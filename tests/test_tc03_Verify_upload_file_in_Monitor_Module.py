@@ -1,0 +1,104 @@
+import os
+import json
+import pytest
+from utils.logger import get_logger
+from pages.monitor_page import MonitorPage
+from pages.task_page import TaskPage
+
+logger = get_logger("TC03")
+
+TEST_ID = "TC-03"
+STEP_DESCRIPTIONS = {
+    1: "Navigate to the Monitor module",
+    2: "Select Data Lakehouse Option",
+    3: "Search Using Domain Name from TC1",
+    4: "Validate Domain Presence in results grid",
+    5: "Click the Task button in the Actions column",
+    6: "Identify All Tasks",
+    7: "Validate Task Count >= 1",
+    8: "Monitor Status Transition to Completed"
+}
+STEP_EXPECTED = {
+    1: "Monitor page loads successfully",
+    2: "Data Lakehouse view is selected successfully",
+    3: "Search term is entered",
+    4: "Domain Name appears in the results grid",
+    5: "Task button is clicked successfully",
+    6: "All task rows are located",
+    7: "Task count is greater than or equal to 1",
+    8: "All tasks successfully reach Completed status"
+}
+
+def _record(tracker, sm, step_num, actual, status="PASS", error=None):
+    if sm:
+        sm.capture(step_number=step_num, description=STEP_DESCRIPTIONS.get(step_num, ""))
+    
+    tracker["results"].append({
+        "step": step_num,
+        "description": STEP_DESCRIPTIONS.get(step_num, ""),
+        "expected": STEP_EXPECTED.get(step_num, ""),
+        "actual": actual,
+        "status": status,
+        "error": error
+    })
+
+def test_tc03_verify_upload_file_in_monitor(driver, step_tracker, screenshot_manager):
+    logger.info("Starting TC-03 Verify upload file in Monitor Module")
+    
+    # Hardcoding workflow_name based on user's instruction for isolated testing
+    workflow_name = "international_cricket_match_analytics"
+    logger.info(f"Isolated Test: Hardcoded Domain Name as '{workflow_name}'")
+
+    step_tracker["test_id"] = TEST_ID
+    step_tracker["descriptions"] = STEP_DESCRIPTIONS
+    step_tracker["expected"] = STEP_EXPECTED
+
+    from pages.login_page import LoginPage
+    login_page = LoginPage(driver)
+    login_page.navigate()
+    login_page.login()
+    login_page.wait_for_dashboard()
+
+    monitor_page = MonitorPage(driver)
+    task_page = TaskPage(driver)
+
+    # ── Step 1: Open Monitor Module ───────────────────────────────────────────
+    step_tracker["current"] = 1
+    monitor_page.navigate_to_monitor()
+    _record(step_tracker, screenshot_manager, 1, "Monitor page loaded successfully.")
+
+    # ── Step 2: Select Data Lakehouse Option ──────────────────────────────────
+    step_tracker["current"] = 2
+    monitor_page.select_data_lakehouse_view()
+    _record(step_tracker, screenshot_manager, 2, "Data Lakehouse view selected successfully.")
+
+    # ── Step 3: Search Using Domain Name from TC1 ──────────────────────────────
+    step_tracker["current"] = 3
+    monitor_page.search_domain(workflow_name)
+    _record(step_tracker, screenshot_manager, 3, f"Searched for domain '{workflow_name}'.")
+
+    # ── Step 4: Validate Domain Presence ───────────────────────────────────────
+    step_tracker["current"] = 4
+    monitor_page.validate_domain_presence(workflow_name)
+    _record(step_tracker, screenshot_manager, 4, f"Domain '{workflow_name}' found in results grid.")
+
+    # ── Step 5: Click Task Button ──────────────────────────────────────────────
+    step_tracker["current"] = 5
+    monitor_page.click_task_button(workflow_name)
+    _record(step_tracker, screenshot_manager, 5, "Task button clicked successfully.")
+
+    # ── Step 6 & 7: Identify Tasks and Validate Count ──────────────────────────
+    step_tracker["current"] = 6
+    count = task_page.validate_task_count()
+    _record(step_tracker, screenshot_manager, 6, f"Successfully identified {count} tasks.")
+    
+    step_tracker["current"] = 7
+    _record(step_tracker, screenshot_manager, 7, f"Task count {count} is >= 1 (PASS).")
+
+    # ── Step 8: Monitor Status Transition ─────────────────────────────────────
+    step_tracker["current"] = 8
+    # This will poll for up to 10 mins and throw an exception if failed or timeout
+    task_page.monitor_task_execution(max_wait_seconds=600, poll_interval=30)
+    _record(step_tracker, screenshot_manager, 8, "All tasks successfully changed status to Completed.")
+
+    logger.info("TC03 TEST PASSED ✅")
