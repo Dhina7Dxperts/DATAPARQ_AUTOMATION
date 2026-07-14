@@ -46,23 +46,36 @@ class DataGovernancePage:
         except Exception as e:
             pytest.fail(f"FAIL: Could not open Upload page. {e}")
 
-    def search_and_select_workflow(self, workflow_name):
+    def search_workflow(self, workflow_name):
         try:
-            # Search
             search = self.wait.until(EC.presence_of_element_located(self.search_box))
             search.clear()
             search.send_keys(workflow_name)
             time.sleep(2) # Wait for debounce
+            logger.info(f"Searched for workflow: {workflow_name}")
+        except Exception as e:
+            pytest.fail(f"FAIL: Search field is not visible. {e}")
             
-            # The result appears as a card, not a table row. Locate by workflow name text.
+    def validate_workflow_exists(self, workflow_name):
+        try:
+            workflow_card = (By.XPATH, f"//*[normalize-space(text())='{workflow_name}']")
+            self.wait.until(EC.presence_of_element_located(workflow_card))
+            logger.info(f"Workflow '{workflow_name}' found in grid results.")
+            return True
+        except Exception as e:
+            pytest.fail(f"FAIL: Workflow '{workflow_name}' was not found in the grid results. {e}")
+            
+    def open_workflow(self, workflow_name):
+        try:
             workflow_card = (By.XPATH, f"//*[normalize-space(text())='{workflow_name}']")
             row = self.wait.until(EC.presence_of_element_located(workflow_card))
             self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", row)
             self.wait.until(EC.element_to_be_clickable(workflow_card))
             self.driver.execute_script("arguments[0].click();", row)
-            logger.info(f"Selected workflow: {workflow_name}")
+            time.sleep(2) # Give UI time to open the upload page
+            logger.info(f"Opened workflow: {workflow_name}")
         except Exception as e:
-            pytest.fail(f"FAIL: Search field is not visible or Workflow created in TC1 was not found or Unable to select workflow. {e}")
+            pytest.fail(f"FAIL: Unable to click/open workflow '{workflow_name}'. {e}")
 
     def _is_button_disabled(self, element) -> bool:
         classes = element.get_attribute("class") or ""
@@ -121,11 +134,36 @@ class DataGovernancePage:
 
     def click_validate(self):
         try:
+            # First, explicitly wait for the button to be fully enabled
+            def check_enabled(driver):
+                b = driver.find_element(*self.validate_btn)
+                return not self._is_button_disabled(b)
+            self.wait.until(check_enabled)
+            
             btn = self.wait.until(EC.element_to_be_clickable(self.validate_btn))
             self.driver.execute_script("arguments[0].click();", btn)
-            # Wait for success message
-            self.long_wait.until(EC.visibility_of_element_located(self.file_validated_msg))
-            logger.info("File Validated Successfully.")
+            logger.info("Clicked Validate button. Waiting up to 30 minutes for validation to complete...")
+            
+            # Polling for up to 30 minutes
+            start_time = time.time()
+            max_wait = 30 * 60 # 30 minutes
+            poll_interval = 15
+            
+            while time.time() - start_time < max_wait:
+                try:
+                    # The definitive sign that validation completed is the appearance of the Rejected/Valid summary
+                    rejected_xpath = "//*[contains(translate(normalize-space(text()), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'rejected records')]"
+                    elements = self.driver.find_elements(By.XPATH, rejected_xpath)
+                    
+                    if elements and any(e.is_displayed() for e in elements):
+                        logger.info("Validation completed. Rejected summary block is now visible.")
+                        return True
+                except Exception as inner_e:
+                    logger.debug(f"Transient error during polling: {inner_e}")
+                
+                time.sleep(poll_interval)
+                
+            pytest.fail("FAIL: File validation timed out after 30 minutes.")
         except Exception as e:
             pytest.fail(f"FAIL: File validation was not completed successfully. {e}")
 
@@ -190,3 +228,36 @@ class DataGovernancePage:
         except Exception as e:
             pytest.fail(f"FAIL: Historical Upload Status was not updated after submission. {e}")
 
+    def get_rejected_records_count(self):
+        try:
+            # Locate the count adjacent to the "Rejected Records" label based on provided HTML
+            rejected_label_xpath = "//*[contains(translate(normalize-space(text()), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'rejected records')]"
+            self.wait.until(EC.visibility_of_element_located((By.XPATH, rejected_label_xpath)))
+            
+            count_xpath = rejected_label_xpath + "/preceding-sibling::div"
+            rejected_elem = self.driver.find_element(By.XPATH, count_xpath)
+            count_str = rejected_elem.text.strip()
+            logger.info(f"UI Rejected Records Count captured: {count_str}")
+            
+            return int(count_str)
+        except Exception as e:
+            pytest.fail(f"FAIL: Could not retrieve Rejected Records count from UI. {e}")
+
+    def click_download_rejected(self):
+        try:
+            # Find the <a> tag that contains the 'Download Rejected' text
+            download_xpath = "//a[.//div[contains(translate(normalize-space(text()), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'download rejected')]]"
+            download_btn = self.wait.until(EC.presence_of_element_located((By.XPATH, download_xpath)))
+            
+            # Extract the href to guarantee download without relying on JS click bubbling
+            href = download_btn.get_attribute("href")
+            if href:
+                logger.info(f"Triggering download directly via href: {href}")
+                self.driver.get(href)
+            else:
+                logger.info("No href found, falling back to native click.")
+                self.wait.until(EC.element_to_be_clickable((By.XPATH, download_xpath))).click()
+                
+            logger.info("Clicked 'Download Rejected' button.")
+        except Exception as e:
+            pytest.fail(f"FAIL: Could not click Download Rejected button. {e}")

@@ -45,19 +45,42 @@ def _record(tracker, sm, step_num, actual, status="PASS", error=None):
 def test_tc03_verify_upload_file_in_monitor(driver, step_tracker, screenshot_manager):
     logger.info("Starting TC-03 Verify upload file in Monitor Module")
     
-    # Hardcoding workflow_name based on user's instruction for isolated testing
-    workflow_name = "international_cricket_match_analytics"
-    logger.info(f"Isolated Test: Hardcoded Domain Name as '{workflow_name}'")
+    # Check dependencies (TC1 & TC2 must have passed)
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    run_info_path = os.path.join(base_dir, "run_info.json")
+
+    if not os.path.exists(run_info_path):
+        pytest.skip("TC3 Skipped: run_info.json not found. TC1 and TC2 must run first.")
+
+    with open(run_info_path, "r") as f:
+        run_info = json.load(f)
+
+    if run_info.get("tc2_status") != "PASS":
+        pytest.skip("TC3 Skipped: TC2 failed or did not run. Browser session terminated without executing TC3.")
+
+    workflow_name = run_info.get("workflow_name")
+    if not workflow_name:
+        pytest.skip("TC3 Skipped: Domain Name (workflow_name) from TC1 is missing.")
 
     step_tracker["test_id"] = TEST_ID
     step_tracker["descriptions"] = STEP_DESCRIPTIONS
     step_tracker["expected"] = STEP_EXPECTED
 
+    # ── Handle standalone execution (Login if necessary) ──────────────────────
     from pages.login_page import LoginPage
     login_page = LoginPage(driver)
-    login_page.navigate()
-    login_page.login()
-    login_page.wait_for_dashboard()
+    
+    # If the current URL is not the app, navigate there
+    if "7dxperts" not in driver.current_url.lower() and "dataparq" not in driver.current_url.lower():
+        logger.info("Fresh session detected. Navigating to base URL and logging in...")
+        login_page.navigate()
+        login_page.login()
+    else:
+        # We are already in the app. Just to be safe, if on login page, log in.
+        from selenium.webdriver.common.by import By
+        if driver.find_elements(By.XPATH, "//input[@name='username' or @id='username' or @aria-label='Username']"):
+            logger.info("Session active but found login screen. Logging in...")
+            login_page.login()
 
     monitor_page = MonitorPage(driver)
     task_page = TaskPage(driver)
@@ -102,3 +125,8 @@ def test_tc03_verify_upload_file_in_monitor(driver, step_tracker, screenshot_man
     _record(step_tracker, screenshot_manager, 8, "All tasks successfully changed status to Completed.")
 
     logger.info("TC03 TEST PASSED ✅")
+
+    # Save tc3 status for tc4
+    run_info["tc3_status"] = "PASS"
+    with open(run_info_path, "w") as f:
+        json.dump(run_info, f, indent=4)

@@ -137,3 +137,70 @@ class MonitorPage:
             time.sleep(2) # Give UI time to transition
         except Exception as e:
             pytest.fail(f"FAIL: Could not click the Task button for domain '{domain_name}'. {e}")
+
+    def validate_data_quality_and_lake_status(self):
+        import time
+        try:
+            # Wait for grid headers to load
+            self.wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(@class, 'k-column-title') and contains(text(), 'Layer Name')]")))
+            
+            # Find column indices dynamically
+            headers = self.driver.find_elements(By.XPATH, "//th")
+            layer_idx = -1
+            status_idx = -1
+            for i, header in enumerate(headers):
+                text = header.get_attribute("textContent").strip()
+                if "Layer Name" in text:
+                    layer_idx = i + 1
+                elif "Status" in text:
+                    status_idx = i + 1
+                    
+            if layer_idx == -1 or status_idx == -1:
+                pytest.fail("Could not find 'Layer Name' or 'Status' column in the task details grid.")
+                
+            layers_to_check = ["dataquality", "datalake"]
+            layers_completed = {"dataquality": False, "datalake": False}
+            
+            start_time = time.time()
+            max_wait = 10 * 60 # 10 minutes
+            poll_interval = 30
+            
+            logger.info(f"Starting 10-minute polling for layers {layers_to_check}. Layer Name col: {layer_idx}, Status col: {status_idx}")
+            
+            while time.time() - start_time < max_wait:
+                all_completed = True
+                
+                for layer in layers_to_check:
+                    if layers_completed[layer]:
+                        continue
+                        
+                    # Find the row for this layer
+                    row_xpath = f"//tr[td[{layer_idx}][normalize-space(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'))='{layer}']]"
+                    
+                    try:
+                        # Attempt to find the specific cell
+                        status_cell = self.driver.find_element(By.XPATH, f"{row_xpath}//td[{status_idx}]")
+                        status_text = status_cell.text.strip()
+                        
+                        logger.info(f"Layer '{layer}' current status: {status_text}")
+                        
+                        if status_text in ["Failed", "Error", "Stopped", "Cancelled"]:
+                            pytest.fail(f"Task for layer '{layer}' failed with status: {status_text}")
+                        elif status_text == "Completed":
+                            layers_completed[layer] = True
+                        else:
+                            all_completed = False
+                    except Exception:
+                        # Row might not be spawned yet or grid might be refreshing
+                        logger.info(f"Layer '{layer}' not yet visible or grid refreshing. Waiting...")
+                        all_completed = False
+                        
+                if all_completed and all(layers_completed.values()):
+                    logger.info("Both 'dataquality' and 'datalake' tasks are Completed successfully!")
+                    return True
+                    
+                time.sleep(poll_interval)
+                
+            pytest.fail("Timeout reached: Tasks did not complete within 10 minutes.")
+        except Exception as e:
+            pytest.fail(f"Failed to validate task statuses: {e}")

@@ -82,6 +82,23 @@ def test_tc02_data_governance_reupload_flow(driver, upload_file_path, step_track
     step_tracker["descriptions"] = STEP_DESCRIPTIONS
     step_tracker["expected"] = STEP_EXPECTED
 
+    # ── Handle standalone execution (Login if necessary) ──────────────────────
+    from pages.login_page import LoginPage
+    login_page = LoginPage(driver)
+    
+    # If the current URL is not the app, navigate there
+    if "7dxperts" not in driver.current_url.lower() and "dataparq" not in driver.current_url.lower():
+        logger.info("Fresh session detected. Navigating to base URL and logging in...")
+        login_page.navigate()
+        login_page.login()
+    else:
+        # We are already in the app (e.g. TC1 ran before this). 
+        # Just to be safe, if we somehow landed on the login page, log in.
+        from selenium.webdriver.common.by import By
+        if driver.find_elements(By.XPATH, "//input[@name='username' or @id='username' or @aria-label='Username']"):
+            logger.info("Session active but found login screen. Logging in...")
+            login_page.login()
+
     dg_page = DataGovernancePage(driver)
 
     # ── Step 1: Navigate to Data Governance ───────────────────────────────────
@@ -142,5 +159,6 @@ def test_tc02_data_governance_reupload_flow(driver, upload_file_path, step_track
     
     # Save TC2 status for TC3 dependency
     run_info["tc2_status"] = "PASS"
-    with open(run_info_path, "w") as f:
-        json.dump(run_info, f, indent=4)
+    with open("run_info.json", "w") as f:
+        json.dump(run_info, f, indent=2)
+    logger.info("TC2 run info saved.")

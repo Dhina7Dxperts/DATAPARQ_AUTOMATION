@@ -285,8 +285,14 @@ def generate_execution_report(
     os.makedirs(output_dir, exist_ok=True)
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     timestamp_file = datetime.now().strftime("%Y%m%d_%H%M%S")
-    status_str = "PASS" if passed else "FAIL"
-    output_path = os.path.join(output_dir, f"{status_str}_{test_name}_{timestamp_file}.docx")
+    
+    safe_test_id = test_id.replace("-", "")
+    if passed:
+        filename = f"{safe_test_id}_Evidence_{timestamp_file}.docx"
+    else:
+        filename = f"{safe_test_id}_FAILED_{timestamp_file}.docx"
+        
+    output_path = os.path.join(output_dir, filename)
 
     doc = Document()
 

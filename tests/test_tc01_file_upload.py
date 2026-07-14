@@ -306,4 +306,9 @@ def test_tc01_governance_file_upload_flow(driver, upload_file_path, step_tracker
             "file_name": os.path.basename(abs_upload_path),
         }, f, indent=2)
     logger.info(f"TC1 run info saved → workflow: '{domain_name}', file: '{abs_upload_path}'")
+    
+    # Wait for the post-deployment automatic redirect to settle before handing off to TC2
+    import time
+    time.sleep(5)
+    
     logger.info("TEST PASSED ✅")
