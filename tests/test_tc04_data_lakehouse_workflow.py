@@ -206,23 +206,13 @@ def test_tc04_data_lakehouse_workflow(driver, step_tracker, screenshot_manager, 
     business_key_col = None
     if os.path.exists(upload_file_path):
         with open(upload_file_path, "r", encoding="utf-8") as f:
-            reader = csv.DictReader(f)
-            rows = list(reader)
-            if rows and reader.fieldnames:
-                for header in reader.fieldnames:
-                    # Exclude date/timestamp fields
-                    if any(kw in header.lower() for kw in ['date', 'time', 'stamp']):
-                        continue
-                    values = [row[header] for row in rows]
-                    # Exclude if any null or empty values
-                    if any(v is None or str(v).strip() == "" for v in values):
-                        continue
-                    # Ensure uniqueness across all rows
-                    if len(set(values)) == len(values):
-                        business_key_col = header
-                        break # Exactly one valid Business Key is selected
+            reader = csv.reader(f)
+            headers = next(reader, None)
+            if headers and len(headers) > 0:
+                business_key_col = headers[0]
+
     if not business_key_col:
-        pytest.fail("Could not dynamically determine a valid Business Key column from the uploaded file.")
+        pytest.fail("Could not determine the first column from the uploaded file.")
         
     logger.info("Enforcing rule: Interacting strictly with Business Key column only (Mask Column & PII will remain untouched).")
     dl_workflow_page.select_business_key(business_key_col)

@@ -11,8 +11,19 @@ The automation validates the complete workflow from data onboarding to data qual
 - **Automation Tool:** Selenium WebDriver (ChromeDriver)
 - **Testing Framework:** PyTest
 - **Design Pattern:** Page Object Model (POM)
-- **Data Manipulation:** Pandas, OpenPyXL
+- **Data Manipulation:** Pandas, OpenPyXL, CSV
 - **Reporting & Evidence Generation:** python-docx
+
+### Recent Enhancements & Fixes
+The framework has been heavily optimized for stability, particularly with long-running backend processes and complex UI grids:
+- **Dynamic Asynchronous Waiting:** 
+  - *Data Governance Validation (TC2/TC6):* Polls for validation completion up to **30 minutes** (checking every 15 seconds), proceeding immediately once the UI indicates success (no hardcoded waits).
+  - *Monitor Task Execution (TC3/TC5):* Polls task execution grid up to **30 minutes** (checking every 30 seconds), explicitly failing if any task hits a terminal failure state.
+- **Robust UI Interactions (Kendo Grids):**
+  - *Multi-Strategy Search:* Uses a 4-layer fallback strategy for interacting with complex search boxes and Kendo grids (testing popups, JS events, direct ENTER key inputs, and scanning unfiltered grids).
+  - *Case-Insensitive XPath Matching:* Utilizes `translate()` in XPath to ensure workflows and domains are successfully matched regardless of how the UI renders text casing.
+- **TC4 Business Key Configuration:** Dynamically parses the uploaded CSV file and strictly sets the *first column* as the Business Key, leaving Mask and PII configurations untouched.
+- **Enhanced Failure Reporting:** Network capture logs now safely generate internal directories before saving (`os.makedirs`), ensuring you always get the `Request.json` and `Response.json` payloads upon any step failure.
 
 ## Project Structure
 ```text
@@ -107,7 +118,7 @@ Ensures data governance files can be uploaded and structurally validated prior t
 - **Step 3:** Search for Workflow Created in TC1
 - **Step 4:** Upload Same File Again
 - **Step 5:** Validate Validate Button Behavior
-- **Step 6:** Validate Uploaded File
+- **Step 6:** Validate Uploaded File (Dynamic Wait up to 30 mins)
 - **Step 7:** Validate Submit Button Behavior
 - **Step 8:** Submit File
 - **Step 9:** Validate Historical Upload Status
@@ -116,12 +127,12 @@ Ensures data governance files can be uploaded and structurally validated prior t
 Validates that the submitted data workflow properly transitions to a completed state in the monitoring layer.
 - **Step 1:** Navigate to the Monitor module
 - **Step 2:** Select Data Lakehouse Option
-- **Step 3:** Search Using Domain Name from TC1
+- **Step 3:** Search Using Domain Name from TC1 (Case-insensitive)
 - **Step 4:** Validate Domain Presence in results grid
 - **Step 5:** Click the Task button in the Actions column
 - **Step 6:** Identify All Tasks
 - **Step 7:** Validate Task Count >= 1
-- **Step 8:** Monitor Status Transition to Completed
+- **Step 8:** Monitor Status Transition to Completed (Dynamic Poll up to 30 mins)
 
 ### TC4: Data Lakehouse Workflow Deployment
 Tests the creation and deployment of custom Data Quality (DQ) rules onto the data pipeline.
@@ -136,10 +147,10 @@ Tests the creation and deployment of custom Data Quality (DQ) rules onto the dat
 - **Step 9:** Enable Notification
 - **Step 10:** Select Attribute
 - **Step 11:** Select Comparison Operator
-- **Step 12:** Enter Attribute Value
+- **Step 12:** Enter Attribute Value (Dynamically extracted from CSV data)
 - **Step 13:** Click Create
 - **Step 14:** Click the Next Button
-- **Step 15:** Select Business Key Column
+- **Step 15:** Select Business Key Column (Dynamically selects strictly the 1st column of the CSV)
 - **Step 16:** Save the Business Key Configuration
 - **Step 17:** Click the Next Button After Saving Business Key
 - **Step 18:** Deploy the Pipeline and Verify Successful Deployment
@@ -193,7 +204,7 @@ The framework enforces strict data integrity by validating that the:
 
 ---
 
-##  How to Execute
+## How to Execute
 
 ### Step 1: Create a Fresh Virtual Environment
 *Isolate your project dependencies by creating a new virtual environment.*
@@ -216,7 +227,7 @@ pip install -r requirements.txt
 ### Step 4: Execute the Tests!
 *Run the full test suite in sequence.*
 ```powershell
-.\venv\Scripts\pytest --upload-file=test_data\ipl_match_data.csv
+.\venv\Scripts\python.exe -m pytest --upload-file=test_data/abc_company_sales_data_fixed.csv
 ```
 
 ---
@@ -224,5 +235,5 @@ pip install -r requirements.txt
 #### 🎯 Option 2: Run a Specific Test Case (e.g., just TC1)
 *If you need to debug or run an individual test case, use the command below.*
 ```powershell
-.\venv\Scripts\pytest tests\test_tc01_file_upload.py --upload-file=test_data\ipl_match_data.csv
+.\venv\Scripts\python.exe -m pytest tests\test_tc01_file_upload.py --upload-file=test_data\ipl_match_data.csv
 ```

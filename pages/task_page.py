@@ -39,41 +39,93 @@ class TaskPage:
             pytest.fail(f"FAIL: Could not validate task count. {e}")
 
     def monitor_task_execution(self, max_wait_seconds=600, poll_interval=30):
+        """
+        Poll task rows and monitor their status until all reach 'Completed'
+        or the timeout is reached.
+
+        Improvements over the previous version:
+        - Logs EVERY task's current status on each poll cycle (not just changes).
+        - Collects ALL failed/errored tasks before calling pytest.fail,
+          so the full picture is visible in the report.
+        - Shows elapsed time and remaining time on each poll log line.
+        - Handles 'unknown' status gracefully (keeps waiting, not an instant fail).
+        """
         try:
-            logger.info(f"Monitoring task execution status for up to {max_wait_seconds/60} minutes...")
-            end_time = time.monotonic() + max_wait_seconds
-            
+            logger.info(
+                f"Monitoring task execution for up to "
+                f"{max_wait_seconds // 60}m {max_wait_seconds % 60}s "
+                f"(poll every {poll_interval}s)..."
+            )
+            start_time = time.monotonic()
+            end_time   = start_time + max_wait_seconds
+
+            TERMINAL_FAIL   = {'failed', 'error', 'aborted', 'cancelled'}
+            TERMINAL_SUCCESS = {'completed'}
+
             while time.monotonic() < end_time:
+                elapsed   = time.monotonic() - start_time
+                remaining = end_time - time.monotonic()
+                elapsed_str   = f"{int(elapsed // 60)}m {int(elapsed % 60)}s"
+                remaining_str = f"{int(remaining // 60)}m {int(remaining % 60)}s"
+
                 rows = self.driver.find_elements(*self.task_row)
                 if not rows:
-                    pytest.fail("FAIL: No tasks found during monitoring.")
-                    
-                all_completed = True
-                
+                    pytest.fail("FAIL: No task rows found in the task grid during monitoring.")
+
+                all_completed  = True
+                failed_tasks   = []
+
+                logger.info(
+                    f"─── Poll at {elapsed_str} elapsed "
+                    f"| {len(rows)} task(s) | Remaining: {remaining_str} ───"
+                )
+
                 for i, row in enumerate(rows):
-                    # Find status badge in this row
                     try:
                         badge = row.find_element(*self.status_badge)
                         status_text = badge.text.strip().lower()
                     except Exception:
                         status_text = "unknown"
-                        
-                    logger.debug(f"Task {i+1} status: {status_text.capitalize()}")
-                    
-                    if status_text in ['failed', 'error', 'aborted']:
-                        pytest.fail(f"FAIL: Task {i+1} reached terminal failure status: {status_text.capitalize()}")
-                        
-                    if status_text != 'completed':
+
+                    status_display = status_text.capitalize()
+                    logger.info(f"  Task {i + 1}: {status_display}")
+
+                    if status_text in TERMINAL_FAIL:
+                        failed_tasks.append((i + 1, status_display))
+
+                    if status_text not in TERMINAL_SUCCESS:
                         all_completed = False
-                        
+
+                # ── Report all failures at once ───────────────────────────────
+                if failed_tasks:
+                    fail_summary = ", ".join(
+                        f"Task {n} → {s}" for n, s in failed_tasks
+                    )
+                    pytest.fail(
+                        f"FAIL: {len(failed_tasks)} task(s) reached a terminal "
+                        f"failure status after {elapsed_str}: [{fail_summary}]. "
+                        f"Check the application backend for details."
+                    )
+
                 if all_completed:
-                    logger.info("All tasks successfully reached COMPLETED status.")
+                    logger.info(
+                        f"✅ All {len(rows)} task(s) reached COMPLETED status "
+                        f"after {elapsed_str}."
+                    )
                     return True
-                    
-                # Wait before polling again
-                logger.info(f"Tasks are still executing. Waiting {poll_interval} seconds before next check...")
+
+                logger.info(
+                    f"Tasks still executing. Next check in {poll_interval}s..."
+                )
                 time.sleep(poll_interval)
-                
-            pytest.fail(f"FAIL: Tasks did not complete within the maximum wait time of {max_wait_seconds} seconds.")
+
+            # ── Timeout ───────────────────────────────────────────────────────
+            pytest.fail(
+                f"FAIL: Tasks did not complete within the maximum wait time "
+                f"of {max_wait_seconds // 60} minutes. "
+                f"Last known row count: {len(self.driver.find_elements(*self.task_row))}."
+            )
         except Exception as e:
+            if "FAIL:" in str(e):
+                raise
             pytest.fail(f"FAIL: Error occurred while monitoring task status: {e}")

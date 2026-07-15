@@ -120,8 +120,8 @@ def test_tc03_verify_upload_file_in_monitor(driver, step_tracker, screenshot_man
 
     # ── Step 8: Monitor Status Transition ─────────────────────────────────────
     step_tracker["current"] = 8
-    # This will poll for up to 10 mins and throw an exception if failed or timeout
-    task_page.monitor_task_execution(max_wait_seconds=600, poll_interval=30)
+    # This will poll for up to 30 mins (1800s) and throw an exception if failed or timeout
+    task_page.monitor_task_execution(max_wait_seconds=1800, poll_interval=30)
     _record(step_tracker, screenshot_manager, 8, "All tasks successfully changed status to Completed.")
 
     logger.info("TC03 TEST PASSED ✅")

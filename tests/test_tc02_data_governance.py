@@ -113,7 +113,9 @@ def test_tc02_data_governance_reupload_flow(driver, upload_file_path, step_track
 
     # ── Step 3: Search for Workflow ───────────────────────────────────────────
     step_tracker["current"] = 3
-    dg_page.search_and_select_workflow(workflow_name)
+    dg_page.search_workflow(workflow_name)
+    dg_page.validate_workflow_exists(workflow_name)
+    dg_page.open_workflow(workflow_name)
     _record(step_tracker, screenshot_manager, 3, f"Workflow '{workflow_name}' selected from search.")
 
     # ── Step 5a: Validate Validate button disabled ─────────────────────────────

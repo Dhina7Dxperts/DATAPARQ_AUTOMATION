@@ -88,7 +88,8 @@ class NetworkCapture:
             }
             network_summary.append(entry_summary)
 
-        # Save JSON files
+        # Save JSON files — ensure the directory exists first
+        os.makedirs(run_dir, exist_ok=True)
         req_path = os.path.join(run_dir, f"Step_{step_number:02d}_Request.json")
         resp_path = os.path.join(run_dir, f"Step_{step_number:02d}_Response.json")
 

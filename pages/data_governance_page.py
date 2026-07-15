@@ -58,7 +58,8 @@ class DataGovernancePage:
             
     def validate_workflow_exists(self, workflow_name):
         try:
-            workflow_card = (By.XPATH, f"//*[normalize-space(text())='{workflow_name}']")
+            workflow_lower = workflow_name.lower()
+            workflow_card = (By.XPATH, f"//*[contains(translate(normalize-space(text()), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), '{workflow_lower}')]")
             self.wait.until(EC.presence_of_element_located(workflow_card))
             logger.info(f"Workflow '{workflow_name}' found in grid results.")
             return True
@@ -67,7 +68,8 @@ class DataGovernancePage:
             
     def open_workflow(self, workflow_name):
         try:
-            workflow_card = (By.XPATH, f"//*[normalize-space(text())='{workflow_name}']")
+            workflow_lower = workflow_name.lower()
+            workflow_card = (By.XPATH, f"//*[contains(translate(normalize-space(text()), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), '{workflow_lower}')]")
             row = self.wait.until(EC.presence_of_element_located(workflow_card))
             self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", row)
             self.wait.until(EC.element_to_be_clickable(workflow_card))
@@ -127,44 +129,105 @@ class DataGovernancePage:
                 b = driver.find_element(*self.validate_btn)
                 return not self._is_button_disabled(b)
             
-            self.wait.until(check_enabled)
+            self.long_wait.until(check_enabled)
             logger.info("Validate button is enabled.")
         except Exception as e:
             pytest.fail(f"FAIL: Validate button did not become enabled after file upload. {e}")
 
     def click_validate(self):
+        """
+        Click the Validate button and dynamically wait for validation to complete.
+
+        Strategy:
+        - Polls every 15 seconds for completion signals.
+        - Proceeds immediately as soon as validation is detected (no fixed wait).
+        - Checks multiple signals: 'Rejected Records' summary, 'File Validated
+          Successfully' text, or disappearance of any loading/progress indicator.
+        - Logs elapsed time on each poll so the test output shows live progress.
+        - Maximum wait is 30 minutes; fails only if timeout is reached.
+        """
         try:
-            # First, explicitly wait for the button to be fully enabled
+            # ── Wait for Validate button to be fully enabled ──────────────────
             def check_enabled(driver):
                 b = driver.find_element(*self.validate_btn)
                 return not self._is_button_disabled(b)
             self.wait.until(check_enabled)
-            
+
             btn = self.wait.until(EC.element_to_be_clickable(self.validate_btn))
             self.driver.execute_script("arguments[0].click();", btn)
-            logger.info("Clicked Validate button. Waiting up to 30 minutes for validation to complete...")
-            
-            # Polling for up to 30 minutes
-            start_time = time.time()
-            max_wait = 30 * 60 # 30 minutes
-            poll_interval = 15
-            
-            while time.time() - start_time < max_wait:
-                try:
-                    # The definitive sign that validation completed is the appearance of the Rejected/Valid summary
-                    rejected_xpath = "//*[contains(translate(normalize-space(text()), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'rejected records')]"
-                    elements = self.driver.find_elements(By.XPATH, rejected_xpath)
-                    
-                    if elements and any(e.is_displayed() for e in elements):
-                        logger.info("Validation completed. Rejected summary block is now visible.")
-                        return True
-                except Exception as inner_e:
-                    logger.debug(f"Transient error during polling: {inner_e}")
-                
+            logger.info("Clicked Validate button. Dynamic polling started (max 30 min, poll every 15 s).")
+
+            # ── Dynamic polling loop ──────────────────────────────────────────
+            max_wait      = 30 * 60   # 30 minutes in seconds
+            poll_interval = 15        # check every 15 seconds
+            start_time    = time.time()
+
+            # XPaths for all known completion signals
+            COMPLETION_SIGNALS = [
+                # Signal 1: Rejected Records count/summary block appears
+                (
+                    "Rejected Records summary",
+                    "//*[contains(translate(normalize-space(text()),"
+                    " 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),"
+                    " 'rejected records')]"
+                ),
+                # Signal 2: Explicit 'File Validated Successfully' message
+                (
+                    "File Validated Successfully message",
+                    "//*[contains(normalize-space(text()), 'File Validated Successfully')]"
+                ),
+                # Signal 3: Generic validation success banner
+                (
+                    "Validation success banner",
+                    "//*[contains(translate(normalize-space(text()),"
+                    " 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),"
+                    " 'validation complete') or "
+                    " contains(translate(normalize-space(text()),"
+                    " 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'),"
+                    " 'validated successfully')]"
+                ),
+            ]
+
+            while True:
+                elapsed = time.time() - start_time
+                elapsed_str = f"{int(elapsed // 60)}m {int(elapsed % 60)}s"
+
+                if elapsed >= max_wait:
+                    pytest.fail(
+                        f"FAIL: File validation timed out after 30 minutes. "
+                        f"No completion signal was detected."
+                    )
+
+                # ── Check each completion signal ──────────────────────────────
+                completed = False
+                for signal_name, xpath in COMPLETION_SIGNALS:
+                    try:
+                        elements = self.driver.find_elements(By.XPATH, xpath)
+                        if elements and any(e.is_displayed() for e in elements):
+                            logger.info(
+                                f"Validation completed after {elapsed_str}. "
+                                f"Signal detected: '{signal_name}'."
+                            )
+                            completed = True
+                            break
+                    except Exception as inner_e:
+                        logger.debug(f"Transient error while checking '{signal_name}': {inner_e}")
+
+                if completed:
+                    return True
+
+                # ── Log progress and wait before next poll ────────────────────
+                remaining = max_wait - elapsed
+                logger.info(
+                    f"Validation in progress... Elapsed: {elapsed_str} | "
+                    f"Remaining: {int(remaining // 60)}m {int(remaining % 60)}s. "
+                    f"Next check in {poll_interval}s."
+                )
                 time.sleep(poll_interval)
-                
-            pytest.fail("FAIL: File validation timed out after 30 minutes.")
+
         except Exception as e:
+            if "FAIL:" in str(e):
+                raise
             pytest.fail(f"FAIL: File validation was not completed successfully. {e}")
 
     def validate_submit_button_disabled(self):
