@@ -139,6 +139,9 @@ class DataGovernancePage:
         Click the Validate button and dynamically wait for validation to complete.
 
         Strategy:
+        - Waits until the "File successfully uploaded" message is visible.
+        - Waits an additional 15 seconds after the upload success message appears
+          to allow the UI to fully stabilise before clicking Validate.
         - Polls every 15 seconds for completion signals.
         - Proceeds immediately as soon as validation is detected (no fixed wait).
         - Checks multiple signals: 'Rejected Records' summary, 'File Validated
@@ -147,7 +150,16 @@ class DataGovernancePage:
         - Maximum wait is 30 minutes; fails only if timeout is reached.
         """
         try:
-            # ── Wait for Validate button to be fully enabled ──────────────────
+            # ── Step 1: Wait for "File successfully uploaded" message ─────────
+            upload_success_locator = (By.XPATH, "//*[contains(normalize-space(text()), 'successfully uploaded')]")
+            self.long_wait.until(EC.visibility_of_element_located(upload_success_locator))
+            logger.info("'File successfully uploaded' message is visible.")
+
+            # ── Step 2: Wait an additional 15 seconds before clicking Validate ─
+            logger.info("Waiting 15 seconds before clicking Validate button...")
+            time.sleep(15)
+
+            # ── Step 3: Wait for Validate button to be fully enabled ──────────
             def check_enabled(driver):
                 b = driver.find_element(*self.validate_btn)
                 return not self._is_button_disabled(b)

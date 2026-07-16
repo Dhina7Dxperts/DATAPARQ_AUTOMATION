@@ -1,0 +1,1001 @@
+Order_ID,Date,Product_Name,Category,Unit_Price,Quantity,Total_Sales,Region,Sales_Channel
+ORD-100504,2025-06-01,USB-C Multi-Port Hub,Accessories,60,5,300,North,Online B2C
+ORD-100967,2025-06-01,Corporate Laptop Pro,Electronics,1200,3,3600,South,Retail Partner
+ORD-100735,2025-06-01,Premium Mesh Office Chair,Furniture,320,2,640,West,Retail Partner
+ORD-100859,2025-06-01,Premium Mesh Office Chair,Furniture,320,10,3200,East,Online B2C
+ORD-100769,2025-06-01,4K UltraWide Monitor,Electronics,450,5,2250,North,Online B2C
+ORD-100069,2025-06-02,Noise Cancelling Headphones,Audio,180,9,1620,South,Direct B2B
+ORD-100230,2025-06-02,USB-C Multi-Port Hub,Accessories,60,3,180,South,Retail Partner
+ORD-100294,2025-06-02,Corporate Laptop Pro,Electronics,1200,1,1200,South,Direct B2B
+ORD-100370,2025-06-04,Wireless Ergonomic Mouse,Accessories,45,8,360,North,Online B2C
+ORD-100558,2025-06-04,HD Smart Webcam 1080p,Audio/Video,95,4,380,South,Retail Partner
+ORD-100469,2025-06-05,Mechanical Office Keyboard,Accessories,85,9,765,West,Online B2C
+ORD-100142,2025-06-05,Noise Cancelling Headphones,Audio,180,10,1800,West,Direct B2B
+ORD-100820,2025-06-05,HD Smart Webcam 1080p,Audio/Video,95,1,95,North,Direct B2B
+ORD-100960,2025-06-05,Corporate Laptop Pro,Electronics,1200,2,2400,West,Retail Partner
+ORD-100699,2025-06-05,Dual-Motor Standing Desk,Furniture,550,4,2200,North,Online B2C
+ORD-100380,2025-06-06,Noise Cancelling Headphones,Audio,180,7,1260,North,Online B2C
+ORD-100844,2025-06-06,Dual-Motor Standing Desk,Furniture,550,1,550,North,Direct B2B
+ORD-100690,2025-06-07,Noise Cancelling Headphones,Audio,180,1,180,South,Retail Partner
+ORD-100994,2025-06-08,Premium Mesh Office Chair,Furniture,320,4,1280,South,Online B2C
+ORD-100943,2025-06-08,Mechanical Office Keyboard,Accessories,85,9,765,East,Online B2C
+ORD-100783,2025-06-08,HD Smart Webcam 1080p,Audio/Video,95,8,760,West,Direct B2B
+ORD-100301,2025-06-09,Corporate Laptop Pro,Electronics,1200,8,9600,South,Direct B2B
+ORD-100108,2025-06-09,Noise Cancelling Headphones,Audio,180,9,1620,North,Direct B2B
+ORD-100685,2025-06-09,4K UltraWide Monitor,Electronics,450,3,1350,West,Online B2C
+ORD-100814,2025-06-10,Wireless Ergonomic Mouse,Accessories,45,2,90,West,Direct B2B
+ORD-100545,2025-06-10,4K UltraWide Monitor,Electronics,450,10,4500,South,Online B2C
+ORD-100970,2025-06-12,Mechanical Office Keyboard,Accessories,85,2,170,South,Direct B2B
+ORD-100584,2025-06-12,4K UltraWide Monitor,Electronics,450,4,1800,North,Direct B2B
+ORD-100775,2025-06-12,Premium Mesh Office Chair,Furniture,320,2,640,East,Online B2C
+ORD-100627,2025-06-13,Premium Mesh Office Chair,Furniture,320,1,320,West,Direct B2B
+ORD-100170,2025-06-13,Premium Mesh Office Chair,Furniture,320,6,1920,East,Online B2C
+ORD-100429,2025-06-13,Premium Mesh Office Chair,Furniture,320,10,3200,South,Retail Partner
+ORD-100767,2025-06-14,Mechanical Office Keyboard,Accessories,85,10,850,North,Retail Partner
+ORD-100053,2025-06-14,HD Smart Webcam 1080p,Audio/Video,95,1,95,East,Online B2C
+ORD-100150,2025-06-15,USB-C Multi-Port Hub,Accessories,60,7,420,West,Retail Partner
+ORD-100103,2025-06-15,Corporate Laptop Pro,Electronics,1200,10,12000,South,Direct B2B
+ORD-100559,2025-06-16,Wireless Ergonomic Mouse,Accessories,45,5,225,West,Online B2C
+ORD-100374,2025-06-17,Portable SSD 2TB,Storage,150,9,1350,East,Online B2C
+ORD-100399,2025-06-18,HD Smart Webcam 1080p,Audio/Video,95,7,665,North,Retail Partner
+ORD-100722,2025-06-19,Noise Cancelling Headphones,Audio,180,5,900,North,Direct B2B
+ORD-100642,2025-06-19,4K UltraWide Monitor,Electronics,450,4,1800,West,Direct B2B
+ORD-100762,2025-06-20,4K UltraWide Monitor,Electronics,450,9,4050,North,Online B2C
+ORD-100435,2025-06-20,HD Smart Webcam 1080p,Audio/Video,95,1,95,East,Direct B2B
+ORD-100046,2025-06-21,Premium Mesh Office Chair,Furniture,320,10,3200,West,Direct B2B
+ORD-100006,2025-06-21,Portable SSD 2TB,Storage,150,5,750,North,Online B2C
+ORD-100351,2025-06-22,USB-C Multi-Port Hub,Accessories,60,4,240,West,Retail Partner
+ORD-100027,2025-06-22,HD Smart Webcam 1080p,Audio/Video,95,7,665,East,Retail Partner
+ORD-100964,2025-06-22,4K UltraWide Monitor,Electronics,450,6,2700,South,Online B2C
+ORD-100543,2025-06-23,Corporate Laptop Pro,Electronics,1200,5,6000,West,Online B2C
+ORD-100850,2025-06-23,Wireless Ergonomic Mouse,Accessories,45,4,180,North,Direct B2B
+ORD-100662,2025-06-25,Wireless Ergonomic Mouse,Accessories,45,7,315,West,Direct B2B
+ORD-100424,2025-06-26,Premium Mesh Office Chair,Furniture,320,2,640,West,Retail Partner
+ORD-100991,2025-06-26,Corporate Laptop Pro,Electronics,1200,5,6000,North,Retail Partner
+ORD-100360,2025-06-27,Dual-Motor Standing Desk,Furniture,550,1,550,South,Online B2C
+ORD-100122,2025-06-28,Dual-Motor Standing Desk,Furniture,550,7,3850,East,Retail Partner
+ORD-100792,2025-06-28,USB-C Multi-Port Hub,Accessories,60,10,600,South,Online B2C
+ORD-100183,2025-06-28,HD Smart Webcam 1080p,Audio/Video,95,1,95,South,Direct B2B
+ORD-100168,2025-06-29,Dual-Motor Standing Desk,Furniture,550,7,3850,West,Online B2C
+ORD-100700,2025-06-29,Portable SSD 2TB,Storage,150,4,600,East,Online B2C
+ORD-100911,2025-06-30,Mechanical Office Keyboard,Accessories,85,6,510,North,Direct B2B
+ORD-100127,2025-07-03,Noise Cancelling Headphones,Audio,180,7,1260,South,Direct B2B
+ORD-100347,2025-07-03,Corporate Laptop Pro,Electronics,1200,2,2400,North,Online B2C
+ORD-100572,2025-07-03,Corporate Laptop Pro,Electronics,1200,5,6000,North,Online B2C
+ORD-100926,2025-07-04,Wireless Ergonomic Mouse,Accessories,45,3,135,West,Retail Partner
+ORD-100866,2025-07-04,Wireless Ergonomic Mouse,Accessories,45,8,360,South,Online B2C
+ORD-100973,2025-07-04,4K UltraWide Monitor,Electronics,450,8,3600,South,Direct B2B
+ORD-100371,2025-07-05,Corporate Laptop Pro,Electronics,1200,5,6000,South,Direct B2B
+ORD-100137,2025-07-05,HD Smart Webcam 1080p,Audio/Video,95,4,380,West,Direct B2B
+ORD-100805,2025-07-05,Premium Mesh Office Chair,Furniture,320,4,1280,West,Direct B2B
+ORD-100590,2025-07-05,HD Smart Webcam 1080p,Audio/Video,95,5,475,East,Direct B2B
+ORD-100063,2025-07-05,Dual-Motor Standing Desk,Furniture,550,10,5500,North,Retail Partner
+ORD-100433,2025-07-06,USB-C Multi-Port Hub,Accessories,60,7,420,South,Direct B2B
+ORD-100617,2025-07-06,HD Smart Webcam 1080p,Audio/Video,95,2,190,West,Online B2C
+ORD-100169,2025-07-06,4K UltraWide Monitor,Electronics,450,6,2700,West,Retail Partner
+ORD-100623,2025-07-07,USB-C Multi-Port Hub,Accessories,60,10,600,West,Direct B2B
+ORD-100384,2025-07-07,Wireless Ergonomic Mouse,Accessories,45,3,135,South,Retail Partner
+ORD-100299,2025-07-07,Corporate Laptop Pro,Electronics,1200,6,7200,South,Online B2C
+ORD-100354,2025-07-08,Mechanical Office Keyboard,Accessories,85,9,765,South,Retail Partner
+ORD-100723,2025-07-09,Premium Mesh Office Chair,Furniture,320,5,1600,North,Direct B2B
+ORD-100870,2025-07-09,Mechanical Office Keyboard,Accessories,85,3,255,South,Direct B2B
+ORD-100537,2025-07-09,Mechanical Office Keyboard,Accessories,85,10,850,West,Online B2C
+ORD-100421,2025-07-09,Corporate Laptop Pro,Electronics,1200,6,7200,North,Direct B2B
+ORD-100668,2025-07-09,Wireless Ergonomic Mouse,Accessories,45,7,315,West,Retail Partner
+ORD-100279,2025-07-09,Mechanical Office Keyboard,Accessories,85,10,850,West,Online B2C
+ORD-100101,2025-07-11,Mechanical Office Keyboard,Accessories,85,3,255,South,Online B2C
+ORD-100795,2025-07-11,Mechanical Office Keyboard,Accessories,85,1,85,South,Online B2C
+ORD-100121,2025-07-11,Premium Mesh Office Chair,Furniture,320,4,1280,North,Online B2C
+ORD-100671,2025-07-12,Noise Cancelling Headphones,Audio,180,8,1440,North,Online B2C
+ORD-100152,2025-07-12,Dual-Motor Standing Desk,Furniture,550,7,3850,North,Direct B2B
+ORD-100932,2025-07-13,4K UltraWide Monitor,Electronics,450,10,4500,South,Retail Partner
+ORD-100580,2025-07-13,Mechanical Office Keyboard,Accessories,85,6,510,East,Online B2C
+ORD-100746,2025-07-14,4K UltraWide Monitor,Electronics,450,8,3600,South,Direct B2B
+ORD-100185,2025-07-14,Noise Cancelling Headphones,Audio,180,5,900,South,Online B2C
+ORD-100581,2025-07-14,Noise Cancelling Headphones,Audio,180,2,360,West,Online B2C
+ORD-100078,2025-07-14,Corporate Laptop Pro,Electronics,1200,6,7200,East,Online B2C
+ORD-100179,2025-07-15,Mechanical Office Keyboard,Accessories,85,9,765,West,Online B2C
+ORD-100378,2025-07-16,Dual-Motor Standing Desk,Furniture,550,6,3300,North,Direct B2B
+ORD-100972,2025-07-16,Portable SSD 2TB,Storage,150,3,450,South,Online B2C
+ORD-100804,2025-07-16,Premium Mesh Office Chair,Furniture,320,5,1600,West,Direct B2B
+ORD-100530,2025-07-17,Dual-Motor Standing Desk,Furniture,550,4,2200,West,Retail Partner
+ORD-100476,2025-07-17,Portable SSD 2TB,Storage,150,8,1200,West,Retail Partner
+ORD-100764,2025-07-17,USB-C Multi-Port Hub,Accessories,60,8,480,North,Online B2C
+ORD-100980,2025-07-17,Mechanical Office Keyboard,Accessories,85,8,680,South,Direct B2B
+ORD-100510,2025-07-18,Noise Cancelling Headphones,Audio,180,7,1260,North,Direct B2B
+ORD-100988,2025-07-18,Noise Cancelling Headphones,Audio,180,5,900,West,Online B2C
+ORD-100128,2025-07-18,USB-C Multi-Port Hub,Accessories,60,5,300,East,Online B2C
+ORD-100031,2025-07-19,Mechanical Office Keyboard,Accessories,85,7,595,North,Direct B2B
+ORD-100373,2025-07-19,Mechanical Office Keyboard,Accessories,85,4,340,East,Online B2C
+ORD-100066,2025-07-20,4K UltraWide Monitor,Electronics,450,6,2700,East,Direct B2B
+ORD-100860,2025-07-21,HD Smart Webcam 1080p,Audio/Video,95,10,950,South,Online B2C
+ORD-100038,2025-07-21,Wireless Ergonomic Mouse,Accessories,45,6,270,North,Direct B2B
+ORD-100914,2025-07-21,Mechanical Office Keyboard,Accessories,85,7,595,West,Direct B2B
+ORD-100957,2025-07-21,Wireless Ergonomic Mouse,Accessories,45,2,90,North,Direct B2B
+ORD-100357,2025-07-21,Noise Cancelling Headphones,Audio,180,6,1080,East,Direct B2B
+ORD-100448,2025-07-21,Mechanical Office Keyboard,Accessories,85,4,340,East,Direct B2B
+ORD-100654,2025-07-22,4K UltraWide Monitor,Electronics,450,5,2250,North,Direct B2B
+ORD-100159,2025-07-22,HD Smart Webcam 1080p,Audio/Video,95,4,380,South,Direct B2B
+ORD-100219,2025-07-22,Portable SSD 2TB,Storage,150,7,1050,North,Online B2C
+ORD-100664,2025-07-23,Premium Mesh Office Chair,Furniture,320,3,960,North,Direct B2B
+ORD-100851,2025-07-23,Wireless Ergonomic Mouse,Accessories,45,6,270,South,Retail Partner
+ORD-100241,2025-07-23,Corporate Laptop Pro,Electronics,1200,3,3600,South,Direct B2B
+ORD-100094,2025-07-23,Corporate Laptop Pro,Electronics,1200,7,8400,North,Online B2C
+ORD-100057,2025-07-23,Noise Cancelling Headphones,Audio,180,1,180,North,Direct B2B
+ORD-100466,2025-07-23,Corporate Laptop Pro,Electronics,1200,1,1200,South,Direct B2B
+ORD-100928,2025-07-23,Premium Mesh Office Chair,Furniture,320,4,1280,South,Retail Partner
+ORD-100233,2025-07-24,Portable SSD 2TB,Storage,150,6,900,South,Online B2C
+ORD-100310,2025-07-24,Corporate Laptop Pro,Electronics,1200,7,8400,East,Retail Partner
+ORD-100402,2025-07-24,HD Smart Webcam 1080p,Audio/Video,95,4,380,South,Direct B2B
+ORD-100071,2025-07-24,USB-C Multi-Port Hub,Accessories,60,9,540,North,Retail Partner
+ORD-100879,2025-07-24,Premium Mesh Office Chair,Furniture,320,3,960,South,Online B2C
+ORD-100463,2025-07-24,Premium Mesh Office Chair,Furniture,320,10,3200,West,Direct B2B
+ORD-100771,2025-07-24,Noise Cancelling Headphones,Audio,180,2,360,North,Retail Partner
+ORD-100040,2025-07-25,USB-C Multi-Port Hub,Accessories,60,6,360,South,Online B2C
+ORD-100984,2025-07-26,Premium Mesh Office Chair,Furniture,320,4,1280,East,Online B2C
+ORD-100667,2025-07-27,Portable SSD 2TB,Storage,150,10,1500,North,Direct B2B
+ORD-100502,2025-07-28,Dual-Motor Standing Desk,Furniture,550,5,2750,East,Online B2C
+ORD-100730,2025-07-28,Premium Mesh Office Chair,Furniture,320,6,1920,West,Online B2C
+ORD-100745,2025-07-28,Premium Mesh Office Chair,Furniture,320,4,1280,North,Retail Partner
+ORD-100492,2025-07-28,Noise Cancelling Headphones,Audio,180,8,1440,North,Online B2C
+ORD-100403,2025-07-28,Dual-Motor Standing Desk,Furniture,550,7,3850,North,Direct B2B
+ORD-100456,2025-07-28,USB-C Multi-Port Hub,Accessories,60,8,480,South,Direct B2B
+ORD-100032,2025-07-29,Portable SSD 2TB,Storage,150,8,1200,North,Online B2C
+ORD-100292,2025-07-30,Mechanical Office Keyboard,Accessories,85,8,680,West,Direct B2B
+ORD-100467,2025-07-30,Portable SSD 2TB,Storage,150,8,1200,East,Online B2C
+ORD-100989,2025-07-31,Noise Cancelling Headphones,Audio,180,3,540,South,Online B2C
+ORD-100955,2025-07-31,HD Smart Webcam 1080p,Audio/Video,95,3,285,West,Online B2C
+ORD-100130,2025-08-01,Wireless Ergonomic Mouse,Accessories,45,4,180,East,Online B2C
+ORD-100180,2025-08-01,Dual-Motor Standing Desk,Furniture,550,10,5500,North,Direct B2B
+ORD-100635,2025-08-01,Portable SSD 2TB,Storage,150,6,900,South,Direct B2B
+ORD-100451,2025-08-02,Noise Cancelling Headphones,Audio,180,10,1800,South,Direct B2B
+ORD-100832,2025-08-02,Portable SSD 2TB,Storage,150,2,300,East,Direct B2B
+ORD-100112,2025-08-02,USB-C Multi-Port Hub,Accessories,60,8,480,South,Online B2C
+ORD-100155,2025-08-02,Premium Mesh Office Chair,Furniture,320,1,320,East,Direct B2B
+ORD-100105,2025-08-04,Wireless Ergonomic Mouse,Accessories,45,8,360,North,Direct B2B
+ORD-100577,2025-08-04,Portable SSD 2TB,Storage,150,6,900,South,Direct B2B
+ORD-100824,2025-08-04,USB-C Multi-Port Hub,Accessories,60,2,120,West,Retail Partner
+ORD-100177,2025-08-05,Mechanical Office Keyboard,Accessories,85,8,680,North,Direct B2B
+ORD-100894,2025-08-05,Wireless Ergonomic Mouse,Accessories,45,4,180,South,Online B2C
+ORD-100335,2025-08-07,Corporate Laptop Pro,Electronics,1200,6,7200,East,Direct B2B
+ORD-100529,2025-08-08,Noise Cancelling Headphones,Audio,180,4,720,South,Online B2C
+ORD-100925,2025-08-08,Wireless Ergonomic Mouse,Accessories,45,9,405,North,Direct B2B
+ORD-100659,2025-08-08,USB-C Multi-Port Hub,Accessories,60,4,240,South,Online B2C
+ORD-100518,2025-08-08,HD Smart Webcam 1080p,Audio/Video,95,10,950,North,Online B2C
+ORD-100713,2025-08-09,Wireless Ergonomic Mouse,Accessories,45,6,270,North,Online B2C
+ORD-100004,2025-08-11,USB-C Multi-Port Hub,Accessories,60,3,180,South,Online B2C
+ORD-100869,2025-08-11,Mechanical Office Keyboard,Accessories,85,4,340,North,Online B2C
+ORD-100977,2025-08-12,HD Smart Webcam 1080p,Audio/Video,95,9,855,North,Online B2C
+ORD-100686,2025-08-13,USB-C Multi-Port Hub,Accessories,60,4,240,South,Direct B2B
+ORD-100315,2025-08-14,Corporate Laptop Pro,Electronics,1200,2,2400,North,Direct B2B
+ORD-100895,2025-08-14,4K UltraWide Monitor,Electronics,450,6,2700,North,Direct B2B
+ORD-100604,2025-08-14,USB-C Multi-Port Hub,Accessories,60,1,60,West,Direct B2B
+ORD-100522,2025-08-15,Corporate Laptop Pro,Electronics,1200,8,9600,East,Online B2C
+ORD-100684,2025-08-15,USB-C Multi-Port Hub,Accessories,60,4,240,West,Online B2C
+ORD-100648,2025-08-15,Noise Cancelling Headphones,Audio,180,5,900,South,Online B2C
+ORD-100857,2025-08-17,Premium Mesh Office Chair,Furniture,320,9,2880,South,Direct B2B
+ORD-100974,2025-08-17,Premium Mesh Office Chair,Furniture,320,8,2560,South,Retail Partner
+ORD-100753,2025-08-19,Corporate Laptop Pro,Electronics,1200,7,8400,North,Online B2C
+ORD-100227,2025-08-20,Noise Cancelling Headphones,Audio,180,1,180,North,Online B2C
+ORD-100114,2025-08-20,Mechanical Office Keyboard,Accessories,85,6,510,North,Online B2C
+ORD-100915,2025-08-20,USB-C Multi-Port Hub,Accessories,60,1,60,South,Direct B2B
+ORD-100065,2025-08-20,Dual-Motor Standing Desk,Furniture,550,2,1100,North,Retail Partner
+ORD-100808,2025-08-21,Wireless Ergonomic Mouse,Accessories,45,7,315,North,Direct B2B
+ORD-100854,2025-08-22,Corporate Laptop Pro,Electronics,1200,5,6000,North,Online B2C
+ORD-100636,2025-08-23,4K UltraWide Monitor,Electronics,450,8,3600,West,Online B2C
+ORD-100856,2025-08-24,4K UltraWide Monitor,Electronics,450,4,1800,North,Direct B2B
+ORD-100175,2025-08-25,USB-C Multi-Port Hub,Accessories,60,9,540,West,Online B2C
+ORD-100525,2025-08-25,Noise Cancelling Headphones,Audio,180,2,360,East,Online B2C
+ORD-100011,2025-08-27,Dual-Motor Standing Desk,Furniture,550,3,1650,South,Online B2C
+ORD-100051,2025-08-28,Premium Mesh Office Chair,Furniture,320,8,2560,South,Retail Partner
+ORD-100511,2025-08-28,Premium Mesh Office Chair,Furniture,320,3,960,West,Online B2C
+ORD-100787,2025-08-29,Wireless Ergonomic Mouse,Accessories,45,5,225,East,Online B2C
+ORD-100597,2025-08-29,Mechanical Office Keyboard,Accessories,85,7,595,East,Online B2C
+ORD-100593,2025-08-29,HD Smart Webcam 1080p,Audio/Video,95,3,285,South,Online B2C
+ORD-100719,2025-08-30,Portable SSD 2TB,Storage,150,3,450,South,Retail Partner
+ORD-100491,2025-08-31,Wireless Ergonomic Mouse,Accessories,45,5,225,East,Direct B2B
+ORD-100442,2025-08-31,Portable SSD 2TB,Storage,150,5,750,North,Direct B2B
+ORD-100961,2025-08-31,HD Smart Webcam 1080p,Audio/Video,95,10,950,East,Online B2C
+ORD-100060,2025-08-31,Dual-Motor Standing Desk,Furniture,550,5,2750,South,Retail Partner
+ORD-100595,2025-09-01,HD Smart Webcam 1080p,Audio/Video,95,3,285,East,Online B2C
+ORD-100953,2025-09-01,USB-C Multi-Port Hub,Accessories,60,1,60,North,Online B2C
+ORD-100531,2025-09-02,HD Smart Webcam 1080p,Audio/Video,95,9,855,East,Direct B2B
+ORD-100940,2025-09-03,4K UltraWide Monitor,Electronics,450,3,1350,South,Online B2C
+ORD-100585,2025-09-03,USB-C Multi-Port Hub,Accessories,60,2,120,South,Online B2C
+ORD-100868,2025-09-03,Dual-Motor Standing Desk,Furniture,550,10,5500,West,Online B2C
+ORD-100389,2025-09-03,Premium Mesh Office Chair,Furniture,320,2,640,East,Direct B2B
+ORD-100507,2025-09-04,Noise Cancelling Headphones,Audio,180,4,720,South,Online B2C
+ORD-100555,2025-09-04,Corporate Laptop Pro,Electronics,1200,2,2400,North,Retail Partner
+ORD-100160,2025-09-04,Corporate Laptop Pro,Electronics,1200,4,4800,North,Retail Partner
+ORD-100214,2025-09-04,Premium Mesh Office Chair,Furniture,320,9,2880,West,Direct B2B
+ORD-100618,2025-09-04,Portable SSD 2TB,Storage,150,9,1350,East,Online B2C
+ORD-100262,2025-09-05,Portable SSD 2TB,Storage,150,6,900,South,Retail Partner
+ORD-100364,2025-09-05,Dual-Motor Standing Desk,Furniture,550,3,1650,North,Online B2C
+ORD-100902,2025-09-06,4K UltraWide Monitor,Electronics,450,6,2700,East,Direct B2B
+ORD-100257,2025-09-06,HD Smart Webcam 1080p,Audio/Video,95,3,285,North,Retail Partner
+ORD-100838,2025-09-06,Corporate Laptop Pro,Electronics,1200,8,9600,East,Direct B2B
+ORD-100390,2025-09-07,USB-C Multi-Port Hub,Accessories,60,8,480,North,Direct B2B
+ORD-100660,2025-09-07,HD Smart Webcam 1080p,Audio/Video,95,1,95,West,Online B2C
+ORD-100303,2025-09-07,4K UltraWide Monitor,Electronics,450,1,450,East,Direct B2B
+ORD-100286,2025-09-07,Portable SSD 2TB,Storage,150,7,1050,East,Retail Partner
+ORD-100616,2025-09-07,Wireless Ergonomic Mouse,Accessories,45,7,315,South,Online B2C
+ORD-100840,2025-09-07,Corporate Laptop Pro,Electronics,1200,6,7200,East,Online B2C
+ORD-100133,2025-09-07,Corporate Laptop Pro,Electronics,1200,5,6000,North,Direct B2B
+ORD-100322,2025-09-07,Dual-Motor Standing Desk,Furniture,550,10,5500,North,Online B2C
+ORD-100381,2025-09-07,Noise Cancelling Headphones,Audio,180,3,540,North,Online B2C
+ORD-100013,2025-09-08,Portable SSD 2TB,Storage,150,4,600,South,Direct B2B
+ORD-100538,2025-09-08,Dual-Motor Standing Desk,Furniture,550,5,2750,East,Direct B2B
+ORD-100644,2025-09-08,USB-C Multi-Port Hub,Accessories,60,8,480,West,Online B2C
+ORD-100548,2025-09-08,Noise Cancelling Headphones,Audio,180,2,360,South,Online B2C
+ORD-100225,2025-09-09,Mechanical Office Keyboard,Accessories,85,7,595,North,Online B2C
+ORD-100139,2025-09-09,4K UltraWide Monitor,Electronics,450,4,1800,East,Online B2C
+ORD-100464,2025-09-09,Noise Cancelling Headphones,Audio,180,1,180,North,Direct B2B
+ORD-100574,2025-09-09,HD Smart Webcam 1080p,Audio/Video,95,8,760,South,Retail Partner
+ORD-100000,2025-09-11,USB-C Multi-Port Hub,Accessories,60,4,240,East,Online B2C
+ORD-100896,2025-09-11,Premium Mesh Office Chair,Furniture,320,2,640,East,Online B2C
+ORD-100007,2025-09-11,USB-C Multi-Port Hub,Accessories,60,5,300,South,Online B2C
+ORD-100470,2025-09-11,4K UltraWide Monitor,Electronics,450,1,450,East,Direct B2B
+ORD-100317,2025-09-12,Premium Mesh Office Chair,Furniture,320,9,2880,East,Retail Partner
+ORD-100416,2025-09-12,Portable SSD 2TB,Storage,150,3,450,East,Retail Partner
+ORD-100839,2025-09-13,HD Smart Webcam 1080p,Audio/Video,95,8,760,North,Online B2C
+ORD-100599,2025-09-13,Noise Cancelling Headphones,Audio,180,5,900,South,Direct B2B
+ORD-100913,2025-09-14,Mechanical Office Keyboard,Accessories,85,9,765,West,Online B2C
+ORD-100072,2025-09-14,Premium Mesh Office Chair,Furniture,320,5,1600,North,Direct B2B
+ORD-100484,2025-09-14,HD Smart Webcam 1080p,Audio/Video,95,1,95,North,Online B2C
+ORD-100986,2025-09-15,HD Smart Webcam 1080p,Audio/Video,95,9,855,East,Online B2C
+ORD-100003,2025-09-15,Dual-Motor Standing Desk,Furniture,550,7,3850,North,Direct B2B
+ORD-100468,2025-09-16,Mechanical Office Keyboard,Accessories,85,9,765,South,Direct B2B
+ORD-100184,2025-09-16,Corporate Laptop Pro,Electronics,1200,10,12000,North,Direct B2B
+ORD-100669,2025-09-17,Premium Mesh Office Chair,Furniture,320,4,1280,North,Online B2C
+ORD-100935,2025-09-19,4K UltraWide Monitor,Electronics,450,9,4050,South,Direct B2B
+ORD-100321,2025-09-20,USB-C Multi-Port Hub,Accessories,60,7,420,North,Online B2C
+ORD-100291,2025-09-20,Corporate Laptop Pro,Electronics,1200,4,4800,North,Direct B2B
+ORD-100886,2025-09-20,Mechanical Office Keyboard,Accessories,85,5,425,North,Online B2C
+ORD-100316,2025-09-21,Wireless Ergonomic Mouse,Accessories,45,9,405,North,Direct B2B
+ORD-100229,2025-09-21,Noise Cancelling Headphones,Audio,180,8,1440,South,Online B2C
+ORD-100995,2025-09-21,Mechanical Office Keyboard,Accessories,85,1,85,North,Direct B2B
+ORD-100226,2025-09-21,Mechanical Office Keyboard,Accessories,85,9,765,North,Online B2C
+ORD-100224,2025-09-21,USB-C Multi-Port Hub,Accessories,60,6,360,South,Online B2C
+ORD-100217,2025-09-21,Dual-Motor Standing Desk,Furniture,550,2,1100,South,Online B2C
+ORD-100603,2025-09-22,USB-C Multi-Port Hub,Accessories,60,8,480,South,Direct B2B
+ORD-100408,2025-09-22,Portable SSD 2TB,Storage,150,4,600,West,Direct B2B
+ORD-100598,2025-09-23,Portable SSD 2TB,Storage,150,9,1350,South,Online B2C
+ORD-100198,2025-09-24,USB-C Multi-Port Hub,Accessories,60,1,60,South,Retail Partner
+ORD-100314,2025-09-24,Premium Mesh Office Chair,Furniture,320,5,1600,West,Direct B2B
+ORD-100392,2025-09-24,Portable SSD 2TB,Storage,150,7,1050,West,Online B2C
+ORD-100495,2025-09-25,Wireless Ergonomic Mouse,Accessories,45,7,315,East,Direct B2B
+ORD-100743,2025-09-25,Dual-Motor Standing Desk,Furniture,550,6,3300,East,Online B2C
+ORD-100509,2025-09-26,Dual-Motor Standing Desk,Furniture,550,3,1650,North,Direct B2B
+ORD-100874,2025-09-26,Portable SSD 2TB,Storage,150,7,1050,South,Direct B2B
+ORD-100821,2025-09-27,USB-C Multi-Port Hub,Accessories,60,2,120,South,Online B2C
+ORD-100311,2025-09-28,4K UltraWide Monitor,Electronics,450,2,900,South,Online B2C
+ORD-100488,2025-09-28,Dual-Motor Standing Desk,Furniture,550,5,2750,East,Online B2C
+ORD-100197,2025-09-29,Mechanical Office Keyboard,Accessories,85,10,850,North,Direct B2B
+ORD-100981,2025-09-29,USB-C Multi-Port Hub,Accessories,60,7,420,West,Retail Partner
+ORD-100008,2025-09-30,4K UltraWide Monitor,Electronics,450,5,2250,North,Retail Partner
+ORD-100503,2025-09-30,Corporate Laptop Pro,Electronics,1200,4,4800,West,Online B2C
+ORD-100784,2025-09-30,Corporate Laptop Pro,Electronics,1200,9,10800,North,Direct B2B
+ORD-100956,2025-09-30,Mechanical Office Keyboard,Accessories,85,4,340,West,Retail Partner
+ORD-100675,2025-09-30,4K UltraWide Monitor,Electronics,450,3,1350,South,Direct B2B
+ORD-100697,2025-09-30,HD Smart Webcam 1080p,Audio/Video,95,1,95,North,Online B2C
+ORD-100250,2025-10-01,Premium Mesh Office Chair,Furniture,320,2,640,South,Direct B2B
+ORD-100483,2025-10-02,Corporate Laptop Pro,Electronics,1200,1,1200,South,Retail Partner
+ORD-100264,2025-10-02,4K UltraWide Monitor,Electronics,450,7,3150,South,Retail Partner
+ORD-100453,2025-10-03,Mechanical Office Keyboard,Accessories,85,2,170,West,Direct B2B
+ORD-100508,2025-10-04,Corporate Laptop Pro,Electronics,1200,4,4800,North,Direct B2B
+ORD-100930,2025-10-04,Portable SSD 2TB,Storage,150,4,600,North,Direct B2B
+ORD-100239,2025-10-04,Premium Mesh Office Chair,Furniture,320,1,320,South,Online B2C
+ORD-100729,2025-10-04,Corporate Laptop Pro,Electronics,1200,4,4800,West,Online B2C
+ORD-100724,2025-10-04,Mechanical Office Keyboard,Accessories,85,4,340,East,Online B2C
+ORD-100412,2025-10-05,Noise Cancelling Headphones,Audio,180,7,1260,South,Online B2C
+ORD-100498,2025-10-05,Corporate Laptop Pro,Electronics,1200,8,9600,East,Online B2C
+ORD-100346,2025-10-06,4K UltraWide Monitor,Electronics,450,3,1350,North,Online B2C
+ORD-100398,2025-10-06,Corporate Laptop Pro,Electronics,1200,3,3600,South,Retail Partner
+ORD-100189,2025-10-06,Premium Mesh Office Chair,Furniture,320,3,960,South,Direct B2B
+ORD-100278,2025-10-06,Dual-Motor Standing Desk,Furniture,550,7,3850,East,Retail Partner
+ORD-100282,2025-10-07,USB-C Multi-Port Hub,Accessories,60,1,60,South,Online B2C
+ORD-100110,2025-10-07,Portable SSD 2TB,Storage,150,5,750,South,Online B2C
+ORD-100501,2025-10-07,HD Smart Webcam 1080p,Audio/Video,95,1,95,North,Online B2C
+ORD-100231,2025-10-08,Portable SSD 2TB,Storage,150,4,600,North,Direct B2B
+ORD-100240,2025-10-08,Dual-Motor Standing Desk,Furniture,550,4,2200,West,Online B2C
+ORD-100140,2025-10-09,Noise Cancelling Headphones,Audio,180,3,540,West,Direct B2B
+ORD-100016,2025-10-09,4K UltraWide Monitor,Electronics,450,8,3600,North,Online B2C
+ORD-100307,2025-10-09,USB-C Multi-Port Hub,Accessories,60,2,120,West,Direct B2B
+ORD-100043,2025-10-09,Portable SSD 2TB,Storage,150,7,1050,West,Online B2C
+ORD-100711,2025-10-10,Corporate Laptop Pro,Electronics,1200,1,1200,South,Direct B2B
+ORD-100847,2025-10-11,Dual-Motor Standing Desk,Furniture,550,4,2200,North,Online B2C
+ORD-100916,2025-10-11,Wireless Ergonomic Mouse,Accessories,45,7,315,South,Online B2C
+ORD-100968,2025-10-11,USB-C Multi-Port Hub,Accessories,60,1,60,South,Direct B2B
+ORD-100676,2025-10-11,Portable SSD 2TB,Storage,150,3,450,North,Direct B2B
+ORD-100744,2025-10-12,Corporate Laptop Pro,Electronics,1200,9,10800,North,Online B2C
+ORD-100181,2025-10-12,Mechanical Office Keyboard,Accessories,85,8,680,South,Direct B2B
+ORD-100343,2025-10-13,HD Smart Webcam 1080p,Audio/Video,95,4,380,North,Online B2C
+ORD-100045,2025-10-13,Noise Cancelling Headphones,Audio,180,10,1800,North,Online B2C
+ORD-100123,2025-10-13,4K UltraWide Monitor,Electronics,450,6,2700,North,Online B2C
+ORD-100703,2025-10-14,Dual-Motor Standing Desk,Furniture,550,9,4950,West,Online B2C
+ORD-100788,2025-10-14,Mechanical Office Keyboard,Accessories,85,2,170,East,Online B2C
+ORD-100111,2025-10-14,Wireless Ergonomic Mouse,Accessories,45,10,450,North,Retail Partner
+ORD-100203,2025-10-15,Mechanical Office Keyboard,Accessories,85,3,255,North,Direct B2B
+ORD-100919,2025-10-16,HD Smart Webcam 1080p,Audio/Video,95,2,190,South,Online B2C
+ORD-100113,2025-10-17,Wireless Ergonomic Mouse,Accessories,45,2,90,North,Online B2C
+ORD-100298,2025-10-18,USB-C Multi-Port Hub,Accessories,60,6,360,North,Online B2C
+ORD-100692,2025-10-19,Mechanical Office Keyboard,Accessories,85,4,340,East,Online B2C
+ORD-100726,2025-10-19,Mechanical Office Keyboard,Accessories,85,5,425,South,Online B2C
+ORD-100439,2025-10-20,Corporate Laptop Pro,Electronics,1200,5,6000,West,Online B2C
+ORD-100441,2025-10-21,Noise Cancelling Headphones,Audio,180,2,360,East,Online B2C
+ORD-100768,2025-10-21,Premium Mesh Office Chair,Furniture,320,9,2880,North,Online B2C
+ORD-100166,2025-10-21,USB-C Multi-Port Hub,Accessories,60,8,480,South,Online B2C
+ORD-100774,2025-10-22,Portable SSD 2TB,Storage,150,6,900,North,Direct B2B
+ORD-100289,2025-10-22,Corporate Laptop Pro,Electronics,1200,6,7200,East,Retail Partner
+ORD-100666,2025-10-22,Noise Cancelling Headphones,Audio,180,5,900,East,Online B2C
+ORD-100480,2025-10-22,HD Smart Webcam 1080p,Audio/Video,95,8,760,North,Online B2C
+ORD-100524,2025-10-22,Portable SSD 2TB,Storage,150,9,1350,South,Direct B2B
+ORD-100657,2025-10-22,Portable SSD 2TB,Storage,150,4,600,South,Retail Partner
+ORD-100261,2025-10-22,Noise Cancelling Headphones,Audio,180,6,1080,West,Online B2C
+ORD-100855,2025-10-23,USB-C Multi-Port Hub,Accessories,60,6,360,South,Direct B2B
+ORD-100707,2025-10-23,Dual-Motor Standing Desk,Furniture,550,4,2200,North,Online B2C
+ORD-100487,2025-10-23,HD Smart Webcam 1080p,Audio/Video,95,3,285,West,Direct B2B
+ORD-100798,2025-10-23,Corporate Laptop Pro,Electronics,1200,9,10800,South,Direct B2B
+ORD-100682,2025-10-24,Corporate Laptop Pro,Electronics,1200,6,7200,South,Online B2C
+ORD-100825,2025-10-24,HD Smart Webcam 1080p,Audio/Video,95,1,95,South,Online B2C
+ORD-100554,2025-10-25,USB-C Multi-Port Hub,Accessories,60,9,540,West,Online B2C
+ORD-100761,2025-10-25,Premium Mesh Office Chair,Furniture,320,6,1920,North,Retail Partner
+ORD-100369,2025-10-25,Wireless Ergonomic Mouse,Accessories,45,2,90,West,Retail Partner
+ORD-100486,2025-10-25,Portable SSD 2TB,Storage,150,8,1200,East,Direct B2B
+ORD-100304,2025-10-25,USB-C Multi-Port Hub,Accessories,60,5,300,West,Direct B2B
+ORD-100273,2025-10-25,Corporate Laptop Pro,Electronics,1200,6,7200,East,Online B2C
+ORD-100274,2025-10-26,4K UltraWide Monitor,Electronics,450,10,4500,South,Online B2C
+ORD-100269,2025-10-26,Wireless Ergonomic Mouse,Accessories,45,2,90,East,Online B2C
+ORD-100731,2025-10-26,Corporate Laptop Pro,Electronics,1200,10,12000,North,Online B2C
+ORD-100752,2025-10-27,Mechanical Office Keyboard,Accessories,85,6,510,East,Direct B2B
+ORD-100017,2025-10-28,HD Smart Webcam 1080p,Audio/Video,95,2,190,East,Online B2C
+ORD-100454,2025-10-28,Corporate Laptop Pro,Electronics,1200,4,4800,North,Direct B2B
+ORD-100411,2025-10-29,Dual-Motor Standing Desk,Furniture,550,6,3300,North,Retail Partner
+ORD-100620,2025-10-29,Corporate Laptop Pro,Electronics,1200,4,4800,North,Direct B2B
+ORD-100937,2025-10-29,USB-C Multi-Port Hub,Accessories,60,6,360,South,Direct B2B
+ORD-100665,2025-10-29,USB-C Multi-Port Hub,Accessories,60,8,480,West,Direct B2B
+ORD-100284,2025-10-29,Corporate Laptop Pro,Electronics,1200,4,4800,South,Online B2C
+ORD-100015,2025-10-30,4K UltraWide Monitor,Electronics,450,2,900,West,Online B2C
+ORD-100567,2025-10-30,Dual-Motor Standing Desk,Furniture,550,7,3850,North,Direct B2B
+ORD-100619,2025-10-30,HD Smart Webcam 1080p,Audio/Video,95,9,855,North,Online B2C
+ORD-100210,2025-10-30,Noise Cancelling Headphones,Audio,180,5,900,South,Retail Partner
+ORD-100309,2025-10-30,Wireless Ergonomic Mouse,Accessories,45,1,45,South,Direct B2B
+ORD-100449,2025-10-31,4K UltraWide Monitor,Electronics,450,7,3150,West,Retail Partner
+ORD-100323,2025-10-31,Dual-Motor Standing Desk,Furniture,550,4,2200,West,Direct B2B
+ORD-100523,2025-11-01,Dual-Motor Standing Desk,Furniture,550,9,4950,South,Online B2C
+ORD-100871,2025-11-01,Premium Mesh Office Chair,Furniture,320,6,1920,East,Direct B2B
+ORD-100952,2025-11-02,Premium Mesh Office Chair,Furniture,320,10,3200,East,Retail Partner
+ORD-100413,2025-11-02,Premium Mesh Office Chair,Furniture,320,2,640,North,Retail Partner
+ORD-100781,2025-11-03,Wireless Ergonomic Mouse,Accessories,45,10,450,South,Online B2C
+ORD-100102,2025-11-04,4K UltraWide Monitor,Electronics,450,6,2700,South,Online B2C
+ORD-100485,2025-11-05,USB-C Multi-Port Hub,Accessories,60,7,420,North,Retail Partner
+ORD-100353,2025-11-05,Mechanical Office Keyboard,Accessories,85,10,850,North,Online B2C
+ORD-100377,2025-11-05,Dual-Motor Standing Desk,Furniture,550,2,1100,South,Retail Partner
+ORD-100171,2025-11-07,Premium Mesh Office Chair,Furniture,320,5,1600,South,Direct B2B
+ORD-100300,2025-11-07,Dual-Motor Standing Desk,Furniture,550,2,1100,South,Retail Partner
+ORD-100244,2025-11-07,Portable SSD 2TB,Storage,150,1,150,North,Online B2C
+ORD-100565,2025-11-07,Portable SSD 2TB,Storage,150,10,1500,East,Direct B2B
+ORD-100954,2025-11-07,Dual-Motor Standing Desk,Furniture,550,5,2750,West,Online B2C
+ORD-100748,2025-11-07,Dual-Motor Standing Desk,Furniture,550,4,2200,East,Direct B2B
+ORD-100213,2025-11-07,USB-C Multi-Port Hub,Accessories,60,10,600,North,Retail Partner
+ORD-100395,2025-11-08,Corporate Laptop Pro,Electronics,1200,3,3600,South,Direct B2B
+ORD-100312,2025-11-08,Wireless Ergonomic Mouse,Accessories,45,2,90,West,Online B2C
+ORD-100334,2025-11-08,USB-C Multi-Port Hub,Accessories,60,10,600,North,Online B2C
+ORD-100025,2025-11-08,Premium Mesh Office Chair,Furniture,320,6,1920,East,Online B2C
+ORD-100079,2025-11-09,USB-C Multi-Port Hub,Accessories,60,3,180,North,Direct B2B
+ORD-100873,2025-11-09,Premium Mesh Office Chair,Furniture,320,4,1280,North,Direct B2B
+ORD-100677,2025-11-10,4K UltraWide Monitor,Electronics,450,1,450,West,Direct B2B
+ORD-100116,2025-11-10,Noise Cancelling Headphones,Audio,180,10,1800,North,Direct B2B
+ORD-100570,2025-11-10,Dual-Motor Standing Desk,Furniture,550,2,1100,West,Online B2C
+ORD-100331,2025-11-10,Dual-Motor Standing Desk,Furniture,550,4,2200,East,Online B2C
+ORD-100609,2025-11-11,Mechanical Office Keyboard,Accessories,85,8,680,West,Direct B2B
+ORD-100786,2025-11-11,USB-C Multi-Port Hub,Accessories,60,10,600,North,Direct B2B
+ORD-100759,2025-11-11,Wireless Ergonomic Mouse,Accessories,45,10,450,South,Online B2C
+ORD-100205,2025-11-12,4K UltraWide Monitor,Electronics,450,1,450,West,Direct B2B
+ORD-100852,2025-11-12,Portable SSD 2TB,Storage,150,8,1200,West,Direct B2B
+ORD-100701,2025-11-12,Portable SSD 2TB,Storage,150,6,900,East,Online B2C
+ORD-100909,2025-11-13,Portable SSD 2TB,Storage,150,4,600,North,Online B2C
+ORD-100718,2025-11-14,Dual-Motor Standing Desk,Furniture,550,10,5500,North,Online B2C
+ORD-100048,2025-11-14,Portable SSD 2TB,Storage,150,2,300,South,Retail Partner
+ORD-100578,2025-11-15,HD Smart Webcam 1080p,Audio/Video,95,6,570,West,Direct B2B
+ORD-100693,2025-11-15,Premium Mesh Office Chair,Furniture,320,1,320,South,Direct B2B
+ORD-100333,2025-11-16,Dual-Motor Standing Desk,Furniture,550,1,550,West,Online B2C
+ORD-100422,2025-11-17,Noise Cancelling Headphones,Audio,180,5,900,West,Online B2C
+ORD-100694,2025-11-17,Dual-Motor Standing Desk,Furniture,550,9,4950,North,Online B2C
+ORD-100460,2025-11-17,Dual-Motor Standing Desk,Furniture,550,6,3300,East,Online B2C
+ORD-100962,2025-11-17,HD Smart Webcam 1080p,Audio/Video,95,9,855,West,Online B2C
+ORD-100178,2025-11-17,Corporate Laptop Pro,Electronics,1200,10,12000,South,Online B2C
+ORD-100033,2025-11-17,4K UltraWide Monitor,Electronics,450,2,900,North,Online B2C
+ORD-100167,2025-11-18,4K UltraWide Monitor,Electronics,450,10,4500,West,Online B2C
+ORD-100375,2025-11-19,Wireless Ergonomic Mouse,Accessories,45,4,180,North,Online B2C
+ORD-100209,2025-11-19,Portable SSD 2TB,Storage,150,6,900,North,Direct B2B
+ORD-100242,2025-11-19,Noise Cancelling Headphones,Audio,180,9,1620,North,Direct B2B
+ORD-100134,2025-11-19,USB-C Multi-Port Hub,Accessories,60,6,360,East,Direct B2B
+ORD-100434,2025-11-20,Wireless Ergonomic Mouse,Accessories,45,5,225,West,Direct B2B
+ORD-100749,2025-11-20,Portable SSD 2TB,Storage,150,5,750,South,Online B2C
+ORD-100861,2025-11-20,Dual-Motor Standing Desk,Furniture,550,1,550,East,Online B2C
+ORD-100747,2025-11-20,Portable SSD 2TB,Storage,150,9,1350,North,Online B2C
+ORD-100725,2025-11-20,Mechanical Office Keyboard,Accessories,85,1,85,East,Online B2C
+ORD-100406,2025-11-21,Premium Mesh Office Chair,Furniture,320,5,1600,South,Retail Partner
+ORD-100691,2025-11-21,Portable SSD 2TB,Storage,150,2,300,North,Online B2C
+ORD-100037,2025-11-22,Premium Mesh Office Chair,Furniture,320,8,2560,North,Direct B2B
+ORD-100420,2025-11-23,Wireless Ergonomic Mouse,Accessories,45,5,225,South,Online B2C
+ORD-100348,2025-11-23,USB-C Multi-Port Hub,Accessories,60,2,120,West,Online B2C
+ORD-100643,2025-11-24,Premium Mesh Office Chair,Furniture,320,10,3200,North,Direct B2B
+ORD-100828,2025-11-24,Premium Mesh Office Chair,Furniture,320,5,1600,North,Online B2C
+ORD-100615,2025-11-24,Portable SSD 2TB,Storage,150,5,750,West,Direct B2B
+ORD-100837,2025-11-24,Corporate Laptop Pro,Electronics,1200,6,7200,East,Direct B2B
+ORD-100569,2025-11-25,4K UltraWide Monitor,Electronics,450,9,4050,East,Direct B2B
+ORD-100791,2025-11-25,Noise Cancelling Headphones,Audio,180,7,1260,South,Online B2C
+ORD-100154,2025-11-26,4K UltraWide Monitor,Electronics,450,8,3600,South,Online B2C
+ORD-100573,2025-11-26,Noise Cancelling Headphones,Audio,180,8,1440,North,Direct B2B
+ORD-100998,2025-11-27,HD Smart Webcam 1080p,Audio/Video,95,3,285,West,Direct B2B
+ORD-100459,2025-11-27,Wireless Ergonomic Mouse,Accessories,45,4,180,North,Retail Partner
+ORD-100216,2025-11-27,USB-C Multi-Port Hub,Accessories,60,9,540,West,Online B2C
+ORD-100550,2025-11-27,Portable SSD 2TB,Storage,150,9,1350,North,Online B2C
+ORD-100388,2025-11-28,Portable SSD 2TB,Storage,150,2,300,South,Direct B2B
+ORD-100670,2025-11-28,Noise Cancelling Headphones,Audio,180,4,720,East,Online B2C
+ORD-100717,2025-11-29,4K UltraWide Monitor,Electronics,450,3,1350,North,Retail Partner
+ORD-100626,2025-11-30,Noise Cancelling Headphones,Audio,180,6,1080,East,Retail Partner
+ORD-100938,2025-11-30,Noise Cancelling Headphones,Audio,180,2,360,North,Online B2C
+ORD-100920,2025-12-01,Mechanical Office Keyboard,Accessories,85,4,340,East,Online B2C
+ORD-100947,2025-12-01,Dual-Motor Standing Desk,Furniture,550,6,3300,West,Retail Partner
+ORD-100249,2025-12-01,Corporate Laptop Pro,Electronics,1200,1,1200,South,Online B2C
+ORD-100526,2025-12-02,Premium Mesh Office Chair,Furniture,320,2,640,South,Online B2C
+ORD-100450,2025-12-03,Portable SSD 2TB,Storage,150,5,750,North,Direct B2B
+ORD-100672,2025-12-03,Corporate Laptop Pro,Electronics,1200,8,9600,South,Retail Partner
+ORD-100789,2025-12-03,Dual-Motor Standing Desk,Furniture,550,5,2750,West,Online B2C
+ORD-100265,2025-12-04,Mechanical Office Keyboard,Accessories,85,2,170,West,Direct B2B
+ORD-100641,2025-12-04,4K UltraWide Monitor,Electronics,450,4,1800,North,Direct B2B
+ORD-100173,2025-12-04,Dual-Motor Standing Desk,Furniture,550,9,4950,North,Direct B2B
+ORD-100228,2025-12-04,USB-C Multi-Port Hub,Accessories,60,7,420,West,Online B2C
+ORD-100099,2025-12-05,Premium Mesh Office Chair,Furniture,320,1,320,South,Online B2C
+ORD-100391,2025-12-05,Corporate Laptop Pro,Electronics,1200,9,10800,East,Direct B2B
+ORD-100034,2025-12-05,HD Smart Webcam 1080p,Audio/Video,95,5,475,South,Direct B2B
+ORD-100516,2025-12-06,HD Smart Webcam 1080p,Audio/Video,95,6,570,North,Online B2C
+ORD-100005,2025-12-06,Wireless Ergonomic Mouse,Accessories,45,6,270,South,Online B2C
+ORD-100036,2025-12-07,Mechanical Office Keyboard,Accessories,85,7,595,West,Online B2C
+ORD-100452,2025-12-07,USB-C Multi-Port Hub,Accessories,60,4,240,East,Online B2C
+ORD-100621,2025-12-07,Portable SSD 2TB,Storage,150,4,600,South,Online B2C
+ORD-100192,2025-12-07,Noise Cancelling Headphones,Audio,180,10,1800,East,Online B2C
+ORD-100087,2025-12-07,Noise Cancelling Headphones,Audio,180,8,1440,North,Online B2C
+ORD-100738,2025-12-07,Wireless Ergonomic Mouse,Accessories,45,8,360,East,Online B2C
+ORD-100393,2025-12-08,USB-C Multi-Port Hub,Accessories,60,3,180,South,Direct B2B
+ORD-100075,2025-12-08,Mechanical Office Keyboard,Accessories,85,2,170,South,Direct B2B
+ORD-100739,2025-12-08,Wireless Ergonomic Mouse,Accessories,45,9,405,South,Online B2C
+ORD-100023,2025-12-09,Corporate Laptop Pro,Electronics,1200,2,2400,East,Online B2C
+ORD-100897,2025-12-09,Noise Cancelling Headphones,Audio,180,7,1260,South,Online B2C
+ORD-100372,2025-12-09,Noise Cancelling Headphones,Audio,180,2,360,North,Online B2C
+ORD-100613,2025-12-09,Noise Cancelling Headphones,Audio,180,9,1620,South,Direct B2B
+ORD-100517,2025-12-09,Portable SSD 2TB,Storage,150,8,1200,South,Retail Partner
+ORD-100797,2025-12-09,Dual-Motor Standing Desk,Furniture,550,3,1650,North,Online B2C
+ORD-100698,2025-12-11,4K UltraWide Monitor,Electronics,450,6,2700,West,Online B2C
+ORD-100329,2025-12-11,Corporate Laptop Pro,Electronics,1200,6,7200,West,Online B2C
+ORD-100949,2025-12-12,Noise Cancelling Headphones,Audio,180,10,1800,East,Online B2C
+ORD-100951,2025-12-12,HD Smart Webcam 1080p,Audio/Video,95,8,760,North,Direct B2B
+ORD-100344,2025-12-12,Noise Cancelling Headphones,Audio,180,9,1620,North,Online B2C
+ORD-100601,2025-12-13,Premium Mesh Office Chair,Furniture,320,10,3200,South,Retail Partner
+ORD-100471,2025-12-13,4K UltraWide Monitor,Electronics,450,2,900,East,Online B2C
+ORD-100811,2025-12-14,Corporate Laptop Pro,Electronics,1200,1,1200,North,Online B2C
+ORD-100845,2025-12-14,Wireless Ergonomic Mouse,Accessories,45,7,315,West,Online B2C
+ORD-100258,2025-12-15,Portable SSD 2TB,Storage,150,6,900,South,Direct B2B
+ORD-100202,2025-12-15,Noise Cancelling Headphones,Audio,180,1,180,East,Direct B2B
+ORD-100245,2025-12-15,Mechanical Office Keyboard,Accessories,85,6,510,North,Direct B2B
+ORD-100276,2025-12-16,USB-C Multi-Port Hub,Accessories,60,5,300,North,Direct B2B
+ORD-100799,2025-12-18,Mechanical Office Keyboard,Accessories,85,5,425,North,Online B2C
+ORD-100263,2025-12-18,HD Smart Webcam 1080p,Audio/Video,95,2,190,North,Online B2C
+ORD-100124,2025-12-18,Corporate Laptop Pro,Electronics,1200,2,2400,South,Direct B2B
+ORD-100853,2025-12-19,Dual-Motor Standing Desk,Furniture,550,8,4400,South,Online B2C
+ORD-100720,2025-12-19,HD Smart Webcam 1080p,Audio/Video,95,10,950,West,Direct B2B
+ORD-100080,2025-12-19,Premium Mesh Office Chair,Furniture,320,6,1920,North,Retail Partner
+ORD-100756,2025-12-20,Dual-Motor Standing Desk,Furniture,550,8,4400,East,Online B2C
+ORD-100248,2025-12-20,HD Smart Webcam 1080p,Audio/Video,95,4,380,West,Online B2C
+ORD-100533,2025-12-21,USB-C Multi-Port Hub,Accessories,60,9,540,North,Retail Partner
+ORD-100929,2025-12-22,Dual-Motor Standing Desk,Furniture,550,9,4950,North,Retail Partner
+ORD-100862,2025-12-22,HD Smart Webcam 1080p,Audio/Video,95,2,190,East,Online B2C
+ORD-100651,2025-12-23,USB-C Multi-Port Hub,Accessories,60,6,360,North,Retail Partner
+ORD-100064,2025-12-23,HD Smart Webcam 1080p,Audio/Video,95,2,190,West,Online B2C
+ORD-100890,2025-12-24,Dual-Motor Standing Desk,Furniture,550,9,4950,West,Retail Partner
+ORD-100999,2025-12-24,Noise Cancelling Headphones,Audio,180,2,360,West,Online B2C
+ORD-100149,2025-12-24,Wireless Ergonomic Mouse,Accessories,45,9,405,South,Direct B2B
+ORD-100090,2025-12-25,Premium Mesh Office Chair,Furniture,320,9,2880,North,Direct B2B
+ORD-100332,2025-12-25,Wireless Ergonomic Mouse,Accessories,45,10,450,East,Retail Partner
+ORD-100306,2025-12-25,Corporate Laptop Pro,Electronics,1200,4,4800,East,Retail Partner
+ORD-100800,2025-12-29,Mechanical Office Keyboard,Accessories,85,9,765,West,Online B2C
+ORD-100089,2025-12-30,Portable SSD 2TB,Storage,150,7,1050,West,Direct B2B
+ORD-100755,2025-12-30,HD Smart Webcam 1080p,Audio/Video,95,7,665,East,Online B2C
+ORD-100982,2025-12-31,Corporate Laptop Pro,Electronics,1200,7,8400,North,Online B2C
+ORD-100136,2025-12-31,USB-C Multi-Port Hub,Accessories,60,2,120,East,Direct B2B
+ORD-100085,2026-01-01,Portable SSD 2TB,Storage,150,3,450,South,Retail Partner
+ORD-100678,2026-01-01,USB-C Multi-Port Hub,Accessories,60,3,180,North,Online B2C
+ORD-100446,2026-01-01,4K UltraWide Monitor,Electronics,450,1,450,North,Retail Partner
+ORD-100009,2026-01-01,Dual-Motor Standing Desk,Furniture,550,1,550,South,Online B2C
+ORD-100591,2026-01-01,Corporate Laptop Pro,Electronics,1200,1,1200,North,Retail Partner
+ORD-100131,2026-01-02,4K UltraWide Monitor,Electronics,450,3,1350,North,Direct B2B
+ORD-100606,2026-01-03,HD Smart Webcam 1080p,Audio/Video,95,3,285,North,Online B2C
+ORD-100629,2026-01-03,Corporate Laptop Pro,Electronics,1200,2,2400,South,Retail Partner
+ORD-100638,2026-01-03,Wireless Ergonomic Mouse,Accessories,45,5,225,North,Direct B2B
+ORD-100833,2026-01-03,USB-C Multi-Port Hub,Accessories,60,10,600,North,Online B2C
+ORD-100709,2026-01-03,Corporate Laptop Pro,Electronics,1200,2,2400,South,Online B2C
+ORD-100097,2026-01-03,Corporate Laptop Pro,Electronics,1200,9,10800,South,Online B2C
+ORD-100143,2026-01-04,4K UltraWide Monitor,Electronics,450,4,1800,North,Online B2C
+ORD-100975,2026-01-04,Portable SSD 2TB,Storage,150,7,1050,North,Online B2C
+ORD-100077,2026-01-04,Premium Mesh Office Chair,Furniture,320,4,1280,East,Retail Partner
+ORD-100243,2026-01-04,Noise Cancelling Headphones,Audio,180,8,1440,East,Direct B2B
+ORD-100535,2026-01-04,Dual-Motor Standing Desk,Furniture,550,7,3850,West,Online B2C
+ORD-100528,2026-01-06,Dual-Motor Standing Desk,Furniture,550,1,550,East,Direct B2B
+ORD-100232,2026-01-06,Corporate Laptop Pro,Electronics,1200,10,12000,North,Online B2C
+ORD-100728,2026-01-06,Mechanical Office Keyboard,Accessories,85,5,425,East,Direct B2B
+ORD-100376,2026-01-06,4K UltraWide Monitor,Electronics,450,4,1800,West,Direct B2B
+ORD-100793,2026-01-06,Portable SSD 2TB,Storage,150,5,750,East,Online B2C
+ORD-100801,2026-01-06,HD Smart Webcam 1080p,Audio/Video,95,9,855,East,Online B2C
+ORD-100679,2026-01-07,USB-C Multi-Port Hub,Accessories,60,6,360,South,Online B2C
+ORD-100162,2026-01-08,Dual-Motor Standing Desk,Furniture,550,6,3300,North,Direct B2B
+ORD-100541,2026-01-08,Portable SSD 2TB,Storage,150,2,300,East,Online B2C
+ORD-100882,2026-01-08,4K UltraWide Monitor,Electronics,450,8,3600,South,Retail Partner
+ORD-100652,2026-01-09,4K UltraWide Monitor,Electronics,450,8,3600,North,Online B2C
+ORD-100551,2026-01-09,Dual-Motor Standing Desk,Furniture,550,9,4950,East,Online B2C
+ORD-100674,2026-01-09,USB-C Multi-Port Hub,Accessories,60,2,120,South,Online B2C
+ORD-100401,2026-01-09,Wireless Ergonomic Mouse,Accessories,45,4,180,North,Direct B2B
+ORD-100777,2026-01-10,4K UltraWide Monitor,Electronics,450,4,1800,South,Direct B2B
+ORD-100622,2026-01-10,4K UltraWide Monitor,Electronics,450,6,2700,East,Retail Partner
+ORD-100826,2026-01-10,Corporate Laptop Pro,Electronics,1200,10,12000,West,Online B2C
+ORD-100235,2026-01-10,Premium Mesh Office Chair,Furniture,320,7,2240,West,Online B2C
+ORD-100206,2026-01-11,4K UltraWide Monitor,Electronics,450,7,3150,North,Online B2C
+ORD-100236,2026-01-11,4K UltraWide Monitor,Electronics,450,4,1800,South,Retail Partner
+ORD-100193,2026-01-11,Portable SSD 2TB,Storage,150,9,1350,North,Online B2C
+ORD-100361,2026-01-12,Portable SSD 2TB,Storage,150,6,900,East,Online B2C
+ORD-100899,2026-01-12,HD Smart Webcam 1080p,Audio/Video,95,3,285,South,Online B2C
+ORD-100760,2026-01-13,Mechanical Office Keyboard,Accessories,85,9,765,North,Direct B2B
+ORD-100138,2026-01-13,Noise Cancelling Headphones,Audio,180,5,900,North,Online B2C
+ORD-100614,2026-01-13,4K UltraWide Monitor,Electronics,450,10,4500,West,Online B2C
+ORD-100320,2026-01-13,Corporate Laptop Pro,Electronics,1200,4,4800,North,Online B2C
+ORD-100796,2026-01-14,HD Smart Webcam 1080p,Audio/Video,95,3,285,South,Online B2C
+ORD-100494,2026-01-15,Premium Mesh Office Chair,Furniture,320,9,2880,West,Retail Partner
+ORD-100891,2026-01-15,4K UltraWide Monitor,Electronics,450,8,3600,North,Online B2C
+ORD-100758,2026-01-15,Mechanical Office Keyboard,Accessories,85,6,510,West,Online B2C
+ORD-100355,2026-01-16,Noise Cancelling Headphones,Audio,180,2,360,East,Online B2C
+ORD-100689,2026-01-16,HD Smart Webcam 1080p,Audio/Video,95,7,665,North,Online B2C
+ORD-100164,2026-01-17,Noise Cancelling Headphones,Audio,180,6,1080,East,Direct B2B
+ORD-100120,2026-01-17,USB-C Multi-Port Hub,Accessories,60,5,300,South,Online B2C
+ORD-100191,2026-01-17,Portable SSD 2TB,Storage,150,7,1050,South,Online B2C
+ORD-100157,2026-01-17,Dual-Motor Standing Desk,Furniture,550,10,5500,West,Direct B2B
+ORD-100646,2026-01-19,HD Smart Webcam 1080p,Audio/Video,95,3,285,South,Online B2C
+ORD-100302,2026-01-19,Dual-Motor Standing Desk,Furniture,550,7,3850,South,Online B2C
+ORD-100765,2026-01-19,Noise Cancelling Headphones,Audio,180,4,720,North,Online B2C
+ORD-100969,2026-01-19,USB-C Multi-Port Hub,Accessories,60,4,240,East,Retail Partner
+ORD-100199,2026-01-19,Mechanical Office Keyboard,Accessories,85,7,595,South,Direct B2B
+ORD-100215,2026-01-19,Premium Mesh Office Chair,Furniture,320,9,2880,South,Direct B2B
+ORD-100383,2026-01-19,HD Smart Webcam 1080p,Audio/Video,95,5,475,West,Direct B2B
+ORD-100208,2026-01-20,Mechanical Office Keyboard,Accessories,85,1,85,South,Direct B2B
+ORD-100931,2026-01-21,4K UltraWide Monitor,Electronics,450,2,900,West,Direct B2B
+ORD-100680,2026-01-21,Wireless Ergonomic Mouse,Accessories,45,8,360,West,Online B2C
+ORD-100880,2026-01-22,Dual-Motor Standing Desk,Furniture,550,8,4400,East,Online B2C
+ORD-100029,2026-01-22,Mechanical Office Keyboard,Accessories,85,2,170,North,Direct B2B
+ORD-100165,2026-01-23,USB-C Multi-Port Hub,Accessories,60,1,60,East,Direct B2B
+ORD-100512,2026-01-23,Premium Mesh Office Chair,Furniture,320,3,960,South,Online B2C
+ORD-100091,2026-01-23,Mechanical Office Keyboard,Accessories,85,5,425,North,Direct B2B
+ORD-100532,2026-01-24,4K UltraWide Monitor,Electronics,450,9,4050,North,Retail Partner
+ORD-100352,2026-01-24,USB-C Multi-Port Hub,Accessories,60,2,120,East,Direct B2B
+ORD-100827,2026-01-25,HD Smart Webcam 1080p,Audio/Video,95,5,475,East,Online B2C
+ORD-100683,2026-01-25,Premium Mesh Office Chair,Furniture,320,5,1600,East,Retail Partner
+ORD-100983,2026-01-25,HD Smart Webcam 1080p,Audio/Video,95,3,285,South,Online B2C
+ORD-100505,2026-01-25,4K UltraWide Monitor,Electronics,450,8,3600,South,Online B2C
+ORD-100802,2026-01-26,Premium Mesh Office Chair,Furniture,320,1,320,West,Direct B2B
+ORD-100260,2026-01-26,HD Smart Webcam 1080p,Audio/Video,95,3,285,North,Direct B2B
+ORD-100933,2026-01-26,Portable SSD 2TB,Storage,150,5,750,South,Direct B2B
+ORD-100158,2026-01-27,Corporate Laptop Pro,Electronics,1200,8,9600,South,Online B2C
+ORD-100054,2026-01-28,Corporate Laptop Pro,Electronics,1200,8,9600,South,Direct B2B
+ORD-100727,2026-01-28,Wireless Ergonomic Mouse,Accessories,45,10,450,East,Retail Partner
+ORD-100589,2026-01-28,Noise Cancelling Headphones,Audio,180,6,1080,West,Online B2C
+ORD-100817,2026-01-28,HD Smart Webcam 1080p,Audio/Video,95,7,665,North,Online B2C
+ORD-100174,2026-01-29,4K UltraWide Monitor,Electronics,450,10,4500,South,Direct B2B
+ORD-100041,2026-01-30,Corporate Laptop Pro,Electronics,1200,2,2400,North,Online B2C
+ORD-100546,2026-02-01,Wireless Ergonomic Mouse,Accessories,45,1,45,East,Retail Partner
+ORD-100419,2026-02-01,Premium Mesh Office Chair,Furniture,320,7,2240,South,Direct B2B
+ORD-100562,2026-02-02,Wireless Ergonomic Mouse,Accessories,45,8,360,West,Online B2C
+ORD-100423,2026-02-02,HD Smart Webcam 1080p,Audio/Video,95,7,665,North,Retail Partner
+ORD-100521,2026-02-02,Dual-Motor Standing Desk,Furniture,550,8,4400,North,Direct B2B
+ORD-100246,2026-02-02,Premium Mesh Office Chair,Furniture,320,9,2880,West,Direct B2B
+ORD-100912,2026-02-02,Noise Cancelling Headphones,Audio,180,3,540,West,Direct B2B
+ORD-100979,2026-02-04,Noise Cancelling Headphones,Audio,180,1,180,North,Online B2C
+ORD-100936,2026-02-04,Wireless Ergonomic Mouse,Accessories,45,4,180,South,Direct B2B
+ORD-100608,2026-02-04,Mechanical Office Keyboard,Accessories,85,4,340,North,Direct B2B
+ORD-100908,2026-02-04,Noise Cancelling Headphones,Audio,180,5,900,East,Direct B2B
+ORD-100544,2026-02-05,USB-C Multi-Port Hub,Accessories,60,2,120,North,Online B2C
+ORD-100872,2026-02-05,Portable SSD 2TB,Storage,150,7,1050,South,Direct B2B
+ORD-100553,2026-02-05,Dual-Motor Standing Desk,Furniture,550,10,5500,West,Direct B2B
+ORD-100883,2026-02-06,Portable SSD 2TB,Storage,150,8,1200,North,Direct B2B
+ORD-100818,2026-02-06,Corporate Laptop Pro,Electronics,1200,6,7200,North,Online B2C
+ORD-100898,2026-02-07,USB-C Multi-Port Hub,Accessories,60,3,180,West,Direct B2B
+ORD-100757,2026-02-07,Dual-Motor Standing Desk,Furniture,550,10,5500,North,Online B2C
+ORD-100270,2026-02-07,Dual-Motor Standing Desk,Furniture,550,7,3850,East,Direct B2B
+ORD-100098,2026-02-07,Portable SSD 2TB,Storage,150,1,150,East,Online B2C
+ORD-100714,2026-02-07,USB-C Multi-Port Hub,Accessories,60,1,60,South,Online B2C
+ORD-100288,2026-02-07,Noise Cancelling Headphones,Audio,180,8,1440,North,Retail Partner
+ORD-100086,2026-02-07,4K UltraWide Monitor,Electronics,450,1,450,West,Online B2C
+ORD-100806,2026-02-08,Noise Cancelling Headphones,Audio,180,10,1800,East,Online B2C
+ORD-100688,2026-02-08,HD Smart Webcam 1080p,Audio/Video,95,1,95,North,Online B2C
+ORD-100588,2026-02-08,Wireless Ergonomic Mouse,Accessories,45,8,360,South,Direct B2B
+ORD-100394,2026-02-08,Dual-Motor Standing Desk,Furniture,550,9,4950,West,Online B2C
+ORD-100028,2026-02-08,Corporate Laptop Pro,Electronics,1200,4,4800,South,Direct B2B
+ORD-100997,2026-02-08,Wireless Ergonomic Mouse,Accessories,45,9,405,North,Online B2C
+ORD-100297,2026-02-09,Premium Mesh Office Chair,Furniture,320,4,1280,South,Direct B2B
+ORD-100540,2026-02-09,Wireless Ergonomic Mouse,Accessories,45,8,360,North,Online B2C
+ORD-100319,2026-02-09,Mechanical Office Keyboard,Accessories,85,3,255,North,Online B2C
+ORD-100887,2026-02-10,USB-C Multi-Port Hub,Accessories,60,5,300,South,Online B2C
+ORD-100144,2026-02-10,Portable SSD 2TB,Storage,150,2,300,East,Online B2C
+ORD-100252,2026-02-10,4K UltraWide Monitor,Electronics,450,5,2250,North,Online B2C
+ORD-100810,2026-02-11,USB-C Multi-Port Hub,Accessories,60,7,420,South,Online B2C
+ORD-100396,2026-02-11,Wireless Ergonomic Mouse,Accessories,45,5,225,East,Online B2C
+ORD-100556,2026-02-12,Mechanical Office Keyboard,Accessories,85,6,510,North,Online B2C
+ORD-100141,2026-02-12,Noise Cancelling Headphones,Audio,180,8,1440,North,Online B2C
+ORD-100993,2026-02-12,USB-C Multi-Port Hub,Accessories,60,4,240,South,Direct B2B
+ORD-100019,2026-02-13,Noise Cancelling Headphones,Audio,180,2,360,West,Online B2C
+ORD-100563,2026-02-13,Dual-Motor Standing Desk,Furniture,550,5,2750,West,Online B2C
+ORD-100849,2026-02-14,Portable SSD 2TB,Storage,150,4,600,West,Direct B2B
+ORD-100773,2026-02-14,Corporate Laptop Pro,Electronics,1200,7,8400,North,Retail Partner
+ORD-100200,2026-02-14,USB-C Multi-Port Hub,Accessories,60,2,120,South,Online B2C
+ORD-100875,2026-02-14,4K UltraWide Monitor,Electronics,450,9,4050,East,Online B2C
+ORD-100268,2026-02-14,Premium Mesh Office Chair,Furniture,320,3,960,North,Retail Partner
+ORD-100073,2026-02-15,Wireless Ergonomic Mouse,Accessories,45,9,405,North,Direct B2B
+ORD-100863,2026-02-15,Wireless Ergonomic Mouse,Accessories,45,9,405,South,Online B2C
+ORD-100119,2026-02-16,HD Smart Webcam 1080p,Audio/Video,95,2,190,West,Online B2C
+ORD-100927,2026-02-17,Mechanical Office Keyboard,Accessories,85,1,85,North,Online B2C
+ORD-100472,2026-02-17,Mechanical Office Keyboard,Accessories,85,1,85,East,Direct B2B
+ORD-100287,2026-02-18,Wireless Ergonomic Mouse,Accessories,45,3,135,South,Direct B2B
+ORD-100594,2026-02-19,Corporate Laptop Pro,Electronics,1200,6,7200,South,Direct B2B
+ORD-100465,2026-02-19,USB-C Multi-Port Hub,Accessories,60,9,540,South,Online B2C
+ORD-100437,2026-02-19,Dual-Motor Standing Desk,Furniture,550,10,5500,North,Direct B2B
+ORD-100062,2026-02-19,USB-C Multi-Port Hub,Accessories,60,9,540,West,Online B2C
+ORD-100358,2026-02-19,Dual-Motor Standing Desk,Furniture,550,1,550,North,Direct B2B
+ORD-100649,2026-02-20,Wireless Ergonomic Mouse,Accessories,45,6,270,East,Online B2C
+ORD-100055,2026-02-20,Noise Cancelling Headphones,Audio,180,9,1620,East,Online B2C
+ORD-100283,2026-02-22,Corporate Laptop Pro,Electronics,1200,8,9600,South,Online B2C
+ORD-100829,2026-02-22,Premium Mesh Office Chair,Furniture,320,2,640,South,Online B2C
+ORD-100624,2026-02-23,Premium Mesh Office Chair,Furniture,320,10,3200,East,Online B2C
+ORD-100126,2026-02-23,Wireless Ergonomic Mouse,Accessories,45,7,315,North,Online B2C
+ORD-100878,2026-02-23,Wireless Ergonomic Mouse,Accessories,45,5,225,South,Retail Partner
+ORD-100575,2026-02-23,USB-C Multi-Port Hub,Accessories,60,7,420,North,Online B2C
+ORD-100220,2026-02-23,USB-C Multi-Port Hub,Accessories,60,5,300,North,Online B2C
+ORD-100481,2026-02-24,USB-C Multi-Port Hub,Accessories,60,6,360,East,Online B2C
+ORD-100081,2026-02-25,4K UltraWide Monitor,Electronics,450,2,900,East,Direct B2B
+ORD-100002,2026-02-26,Portable SSD 2TB,Storage,150,1,150,North,Direct B2B
+ORD-100462,2026-02-26,Premium Mesh Office Chair,Furniture,320,5,1600,North,Online B2C
+ORD-100084,2026-02-26,USB-C Multi-Port Hub,Accessories,60,7,420,North,Online B2C
+ORD-100035,2026-02-26,Wireless Ergonomic Mouse,Accessories,45,1,45,North,Retail Partner
+ORD-100778,2026-02-27,Corporate Laptop Pro,Electronics,1200,8,9600,South,Online B2C
+ORD-100515,2026-02-27,Wireless Ergonomic Mouse,Accessories,45,5,225,South,Direct B2B
+ORD-100633,2026-02-28,Portable SSD 2TB,Storage,150,3,450,West,Direct B2B
+ORD-100923,2026-02-28,Wireless Ergonomic Mouse,Accessories,45,7,315,East,Direct B2B
+ORD-100415,2026-02-28,Noise Cancelling Headphones,Audio,180,4,720,East,Online B2C
+ORD-100049,2026-03-01,Wireless Ergonomic Mouse,Accessories,45,1,45,West,Online B2C
+ORD-100715,2026-03-02,4K UltraWide Monitor,Electronics,450,3,1350,East,Direct B2B
+ORD-100490,2026-03-02,4K UltraWide Monitor,Electronics,450,7,3150,North,Direct B2B
+ORD-100362,2026-03-04,Dual-Motor Standing Desk,Furniture,550,4,2200,South,Direct B2B
+ORD-100024,2026-03-04,Dual-Motor Standing Desk,Furniture,550,7,3850,South,Online B2C
+ORD-100607,2026-03-04,Dual-Motor Standing Desk,Furniture,550,1,550,North,Retail Partner
+ORD-100338,2026-03-04,4K UltraWide Monitor,Electronics,450,8,3600,West,Online B2C
+ORD-100959,2026-03-04,Premium Mesh Office Chair,Furniture,320,3,960,South,Online B2C
+ORD-100519,2026-03-05,Portable SSD 2TB,Storage,150,6,900,North,Online B2C
+ORD-100497,2026-03-06,Noise Cancelling Headphones,Audio,180,3,540,North,Online B2C
+ORD-100628,2026-03-06,Dual-Motor Standing Desk,Furniture,550,9,4950,East,Online B2C
+ORD-100385,2026-03-07,Noise Cancelling Headphones,Audio,180,2,360,North,Online B2C
+ORD-100254,2026-03-07,Noise Cancelling Headphones,Audio,180,6,1080,South,Online B2C
+ORD-100095,2026-03-07,Mechanical Office Keyboard,Accessories,85,5,425,South,Online B2C
+ORD-100560,2026-03-07,Corporate Laptop Pro,Electronics,1200,3,3600,North,Direct B2B
+ORD-100407,2026-03-07,Mechanical Office Keyboard,Accessories,85,7,595,North,Retail Partner
+ORD-100948,2026-03-08,Noise Cancelling Headphones,Audio,180,3,540,North,Direct B2B
+ORD-100400,2026-03-08,USB-C Multi-Port Hub,Accessories,60,1,60,North,Direct B2B
+ORD-100978,2026-03-09,Corporate Laptop Pro,Electronics,1200,4,4800,East,Online B2C
+ORD-100831,2026-03-09,Corporate Laptop Pro,Electronics,1200,9,10800,North,Retail Partner
+ORD-100147,2026-03-10,Portable SSD 2TB,Storage,150,4,600,North,Direct B2B
+ORD-100359,2026-03-10,Wireless Ergonomic Mouse,Accessories,45,4,180,North,Direct B2B
+ORD-100836,2026-03-10,Wireless Ergonomic Mouse,Accessories,45,7,315,West,Online B2C
+ORD-100696,2026-03-10,Portable SSD 2TB,Storage,150,1,150,South,Online B2C
+ORD-100196,2026-03-10,Premium Mesh Office Chair,Furniture,320,4,1280,South,Direct B2B
+ORD-100650,2026-03-11,HD Smart Webcam 1080p,Audio/Video,95,5,475,North,Direct B2B
+ORD-100176,2026-03-11,Portable SSD 2TB,Storage,150,10,1500,West,Direct B2B
+ORD-100365,2026-03-11,Noise Cancelling Headphones,Audio,180,9,1620,North,Online B2C
+ORD-100182,2026-03-11,Premium Mesh Office Chair,Furniture,320,8,2560,West,Online B2C
+ORD-100527,2026-03-12,Portable SSD 2TB,Storage,150,3,450,West,Online B2C
+ORD-100582,2026-03-12,Corporate Laptop Pro,Electronics,1200,2,2400,East,Online B2C
+ORD-100917,2026-03-12,Corporate Laptop Pro,Electronics,1200,5,6000,West,Direct B2B
+ORD-100363,2026-03-13,Corporate Laptop Pro,Electronics,1200,3,3600,East,Online B2C
+ORD-100904,2026-03-13,Premium Mesh Office Chair,Furniture,320,1,320,East,Online B2C
+ORD-100632,2026-03-13,Mechanical Office Keyboard,Accessories,85,4,340,North,Online B2C
+ORD-100187,2026-03-13,Corporate Laptop Pro,Electronics,1200,2,2400,South,Direct B2B
+ORD-100816,2026-03-13,Premium Mesh Office Chair,Furniture,320,9,2880,East,Online B2C
+ORD-100865,2026-03-15,USB-C Multi-Port Hub,Accessories,60,3,180,North,Direct B2B
+ORD-100445,2026-03-15,Corporate Laptop Pro,Electronics,1200,3,3600,North,Online B2C
+ORD-100409,2026-03-15,Portable SSD 2TB,Storage,150,4,600,West,Online B2C
+ORD-100117,2026-03-16,HD Smart Webcam 1080p,Audio/Video,95,9,855,West,Direct B2B
+ORD-100539,2026-03-16,4K UltraWide Monitor,Electronics,450,4,1800,South,Online B2C
+ORD-100822,2026-03-16,Premium Mesh Office Chair,Furniture,320,6,1920,North,Direct B2B
+ORD-100336,2026-03-16,HD Smart Webcam 1080p,Audio/Video,95,2,190,South,Retail Partner
+ORD-100506,2026-03-17,USB-C Multi-Port Hub,Accessories,60,10,600,East,Online B2C
+ORD-100549,2026-03-17,USB-C Multi-Port Hub,Accessories,60,7,420,East,Online B2C
+ORD-100712,2026-03-19,USB-C Multi-Port Hub,Accessories,60,6,360,South,Direct B2B
+ORD-100992,2026-03-19,USB-C Multi-Port Hub,Accessories,60,5,300,West,Direct B2B
+ORD-100132,2026-03-20,4K UltraWide Monitor,Electronics,450,4,1800,East,Online B2C
+ORD-100021,2026-03-21,Dual-Motor Standing Desk,Furniture,550,7,3850,West,Online B2C
+ORD-100900,2026-03-21,4K UltraWide Monitor,Electronics,450,2,900,West,Retail Partner
+ORD-100253,2026-03-21,USB-C Multi-Port Hub,Accessories,60,8,480,West,Online B2C
+ORD-100221,2026-03-22,Wireless Ergonomic Mouse,Accessories,45,2,90,West,Retail Partner
+ORD-100088,2026-03-23,Premium Mesh Office Chair,Furniture,320,6,1920,South,Online B2C
+ORD-100285,2026-03-25,Premium Mesh Office Chair,Furniture,320,3,960,North,Direct B2B
+ORD-100418,2026-03-26,HD Smart Webcam 1080p,Audio/Video,95,6,570,West,Direct B2B
+ORD-100104,2026-03-28,Premium Mesh Office Chair,Furniture,320,3,960,West,Direct B2B
+ORD-100976,2026-03-28,Portable SSD 2TB,Storage,150,6,900,North,Online B2C
+ORD-100710,2026-03-28,HD Smart Webcam 1080p,Audio/Video,95,3,285,South,Online B2C
+ORD-100387,2026-03-29,Mechanical Office Keyboard,Accessories,85,9,765,North,Online B2C
+ORD-100586,2026-03-29,Wireless Ergonomic Mouse,Accessories,45,3,135,South,Retail Partner
+ORD-100751,2026-03-30,Wireless Ergonomic Mouse,Accessories,45,10,450,West,Direct B2B
+ORD-100812,2026-03-30,USB-C Multi-Port Hub,Accessories,60,1,60,North,Retail Partner
+ORD-100888,2026-03-30,Dual-Motor Standing Desk,Furniture,550,8,4400,East,Online B2C
+ORD-100296,2026-03-31,Premium Mesh Office Chair,Furniture,320,5,1600,East,Direct B2B
+ORD-100305,2026-03-31,4K UltraWide Monitor,Electronics,450,6,2700,South,Direct B2B
+ORD-100083,2026-03-31,Wireless Ergonomic Mouse,Accessories,45,9,405,North,Direct B2B
+ORD-100368,2026-03-31,Mechanical Office Keyboard,Accessories,85,5,425,North,Online B2C
+ORD-100339,2026-03-31,USB-C Multi-Port Hub,Accessories,60,10,600,North,Online B2C
+ORD-100766,2026-04-01,Noise Cancelling Headphones,Audio,180,2,360,West,Online B2C
+ORD-100458,2026-04-01,Premium Mesh Office Chair,Furniture,320,9,2880,South,Direct B2B
+ORD-100877,2026-04-02,Portable SSD 2TB,Storage,150,3,450,South,Online B2C
+ORD-100426,2026-04-02,Dual-Motor Standing Desk,Furniture,550,6,3300,North,Direct B2B
+ORD-100901,2026-04-02,Portable SSD 2TB,Storage,150,8,1200,North,Online B2C
+ORD-100044,2026-04-03,HD Smart Webcam 1080p,Audio/Video,95,7,665,North,Online B2C
+ORD-100207,2026-04-03,Mechanical Office Keyboard,Accessories,85,5,425,South,Direct B2B
+ORD-100479,2026-04-04,HD Smart Webcam 1080p,Audio/Video,95,2,190,West,Online B2C
+ORD-100907,2026-04-04,Corporate Laptop Pro,Electronics,1200,5,6000,South,Direct B2B
+ORD-100277,2026-04-04,HD Smart Webcam 1080p,Audio/Video,95,9,855,West,Online B2C
+ORD-100018,2026-04-05,Dual-Motor Standing Desk,Furniture,550,9,4950,West,Online B2C
+ORD-100330,2026-04-06,Dual-Motor Standing Desk,Furniture,550,5,2750,South,Online B2C
+ORD-100074,2026-04-06,Mechanical Office Keyboard,Accessories,85,4,340,West,Retail Partner
+ORD-100478,2026-04-07,Noise Cancelling Headphones,Audio,180,7,1260,East,Direct B2B
+ORD-100843,2026-04-07,Premium Mesh Office Chair,Furniture,320,3,960,West,Online B2C
+ORD-100815,2026-04-08,Wireless Ergonomic Mouse,Accessories,45,10,450,West,Online B2C
+ORD-100742,2026-04-08,Mechanical Office Keyboard,Accessories,85,9,765,South,Retail Partner
+ORD-100884,2026-04-09,4K UltraWide Monitor,Electronics,450,9,4050,North,Online B2C
+ORD-100432,2026-04-09,Premium Mesh Office Chair,Furniture,320,8,2560,South,Direct B2B
+ORD-100026,2026-04-10,Portable SSD 2TB,Storage,150,4,600,South,Direct B2B
+ORD-100602,2026-04-10,Dual-Motor Standing Desk,Furniture,550,10,5500,North,Direct B2B
+ORD-100455,2026-04-10,Dual-Motor Standing Desk,Furniture,550,2,1100,South,Direct B2B
+ORD-100211,2026-04-11,Mechanical Office Keyboard,Accessories,85,3,255,East,Direct B2B
+ORD-100835,2026-04-11,Corporate Laptop Pro,Electronics,1200,3,3600,South,Online B2C
+ORD-100052,2026-04-12,Noise Cancelling Headphones,Audio,180,8,1440,North,Direct B2B
+ORD-100790,2026-04-12,4K UltraWide Monitor,Electronics,450,3,1350,North,Online B2C
+ORD-100430,2026-04-12,Noise Cancelling Headphones,Audio,180,7,1260,West,Online B2C
+ORD-100732,2026-04-13,Portable SSD 2TB,Storage,150,4,600,North,Direct B2B
+ORD-100367,2026-04-13,4K UltraWide Monitor,Electronics,450,9,4050,East,Retail Partner
+ORD-100750,2026-04-13,Wireless Ergonomic Mouse,Accessories,45,8,360,South,Direct B2B
+ORD-100963,2026-04-13,Wireless Ergonomic Mouse,Accessories,45,7,315,South,Direct B2B
+ORD-100204,2026-04-14,Wireless Ergonomic Mouse,Accessories,45,2,90,East,Online B2C
+ORD-100496,2026-04-14,4K UltraWide Monitor,Electronics,450,1,450,West,Retail Partner
+ORD-100218,2026-04-14,Portable SSD 2TB,Storage,150,3,450,South,Direct B2B
+ORD-100489,2026-04-15,4K UltraWide Monitor,Electronics,450,1,450,South,Online B2C
+ORD-100987,2026-04-15,Noise Cancelling Headphones,Audio,180,6,1080,East,Online B2C
+ORD-100042,2026-04-16,4K UltraWide Monitor,Electronics,450,1,450,West,Online B2C
+ORD-100705,2026-04-17,Mechanical Office Keyboard,Accessories,85,5,425,South,Retail Partner
+ORD-100436,2026-04-17,Noise Cancelling Headphones,Audio,180,5,900,North,Direct B2B
+ORD-100444,2026-04-18,Premium Mesh Office Chair,Furniture,320,1,320,West,Online B2C
+ORD-100397,2026-04-19,4K UltraWide Monitor,Electronics,450,9,4050,South,Direct B2B
+ORD-100404,2026-04-19,HD Smart Webcam 1080p,Audio/Video,95,8,760,West,Retail Partner
+ORD-100576,2026-04-19,HD Smart Webcam 1080p,Audio/Video,95,7,665,East,Direct B2B
+ORD-100247,2026-04-20,Dual-Motor Standing Desk,Furniture,550,7,3850,East,Retail Partner
+ORD-100255,2026-04-21,HD Smart Webcam 1080p,Audio/Video,95,8,760,West,Retail Partner
+ORD-100547,2026-04-21,4K UltraWide Monitor,Electronics,450,8,3600,East,Direct B2B
+ORD-100557,2026-04-21,Premium Mesh Office Chair,Furniture,320,4,1280,West,Direct B2B
+ORD-100266,2026-04-22,HD Smart Webcam 1080p,Audio/Video,95,6,570,North,Online B2C
+ORD-100461,2026-04-22,USB-C Multi-Port Hub,Accessories,60,10,600,East,Direct B2B
+ORD-100966,2026-04-22,Noise Cancelling Headphones,Audio,180,5,900,East,Direct B2B
+ORD-100107,2026-04-23,Portable SSD 2TB,Storage,150,2,300,West,Online B2C
+ORD-100172,2026-04-23,4K UltraWide Monitor,Electronics,450,6,2700,South,Direct B2B
+ORD-100708,2026-04-23,Wireless Ergonomic Mouse,Accessories,45,10,450,West,Retail Partner
+ORD-100125,2026-04-24,Noise Cancelling Headphones,Audio,180,5,900,West,Direct B2B
+ORD-100047,2026-04-25,Mechanical Office Keyboard,Accessories,85,2,170,East,Direct B2B
+ORD-100776,2026-04-26,Wireless Ergonomic Mouse,Accessories,45,8,360,East,Online B2C
+ORD-100579,2026-04-26,Dual-Motor Standing Desk,Furniture,550,9,4950,West,Online B2C
+ORD-100922,2026-04-26,Noise Cancelling Headphones,Audio,180,10,1800,North,Direct B2B
+ORD-100188,2026-04-27,Mechanical Office Keyboard,Accessories,85,8,680,North,Direct B2B
+ORD-100010,2026-04-27,4K UltraWide Monitor,Electronics,450,1,450,West,Direct B2B
+ORD-100681,2026-04-27,USB-C Multi-Port Hub,Accessories,60,10,600,West,Direct B2B
+ORD-100905,2026-05-01,Corporate Laptop Pro,Electronics,1200,7,8400,North,Online B2C
+ORD-100910,2026-05-01,USB-C Multi-Port Hub,Accessories,60,6,360,West,Direct B2B
+ORD-100561,2026-05-02,Portable SSD 2TB,Storage,150,1,150,East,Online B2C
+ORD-100939,2026-05-02,Corporate Laptop Pro,Electronics,1200,6,7200,West,Direct B2B
+ORD-100990,2026-05-03,Corporate Laptop Pro,Electronics,1200,9,10800,West,Online B2C
+ORD-100592,2026-05-03,Noise Cancelling Headphones,Audio,180,8,1440,West,Online B2C
+ORD-100328,2026-05-04,Wireless Ergonomic Mouse,Accessories,45,6,270,North,Online B2C
+ORD-100280,2026-05-04,Premium Mesh Office Chair,Furniture,320,9,2880,North,Direct B2B
+ORD-100903,2026-05-04,4K UltraWide Monitor,Electronics,450,1,450,East,Online B2C
+ORD-100092,2026-05-04,4K UltraWide Monitor,Electronics,450,1,450,East,Online B2C
+ORD-100702,2026-05-05,Noise Cancelling Headphones,Audio,180,7,1260,South,Direct B2B
+ORD-100655,2026-05-05,HD Smart Webcam 1080p,Audio/Video,95,10,950,East,Direct B2B
+ORD-100318,2026-05-06,4K UltraWide Monitor,Electronics,450,1,450,North,Direct B2B
+ORD-100186,2026-05-06,Dual-Motor Standing Desk,Furniture,550,4,2200,West,Retail Partner
+ORD-100924,2026-05-06,Mechanical Office Keyboard,Accessories,85,5,425,West,Online B2C
+ORD-100566,2026-05-06,Wireless Ergonomic Mouse,Accessories,45,7,315,South,Retail Partner
+ORD-100059,2026-05-06,Premium Mesh Office Chair,Furniture,320,3,960,East,Online B2C
+ORD-100536,2026-05-07,Wireless Ergonomic Mouse,Accessories,45,2,90,East,Online B2C
+ORD-100830,2026-05-07,Mechanical Office Keyboard,Accessories,85,6,510,North,Direct B2B
+ORD-100892,2026-05-07,Wireless Ergonomic Mouse,Accessories,45,2,90,East,Direct B2B
+ORD-100834,2026-05-08,Wireless Ergonomic Mouse,Accessories,45,2,90,North,Direct B2B
+ORD-100639,2026-05-08,Corporate Laptop Pro,Electronics,1200,10,12000,South,Online B2C
+ORD-100706,2026-05-08,Wireless Ergonomic Mouse,Accessories,45,9,405,North,Direct B2B
+ORD-100410,2026-05-08,Wireless Ergonomic Mouse,Accessories,45,4,180,East,Online B2C
+ORD-100447,2026-05-08,Noise Cancelling Headphones,Audio,180,5,900,North,Retail Partner
+ORD-100457,2026-05-08,4K UltraWide Monitor,Electronics,450,3,1350,West,Direct B2B
+ORD-100234,2026-05-09,HD Smart Webcam 1080p,Audio/Video,95,10,950,North,Direct B2B
+ORD-100020,2026-05-10,Portable SSD 2TB,Storage,150,9,1350,East,Online B2C
+ORD-100109,2026-05-10,Dual-Motor Standing Desk,Furniture,550,3,1650,South,Retail Partner
+ORD-100106,2026-05-11,USB-C Multi-Port Hub,Accessories,60,10,600,West,Retail Partner
+ORD-100030,2026-05-11,HD Smart Webcam 1080p,Audio/Video,95,10,950,North,Online B2C
+ORD-100721,2026-05-12,Wireless Ergonomic Mouse,Accessories,45,3,135,North,Direct B2B
+ORD-100272,2026-05-12,Wireless Ergonomic Mouse,Accessories,45,8,360,North,Direct B2B
+ORD-100290,2026-05-12,Dual-Motor Standing Desk,Furniture,550,5,2750,South,Direct B2B
+ORD-100151,2026-05-12,USB-C Multi-Port Hub,Accessories,60,10,600,South,Direct B2B
+ORD-100971,2026-05-12,Dual-Motor Standing Desk,Furniture,550,2,1100,North,Direct B2B
+ORD-100056,2026-05-12,Premium Mesh Office Chair,Furniture,320,4,1280,North,Online B2C
+ORD-100493,2026-05-12,4K UltraWide Monitor,Electronics,450,8,3600,West,Direct B2B
+ORD-100906,2026-05-13,Dual-Motor Standing Desk,Furniture,550,8,4400,East,Direct B2B
+ORD-100737,2026-05-14,USB-C Multi-Port Hub,Accessories,60,1,60,North,Online B2C
+ORD-100785,2026-05-14,Noise Cancelling Headphones,Audio,180,5,900,East,Online B2C
+ORD-100867,2026-05-14,Mechanical Office Keyboard,Accessories,85,1,85,North,Online B2C
+ORD-100190,2026-05-14,Wireless Ergonomic Mouse,Accessories,45,4,180,South,Online B2C
+ORD-100001,2026-05-15,Premium Mesh Office Chair,Furniture,320,10,3200,West,Direct B2B
+ORD-100324,2026-05-15,4K UltraWide Monitor,Electronics,450,2,900,North,Retail Partner
+ORD-100386,2026-05-15,4K UltraWide Monitor,Electronics,450,10,4500,North,Direct B2B
+ORD-100520,2026-05-15,Portable SSD 2TB,Storage,150,1,150,East,Direct B2B
+ORD-100267,2026-05-15,Portable SSD 2TB,Storage,150,1,150,West,Direct B2B
+ORD-100475,2026-05-16,HD Smart Webcam 1080p,Audio/Video,95,10,950,South,Retail Partner
+ORD-100985,2026-05-16,Mechanical Office Keyboard,Accessories,85,10,850,West,Retail Partner
+ORD-100082,2026-05-17,HD Smart Webcam 1080p,Audio/Video,95,2,190,West,Direct B2B
+ORD-100846,2026-05-17,Premium Mesh Office Chair,Furniture,320,5,1600,West,Online B2C
+ORD-100275,2026-05-18,Premium Mesh Office Chair,Furniture,320,4,1280,East,Online B2C
+ORD-100950,2026-05-18,Premium Mesh Office Chair,Furniture,320,5,1600,South,Online B2C
+ORD-100156,2026-05-18,Corporate Laptop Pro,Electronics,1200,10,12000,East,Online B2C
+ORD-100443,2026-05-20,Wireless Ergonomic Mouse,Accessories,45,4,180,North,Online B2C
+ORD-100477,2026-05-21,Wireless Ergonomic Mouse,Accessories,45,5,225,North,Direct B2B
+ORD-100996,2026-05-21,Wireless Ergonomic Mouse,Accessories,45,7,315,East,Direct B2B
+ORD-100630,2026-05-21,HD Smart Webcam 1080p,Audio/Video,95,5,475,South,Direct B2B
+ORD-100425,2026-05-21,Portable SSD 2TB,Storage,150,5,750,West,Online B2C
+ORD-100542,2026-05-23,Dual-Motor Standing Desk,Furniture,550,6,3300,South,Retail Partner
+ORD-100611,2026-05-23,Mechanical Office Keyboard,Accessories,85,10,850,South,Online B2C
+ORD-100794,2026-05-23,4K UltraWide Monitor,Electronics,450,8,3600,South,Online B2C
+ORD-100848,2026-05-24,Portable SSD 2TB,Storage,150,10,1500,South,Direct B2B
+ORD-100779,2026-05-24,HD Smart Webcam 1080p,Audio/Video,95,7,665,North,Direct B2B
+ORD-100201,2026-05-25,USB-C Multi-Port Hub,Accessories,60,5,300,North,Online B2C
+ORD-100146,2026-05-25,HD Smart Webcam 1080p,Audio/Video,95,1,95,East,Online B2C
+ORD-100945,2026-05-26,Portable SSD 2TB,Storage,150,8,1200,South,Online B2C
+ORD-100014,2026-05-26,Premium Mesh Office Chair,Furniture,320,5,1600,North,Retail Partner
+ORD-100281,2026-05-26,Noise Cancelling Headphones,Audio,180,7,1260,South,Online B2C
+ORD-100405,2026-05-26,Premium Mesh Office Chair,Furniture,320,1,320,East,Online B2C
+ORD-100067,2026-05-26,4K UltraWide Monitor,Electronics,450,9,4050,North,Online B2C
+ORD-100135,2026-05-26,Premium Mesh Office Chair,Furniture,320,3,960,West,Online B2C
+ORD-100734,2026-05-27,Corporate Laptop Pro,Electronics,1200,7,8400,North,Direct B2B
+ORD-100631,2026-05-27,4K UltraWide Monitor,Electronics,450,9,4050,West,Online B2C
+ORD-100039,2026-05-30,USB-C Multi-Port Hub,Accessories,60,5,300,East,Online B2C
+ORD-100716,2026-05-30,Premium Mesh Office Chair,Furniture,320,5,1600,North,Online B2C
+ORD-100473,2026-05-31,Corporate Laptop Pro,Electronics,1200,10,12000,East,Online B2C
+ORD-100704,2026-05-31,Wireless Ergonomic Mouse,Accessories,45,10,450,South,Online B2C
+ORD-100819,2026-05-31,Premium Mesh Office Chair,Furniture,320,1,320,North,Direct B2B
+ORD-100356,2026-05-31,Premium Mesh Office Chair,Furniture,320,9,2880,North,Online B2C
+ORD-100858,2026-06-01,HD Smart Webcam 1080p,Audio/Video,95,8,760,North,Direct B2B
+ORD-100327,2026-06-01,4K UltraWide Monitor,Electronics,450,3,1350,West,Direct B2B
+ORD-100656,2026-06-02,Wireless Ergonomic Mouse,Accessories,45,6,270,West,Online B2C
+ORD-100061,2026-06-02,Mechanical Office Keyboard,Accessories,85,5,425,North,Direct B2B
+ORD-100366,2026-06-02,4K UltraWide Monitor,Electronics,450,6,2700,West,Online B2C
+ORD-100093,2026-06-02,Mechanical Office Keyboard,Accessories,85,10,850,West,Online B2C
+ORD-100637,2026-06-03,Wireless Ergonomic Mouse,Accessories,45,3,135,North,Retail Partner
+ORD-100634,2026-06-04,Corporate Laptop Pro,Electronics,1200,7,8400,North,Online B2C
+ORD-100293,2026-06-04,HD Smart Webcam 1080p,Audio/Video,95,8,760,West,Online B2C
+ORD-100625,2026-06-04,Noise Cancelling Headphones,Audio,180,10,1800,West,Direct B2B
+ORD-100864,2026-06-04,USB-C Multi-Port Hub,Accessories,60,8,480,East,Direct B2B
+ORD-100740,2026-06-04,Mechanical Office Keyboard,Accessories,85,4,340,North,Online B2C
+ORD-100482,2026-06-05,Corporate Laptop Pro,Electronics,1200,8,9600,South,Direct B2B
+ORD-100809,2026-06-06,USB-C Multi-Port Hub,Accessories,60,6,360,West,Online B2C
+ORD-100440,2026-06-06,Portable SSD 2TB,Storage,150,5,750,West,Online B2C
+ORD-100349,2026-06-06,Wireless Ergonomic Mouse,Accessories,45,3,135,West,Retail Partner
+ORD-100934,2026-06-06,Premium Mesh Office Chair,Furniture,320,3,960,North,Online B2C
+ORD-100474,2026-06-07,Wireless Ergonomic Mouse,Accessories,45,2,90,North,Retail Partner
+ORD-100504,2026-06-07,Noise Cancelling Headphones,Audio,180,2,360,East,Online B2C
+ORD-100504,2026-06-08,Wireless Ergonomic Mouse,Accessories,45,10,450,North,Direct B2B
+ORD-100504,2026-06-08,Mechanical Office Keyboard,Accessories,85,2,170,North,Online B2C
+ORD-100504,2026-06-08,USB-C Multi-Port Hub,Accessories,60,10,600,North,Direct B2B
+ORD-100504,2026-06-08,USB-C Multi-Port Hub,Accessories,60,10,600,South,Direct B2B
+ORD-100504,2026-06-08,HD Smart Webcam 1080p,Audio/Video,95,9,855,South,Direct B2B
+ORD-100504,2026-06-08,HD Smart Webcam 1080p,Audio/Video,95,4,380,North,Online B2C
+ORD-100504,2026-06-09,4K UltraWide Monitor,Electronics,450,3,1350,South,Direct B2B
+ORD-100504,2026-06-09,4K UltraWide Monitor,Electronics,450,1,450,East,Direct B2B
+ORD-100504,2026-06-09,4K UltraWide Monitor,Electronics,450,6,2700,South,Online B2C
+ORD-100504,2026-06-09,Portable SSD 2TB,Storage,150,7,1050,South,Retail Partner
+ORD-100504,2026-06-09,Portable SSD 2TB,Storage,150,9,1350,South,Retail Partner
+ORD-100504,2026-06-10,4K UltraWide Monitor,Electronics,450,2,900,West,Online B2C
+ORD-100504,2026-06-11,Wireless Ergonomic Mouse,Accessories,45,5,225,North,Retail Partner
+ORD-100504,2026-06-12,Premium Mesh Office Chair,Furniture,320,3,960,North,Retail Partner
+ORD-100504,2026-06-14,Corporate Laptop Pro,Electronics,1200,5,6000,South,Online B2C
+ORD-100504,2026-06-14,HD Smart Webcam 1080p,Audio/Video,95,2,190,East,Online B2C
+ORD-100504,2026-06-14,USB-C Multi-Port Hub,Accessories,60,4,240,West,Online B2C
+ORD-100504,2026-06-15,Noise Cancelling Headphones,Audio,180,1,180,South,Online B2C
+ORD-100504,2026-06-15,Premium Mesh Office Chair,Furniture,320,3,960,South,Direct B2B
+ORD-100504,2026-06-15,Mechanical Office Keyboard,Accessories,85,5,425,South,Online B2C
+ORD-100504,2026-06-15,USB-C Multi-Port Hub,Accessories,60,7,420,East,Online B2C
+ORD-100504,2026-06-18,Premium Mesh Office Chair,Furniture,320,7,2240,North,Online B2C
+ORD-100504,2026-06-19,4K UltraWide Monitor,Electronics,450,3,1350,North,Online B2C
+ORD-100504,2026-06-19,Portable SSD 2TB,Storage,150,6,900,East,Direct B2B
+ORD-100504,2026-06-19,HD Smart Webcam 1080p,Audio/Video,95,7,665,South,Online B2C
+ORD-100504,2026-06-19,USB-C Multi-Port Hub,Accessories,60,3,180,North,Online B2C
+ORD-100504,2026-06-20,USB-C Multi-Port Hub,Accessories,60,8,480,South,Online B2C
+ORD-100504,2026-06-20,Corporate Laptop Pro,Electronics,1200,2,2400,West,Online B2C
+ORD-100504,2026-06-20,Mechanical Office Keyboard,Accessories,85,9,765,North,Online B2C
+ORD-100504,2026-06-20,HD Smart Webcam 1080p,Audio/Video,95,5,475,South,Direct B2B
+ORD-100504,2026-06-20,Mechanical Office Keyboard,Accessories,85,10,850,East,Retail Partner
+ORD-100504,2026-06-21,Premium Mesh Office Chair,Furniture,320,1,320,South,Direct B2B
+ORD-100504,2026-06-21,HD Smart Webcam 1080p,Audio/Video,95,8,760,West,Direct B2B
+ORD-100504,2026-06-21,HD Smart Webcam 1080p,Audio/Video,95,3,285,North,Retail Partner
+ORD-100504,2026-06-21,Mechanical Office Keyboard,Accessories,85,7,595,West,Direct B2B
+ORD-100504,2026-06-21,Wireless Ergonomic Mouse,Accessories,45,5,225,North,Online B2C
+ORD-100504,2026-06-22,Corporate Laptop Pro,Electronics,1200,10,12000,West,Direct B2B
+ORD-100504,2026-06-22,Portable SSD 2TB,Storage,150,3,450,South,Online B2C
+ORD-100504,2026-06-23,4K UltraWide Monitor,Electronics,450,5,2250,North,Direct B2B
+ORD-100504,2026-06-23,USB-C Multi-Port Hub,Accessories,60,10,600,North,Direct B2B
+ORD-100504,2026-06-23,Dual-Motor Standing Desk,Furniture,550,5,2750,South,Online B2C
+ORD-100504,2026-06-23,Wireless Ergonomic Mouse,Accessories,45,2,90,North,Direct B2B
+ORD-100504,2026-06-23,USB-C Multi-Port Hub,Accessories,60,1,60,West,Direct B2B
+ORD-100504,2026-06-23,Corporate Laptop Pro,Electronics,1200,4,4800,North,Retail Partner
+ORD-100504,2026-06-24,HD Smart Webcam 1080p,Audio/Video,95,10,950,South,Retail Partner
+ORD-100504,2026-06-25,Mechanical Office Keyboard,Accessories,85,9,765,North,Direct B2B
+ORD-100504,2026-06-25,Noise Cancelling Headphones,Audio,180,9,1620,East,Direct B2B
+ORD-100504,2026-06-26,Noise Cancelling Headphones,Audio,180,8,1440,West,Online B2C
+ORD-100504,2026-06-26,HD Smart Webcam 1080p,Audio/Video,95,10,950,West,Online B2C
+ORD-100504,2026-06-27,Premium Mesh Office Chair,Furniture,320,7,2240,North,Direct B2B
+ORD-100504,2026-06-27,Corporate Laptop Pro,Electronics,1200,5,6000,West,Direct B2B
+ORD-100504,2026-06-28,Mechanical Office Keyboard,Accessories,85,7,595,South,Direct B2B
+ORD-100504,2026-06-28,Corporate Laptop Pro,Electronics,1200,3,3600,North,Direct B2B
+ORD-100504,2026-06-28,Noise Cancelling Headphones,Audio,180,6,1080,West,Online B2C
+ORD-100504,2026-06-28,HD Smart Webcam 1080p,Audio/Video,95,10,950,South,Online B2C
+ORD-100504,2026-06-29,Dual-Motor Standing Desk,Furniture,550,8,4400,East,Retail Partner
+ORD-100504,2026-06-29,USB-C Multi-Port Hub,Accessories,60,3,180,East,Direct B2B
+ORD-100504,2026-06-30,Mechanical Office Keyboard,Accessories,85,10,850,East,Retail Partner
+ORD-100504,2026-07-01,Portable SSD 2TB,Storage,150,8,1200,West,Online B2C
+ORD-100504,2026-07-01,HD Smart Webcam 1080p,Audio/Video,95,6,570,West,Online B2C
+ORD-100504,2026-07-01,Noise Cancelling Headphones,Audio,180,7,1260,West,Direct B2B
+ORD-100504,2026-07-01,Wireless Ergonomic Mouse,Accessories,45,1,45,East,Retail Partner
+ORD-100504,2026-07-02,USB-C Multi-Port Hub,Accessories,60,4,240,West,Online B2C
+ORD-100504,2026-07-02,Corporate Laptop Pro,Electronics,1200,5,6000,South,Online B2C
+ORD-100504,2026-07-02,HD Smart Webcam 1080p,Audio/Video,95,2,190,North,Retail Partner
+ORD-100504,2026-07-03,Premium Mesh Office Chair,Furniture,320,10,3200,East,Direct B2B
+ORD-100504,2026-07-03,Mechanical Office Keyboard,Accessories,85,2,170,West,Online B2C
+ORD-100504,2026-07-03,Wireless Ergonomic Mouse,Accessories,45,2,90,East,Retail Partner
+ORD-100504,2026-07-03,Dual-Motor Standing Desk,Furniture,550,3,1650,East,Online B2C
+ORD-100504,2026-07-05,Wireless Ergonomic Mouse,Accessories,45,10,450,North,Online B2C
+ORD-100504,2026-07-05,Portable SSD 2TB,Storage,150,2,300,South,Online B2C
+ORD-100504,2026-07-05,USB-C Multi-Port Hub,Accessories,60,2,120,North,Online B2C
+ORD-100504,2026-07-06,4K UltraWide Monitor,Electronics,450,5,2250,East,Direct B2B
+ORD-100504,2026-07-06,Portable SSD 2TB,Storage,150,6,900,East,Online B2C
+ORD-100504,2026-07-06,Corporate Laptop Pro,Electronics,1200,7,8400,North,Direct B2B
+ORD-100504,2026-07-06,Dual-Motor Standing Desk,Furniture,550,5,2750,North,Direct B2B
+ORD-100504,2026-07-06,Dual-Motor Standing Desk,Furniture,550,4,2200,North,Online B2C
+ORD-100504,2026-07-07,Corporate Laptop Pro,Electronics,1200,4,4800,West,Online B2C
+ORD-100504,2026-07-07,Premium Mesh Office Chair,Furniture,320,6,1920,East,Online B2C
+ORD-100504,2026-07-07,Portable SSD 2TB,Storage,150,7,1050,East,Online B2C
+ORD-100504,2026-07-08,HD Smart Webcam 1080p,Audio/Video,95,5,475,South,Online B2C
+ORD-100504,2026-07-08,Mechanical Office Keyboard,Accessories,85,10,850,South,Direct B2B
+ORD-100504,2026-07-08,Dual-Motor Standing Desk,Furniture,550,9,4950,East,Online B2C
+ORD-100504,2026-07-08,Wireless Ergonomic Mouse,Accessories,45,4,180,North,Direct B2B
+ORD-100504,2026-07-09,Dual-Motor Standing Desk,Furniture,550,6,3300,West,Online B2C
+ORD-100504,2026-07-09,4K UltraWide Monitor,Electronics,450,4,1800,South,Online B2C
+ORD-100504,2026-07-10,Portable SSD 2TB,Storage,150,3,450,East,Online B2C
+ORD-100504,2026-07-10,Noise Cancelling Headphones,Audio,180,1,180,North,Online B2C
+ORD-100504,2026-07-12,HD Smart Webcam 1080p,Audio/Video,95,9,855,West,Online B2C
+ORD-100504,2026-07-12,Wireless Ergonomic Mouse,Accessories,45,7,315,North,Direct B2B
+ORD-100504,2026-07-12,Noise Cancelling Headphones,Audio,180,7,1260,North,Online B2C
+ORD-100504,2026-07-13,Portable SSD 2TB,Storage,150,5,750,West,Online B2C
+ORD-100504,2026-07-13,USB-C Multi-Port Hub,Accessories,60,5,300,South,Online B2C
+ORD-100504,2026-07-13,Wireless Ergonomic Mouse,Accessories,45,9,405,South,Online B2C
+ORD-100504,2026-07-13,Premium Mesh Office Chair,Furniture,320,2,640,East,Online B2C
+ORD-100504,2026-07-14,4K UltraWide Monitor,Electronics,450,6,2700,South,Online B2C
+ORD-100504,2026-07-14,Noise Cancelling Headphones,Audio,180,6,1080,South,Direct B2B
+ORD-100504,2026-07-14,Noise Cancelling Headphones,Audio,180,8,1440,West,Direct B2B
+ORD-100504,2026-07-15,Corporate Laptop Pro,Electronics,1200,3,3600,South,Direct B2B
+ORD-100504,2026-07-15,USB-C Multi-Port Hub,Accessories,60,7,420,North,Online B2C
