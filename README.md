@@ -1,239 +1,266 @@
 # DataParQ Automation Framework
 
 ## Project Overview
-This project automates the end-to-end testing of the DataParQ Databricks Embedded Analytics flow using Selenium, PyTest, and the Page Object Model (POM) framework.
+This project automates the end-to-end testing of the **DataParQ** platform using Selenium WebDriver, PyTest, and the Page Object Model (POM) design pattern.
 
-The automation validates the complete workflow from data onboarding to data quality validation and rejected record verification.
+The automation covers two independent test flows:
+- **Manual Upload Flow (TC01 → TC06):** Tests the complete workflow starting with a manual CSV file upload from the local system.
+- **GCP Existing File Flow (TC07 → TC10):** Tests the complete workflow by selecting an existing file from a Google Cloud Platform (GCP) bucket, including the Derived Module pipeline.
 
-## Framework Details
-### Technology Stack
-- **Language:** Python
-- **Automation Tool:** Selenium WebDriver (ChromeDriver)
-- **Testing Framework:** PyTest
-- **Design Pattern:** Page Object Model (POM)
-- **Data Manipulation:** Pandas, OpenPyXL, CSV
-- **Reporting & Evidence Generation:** python-docx
+---
 
-### Recent Enhancements & Fixes
-The framework has been heavily optimized for stability, particularly with long-running backend processes and complex UI grids:
-- **Dynamic Asynchronous Waiting:** 
-  - *Data Governance Validation (TC2/TC6):* Polls for validation completion up to **30 minutes** (checking every 15 seconds), proceeding immediately once the UI indicates success (no hardcoded waits).
-  - *Monitor Task Execution (TC3/TC5):* Polls task execution grid up to **30 minutes** (checking every 30 seconds), explicitly failing if any task hits a terminal failure state.
-- **Robust UI Interactions (Kendo Grids):**
-  - *Multi-Strategy Search:* Uses a 4-layer fallback strategy for interacting with complex search boxes and Kendo grids (testing popups, JS events, direct ENTER key inputs, and scanning unfiltered grids).
-  - *Case-Insensitive XPath Matching:* Utilizes `translate()` in XPath to ensure workflows and domains are successfully matched regardless of how the UI renders text casing.
-- **TC4 Business Key Configuration:** Dynamically parses the uploaded CSV file and strictly sets the *first column* as the Business Key, leaving Mask and PII configurations untouched.
-- **Enhanced Failure Reporting:** Network capture logs now safely generate internal directories before saving (`os.makedirs`), ensuring you always get the `Request.json` and `Response.json` payloads upon any step failure.
+## Technology Stack
+
+| Component | Technology |
+|---|---|
+| Language | Python 3.12+ |
+| Automation Tool | Selenium WebDriver 4.22 (ChromeDriver) |
+| Testing Framework | PyTest 8.0 |
+| Design Pattern | Page Object Model (POM) |
+| Reporting | python-docx (DOCX evidence reports) |
+| Data Handling | CSV, JSON |
+| Logging | Python `logging` module (custom logger) |
+| Environment Config | python-dotenv (`.env` file) |
+
+---
 
 ## Project Structure
+
 ```text
 dataparq_automation/
-├── pages/                  # Page Object Model classes
-├── tests/                  # PyTest test cases (TC1 to TC6)
-├── test_data/              # Input CSV files and payloads
-├── utils/                  # Helper utilities (ScreenshotManager, NetworkCapture)
-├── reports/                # Automatically generated during execution
-│   ├── execution_reports/  # Generated DOCX/PDF evidence and JSON logs
-│   ├── documents/          # Downloaded verification files (e.g., CSVs)
-│   └── screenshots/        # Temporary storage for step-by-step images
-├── pytest.ini              # PyTest configuration (enforces strict ordering)
-├── conftest.py             # Global fixtures, hooks, and session management
-└── README.md
+│
+├── pages/                              
+│   ├── login_page.py                   
+│   ├── home_page.py                    
+│   ├── file_setup_page.py              
+│   ├── config_page.py                  
+│   ├── ingest_page.py                  
+│   ├── data_lakehouse_page.py          
+│   ├── data_lakehouse_workflow_page.py 
+│   ├── data_governance_page.py         
+│   ├── derive_page.py                  
+│   ├── monitor_page.py                 
+│   └── task_page.py                    
+│
+├── tests/
+│   ├── manual/                         
+│   │   ├── test_tc01_file_upload.py
+│   │   ├── test_tc02_data_governance.py
+│   │   ├── test_tc03_Verify_upload_file_in_Monitor_Module.py
+│   │   ├── test_tc04_data_lakehouse_workflow.py
+│   │   ├── test_tc05_validate_task_status.py
+│   │   └── test_tc06_validate_dq_rejected_records.py
+│   │
+│   └── gcp/                            
+│       ├── test_tc07_gcp_bucket_file_selection.py
+│       ├── test_tc08_Verify_upload_file_in_Monitor_Module.py
+│       ├── test_tc09_data_lakehouse_workflow.py
+│       └── test_tc10_derived_module.py
+│
+├── utils/
+│   ├── config.py                       
+│   ├── file_reader.py                  
+│   ├── logger.py                       
+│   ├── network_capture.py              
+│   ├── report_generator.py             
+│   └── screenshot_manager.py          
+├── test_data/                          
+├── reports/                            
+│   ├── execution_reports/             
+│   ├── documents/                      
+│   ├── screenshots/                    
+│   └── test_data/                      
+│
+├── run_info.json                       
+├── conftest.py                         
+├── pytest.ini                          
+├── requirements.txt                    
+└── .env                                
 ```
+
+---
 
 ## Test Case Execution Flow
-The framework contains six sequentially dependent test cases:
 
-**TC1 → TC2 → TC3 → TC4 → TC5 → TC6**
+### Manual Upload Flow (TC01 → TC06)
 
-Execution always rigidly follows this ascending order.
+| Test Case | Description |
+|---|---|
+| **TC01** | Login, manually upload a CSV file from `test_data/`, complete the full ingestion wizard (File Setup → Config → Ingest), and deploy the pipeline. |
+| **TC02** | Navigate to the Data Governance module. Upload the governance file and validate it against the ingested data. |
+| **TC03** | Open the Monitor module. Create a new batch, search for the domain, open task details, and wait for all tasks to reach `Completed` status (30 min max, 15s polling). |
+| **TC04** | Navigate to the Data Lakehouse Workflow page. Create a DQ rule (Business DQ / Rejection), configure the Business Key column dynamically, and deploy the pipeline. |
+| **TC05** | Open the Monitor module. Validate that the Data Quality and Data Lake task layers reach `Completed` status. |
+| **TC06** | Validate that the rejected record count shown in the UI matches the actual count in the downloaded CSV file. |
 
-### Dependency Rules
-- **TC2** executes only if **TC1** passes.
-- **TC3** executes only if **TC2** passes.
-- **TC4** executes only if **TC3** passes.
-- **TC5** executes only if **TC4** passes.
-- **TC6** executes only if **TC5** passes.
+### GCP Existing File Flow (TC07 → TC10)
 
-### Failure Handling
-If any test case fails, execution stops immediately and all downstream tests are marked as **BLOCKED**.
+| Test Case | Description |
+|---|---|
+| **TC07** | Login, select an existing GCP bucket file via `Cloud Storage → Google Cloud Platform → Existing`, scan the `testing` folder, validate the file, complete the ingestion wizard (File Setup → Config → Ingest), and deploy the pipeline. |
+| **TC08** | Open the Monitor module. Create a new batch for the domain, search for it, open task details, and poll until all tasks reach `Completed` (30 min max, 15s polling). |
+| **TC09** | Navigate to the Data Lakehouse Workflow module. Dynamically read attribute values and business key column from the uploaded file. Create a DQ rule, configure the Business Key, deploy the pipeline. Validate Data Quality and Data Lake layer task status in the Monitor module. |
+| **TC10** | Navigate to the Derived module. Search for the workflow, select it from the left panel, click `+ New Derive`, configure the entity, map 6 columns (Column 1 with Business Key enabled), save, and deploy. Validate the Derived task in the Monitor module. |
 
-*Example:*
+---
+
+## TC10 – Derived Module Step Reference
+
+| Step | Action |
+|---|---|
+| 1 | Open the Derived module from the left navigation |
+| 2 | Search for the workflow created in TC07 |
+| 3 | Click the workflow from the search results grid |
+| 4 | Click the workflow in the left panel, verify `+ New Derive` is enabled, and click it |
+| 6 | Enter the auto-generated entity name |
+| 7 | Click `+ ADD NEW SOURCE` |
+| 9 | Open the **Source Entity** dropdown and select the domain name |
+| 10 | Click Next |
+| 11 | Enable the PS checkbox |
+| 12 | Click Draw Diagram and wait for completion |
+| 13 | Select Column 1 from the `source_col_*` dropdown and enable Business Key → click Create |
+| 14 | Click `+ ADD NEW`, select Column 2 (no Business Key) → click Create |
+| 15 | Repeat for Columns 3–6 (no Business Key). Click Save Changes. Click Deploy Pipeline. |
+| 20 | Navigate to the Monitor module |
+| 21 | Select Data Lakehouse tab |
+| 22 | Search using the domain name from TC07 |
+| 23 | Validate domain is present in the results grid |
+| 24 | Click the Task button to open task details |
+| 25 | Poll the `derived` layer status until `Completed` (30 min max, 15s polling) |
+
+---
+
+## Key Framework Features
+
+### Single Browser Session
+- The browser opens **once** per test suite run.
+- The same browser instance is shared across all test cases within a flow (TC07 → TC10).
+- Login occurs only once; session cookies and tokens are preserved.
+- The browser closes only after the full suite completes or immediately upon failure.
+
+### State Persistence via `run_info.json`
+- After TC07, the workflow name, file name, and domain name are persisted to `run_info.json`.
+- Downstream test cases (TC08–TC10) read this file to dynamically reference the correct domain without hardcoding.
+- When running a test case in isolation, `run_info.json` is preserved so the test can read prior state.
+
+### Dynamic File Handling (`utils/file_reader.py`)
+- TC09 dynamically resolves the uploaded CSV file path from `report/test_data/` or `test_data/`.
+- The attribute value for DQ rule configuration (Step 12) is read directly from the file's first data row.
+- The Business Key column (Step 15) is determined from the first column header of the CSV — no hardcoding.
+
+### Robust Polling Strategy
+All long-running backend tasks use an active polling loop with:
+- **Maximum wait:** 30 minutes (1800 seconds)
+- **Poll interval:** 15 seconds
+- **Grid refresh:** The refresh button is clicked programmatically before each status check to force the Kendo UI grid to re-fetch data.
+- **Console logging:** Every status change is logged, making it easy to trace execution in live output.
+- **Immediate exit:** As soon as a target status is reached, polling stops — no unnecessary waiting.
+
+### Failure Handling & Downstream Blocking
 ```text
-TC1 PASS
-TC2 PASS
-TC3 FAILED
- ↓
-TC4 BLOCKED
-TC5 BLOCKED
-TC6 BLOCKED
+TC07 PASS
+TC08 PASS
+TC09 FAILED
+    ↓
+TC10 BLOCKED
 ```
+- If any test case fails, all downstream test cases in the same flow are **immediately marked as BLOCKED**.
+- Execution stops at the point of failure.
 
-## Browser Execution Strategy
-The framework is deeply optimized to use a **single browser session**:
-- The browser opens exactly **once** before TC1 starts.
-- The identical browser instance is reused across TC1 through TC6.
-- Login occurs only once; cookies, tokens, and session state are fully preserved across all test cases.
-- The browser closes only after TC6 completes successfully, or immediately if a failure triggers a test suite abort.
+### Evidence Generation
+**On Pass:**
+- High-resolution DOM screenshots are captured after every step.
+- A DOCX evidence report is generated with step-by-step results and screenshots.
+- Saved to: `reports/execution_reports/TC{N}_PASSED_{timestamp}.docx`
 
-## Implemented Test Cases
-
-### TC1: End-to-end Data Onboarding
-Validates the foundational data ingestion and workflow configuration module.
-- **Step 1:** Login to the application and verify Dashboard loads
-- **Step 2:** Navigate to ParQ Your Data and verify Data Lakehouse section is visible
-- **Step 3:** Click Create New inside Data Lakehouse and verify Choose Source page loads
-- **Step 4:** Select Governance tab and verify upload area is visible
-- **Step 5:** Upload the file and verify — fail if app shows an error (e.g., unsupported format)
-- **Step 6:** Verify Next button is enabled after upload and navigate to File Setup page
-- **Step 7:** Validate Metadata tab — verify table and rows are populated
-- **Step 8:** Validate Sample Data tab — verify data rows are populated
-- **Step 9:** Verify Next button is enabled on File Setup page and click it
-- **Step 10:** Verify navigation to Config page — Entity Level Setup visible
-- **Step 11:** Validate Entity Level Setup section and Source Entities panel are visible
-- **Step 12:** Verify Save button is disabled before selecting Data Owners and Data Stewards
-- **Step 13:** Select Data Owner and verify selection
-- **Step 14:** Select Data Steward and verify selection
-- **Step 15:** Verify Save button is enabled after selections and click Save
-- **Step 16:** Verify success message 'Config updated successfully' is displayed
-- **Step 17:** Verify Next button is enabled after save and click it
-- **Step 18:** Verify navigation to Ingest page
-- **Step 19:** Select 'Create New' radio button in Add to Data Domain Group
-- **Step 20:** Verify Save button is disabled before filling mandatory Ingest fields
-- **Step 21:** Enter Domain Name (dynamic: filename without extension)
-- **Step 22:** Enter Workflow Name (same as Domain Name)
-- **Step 23:** Select Workflow Type: Monthly
-- **Step 24:** Enter Expected Runtime (M): 5
-- **Step 25:** Enable Notify on Delay checkbox
-- **Step 26:** Verify Save button is enabled after all fields filled and click Save
-- **Step 27:** Verify save success message: 'Schedule data is saved successfully'
-- **Step 28:** Verify Deploy Pipeline button is enabled after save
-- **Step 29:** Click Deploy Pipeline button
-- **Step 30:** Verify deployment success message is displayed
-
-### TC2: Data Governance Re-upload Validation
-Ensures data governance files can be uploaded and structurally validated prior to ingestion.
-- **Step 1:** Navigate to Data Governance
-- **Step 2:** Open Upload Section
-- **Step 3:** Search for Workflow Created in TC1
-- **Step 4:** Upload Same File Again
-- **Step 5:** Validate Validate Button Behavior
-- **Step 6:** Validate Uploaded File (Dynamic Wait up to 30 mins)
-- **Step 7:** Validate Submit Button Behavior
-- **Step 8:** Submit File
-- **Step 9:** Validate Historical Upload Status
-
-### TC3: Upload Verification in Monitor Module
-Validates that the submitted data workflow properly transitions to a completed state in the monitoring layer.
-- **Step 1:** Navigate to the Monitor module
-- **Step 2:** Select Data Lakehouse Option
-- **Step 3:** Search Using Domain Name from TC1 (Case-insensitive)
-- **Step 4:** Validate Domain Presence in results grid
-- **Step 5:** Click the Task button in the Actions column
-- **Step 6:** Identify All Tasks
-- **Step 7:** Validate Task Count >= 1
-- **Step 8:** Monitor Status Transition to Completed (Dynamic Poll up to 30 mins)
-
-### TC4: Data Lakehouse Workflow Deployment
-Tests the creation and deployment of custom Data Quality (DQ) rules onto the data pipeline.
-- **Step 1:** Navigate to ParQ Your Data
-- **Step 2:** Click 'View All' in Data Lakehouse section
-- **Step 3:** Search Workflow
-- **Step 4:** Validate Workflow Presence
-- **Step 5:** Click the Profile Icon for the Selected Flow
-- **Step 6:** Click the 'Add / Modify Rules' Button
-- **Step 7:** Select DQ Rule as 'Business DQ'
-- **Step 8:** Select DQ Action as 'Rejection'
-- **Step 9:** Enable Notification
-- **Step 10:** Select Attribute
-- **Step 11:** Select Comparison Operator
-- **Step 12:** Enter Attribute Value (Dynamically extracted from CSV data)
-- **Step 13:** Click Create
-- **Step 14:** Click the Next Button
-- **Step 15:** Select Business Key Column (Dynamically selects strictly the 1st column of the CSV)
-- **Step 16:** Save the Business Key Configuration
-- **Step 17:** Click the Next Button After Saving Business Key
-- **Step 18:** Deploy the Pipeline and Verify Successful Deployment
-
-### TC5: Validate Data Quality and Lakehouse Task Status
-Ensures the downstream data quality processing reaches completion in the monitoring module.
-- **Step 1:** Open the Monitor Module
-- **Step 2:** Select Data Lakehouse
-- **Step 3:** Enter Domain Name
-- **Step 4:** Verify Domain Appears in Grid
-- **Step 5:** Open Task Details
-- **Step 6:** Validate Only Data Quality and Data Lake Layer Status
-
-### TC6: Validate DQ Rejected Records Count
-Performs deep-level validation that the rejected records matched against the DQ rule in TC4 are accurately parsed and available for download.
-- **Step 1:** Open Data Governance Module
-- **Step 2:** Open Upload Section
-- **Step 3:** Search Workflow Name
-- **Step 4:** Validate Workflow Exists
-- **Step 5:** Open Workflow
-- **Step 6:** Upload File
-- **Step 7:** Click Validate (Waits dynamically for asynchronous backend verification)
-- **Step 8:** Capture Validation Summary (Extracts rejected counts from UI)
-- **Step 9:** Store Rejected Record Count
-- **Step 10:** Validate Downloaded Rejected Records File (Directly intercepts the downloaded CSV and strictly compares file row count with the UI payload)
-
-## Automatic Evidence Generation
-### Passed Test Cases
-For every passed test case:
-- Captures high-resolution DOM screenshots for every executed step.
-- Automatically generates an evidence report in DOCX format.
-- Saves the evidence document under: `reports/execution_reports/`
-
-### Failed Test Cases
-If a test case fails:
-- Captures screenshots for all successful steps up to the point of failure.
-- Captures an explicit **Failure Screenshot** at the exact moment the assertion fails.
-- Automatically captures **Request and Response network payloads** exclusively for the failed step to assist debugging (avoids unnecessary execution overhead on passed steps).
-- Drops the Failure Screenshot and JSON Network payloads directly into `reports/execution_reports/`.
-
-## Rejected File Handling & Verification
-Downloaded rejected records (CSV files) are natively intercepted by the framework and automatically stored securely in:
-`reports/documents/`
-
-The framework enforces strict data integrity by validating that the:
-1. Rejected count shown in the UI.
-2. Rejected count physically present in the downloaded CSV file.
-
-**Both values must match identically for TC6 to pass.**
-
+**On Failure:**
+- Screenshots for all completed steps are included up to the failure point.
+- An explicit **Failure Screenshot** is captured at the exact moment of the assertion failure.
+- Network request/response payloads (BiDi) are captured for the 2 steps before, the failed step, and 2 steps after.
+- Saved to: `reports/execution_reports/TC{N}_FAILED_{timestamp}.docx`
 
 ---
 
 ## How to Execute
 
-### Step 1: Create a Fresh Virtual Environment
-*Isolate your project dependencies by creating a new virtual environment.*
+### Step 1: Create a Virtual Environment
 ```powershell
 python -m venv venv
 ```
 
 ### Step 2: Activate the Environment
-*Activate the virtual environment to ensure the correct Python executable is used.*
 ```powershell
 .\venv\Scripts\activate
 ```
 
-### Step 3: Install the Blueprint (Dependencies)
-*Install the required libraries to run the tests. (First time only)*
+### Step 3: Install Dependencies *(first time only)*
 ```powershell
 pip install -r requirements.txt
 ```
 
-### Step 4: Execute the Tests!
-*Run the full test suite in sequence.*
-```powershell
-.\venv\Scripts\python.exe -m pytest --upload-file=test_data/abc_company_sales_data_fixed.csv
+### Step 4: Configure the Environment
+Create a `.env` file in the project root (if not already present) with the application URL and credentials:
+```env
+APP_URL=https://your-dataparq-app-url.com
+USERNAME=your_username
+PASSWORD=your_password
 ```
+
+### Step 5: Run the Tests
+
+**Run the Full GCP Flow (TC07 → TC10)**
+```powershell
+.\venv\Scripts\python.exe -m pytest tests/gcp --gcp-file-name=tvs_sales1_data1
+```
+
+**Run the Full Manual Upload Flow (TC01 → TC06)**
+```powershell
+.\venv\Scripts\python.exe -m pytest tests/manual --upload-file=test_data/your_file.csv
+```
+
+**Run a Single Test Case (Standalone)**
+```powershell
+# TC07 only
+.\venv\Scripts\python.exe -m pytest tests/gcp/test_tc07_gcp_bucket_file_selection.py --gcp-file-name=tvs_sales1_data1
+
+# TC08 only (requires run_info.json from TC07)
+.\venv\Scripts\python.exe -m pytest tests/gcp/test_tc08_Verify_upload_file_in_Monitor_Module.py --gcp-file-name=tvs_sales1_data1
+
+# TC09 only (requires run_info.json from TC07/TC08)
+.\venv\Scripts\python.exe -m pytest tests/gcp/test_tc09_data_lakehouse_workflow.py --gcp-file-name=tvs_sales1_data1
+
+# TC10 only (requires run_info.json from TC07–TC09)
+.\venv\Scripts\python.exe -m pytest tests/gcp/test_tc10_derived_module.py --gcp-file-name=tvs_sales1_data1
+```
+
+> **Note:** When running a test case in isolation, `run_info.json` is automatically preserved by the framework so downstream tests can read the workflow and domain name set by TC07.
 
 ---
 
-#### 🎯 Option 2: Run a Specific Test Case (e.g., just TC1)
-*If you need to debug or run an individual test case, use the command below.*
-```powershell
-.\venv\Scripts\python.exe -m pytest tests\test_tc01_file_upload.py --upload-file=test_data\ipl_match_data.csv
+## CLI Arguments Reference
+
+| Argument | Used In | Description |
+|---|---|---|
+| `--gcp-file-name` | TC07–TC10 | File name (without path) that exists in the GCP `testing/` bucket folder. Extension `.csv` is optional. |
+| `--upload-file` | TC01–TC06 | Relative path to the local CSV file to upload (e.g., `test_data/my_file.csv`). |
+
+---
+
+## Reports Directory
+
+All test artifacts are written to the `reports/` directory, which is **automatically cleaned and recreated** at the start of every test run.
+
+```text
+reports/
+├── execution_reports/
+│   ├── TC07_PASSED_20260723_120000.docx
+│   ├── TC08_PASSED_20260723_120500.docx
+│   ├── TC09_FAILED_20260723_123000.docx   
+│   └── Suite_Summary_Report.txt            
+├── documents/
+│   └── rejected_records_*.csv              
+├── screenshots/
+│   └── PASS_01.png, FAIL_09.png, ...
+└── test_data/
+    └── tvs_sales1_data1.csv                
 ```

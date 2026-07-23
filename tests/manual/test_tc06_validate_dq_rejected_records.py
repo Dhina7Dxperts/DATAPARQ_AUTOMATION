@@ -1,10 +1,9 @@
 import pytest
 import os
 import json
-import logging
+import time
 from pages.data_governance_page import DataGovernancePage
 from utils.logger import get_logger
-from utils.screenshot_manager import ScreenshotManager
 
 logger = get_logger("TC06")
 
@@ -49,18 +48,18 @@ def _record(tracker, sm, step_num, actual, status="PASS", error=None):
 def test_tc06_validate_dq_rejected_records(driver, step_tracker, screenshot_manager, upload_file_path):
     logger.info("Starting TC-06 Validate DQ Rejected Records Count")
     
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     run_info_path = os.path.join(base_dir, "run_info.json")
     
     if not os.path.exists(run_info_path):
-        pytest.skip("run_info.json not found. Ensure previous TCs run first.")
+        pytest.skip("BLOCKED: run_info.json not found. Ensure previous TCs run first.")
         
     with open(run_info_path, "r") as f:
         run_info = json.load(f)
         
     # Test Dependency Rule
     if run_info.get("tc5_status") != "PASS":
-        pytest.skip("TC5 did not pass. Skipping TC6 as per preconditions.")
+        pytest.skip("TC5 did not pass. Blocking TC6 as per preconditions.")
         
     # Dynamic Workflow Name Assignment
     workflow_name = run_info.get("workflow_name")
@@ -115,30 +114,34 @@ def test_tc06_validate_dq_rejected_records(driver, step_tracker, screenshot_mana
         pytest.fail("Upload file path not provided.")
     dg_page.upload_file(upload_file_path)
     _record(step_tracker, screenshot_manager, 6, "File successfully uploaded.")
+    time.sleep(2)
 
     # Step 7: Click Validate
     step_tracker["current"] = 7
     dg_page.click_validate()
     _record(step_tracker, screenshot_manager, 7, "Validation process completed successfully.")
+    time.sleep(2)
 
     # Step 8: Capture Validation Summary
     step_tracker["current"] = 8
     ui_rejected_count = dg_page.get_rejected_records_count()
     _record(step_tracker, screenshot_manager, 8, f"UI Rejected Count captured: {ui_rejected_count}")
+    time.sleep(2)
 
     # Step 9: Store Rejected Record Count
     step_tracker["current"] = 9
     logger.info(f"Stored UI Rejected Count = {ui_rejected_count} for comparison.")
     _record(step_tracker, screenshot_manager, 9, f"Stored UI Rejected Count = {ui_rejected_count}")
+    time.sleep(2)
 
     # Step 10: Validate Downloaded Rejected Records File
     step_tracker["current"] = 10
     
-    import time
+    # import time
     import glob
     import csv
     
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     download_dir = os.path.join(base_dir, "reports", "documents")
     
     # Record existing files before download
@@ -160,10 +163,10 @@ def test_tc06_validate_dq_rejected_records(driver, step_tracker, screenshot_mana
         if new_files and not active_downloads:
             # Grab the first new file
             downloaded_file = list(new_files)[0]
-            time.sleep(1) # Ensure file flush
+            time.sleep(2) # Ensure file flush
             break
             
-        time.sleep(1)
+        time.sleep(2)
         
     if not downloaded_file:
         pytest.fail("FAIL: Rejected records CSV file failed to download within 30 seconds.")

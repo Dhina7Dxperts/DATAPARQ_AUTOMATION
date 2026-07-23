@@ -2,10 +2,18 @@ import os
 import pytest
 from datetime import datetime
 from selenium import webdriver
-from utils.logger import get_logger
+from utils.logger import get_logger, release_file_handlers, reattach_file_handlers
 from utils.screenshot_manager import ScreenshotManager
-from utils.network_capture import NetworkCapture
+from selenium.webdriver.common.bidi.network import Network
 from utils.report_generator import generate_execution_report, STEP_EXPECTED
+
+# Global list to store failed BiDi network calls for the current test
+_current_failed_network_calls = []
+
+def pytest_runtest_setup(item):
+    """Clear failed network calls at the start of each test."""
+    global _current_failed_network_calls
+    _current_failed_network_calls.clear()
 
 logger = get_logger("Conftest")
 
@@ -18,6 +26,7 @@ def pytest_sessionstart(session):
     """
     import shutil
     import glob
+    import stat
 
     logger.info("Starting workspace cleanup...")
     import time
@@ -25,6 +34,18 @@ def pytest_sessionstart(session):
 
     base_dir = os.path.dirname(os.path.abspath(__file__))
     reports_dir = os.path.join(base_dir, "reports")
+
+    def _on_rm_error(func, path, exc_info):
+        """
+        Error handler for shutil.rmtree.
+        On WinError 5 (Access Denied), make the file/folder writable and retry.
+        If it still fails (e.g. Chrome has a file lock), log and continue.
+        """
+        try:
+            os.chmod(path, stat.S_IWRITE)
+            func(path)
+        except Exception as inner:
+            logger.warning(f"Could not remove '{path}' (skipping): {inner}")
 
     # Backup run_info.json if it exists so we can run isolated tests that depend on it
     run_info_backup = None
@@ -37,7 +58,9 @@ def pytest_sessionstart(session):
     # 1. Delete reports directory if it exists
     if os.path.exists(reports_dir):
         try:
-            shutil.rmtree(reports_dir)
+            # Release log file handles BEFORE deletion so Windows unlocks framework.log
+            release_file_handlers()
+            shutil.rmtree(reports_dir, onerror=_on_rm_error)
             logger.info(f"Deleted directory: {reports_dir}")
         except Exception as e:
             logger.error(f"Failed to delete {reports_dir}: {e}")
@@ -73,7 +96,10 @@ def pytest_sessionstart(session):
     for folder in required_folders:
         folder_path = os.path.join(base_dir, folder)
         os.makedirs(folder_path, exist_ok=True)
-        logger.info(f"Recreated directory: {folder_path}")
+
+    # Re-attach file handlers now that reports/ exists again
+    reattach_file_handlers()
+    logger.info("Recreated reporting directory structure.")
 
     if run_info_backup:
         with open(run_info_path, "w") as f:
@@ -93,13 +119,24 @@ def pytest_sessionstart(session):
         except Exception as e:
             logger.warning(f"Could not interact with run_info.json: {e}")
 
-# ── Pytest options ─────────────────────────────────────────────────────────────
 def pytest_addoption(parser):
     parser.addoption(
         "--upload-file",
         action="store",
         default="test_data/sample.csv",
         help="Path to the file to be uploaded during tests",
+    )
+    parser.addoption(
+        "--gcp-file-name",
+        action="store",
+        default="sample.csv",
+        help="File name to retrieve from GCP Bucket"
+    )
+    parser.addoption(
+        "--gcp-flow",
+        action="store_true",
+        default=False,
+        help="Execute the GCP Bucket flow (TC7-TC12)"
     )
 
 
@@ -122,16 +159,15 @@ def step_tracker():
 
 
 @pytest.fixture(scope="session")
-def driver():
+def driver(request):
     logger.info("Initializing Chrome WebDriver...")
     options = webdriver.ChromeOptions()
     options.add_argument("--start-maximized")
     options.add_experimental_option("detach", True)
 
-    # Enable performance/network logging for CDP network capture
-    options.add_experimental_option("perfLoggingPrefs", {"enableNetwork": True})
-    options.set_capability("goog:loggingPrefs", {"performance": "ALL", "browser": "ALL"})
-    
+    # Enable WebDriver BiDi (Bidirectional API) instead of legacy CDP
+    options.enable_bidi = True
+        
     # Configure download directory to reports/documents/
     reports_docs_dir = os.path.join(os.getcwd(), "reports", "documents")
     os.makedirs(reports_docs_dir, exist_ok=True)
@@ -144,8 +180,47 @@ def driver():
     options.add_experimental_option("prefs", prefs)
 
     drv = webdriver.Chrome(options=options)
+    
+    # Setup BiDi Network monitoring for the session
+    # network = Network(drv)
+    
+    # def on_response_completed(response):
+    #     """Callback for 'network.responseCompleted' to capture 4xx/5xx errors."""
+    #     global _current_failed_network_calls
+    #     status = response.response.status
+    #     if status >= 400:
+    #         url = response.response.url
+    #         excluded_extensions = ['.css', '.js', '.png', '.jpg', '.jpeg', '.gif', '.svg', '.woff2', '.ico']
+    #         if any(url.lower().endswith(ext) for ext in excluded_extensions):
+    #             return
+    #             
+    #         headers_list = response.response.headers
+    #         headers_dict = {h['name'].lower(): h['value']['value'] for h in headers_list}
+    #         
+    #         tracing_tags = {}
+    #         for key in ['x-correlation-id', 'x-trace-id', 'traceparent']:
+    #             if key in headers_dict:
+    #                 tracing_tags[key] = headers_dict[key]
+    #                 
+    #         try:
+    #             body = response.response.body
+    #         except AttributeError:
+    #             body = "Body fetch not supported or empty"
+    #
+    #         error_data = {
+    #             "request_url": url,
+    #             "http_status_code": status,
+    #             "status_text": getattr(response.response, 'status_text', ''),
+    #             "tracing_tags": tracing_tags,
+    #             "all_response_headers": headers_dict,
+    #             "response_body": body
+    #         }
+    #         _current_failed_network_calls.append(error_data)
+    #
+    # network.add_response_handler(callback=on_response_completed)
+        
     yield drv
-
+    
     logger.info("Test session finished. Closing browser.")
     drv.quit()
 
@@ -192,30 +267,37 @@ def pytest_runtest_makereport(item, call):
                     if match:
                         tc_num = int(match.group(1))
                         r_info[f"tc{tc_num}_status"] = "FAIL"
-                        for i in range(tc_num + 1, 7):
+                        
+                        # Apply block cascade depending on the execution flow (1-6 or 7-12)
+                        if tc_num <= 6:
+                            block_start, block_end = tc_num + 1, 7
+                        else:
+                            block_start, block_end = tc_num + 1, 13
+                            
+                        for i in range(block_start, block_end):
                             r_info[f"tc{i}_status"] = "BLOCKED"
                         with open(run_info_path, "w") as f:
                             json.dump(r_info, f, indent=4)
-                        logger.error(f"Execution Rule 1 Triggered: TC{tc_num} FAILED. Marked TC{tc_num + 1}-TC6 as BLOCKED.")
+                        logger.error(f"Execution Rule 1 Triggered: TC{tc_num} FAILED. Marked downstream tests as BLOCKED.")
             except Exception as e:
                 logger.error(f"Could not apply block rule to run_info: {e}")
 
-            # Capture failure screenshot
+            # Capture failure screenshot (only if the WebDriver session is still alive)
             if sm:
-                sm.capture(
-                    step_number=failed_step,
-                    description=step_descriptions.get(failed_step, "Unknown step"),
-                    is_failure=True,
-                )
-                logger.info("INFO - Failure screenshot captured.")
+                session_alive = False
+                try:
+                    _ = driver.window_handles  # lightweight probe
+                    session_alive = True
+                except Exception:
+                    logger.warning("WebDriver session is no longer active — skipping failure screenshot.")
 
-            # Capture network logs for failed step
-            logger.info("INFO - Capturing network request and response.")
-            nc = NetworkCapture(driver)
-            network_data = nc.capture_network_for_step(
-                step_number=failed_step,
-                run_dir=sm.get_run_dir() if sm else "reports",
-            )
+                if session_alive:
+                    sm.capture(
+                        step_number=failed_step,
+                        description=step_descriptions.get(failed_step, "Unknown step"),
+                        is_failure=True,
+                    )
+                    logger.info("INFO - Failure screenshot captured.")
 
             # --- Extract Failure Evidence to execution_reports/ ---
             safe_test_id = test_id.replace('-', '')
@@ -230,11 +312,30 @@ def pytest_runtest_makereport(item, call):
                     dest_shot = os.path.join(exec_reports_dir, f"{safe_test_id}_FAILURE_SCREENSHOT.png")
                     shutil.copy2(last_shot["path"], dest_shot)
                     
-            # Dump JSON Request/Response
-            if network_data and network_data.get("network_summary"):
-                json_dest = os.path.join(exec_reports_dir, f"{safe_test_id}_FAILED_Request_Response.json")
+            # Dump BiDi JSON Request/Response
+            global _current_failed_network_calls
+            if _current_failed_network_calls:
+                json_dest = os.path.join(exec_reports_dir, f"{item.name}_network_failure.json")
                 with open(json_dest, "w") as jf:
-                    json.dump(network_data["network_summary"], jf, indent=4)
+                    json.dump({
+                        "test_name": item.name,
+                        "failed_api_calls_count": len(_current_failed_network_calls),
+                        "failed_api_calls": _current_failed_network_calls
+                    }, jf, indent=4)
+                logger.info(f"INFO - Saved BiDi failed network calls to {json_dest}")
+                
+                # Format a fake network_data dict so docx report generator has something to print
+                network_data = {
+                    "total_requests": len(_current_failed_network_calls),
+                    "total_responses": len(_current_failed_network_calls),
+                    "network_summary": [{
+                        "url": c["request_url"],
+                        "method": "API_CALL",
+                        "status": c["http_status_code"],
+                        "statusText": c["status_text"],
+                        "responseHeaders": c["all_response_headers"]
+                    } for c in _current_failed_network_calls]
+                }
             # --------------------------------------------------------
 
             logger.info("INFO - Saving failure report.")
@@ -292,7 +393,21 @@ def pytest_sessionfinish(session, exitstatus):
         summary_lines = ["Final Execution Summary Report", "="*30, ""]
         counts = {"PASS": 0, "FAIL": 0, "BLOCKED": 0, "UNKNOWN": 0}
         
-        for i in range(1, 7):
+        # Determine whether to summarize 1-6 or 7-12 based on what was collected
+        # We can check which tests were run in the session
+        run_tcs = [item.name for item in session.items if hasattr(item, "name")]
+        has_manual = any("tc01" in name or "tc02" in name for name in run_tcs)
+        has_gcp = any("tc07" in name or "tc08" in name for name in run_tcs)
+        
+        tc_range = []
+        if has_manual and not has_gcp:
+            tc_range = range(1, 7)
+        elif has_gcp and not has_manual:
+            tc_range = range(7, 13)
+        else:
+            tc_range = range(1, 13)
+            
+        for i in tc_range:
             tc_id = f"tc{i}"
             status = r_info.get(f"{tc_id}_status", "BLOCKED") # Default to blocked if missing due to fail-fast
             summary_lines.append(f"TC{i} : {status}")
@@ -304,7 +419,7 @@ def pytest_sessionfinish(session, exitstatus):
         summary_lines.extend([
             "",
             "-"*30,
-            f"Total Test Cases: 6",
+            f"Total Test Cases: {len(tc_range)}",
             f"Passed Test Cases: {counts.get('PASS', 0)}",
             f"Failed Test Cases: {counts.get('FAIL', 0)}",
             f"Blocked Test Cases: {counts.get('BLOCKED', 0)}",

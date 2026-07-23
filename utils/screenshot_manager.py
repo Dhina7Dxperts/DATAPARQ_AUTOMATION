@@ -28,7 +28,7 @@ class ScreenshotManager:
         Capture a screenshot for a given step.
         Returns absolute path to the saved screenshot.
         """
-        prefix = "FAIL" if is_failure else "Step"
+        prefix = "FAIL" if is_failure else "PASS"
         filename = f"{prefix}_{step_number:02d}.png"
         path = os.path.abspath(os.path.join(self.run_dir, filename))
         try:

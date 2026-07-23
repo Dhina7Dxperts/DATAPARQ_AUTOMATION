@@ -12,24 +12,26 @@ STEP_DESCRIPTIONS = {
     1: "Navigate to Data Governance",
     2: "Open Upload Section",
     3: "Search for Workflow Created in TC1",
-    4: "Upload Same File Again",
-    5: "Validate Validate Button Behavior",
-    6: "Validate Uploaded File",
-    7: "Validate Submit Button Behavior",
-    8: "Submit File",
-    9: "Validate Historical Upload Status",
+    4: "Search and Select the Exact Workflow",
+    5: "Upload Same File Again",
+    6: "Validate Validate Button Behavior",
+    7: "Validate Uploaded File",
+    8: "Validate Submit Button Behavior",
+    9: "Submit File",
+    10: "Validate Historical Upload Status",
 }
 
 STEP_EXPECTED = {
     1: "Data Governance page loads successfully.",
     2: "Upload page opens successfully.",
-    3: "Workflow appears in search results and can be selected.",
-    4: "File upload completes successfully.",
-    5: "Validate button is disabled initially, then enabled after upload.",
-    6: "Success message 'File Validated Successfully' appears.",
-    7: "Submit button is disabled initially, then enabled after validation.",
-    8: "Success message 'File Submitted Successfully' appears.",
-    9: "Historical Upload Status is updated with success state.",
+    3: "Workflow name entered in search box.",
+    4: "Only the EXACT matching workflow is selected.",
+    5: "File upload completes successfully.",
+    6: "Validate button is disabled initially, then enabled after upload.",
+    7: "Success message 'File Validated Successfully' appears.",
+    8: "Submit button is disabled initially, then enabled after validation.",
+    9: "Success message 'File Submitted Successfully' appears.",
+    10: "Historical Upload Status is updated with success state.",
 }
 
 def _record(step_tracker, screenshot_manager, step_num: int, actual: str, status: str = "PASS", error: str = ""):
@@ -55,7 +57,7 @@ def test_tc02_data_governance_reupload_flow(driver, upload_file_path, step_track
     # ── Check Prerequisites ───────────────────────────────────────────────────
     if not os.path.exists("run_info.json"):
         pytest.skip(
-            "TC2 Skipped: TC1 failed, therefore the required uploaded file is "
+            "TC2 BLOCKED: TC1 failed, therefore the required uploaded file is "
             "unavailable for re-upload validation."
         )
 
@@ -63,17 +65,17 @@ def test_tc02_data_governance_reupload_flow(driver, upload_file_path, step_track
         run_info = json.load(f)
 
     if run_info.get("tc1_status") != "PASS":
-        pytest.skip("TC2 Skipped: TC1 failed. Browser session terminated without executing TC2.")
+        pytest.skip("TC2 BLOCKED: TC1 failed. Browser session terminated without executing TC2.")
 
     workflow_name = run_info.get("workflow_name")
     if not workflow_name:
-        pytest.skip("TC2 Skipped: Workflow name from TC1 is missing.")
+        pytest.skip("TC2 BLOCKED: Workflow name from TC1 is missing.")
 
     # ── Retrieve TC1 file path — no hardcoding, no manual selection ───────────
     tc1_file_path = run_info.get("file_path")
     tc1_file_name = run_info.get("file_name")
     if not tc1_file_path or not os.path.exists(tc1_file_path):
-        pytest.skip(f"TC2 Skipped: TC1 upload file not found at '{tc1_file_path}'.")
+        pytest.skip(f"TC2 BLOCKED: TC1 upload file not found at '{tc1_file_path}'.")
 
     logger.info(f"TC1 Dependency Met. Workflow: '{workflow_name}' | File: '{tc1_file_path}'")
     logger.info(f"Reusing TC1 file → name: '{tc1_file_name}', path: '{tc1_file_path}'")
@@ -113,49 +115,53 @@ def test_tc02_data_governance_reupload_flow(driver, upload_file_path, step_track
 
     # ── Step 3: Search for Workflow ───────────────────────────────────────────
     step_tracker["current"] = 3
+    # Just enter the workflow name (Step 3)
     dg_page.search_workflow(workflow_name)
-    dg_page.validate_workflow_exists(workflow_name)
-    dg_page.open_workflow(workflow_name)
-    _record(step_tracker, screenshot_manager, 3, f"Workflow '{workflow_name}' selected from search.")
+    _record(step_tracker, screenshot_manager, 3, f"Searched for workflow '{workflow_name}'.")
 
-    # ── Step 5a: Validate Validate button disabled ─────────────────────────────
-    step_tracker["current"] = 5
+    # ── Step 4: Search and Select the Exact Workflow ──────────────────────────
+    step_tracker["current"] = 4
+    dg_page.search_and_select_exact_workflow(workflow_name)
+    _record(step_tracker, screenshot_manager, 4, f"Exactly matching workflow '{workflow_name}' selected from search.")
+
+    # ── Step 6a: Validate Validate button disabled ─────────────────────────────
+    step_tracker["current"] = 6
     dg_page.validate_validate_button_disabled()
 
-    # ── Step 4: Upload Same File Again ─────────────────────────────────────────
-    step_tracker["current"] = 4
+    # ── Step 5: Upload Same File Again ─────────────────────────────────────────
+    step_tracker["current"] = 5
     dg_page.upload_file(tc1_file_path)
-    _record(step_tracker, screenshot_manager, 4, f"File '{tc1_file_name}' re-uploaded (same as TC1).")
+    _record(step_tracker, screenshot_manager, 5, f"File '{tc1_file_name}' re-uploaded (same as TC1).")
     logger.info(f"PASS - Same file reused successfully. File: '{tc1_file_name}'")
 
-    # ── Step 5b: Validate Validate button enabled ──────────────────────────────
-    step_tracker["current"] = 5
+    # ── Step 6b: Validate Validate button enabled ──────────────────────────────
+    step_tracker["current"] = 6
     dg_page.validate_validate_button()
-    _record(step_tracker, screenshot_manager, 5, "Validate button enabled after file upload.")
+    _record(step_tracker, screenshot_manager, 6, "Validate button enabled after file upload.")
 
-    # ── Step 7a: Validate Submit button disabled ───────────────────────────────
-    step_tracker["current"] = 7
+    # ── Step 8a: Validate Submit button disabled ───────────────────────────────
+    step_tracker["current"] = 8
     dg_page.validate_submit_button_disabled()
 
-    # ── Step 6: Validate Uploaded File ─────────────────────────────────────────
-    step_tracker["current"] = 6
-    dg_page.click_validate()
-    _record(step_tracker, screenshot_manager, 6, "File validated successfully.")
-
-    # ── Step 7b: Validate Submit button enabled ────────────────────────────────
+    # ── Step 7: Validate Uploaded File ─────────────────────────────────────────
     step_tracker["current"] = 7
-    dg_page.validate_submit_button()
-    _record(step_tracker, screenshot_manager, 7, "Submit button enabled after validation.")
+    dg_page.click_validate()
+    _record(step_tracker, screenshot_manager, 7, "File validated successfully.")
 
-    # ── Step 8: Submit File ────────────────────────────────────────────────────
+    # ── Step 8b: Validate Submit button enabled ────────────────────────────────
     step_tracker["current"] = 8
-    dg_page.click_submit()
-    _record(step_tracker, screenshot_manager, 8, "File submitted successfully.")
+    dg_page.validate_submit_button()
+    _record(step_tracker, screenshot_manager, 8, "Submit button enabled after validation.")
 
-    # ── Step 9: Validate Historical Upload Status ──────────────────────────────
+    # ── Step 9: Submit File ────────────────────────────────────────────────────
     step_tracker["current"] = 9
+    dg_page.click_submit()
+    _record(step_tracker, screenshot_manager, 9, "File submitted successfully.")
+
+    # ── Step 10: Validate Historical Upload Status ──────────────────────────────
+    step_tracker["current"] = 10
     dg_page.validate_historical_upload_status()
-    _record(step_tracker, screenshot_manager, 9, "Historical Upload Status updated.")
+    _record(step_tracker, screenshot_manager, 10, "Historical Upload Status updated.")
 
     logger.info("TC02 TEST PASSED ✅")
     

@@ -102,16 +102,48 @@ class DataLakehouseWorkflowPage:
         from selenium.webdriver.common.keys import Keys
         from selenium.common.exceptions import StaleElementReferenceException
         try:
+            # Wait for any potential spinner to clear before searching
+            try:
+                spinner_xpath = "//*[contains(@class, 'k-loading-mask') or contains(@class, 'spinner') or contains(@class, 'loader')]"
+                WebDriverWait(self.driver, 5).until(EC.visibility_of_element_located((By.XPATH, spinner_xpath)))
+                WebDriverWait(self.driver, 60).until(EC.invisibility_of_element_located((By.XPATH, spinner_xpath)))
+            except Exception:
+                pass
+                
+            long_wait = WebDriverWait(self.driver, 30)
+            
+            search_box_locators = [
+                self.search_box,
+                (By.XPATH, "//input[@placeholder='Search' or @placeholder='search']"),
+                (By.XPATH, "//input[contains(@class,'k-input-inner')]"),
+                (By.XPATH, "//input[@type='search']"),
+                (By.XPATH, "//input[@type='text'][contains(@class,'k-input')]")
+            ]
+            
             for attempt in range(3):
                 try:
-                    search_input = self.wait.until(EC.element_to_be_clickable(self.search_box))
+                    search_input = None
+                    for loc in search_box_locators:
+                        try:
+                            search_input = long_wait.until(EC.element_to_be_clickable(loc))
+                            if search_input:
+                                break
+                        except Exception:
+                            continue
+                            
+                    if not search_input:
+                        raise Exception("Search box could not be found with any locator.")
+                        
+                    self.driver.execute_script("arguments[0].click();", search_input)
+                    self.driver.execute_script("arguments[0].value = '';", search_input)
                     search_input.clear()
                     search_input.send_keys(workflow_name)
                     time.sleep(1) # wait for dropdown
-                    # Re-locate to prevent StaleElementReferenceException if Kendo re-rendered it during typing
-                    search_input = self.wait.until(EC.element_to_be_clickable(self.search_box))
+                    
+                    # Re-locate to prevent StaleElementReferenceException
+                    search_input = long_wait.until(EC.element_to_be_clickable(loc))
                     search_input.send_keys(Keys.ENTER) # press enter to close dropdown and filter grid
-                    time.sleep(1.5) # wait for grid to update
+                    time.sleep(2) # wait for grid to update
                     break
                 except StaleElementReferenceException:
                     if attempt == 2:

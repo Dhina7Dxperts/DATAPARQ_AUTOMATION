@@ -37,7 +37,11 @@ class LoginPage:
         
     def wait_for_dashboard(self):
         try:
-            self.wait.until(EC.visibility_of_element_located(self.dashboard_indicator))
+            # 1. Wait for the login page to go away (Sign In button disappears)
+            self.wait.until(EC.invisibility_of_element_located(self.login_btn_locator))
+            # 2. Wait for the dashboard to load (look for "Dashboard" text instead of "Welcome", since "Welcome" is on the login page)
+            dashboard_locator = (By.XPATH, "//*[contains(translate(text(), 'DASHBOARD', 'dashboard'), 'dashboard')]")
+            self.wait.until(EC.visibility_of_element_located(dashboard_locator))
             # Verify login successful
             assert True
         except Exception as e:

@@ -289,6 +289,53 @@ class IngestPage:
                 f"Popup may not have opened. Result={opened}. {e}"
             )
 
+    def select_workflow_day(self, day: str = "1st"):
+        """Select Workflow Day from the dropdown."""
+        try:
+            # Click the dropdown icon or input
+            self.driver.execute_script("""
+                var input = document.getElementById('scheduleDay');
+                if (input) {
+                    var wrapper = input.closest('.k-combobox, .k-dropdownlist, .k-picker') || input.parentElement;
+                    var btn = wrapper.querySelector('button, .k-select');
+                    if (btn) { btn.click(); } else { input.click(); }
+                }
+            """)
+            
+            option_xpath = (
+                f"//*[contains(@class,'k-popup') or contains(@class,'k-animation-container') or "
+                f"contains(@class,'k-list-container')]"
+                f"//*[@role='option' or contains(@class,'k-list-item') or contains(@class,'k-item')]"
+                f"[normalize-space(.)='{day}' or contains(.,'{day}')]"
+            )
+            option = self.wait.until(EC.presence_of_element_located((By.XPATH, option_xpath)))
+            self.driver.execute_script("arguments[0].scrollIntoView({block:'center'});", option)
+            self.driver.execute_script("arguments[0].click();", option)
+            logger.info(f"INFO - Workflow Day '{day}' selected.")
+        except Exception as e:
+            pytest.fail(f"FAIL: Could not select Workflow Day '{day}'. {e}")
+
+    def select_current_time(self):
+        """Click the clock icon next to Time field and click 'Now'."""
+        try:
+            # 1. Click the clock icon
+            self.driver.execute_script("""
+                var input = document.getElementById('runtime_utc');
+                if (input) {
+                    var wrapper = input.closest('.k-timepicker, .k-picker') || input.parentElement;
+                    var btn = wrapper.querySelector('button, .k-select, svg, .k-input-button');
+                    if (btn) { btn.click(); } else { input.click(); }
+                }
+            """)
+                
+            # 2. Click the 'Now' button in the popup
+            now_btn_xpath = "//*[contains(@class,'k-popup') or contains(@class,'k-animation-container')]//button[contains(translate(normalize-space(.), 'NOW', 'now'), 'now')]"
+            now_btn = self.wait.until(EC.element_to_be_clickable((By.XPATH, now_btn_xpath)))
+            self.driver.execute_script("arguments[0].click();", now_btn)
+            logger.info("INFO - Current time ('Now') selected.")
+        except Exception as e:
+            pytest.fail(f"FAIL: Could not select current time. {e}")
+
     # ── Step 24: Enter Expected Runtime ───────────────────────────────────────
 
     def enter_expected_runtime(self, value: str = "5"):

@@ -2,6 +2,8 @@ import os
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import StaleElementReferenceException, ElementClickInterceptedException
+import time
 from utils.logger import get_logger
 import pytest
 
@@ -77,6 +79,115 @@ class DataLakehousePage:
             self.wait.until(EC.element_to_be_clickable(self.governance_tab)).click()
         except Exception as e:
             pytest.fail(f"FAIL: Could not select Governance tab. {e}")
+            
+    def click_cloud_storage(self):
+        try:
+            self.wait.until(EC.element_to_be_clickable(self.cloud_storage_tab)).click()
+        except Exception as e:
+            pytest.fail(f"FAIL: Could not select Cloud Storage tab. {e}")
+
+    def select_gcp_source(self):
+        try:
+            gcp_locator = (By.XPATH, "//span[translate(normalize-space(text()), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')='google cloud platform']")
+            self.wait.until(EC.element_to_be_clickable(gcp_locator)).click()
+        except Exception as e:
+            pytest.fail(f"FAIL: Could not select GCP. {e}")
+
+    def click_existing_connection(self):
+        try:
+            existing_locator = (By.XPATH, "//label[@aria-label='Existing' or normalize-space(text())='Existing']")
+            self.wait.until(EC.element_to_be_clickable(existing_locator)).click()
+        except Exception as e:
+            pytest.fail(f"FAIL: Could not click Existing connection option. {e}")
+
+    def select_connection_name(self, connection_name):
+        try:
+            dropdown_locator = (By.XPATH, "//span[contains(@class, 'k-input-value-text') and contains(text(), 'Please Select')]")
+            self.wait.until(EC.element_to_be_clickable(dropdown_locator)).click()
+            
+            import time
+            time.sleep(1)
+            item_locator = (By.XPATH, f"//li[contains(@class, 'k-list-item')]//span[text()='{connection_name}']")
+            self.wait.until(EC.element_to_be_clickable(item_locator)).click()
+        except Exception as e:
+            pytest.fail(f"FAIL: Could not select connection name {connection_name}. {e}")
+
+    def click_submit(self):
+        try:
+            submit_locator = (By.XPATH, "//button[.//span[text()='Submit']]")
+            for _ in range(5):
+                try:
+                    self.wait.until(EC.element_to_be_clickable(submit_locator)).click()
+                    return
+                except (StaleElementReferenceException, ElementClickInterceptedException):
+                    time.sleep(1)
+            # Try one last time and let the exception bubble up if it fails
+            self.wait.until(EC.element_to_be_clickable(submit_locator)).click()
+        except Exception as e:
+            pytest.fail(f"FAIL: Could not click Submit. {e}")
+
+    def enter_folder_name(self, folder_name):
+        try:
+            folder_input = (By.ID, "folder_name")
+            self.wait.until(EC.visibility_of_element_located(folder_input)).send_keys(folder_name)
+        except Exception as e:
+            pytest.fail(f"FAIL: Could not enter folder name. {e}")
+
+    def select_each_file_is_an_entity(self):
+        try:
+            radio_locator = (By.XPATH, "//input[@value='file_entity']")
+            self.wait.until(EC.element_to_be_clickable(radio_locator)).click()
+        except Exception as e:
+            pytest.fail(f"FAIL: Could not select file entity option. {e}")
+
+    def click_scan(self):
+        try:
+            scan_locator = (By.XPATH, "//span[contains(text(), 'SCAN') or contains(text(), 'Scan')]")
+            self.wait.until(EC.element_to_be_clickable(scan_locator)).click()
+        except Exception as e:
+            pytest.fail(f"FAIL: Could not click Scan. {e}")
+
+    def validate_file_exists(self, folder_name, file_name):
+        try:
+            # Wait longer for scan results to load
+            time.sleep(5)
+
+            # Try multiple locator strategies
+            locators = [
+                (By.XPATH, f"//input[@data-path='/{folder_name}/{file_name}']"),
+                (By.XPATH, f"//input[@data-path='{folder_name}/{file_name}']"),
+                (By.XPATH, f"//span[contains(text(), '{file_name}')]"),
+                (By.XPATH, f"//*[contains(text(), '{file_name}')]"),
+            ]
+
+            element = None
+            for loc in locators:
+                try:
+                    element = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(loc))
+                    logger.info(f"Found file element using locator: {loc}")
+                    break
+                except Exception:
+                    continue
+
+            if element is None:
+                # Dump HTML for debugging
+                import os
+                html_dump_path = os.path.join(os.getcwd(), "reports", "html_dumps", "step12_scan_result.html")
+                os.makedirs(os.path.dirname(html_dump_path), exist_ok=True)
+                with open(html_dump_path, "w", encoding="utf-8") as f:
+                    f.write(self.driver.page_source)
+                logger.info(f"DEBUG: Page HTML dumped to {html_dump_path} — inspect to find correct locator")
+                pytest.fail(f"FAIL: Could not find file '{file_name}' under '{folder_name}' in scan results. HTML dumped to {html_dump_path}")
+
+            # If it's a checkbox/radio, click it if not selected
+            try:
+                if element.tag_name == "input" and not element.is_selected():
+                    self.driver.execute_script("arguments[0].click();", element)
+            except Exception:
+                pass  # Not a checkbox, just visibility check is enough
+
+        except Exception as e:
+            pytest.fail(f"FAIL: Could not find or select file {file_name} under {folder_name}. {e}")
             
     def wait_for_upload_page(self):
         try:

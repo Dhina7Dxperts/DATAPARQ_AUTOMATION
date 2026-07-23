@@ -46,21 +46,21 @@ def test_tc03_verify_upload_file_in_monitor(driver, step_tracker, screenshot_man
     logger.info("Starting TC-03 Verify upload file in Monitor Module")
     
     # Check dependencies (TC1 & TC2 must have passed)
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     run_info_path = os.path.join(base_dir, "run_info.json")
 
     if not os.path.exists(run_info_path):
-        pytest.skip("TC3 Skipped: run_info.json not found. TC1 and TC2 must run first.")
+        pytest.skip("TC3 BLOCKED: run_info.json not found. TC1 and TC2 must run first.")
 
     with open(run_info_path, "r") as f:
         run_info = json.load(f)
 
     if run_info.get("tc2_status") != "PASS":
-        pytest.skip("TC3 Skipped: TC2 failed or did not run. Browser session terminated without executing TC3.")
+        pytest.skip("TC3 BLOCKED: TC2 failed or did not run. Browser session terminated without executing TC3.")
 
     workflow_name = run_info.get("workflow_name")
     if not workflow_name:
-        pytest.skip("TC3 Skipped: Domain Name (workflow_name) from TC1 is missing.")
+        pytest.skip("TC3 BLOCKED: Domain Name (workflow_name) from TC1 is missing.")
 
     step_tracker["test_id"] = TEST_ID
     step_tracker["descriptions"] = STEP_DESCRIPTIONS

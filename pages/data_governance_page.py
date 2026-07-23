@@ -79,6 +79,51 @@ class DataGovernancePage:
         except Exception as e:
             pytest.fail(f"FAIL: Unable to click/open workflow '{workflow_name}'. {e}")
 
+    def search_and_select_exact_workflow(self, workflow_name):
+        """
+        1. Enter the workflow name in the search box.
+        2. Wait for the search results to load in the workflow grid.
+        3. Verify that the exact workflow name provided in the test data appears in the grid.
+        4. Select ONLY the workflow whose name exactly matches.
+        5. Do not select workflows with similar names, partial matches, prefixes, suffixes, etc.
+        6. Fail if exact match is not found.
+        """
+        try:
+            # 1. Search
+            search = self.wait.until(EC.presence_of_element_located(self.search_box))
+            search.clear()
+            search.send_keys(workflow_name)
+            time.sleep(3) # Wait for debounce and grid to update
+            logger.info(f"Searched for exact workflow: {workflow_name}")
+            
+            # 2 & 3. Find EXACT match elements based on string matching (not partial)
+            exact_match_xpath = f"//*[normalize-space(text())='{workflow_name}']"
+            
+            try:
+                exact_elements = self.wait.until(EC.presence_of_all_elements_located((By.XPATH, exact_match_xpath)))
+            except Exception:
+                pytest.fail(f"FAIL: Workflow with EXACT name '{workflow_name}' was not found in the search results.")
+            
+            # 4 & 5. Filter out anything that isn't a 100% exact match
+            matching_elements = [el for el in exact_elements if el.text.strip() == workflow_name]
+            
+            # 6. Mark FAILED if exact match isn't found
+            if not matching_elements:
+                pytest.fail(f"FAIL: Searched for '{workflow_name}', but could not find an exact matching workflow. Similar/partial matches were rejected.")
+            
+            # Select the exact match
+            target_element = matching_elements[0]
+            
+            self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", target_element)
+            self.wait.until(EC.element_to_be_clickable(target_element))
+            self.driver.execute_script("arguments[0].click();", target_element)
+            time.sleep(2) # Give UI time to transition
+            logger.info(f"Successfully selected EXACT workflow: {workflow_name}")
+            
+        except Exception as e:
+            pytest.fail(f"FAIL: Unable to search and select exact workflow '{workflow_name}'. {e}")
+
+
     def _is_button_disabled(self, element) -> bool:
         classes = element.get_attribute("class") or ""
         class_list = classes.split()

@@ -1,10 +1,8 @@
 import pytest
 import os
 import json
-import logging
 from pages.monitor_page import MonitorPage
 from utils.logger import get_logger
-from utils.screenshot_manager import ScreenshotManager
 
 logger = get_logger("TC05")
 
@@ -41,20 +39,20 @@ def _record(tracker, sm, step_num, actual, status="PASS", error=None):
 def test_tc05_validate_task_status(driver, step_tracker, screenshot_manager):
     logger.info("Starting TC-05 Validate Data Quality and Data Lake Task Completion Status")
     
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     run_info_path = os.path.join(base_dir, "run_info.json")
     if not os.path.exists(run_info_path):
-        pytest.skip("run_info.json not found. Ensure TC3 runs first.")
+        pytest.skip("BLOCKED: run_info.json not found. Ensure TC3 runs first.")
         
     with open(run_info_path, "r") as f:
         run_info = json.load(f)
         
     # Test Dependency Rule
     if run_info.get("tc3_status") != "PASS":
-        pytest.skip("TC3 did not pass. Skipping TC5 as per preconditions.")
+        pytest.skip("TC3 did not pass. Blocking TC5 as per preconditions.")
         
     if run_info.get("tc4_status") != "PASS":
-        pytest.skip("TC4 did not pass. Skipping TC5 as it requires successful deployment.")
+        pytest.skip("TC4 did not pass. Blocking TC5 as it requires successful deployment.")
         
     workflow_name = run_info.get("workflow_name")
     if not workflow_name:

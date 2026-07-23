@@ -65,18 +65,16 @@ def _record(tracker, sm, step_num, actual, status="PASS", error=None):
 def test_tc04_data_lakehouse_workflow(driver, step_tracker, screenshot_manager, upload_file_path):
     logger.info("Starting TC-04 Validate Data Lakehouse Workflow Creation")
     
-    import json
-    import os
-    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     run_info_path = os.path.join(base_dir, "run_info.json")
     if not os.path.exists(run_info_path):
-        pytest.skip("run_info.json not found. Ensure TC3 runs first.")
+        pytest.skip("BLOCKED: run_info.json not found. Ensure TC3 runs first.")
         
     with open(run_info_path, "r") as f:
         run_info = json.load(f)
         
     if run_info.get("tc3_status") != "PASS":
-        pytest.skip("TC3 did not pass. Skipping TC4 as per preconditions.")
+        pytest.skip("TC3 did not pass. Blocking TC4 as per preconditions.")
         
     workflow_name = run_info.get("workflow_name")
     if not workflow_name:
