@@ -103,18 +103,9 @@ def test_TC09_data_lakehouse_workflow(driver, step_tracker, screenshot_manager, 
     # ── Handle standalone execution (Login if necessary) ──────────────────────
     from pages.login_page import LoginPage
     login_page = LoginPage(driver)
-    
-    # If the current URL is not the app, navigate there
-    if "7dxperts" not in driver.current_url.lower() and "dataparq" not in driver.current_url.lower():
-        logger.info("Fresh session detected. Navigating to base URL and logging in...")
-        login_page.navigate()
-        login_page.login()
-    else:
-        # We are already in the app. Just to be safe, if on login page, log in.
-        from selenium.webdriver.common.by import By
-        if driver.find_elements(By.XPATH, "//input[@name='username' or @id='username' or @aria-label='Username']"):
-            logger.info("Session active but found login screen. Logging in...")
-            login_page.login()
+    login_page.login_if_needed()
+    logger.info("INFO - Login check completed.")
+
 
     dl_workflow_page = DataLakehouseWorkflowPage(driver)
 

@@ -93,11 +93,9 @@ def test_tc01_governance_file_upload_flow(driver, upload_file_path, step_tracker
     config_page = ConfigPage(driver)
     ingest_page = IngestPage(driver)
 
-    # ── Step 1: Login ──────────────────────────────────────────────────────────
+    # ── Step 1: Login (skipped if already authenticated in suite execution) ──
     step_tracker["current"] = 1
-    login_page.navigate()
-    login_page.login()
-    login_page.wait_for_dashboard()
+    login_page.login_if_needed()
     # No screenshot for login page
     step_tracker["results"].append({
         "step": 1,
@@ -108,6 +106,7 @@ def test_tc01_governance_file_upload_flow(driver, upload_file_path, step_tracker
         "error": "",
     })
     logger.info("INFO - Step 1 completed. Login successful.")
+
 
     # ── Step 2: Navigate to ParQ Your Data ────────────────────────────────────
     step_tracker["current"] = 2

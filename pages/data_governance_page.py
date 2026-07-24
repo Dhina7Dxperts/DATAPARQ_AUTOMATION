@@ -369,15 +369,9 @@ class DataGovernancePage:
             download_xpath = "//a[.//div[contains(translate(normalize-space(text()), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'download rejected')]]"
             download_btn = self.wait.until(EC.presence_of_element_located((By.XPATH, download_xpath)))
             
-            # Extract the href to guarantee download without relying on JS click bubbling
-            href = download_btn.get_attribute("href")
-            if href:
-                logger.info(f"Triggering download directly via href: {href}")
-                self.driver.get(href)
-            else:
-                logger.info("No href found, falling back to native click.")
-                self.wait.until(EC.element_to_be_clickable((By.XPATH, download_xpath))).click()
-                
-            logger.info("Clicked 'Download Rejected' button.")
+            # Execute JS click to ensure it triggers the SPA's download handler (which might attach auth tokens)
+            self.driver.execute_script("arguments[0].scrollIntoView({block:'center'}); arguments[0].click();", download_btn)
+            logger.info("Clicked 'Download Rejected' button via JS click.")
+
         except Exception as e:
             pytest.fail(f"FAIL: Could not click Download Rejected button. {e}")

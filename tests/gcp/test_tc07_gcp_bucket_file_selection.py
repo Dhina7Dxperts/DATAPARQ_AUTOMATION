@@ -105,11 +105,9 @@ def test_tc07_gcp_bucket_file_selection_flow(driver, upload_file_path, setup_tes
     config_page = ConfigPage(driver)
     ingest_page = IngestPage(driver)
 
-    # ── Step 1: Login
+    # ── Step 1: Login (skipped if already authenticated in suite execution) ──
     step_tracker["current"] = 1
-    login_page.navigate()
-    login_page.login()
-    login_page.wait_for_dashboard()
+    login_page.login_if_needed()
     step_tracker["results"].append({
         "step": 1,
         "description": STEP_DESCRIPTIONS[1],
@@ -119,6 +117,7 @@ def test_tc07_gcp_bucket_file_selection_flow(driver, upload_file_path, setup_tes
         "error": "",
     })
     logger.info("INFO - Step 1 completed. Login successful.")
+
 
     # ── Step 2: Navigate to ParQ Your Data
     step_tracker["current"] = 2
@@ -182,11 +181,11 @@ def test_tc07_gcp_bucket_file_selection_flow(driver, upload_file_path, setup_tes
     _record(step_tracker, screenshot_manager, 11, "Scan button clicked")
     logger.info("INFO - Step 11 completed. Scan clicked.")
 
-    # ── Step 12: Validate file exists
+    # ── Step 12: Select Source File
     step_tracker["current"] = 12
-    lakehouse_page.validate_file_exists("testing", gcp_file_name)
-    _record(step_tracker, screenshot_manager, 12, f"Expected file '{gcp_file_name}' exists under 'testing' folder")
-    logger.info("INFO - Step 12 completed. File validation passed.")
+    lakehouse_page.select_specific_source_file("testing", gcp_file_name)
+    _record(step_tracker, screenshot_manager, 12, f"Specific file '{gcp_file_name}' was selected successfully, ignoring other files")
+    logger.info("INFO - Step 12 completed. Specific source file selected.")
 
     # ── Step 13: Validate Next button and proceed
     step_tracker["current"] = 13

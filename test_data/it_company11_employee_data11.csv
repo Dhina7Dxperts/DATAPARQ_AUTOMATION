@@ -1,0 +1,1001 @@
+Employee_ID,Full_Name,Email,Department,Job_Title,Employment_Type,Work_Mode,Country,City,Joining_Date,Salary,Currency,Performance_Rating,Projects_Completed
+EMP-10001,Ananya Smith,ananya.smith74@itcompany.com,Quality Assurance,QA Lead,Part-Time,Remote,India,Hyderabad,2024-12-20,2964186,INR,Exceeds Expectations,18
+EMP-10002,Chris Taylor,chris.taylor66@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,Remote,India,Hyderabad,2019-02-06,1392994,INR,Needs Improvement,22
+EMP-10003,Chris Smith,chris.smith36@itcompany.com,Cybersecurity,Security Engineer,Contract,Hybrid,UK,London,2026-05-14,56829,GBP,Meets Expectations,24
+EMP-10004,Alex Singh,alex.singh81@itcompany.com,Quality Assurance,Automation Engineer,Full-Time,Hybrid,USA,Austin,2025-03-26,116135,USD,Exceeds Expectations,10
+EMP-10005,Aarav Johnson,aarav.johnson56@itcompany.com,Cybersecurity,CISO,Part-Time,Hybrid,India,Hyderabad,2024-03-21,3290672,INR,Exceeds Expectations,14
+EMP-10006,David Anderson,david.anderson72@itcompany.com,Cybersecurity,Security Engineer,Contract,On-Site,Germany,Berlin,2023-10-03,78946,EUR,Exceeds Expectations,19
+EMP-10007,Amit Nair,amit.nair16@itcompany.com,Product Management,Associate Product Manager,Full-Time,Hybrid,Germany,Berlin,2023-05-29,137953,EUR,Meets Expectations,4
+EMP-10008,Sam Miller,sam.miller79@itcompany.com,Data & AI,BI Developer,Full-Time,On-Site,Germany,Berlin,2024-02-24,77892,EUR,Exceeds Expectations,13
+EMP-10009,Morgan Reddy,morgan.reddy47@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Remote,India,Bengaluru,2025-05-09,1410972,INR,Exceeds Expectations,16
+EMP-10010,Jordan Reddy,jordan.reddy43@itcompany.com,Product Management,Director of Product,Contract,On-Site,Singapore,Singapore,2022-11-14,116558,SGD,Exceeds Expectations,2
+EMP-10011,Pooja Smith,pooja.smith68@itcompany.com,IT Infrastructure,System Administrator,Part-Time,On-Site,Singapore,Singapore,2020-11-26,74682,SGD,Outstanding,6
+EMP-10012,Morgan Miller,morgan.miller18@itcompany.com,Product Management,Product Manager,Full-Time,Hybrid,Singapore,Singapore,2020-03-08,128991,SGD,Exceeds Expectations,5
+EMP-10013,Sam Kumar,sam.kumar21@itcompany.com,Software Engineering,Frontend Developer,Full-Time,On-Site,India,Hyderabad,2020-10-12,703375,INR,Meets Expectations,25
+EMP-10014,Sarah Verma,sarah.verma95@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,Remote,UK,London,2021-07-07,61777,GBP,Meets Expectations,25
+EMP-10015,Chris Nair,chris.nair79@itcompany.com,Cloud & DevOps,Cloud Architect,Part-Time,On-Site,India,Pune,2021-04-05,1554138,INR,Meets Expectations,6
+EMP-10016,Vikram Taylor,vikram.taylor49@itcompany.com,Quality Assurance,Automation Engineer,Part-Time,Remote,Germany,Berlin,2020-03-16,69641,EUR,Needs Improvement,4
+EMP-10017,Taylor Singh,taylor.singh16@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Remote,UK,London,2023-09-22,55598,GBP,Meets Expectations,10
+EMP-10018,Sam Smith,sam.smith25@itcompany.com,Cybersecurity,CISO,Part-Time,Remote,India,Pune,2023-10-30,2068160,INR,Meets Expectations,11
+EMP-10019,Sam Anderson,sam.anderson39@itcompany.com,Product Management,Associate Product Manager,Full-Time,Remote,Germany,Berlin,2025-04-05,91361,EUR,Needs Improvement,18
+EMP-10020,Rohan Jones,rohan.jones92@itcompany.com,Cloud & DevOps,Cloud Architect,Part-Time,Remote,India,Bengaluru,2020-06-14,3367837,INR,Exceeds Expectations,5
+EMP-10021,Sneha Iyer,sneha.iyer59@itcompany.com,Data & AI,AI/ML Engineer,Contract,Remote,Germany,Berlin,2021-06-02,57268,EUR,Meets Expectations,9
+EMP-10022,Sam Miller,sam.miller63@itcompany.com,Data & AI,AI/ML Engineer,Part-Time,Hybrid,India,Pune,2023-05-29,1382357,INR,Meets Expectations,17
+EMP-10023,Rahul Patel,rahul.patel37@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,Hybrid,India,Hyderabad,2022-07-30,832628,INR,Outstanding,12
+EMP-10024,Sneha Johnson,sneha.johnson81@itcompany.com,Product Management,Product Owner,Full-Time,On-Site,India,Hyderabad,2024-03-26,899702,INR,Meets Expectations,19
+EMP-10025,Rahul Wilson,rahul.wilson26@itcompany.com,Software Engineering,Backend Engineer,Full-Time,Hybrid,India,Hyderabad,2019-03-11,576722,INR,Exceeds Expectations,24
+EMP-10026,Sneha Patel,sneha.patel74@itcompany.com,Data & AI,Data Scientist,Full-Time,Hybrid,India,Hyderabad,2019-10-24,997059,INR,Meets Expectations,1
+EMP-10027,Morgan Verma,morgan.verma63@itcompany.com,Software Engineering,Junior Developer,Full-Time,Remote,India,Hyderabad,2021-06-23,707992,INR,Meets Expectations,18
+EMP-10028,Emily Johnson,emily.johnson50@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Hybrid,India,Bengaluru,2024-10-25,902221,INR,Meets Expectations,14
+EMP-10029,Ananya Johnson,ananya.johnson74@itcompany.com,Product Management,Product Manager,Full-Time,Hybrid,Germany,Berlin,2018-08-25,128194,EUR,Exceeds Expectations,1
+EMP-10030,Pooja Smith,pooja.smith47@itcompany.com,Product Management,Associate Product Manager,Full-Time,Hybrid,USA,Austin,2024-07-26,132656,USD,Meets Expectations,11
+EMP-10031,Karthik Wilson,karthik.wilson17@itcompany.com,Product Management,Associate Product Manager,Full-Time,On-Site,India,Pune,2019-04-30,1356526,INR,Meets Expectations,12
+EMP-10032,Michael Gupta,michael.gupta13@itcompany.com,Cybersecurity,Penetration Tester,Contract,Hybrid,UK,London,2022-03-25,47841,GBP,Exceeds Expectations,22
+EMP-10033,Amit Nair,amit.nair33@itcompany.com,Quality Assurance,QA Tester,Full-Time,Hybrid,Germany,Berlin,2020-07-23,46531,EUR,Needs Improvement,18
+EMP-10034,Chris Brown,chris.brown43@itcompany.com,Data & AI,Data Engineer,Part-Time,Remote,India,Hyderabad,2018-06-05,1006212,INR,Meets Expectations,17
+EMP-10035,Alex Sharma,alex.sharma94@itcompany.com,IT Infrastructure,System Administrator,Full-Time,Hybrid,USA,San Francisco,2020-06-27,114508,USD,Meets Expectations,5
+EMP-10036,Taylor Johnson,taylor.johnson39@itcompany.com,Quality Assurance,Automation Engineer,Full-Time,Remote,UK,London,2022-01-10,55049,GBP,Meets Expectations,18
+EMP-10037,Chris Taylor,chris.taylor49@itcompany.com,Cloud & DevOps,DevOps Specialist,Contract,Remote,Germany,Berlin,2018-01-22,68228,EUR,Exceeds Expectations,17
+EMP-10038,Morgan Sharma,morgan.sharma91@itcompany.com,Cloud & DevOps,Cloud Engineer,Part-Time,Hybrid,USA,Austin,2026-03-14,87368,USD,Meets Expectations,24
+EMP-10039,Ananya Kumar,ananya.kumar78@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Contract,Hybrid,India,Bengaluru,2024-01-17,781442,INR,Outstanding,4
+EMP-10040,Priya Nair,priya.nair59@itcompany.com,Data & AI,BI Developer,Full-Time,Hybrid,USA,Austin,2026-04-09,108844,USD,Exceeds Expectations,7
+EMP-10041,Sneha Gupta,sneha.gupta47@itcompany.com,Quality Assurance,Automation Engineer,Contract,Remote,UK,London,2020-02-12,64477,GBP,Meets Expectations,20
+EMP-10042,Chris Brown,chris.brown55@itcompany.com,IT Infrastructure,IT Support Specialist,Part-Time,On-Site,India,Pune,2018-05-01,826696,INR,Meets Expectations,5
+EMP-10043,Sneha Kumar,sneha.kumar24@itcompany.com,Quality Assurance,QA Lead,Full-Time,Hybrid,India,Bengaluru,2022-02-16,2469401,INR,Meets Expectations,5
+EMP-10044,Michael Anderson,michael.anderson41@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,Hybrid,UK,London,2026-02-24,42396,GBP,Meets Expectations,20
+EMP-10045,Pooja Patel,pooja.patel54@itcompany.com,Cybersecurity,CISO,Part-Time,On-Site,India,Hyderabad,2020-10-08,2704401,INR,Exceeds Expectations,15
+EMP-10046,Emily Johnson,emily.johnson20@itcompany.com,Software Engineering,Junior Developer,Full-Time,Hybrid,Singapore,Singapore,2025-06-04,59814,SGD,Meets Expectations,14
+EMP-10047,David Wilson,david.wilson52@itcompany.com,Data & AI,AI/ML Engineer,Full-Time,Hybrid,Germany,Berlin,2020-03-15,75343,EUR,Meets Expectations,23
+EMP-10048,Jordan Johnson,jordan.johnson62@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,Remote,Germany,Berlin,2022-12-15,53361,EUR,Meets Expectations,11
+EMP-10049,Ananya Smith,ananya.smith44@itcompany.com,IT Infrastructure,Network Engineer,Part-Time,Remote,USA,Austin,2025-01-11,87575,USD,Meets Expectations,5
+EMP-10050,Sarah Patel,sarah.patel44@itcompany.com,Data & AI,BI Developer,Contract,On-Site,Singapore,Singapore,2022-06-25,46423,SGD,Meets Expectations,11
+EMP-10051,Morgan Smith,morgan.smith22@itcompany.com,Product Management,Director of Product,Full-Time,Hybrid,USA,San Francisco,2025-04-09,173312,USD,Meets Expectations,13
+EMP-10052,Sneha Kumar,sneha.kumar44@itcompany.com,Quality Assurance,QA Lead,Full-Time,Remote,USA,Austin,2024-06-29,214458,USD,Meets Expectations,25
+EMP-10053,Chris Miller,chris.miller53@itcompany.com,Software Engineering,Junior Developer,Full-Time,On-Site,USA,San Francisco,2025-05-30,87605,USD,Meets Expectations,25
+EMP-10054,Karthik Jones,karthik.jones75@itcompany.com,Data & AI,BI Developer,Part-Time,Remote,UK,London,2025-10-07,46149,GBP,Meets Expectations,1
+EMP-10055,Ananya Nair,ananya.nair52@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,On-Site,USA,San Francisco,2025-11-29,170559,USD,Meets Expectations,14
+EMP-10056,David Taylor,david.taylor81@itcompany.com,Cloud & DevOps,Cloud Engineer,Contract,Hybrid,India,Bengaluru,2018-07-02,838514,INR,Meets Expectations,17
+EMP-10057,Amit Miller,amit.miller94@itcompany.com,Product Management,Product Manager,Full-Time,Hybrid,UK,London,2024-10-20,106437,GBP,Meets Expectations,11
+EMP-10058,Rahul Sharma,rahul.sharma92@itcompany.com,Cybersecurity,Penetration Tester,Full-Time,Hybrid,India,Bengaluru,2020-11-05,1427518,INR,Meets Expectations,9
+EMP-10059,David Williams,david.williams48@itcompany.com,Cloud & DevOps,Cloud Engineer,Part-Time,Remote,Germany,Berlin,2025-08-25,79882,EUR,Exceeds Expectations,10
+EMP-10060,Chris Anderson,chris.anderson21@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,Hybrid,UK,London,2025-05-29,51128,GBP,Meets Expectations,3
+EMP-10061,Sarah Iyer,sarah.iyer42@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,On-Site,Germany,Berlin,2024-10-31,59079,EUR,Needs Improvement,8
+EMP-10062,Karthik Brown,karthik.brown75@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,On-Site,India,Pune,2021-01-13,1474634,INR,Meets Expectations,22
+EMP-10063,Alex Johnson,alex.johnson93@itcompany.com,Cybersecurity,Penetration Tester,Part-Time,On-Site,India,Pune,2025-11-26,771090,INR,Exceeds Expectations,5
+EMP-10064,Emily Sharma,emily.sharma95@itcompany.com,IT Infrastructure,System Administrator,Full-Time,Hybrid,USA,Austin,2019-07-25,87534,USD,Outstanding,23
+EMP-10065,Jordan Nair,jordan.nair68@itcompany.com,Cloud & DevOps,DevOps Specialist,Full-Time,Remote,India,Bengaluru,2022-08-23,1477064,INR,Outstanding,1
+EMP-10066,Pooja Rao,pooja.rao75@itcompany.com,Data & AI,BI Developer,Contract,Hybrid,India,Hyderabad,2019-09-27,1130532,INR,Meets Expectations,17
+EMP-10067,Rohan Miller,rohan.miller10@itcompany.com,Software Engineering,Junior Developer,Full-Time,On-Site,UK,London,2021-09-08,64797,GBP,Needs Improvement,17
+EMP-10068,Karthik Singh,karthik.singh64@itcompany.com,Product Management,Director of Product,Full-Time,Remote,USA,San Francisco,2020-07-09,216720,USD,Outstanding,7
+EMP-10069,Jordan Iyer,jordan.iyer78@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Hybrid,Germany,Berlin,2025-11-27,58708,EUR,Outstanding,21
+EMP-10070,Sam Wilson,sam.wilson87@itcompany.com,Cybersecurity,Security Analyst,Full-Time,On-Site,USA,San Francisco,2019-04-20,119548,USD,Meets Expectations,23
+EMP-10071,Michael Iyer,michael.iyer24@itcompany.com,Cloud & DevOps,DevOps Specialist,Contract,Remote,Germany,Berlin,2018-05-05,54494,EUR,Meets Expectations,21
+EMP-10072,Rahul Gupta,rahul.gupta56@itcompany.com,Cybersecurity,Security Analyst,Contract,On-Site,Singapore,Singapore,2021-01-23,68211,SGD,Meets Expectations,5
+EMP-10073,Ananya Nair,ananya.nair81@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Part-Time,Hybrid,Singapore,Singapore,2025-02-05,48161,SGD,Outstanding,22
+EMP-10074,Sarah Smith,sarah.smith42@itcompany.com,Product Management,Associate Product Manager,Full-Time,Hybrid,Singapore,Singapore,2024-02-15,134129,SGD,Exceeds Expectations,17
+EMP-10075,Ananya Verma,ananya.verma47@itcompany.com,Software Engineering,Junior Developer,Part-Time,Remote,India,Bengaluru,2023-01-28,678164,INR,Meets Expectations,21
+EMP-10076,Emily Jones,emily.jones88@itcompany.com,Cybersecurity,Security Analyst,Full-Time,Hybrid,India,Pune,2018-04-19,670522,INR,Meets Expectations,6
+EMP-10077,Sarah Verma,sarah.verma12@itcompany.com,Software Engineering,Engineering Manager,Part-Time,On-Site,India,Hyderabad,2019-05-06,2604728,INR,Exceeds Expectations,10
+EMP-10078,Chris Rao,chris.rao51@itcompany.com,Product Management,Director of Product,Full-Time,Hybrid,USA,San Francisco,2023-10-07,170975,USD,Meets Expectations,16
+EMP-10079,Amit Anderson,amit.anderson33@itcompany.com,Cybersecurity,Penetration Tester,Contract,On-Site,India,Hyderabad,2024-08-15,1250312,INR,Meets Expectations,1
+EMP-10080,Chris Reddy,chris.reddy59@itcompany.com,Product Management,Associate Product Manager,Full-Time,Remote,Singapore,Singapore,2020-09-14,136399,SGD,Meets Expectations,9
+EMP-10081,Morgan Taylor,morgan.taylor13@itcompany.com,Data & AI,BI Developer,Full-Time,On-Site,India,Pune,2024-04-24,1222773,INR,Exceeds Expectations,19
+EMP-10082,Priya Wilson,priya.wilson31@itcompany.com,Cybersecurity,CISO,Contract,Remote,India,Hyderabad,2022-07-01,1224206,INR,Meets Expectations,2
+EMP-10083,Rahul Iyer,rahul.iyer77@itcompany.com,Data & AI,Data Scientist,Full-Time,Hybrid,India,Hyderabad,2018-05-29,908337,INR,Exceeds Expectations,21
+EMP-10084,Sarah Patel,sarah.patel67@itcompany.com,Quality Assurance,QA Lead,Contract,Hybrid,India,Bengaluru,2023-10-13,1345387,INR,Outstanding,7
+EMP-10085,Chris Sharma,chris.sharma47@itcompany.com,Software Engineering,Full Stack Developer,Full-Time,Hybrid,India,Hyderabad,2018-01-30,1051674,INR,Meets Expectations,2
+EMP-10086,Chris Verma,chris.verma19@itcompany.com,Product Management,Product Owner,Full-Time,Hybrid,USA,San Francisco,2024-01-28,93069,USD,Meets Expectations,13
+EMP-10087,Sam Singh,sam.singh41@itcompany.com,Software Engineering,Junior Developer,Part-Time,Hybrid,Germany,Berlin,2019-01-02,73910,EUR,Exceeds Expectations,6
+EMP-10088,Sneha Rao,sneha.rao31@itcompany.com,Quality Assurance,QA Tester,Full-Time,Hybrid,UK,London,2025-03-31,61481,GBP,Meets Expectations,3
+EMP-10089,Aarav Johnson,aarav.johnson19@itcompany.com,Product Management,Product Owner,Full-Time,Hybrid,USA,San Francisco,2025-09-13,122356,USD,Meets Expectations,16
+EMP-10090,Sarah Patel,sarah.patel27@itcompany.com,Software Engineering,Frontend Developer,Contract,On-Site,India,Hyderabad,2025-01-21,1327929,INR,Exceeds Expectations,11
+EMP-10091,David Johnson,david.johnson20@itcompany.com,Product Management,Associate Product Manager,Full-Time,Remote,USA,Austin,2022-03-26,162080,USD,Outstanding,20
+EMP-10092,Emily Taylor,emily.taylor32@itcompany.com,Data & AI,BI Developer,Full-Time,Remote,India,Bengaluru,2026-04-04,818093,INR,Exceeds Expectations,19
+EMP-10093,Ananya Rao,ananya.rao95@itcompany.com,Cybersecurity,Penetration Tester,Full-Time,Remote,Singapore,Singapore,2019-06-05,45260,SGD,Meets Expectations,10
+EMP-10094,Vikram Brown,vikram.brown42@itcompany.com,Software Engineering,Frontend Developer,Contract,Remote,USA,Austin,2025-02-07,110983,USD,Needs Improvement,19
+EMP-10095,Ananya Patel,ananya.patel39@itcompany.com,IT Infrastructure,Network Engineer,Contract,Remote,Singapore,Singapore,2021-01-26,73755,SGD,Exceeds Expectations,24
+EMP-10096,Pooja Verma,pooja.verma67@itcompany.com,Product Management,Director of Product,Full-Time,Hybrid,Singapore,Singapore,2019-11-20,86662,SGD,Meets Expectations,1
+EMP-10097,Karthik Reddy,karthik.reddy99@itcompany.com,Data & AI,AI/ML Engineer,Full-Time,On-Site,USA,San Francisco,2019-11-11,122434,USD,Meets Expectations,13
+EMP-10098,Vikram Anderson,vikram.anderson52@itcompany.com,Product Management,Director of Product,Part-Time,On-Site,USA,San Francisco,2021-05-25,201162,USD,Meets Expectations,13
+EMP-10099,Rahul Johnson,rahul.johnson67@itcompany.com,Cloud & DevOps,DevOps Specialist,Part-Time,Remote,USA,Austin,2020-03-11,89680,USD,Meets Expectations,14
+EMP-10100,Emily Nair,emily.nair66@itcompany.com,Cybersecurity,CISO,Full-Time,On-Site,India,Bengaluru,2026-04-11,1351673,INR,Exceeds Expectations,17
+EMP-10101,Alex Wilson,alex.wilson48@itcompany.com,IT Infrastructure,Network Engineer,Part-Time,On-Site,USA,San Francisco,2023-09-24,88715,USD,Exceeds Expectations,20
+EMP-10102,David Johnson,david.johnson54@itcompany.com,IT Infrastructure,Network Engineer,Contract,Remote,USA,San Francisco,2023-11-24,98132,USD,Meets Expectations,12
+EMP-10103,Amit Wilson,amit.wilson84@itcompany.com,Cybersecurity,Security Engineer,Full-Time,Remote,India,Bengaluru,2020-05-31,816626,INR,Meets Expectations,13
+EMP-10104,Chris Iyer,chris.iyer65@itcompany.com,Quality Assurance,QA Tester,Part-Time,Remote,UK,London,2018-12-13,43325,GBP,Meets Expectations,13
+EMP-10105,Ananya Jones,ananya.jones86@itcompany.com,Data & AI,BI Developer,Full-Time,Hybrid,India,Hyderabad,2021-08-08,1101387,INR,Exceeds Expectations,4
+EMP-10106,Priya Smith,priya.smith94@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,Remote,Germany,Berlin,2020-02-21,137290,EUR,Exceeds Expectations,16
+EMP-10107,Alex Anderson,alex.anderson33@itcompany.com,Software Engineering,Junior Developer,Full-Time,Remote,UK,London,2022-12-22,55278,GBP,Outstanding,4
+EMP-10108,Sarah Brown,sarah.brown26@itcompany.com,Software Engineering,Junior Developer,Full-Time,Hybrid,Singapore,Singapore,2022-12-15,77628,SGD,Meets Expectations,16
+EMP-10109,Jordan Patel,jordan.patel16@itcompany.com,Cybersecurity,Penetration Tester,Full-Time,On-Site,Germany,Berlin,2020-11-13,79339,EUR,Meets Expectations,4
+EMP-10110,Jordan Iyer,jordan.iyer11@itcompany.com,IT Infrastructure,System Administrator,Contract,Hybrid,USA,Austin,2019-02-24,115538,USD,Meets Expectations,25
+EMP-10111,Priya Brown,priya.brown91@itcompany.com,Software Engineering,Tech Lead,Contract,Hybrid,USA,Austin,2024-11-23,205810,USD,Meets Expectations,24
+EMP-10112,Michael Davis,michael.davis33@itcompany.com,Quality Assurance,Automation Engineer,Part-Time,Remote,USA,Austin,2024-11-01,86498,USD,Meets Expectations,10
+EMP-10113,Morgan Verma,morgan.verma36@itcompany.com,Product Management,Director of Product,Part-Time,Hybrid,India,Pune,2021-06-19,2313498,INR,Meets Expectations,20
+EMP-10114,Amit Kumar,amit.kumar35@itcompany.com,Quality Assurance,QA Lead,Full-Time,On-Site,UK,London,2026-03-01,116801,GBP,Meets Expectations,11
+EMP-10115,Taylor Brown,taylor.brown88@itcompany.com,Cybersecurity,CISO,Contract,Hybrid,India,Hyderabad,2025-08-16,3099558,INR,Meets Expectations,19
+EMP-10116,Taylor Johnson,taylor.johnson11@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,On-Site,Germany,Berlin,2020-10-25,76444,EUR,Needs Improvement,14
+EMP-10117,Sam Sharma,sam.sharma87@itcompany.com,Software Engineering,Engineering Manager,Part-Time,On-Site,USA,Austin,2018-08-12,145224,USD,Exceeds Expectations,14
+EMP-10118,Rahul Williams,rahul.williams48@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,Remote,USA,Austin,2020-06-13,73779,USD,Meets Expectations,6
+EMP-10119,Rohan Johnson,rohan.johnson89@itcompany.com,Quality Assurance,Automation Engineer,Part-Time,On-Site,India,Hyderabad,2024-01-07,564002,INR,Meets Expectations,4
+EMP-10120,Morgan Rao,morgan.rao24@itcompany.com,Product Management,Associate Product Manager,Part-Time,Remote,India,Hyderabad,2026-03-30,2828001,INR,Needs Improvement,15
+EMP-10121,Sarah Kumar,sarah.kumar46@itcompany.com,Cybersecurity,Security Engineer,Full-Time,Remote,Singapore,Singapore,2022-08-26,65423,SGD,Meets Expectations,21
+EMP-10122,Sarah Iyer,sarah.iyer87@itcompany.com,Cybersecurity,Security Analyst,Part-Time,Hybrid,India,Hyderabad,2022-08-17,1452416,INR,Meets Expectations,21
+EMP-10123,Vikram Kumar,vikram.kumar46@itcompany.com,IT Infrastructure,System Administrator,Full-Time,Hybrid,India,Pune,2021-01-09,1418876,INR,Meets Expectations,5
+EMP-10124,Karthik Smith,karthik.smith30@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,Remote,USA,Austin,2020-03-02,100560,USD,Meets Expectations,12
+EMP-10125,Taylor Singh,taylor.singh11@itcompany.com,Data & AI,BI Developer,Part-Time,Hybrid,India,Hyderabad,2020-06-15,857736,INR,Meets Expectations,3
+EMP-10126,Pooja Wilson,pooja.wilson81@itcompany.com,Software Engineering,Tech Lead,Full-Time,On-Site,India,Hyderabad,2023-03-16,2658448,INR,Exceeds Expectations,5
+EMP-10127,Sneha Nair,sneha.nair34@itcompany.com,Quality Assurance,Automation Engineer,Full-Time,Hybrid,India,Hyderabad,2024-08-05,1437540,INR,Meets Expectations,7
+EMP-10128,Sneha Johnson,sneha.johnson70@itcompany.com,Software Engineering,Engineering Manager,Full-Time,On-Site,India,Pune,2023-12-29,1406427,INR,Outstanding,12
+EMP-10129,Amit Verma,amit.verma70@itcompany.com,Product Management,Associate Product Manager,Full-Time,Remote,USA,Austin,2023-02-04,181458,USD,Exceeds Expectations,23
+EMP-10130,Ananya Reddy,ananya.reddy49@itcompany.com,Software Engineering,Backend Engineer,Contract,Remote,Germany,Berlin,2021-07-19,63608,EUR,Meets Expectations,23
+EMP-10131,Rohan Singh,rohan.singh47@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Remote,India,Hyderabad,2024-01-22,473762,INR,Needs Improvement,11
+EMP-10132,Karthik Kumar,karthik.kumar90@itcompany.com,IT Infrastructure,Network Engineer,Contract,Hybrid,India,Hyderabad,2023-11-04,1313865,INR,Exceeds Expectations,18
+EMP-10133,Michael Rao,michael.rao15@itcompany.com,Data & AI,BI Developer,Contract,On-Site,Singapore,Singapore,2025-09-27,73111,SGD,Meets Expectations,21
+EMP-10134,Alex Johnson,alex.johnson35@itcompany.com,Quality Assurance,Automation Engineer,Part-Time,Hybrid,UK,London,2018-11-28,60855,GBP,Meets Expectations,25
+EMP-10135,Aarav Brown,aarav.brown69@itcompany.com,Product Management,Associate Product Manager,Full-Time,Hybrid,India,Bengaluru,2025-05-25,3184245,INR,Meets Expectations,23
+EMP-10136,Jordan Patel,jordan.patel43@itcompany.com,Software Engineering,Full Stack Developer,Full-Time,Remote,Germany,Berlin,2021-02-13,58984,EUR,Meets Expectations,22
+EMP-10137,Aarav Patel,aarav.patel14@itcompany.com,Product Management,Director of Product,Contract,Remote,UK,London,2025-03-17,83668,GBP,Exceeds Expectations,23
+EMP-10138,Michael Gupta,michael.gupta32@itcompany.com,Data & AI,AI/ML Engineer,Contract,Hybrid,USA,Austin,2024-03-28,98345,USD,Meets Expectations,13
+EMP-10139,Taylor Johnson,taylor.johnson37@itcompany.com,Quality Assurance,QA Lead,Full-Time,Hybrid,Singapore,Singapore,2026-01-04,95648,SGD,Exceeds Expectations,24
+EMP-10140,Alex Wilson,alex.wilson21@itcompany.com,IT Infrastructure,System Administrator,Full-Time,Remote,USA,Austin,2023-02-28,81521,USD,Meets Expectations,25
+EMP-10141,Amit Gupta,amit.gupta89@itcompany.com,Cybersecurity,CISO,Full-Time,Remote,Singapore,Singapore,2026-01-30,138037,SGD,Exceeds Expectations,23
+EMP-10142,Priya Sharma,priya.sharma45@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,On-Site,UK,London,2022-05-07,69123,GBP,Meets Expectations,14
+EMP-10143,Alex Brown,alex.brown21@itcompany.com,Software Engineering,Engineering Manager,Full-Time,Remote,USA,Austin,2023-11-07,146974,USD,Meets Expectations,11
+EMP-10144,Emily Smith,emily.smith38@itcompany.com,Data & AI,BI Developer,Full-Time,Remote,USA,Austin,2019-11-29,107076,USD,Outstanding,25
+EMP-10145,Chris Verma,chris.verma68@itcompany.com,Quality Assurance,QA Lead,Full-Time,On-Site,India,Hyderabad,2020-12-25,2317334,INR,Meets Expectations,6
+EMP-10146,Taylor Singh,taylor.singh89@itcompany.com,Data & AI,AI/ML Engineer,Part-Time,On-Site,India,Bengaluru,2018-01-02,595776,INR,Meets Expectations,1
+EMP-10147,Rohan Smith,rohan.smith91@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,Hybrid,India,Bengaluru,2018-03-14,676972,INR,Meets Expectations,2
+EMP-10148,Karthik Anderson,karthik.anderson29@itcompany.com,Cybersecurity,Penetration Tester,Full-Time,Remote,USA,San Francisco,2023-01-30,72154,USD,Meets Expectations,10
+EMP-10149,David Davis,david.davis71@itcompany.com,Cybersecurity,Security Analyst,Contract,On-Site,Germany,Berlin,2018-11-14,51889,EUR,Meets Expectations,8
+EMP-10150,Jordan Singh,jordan.singh20@itcompany.com,Software Engineering,Full Stack Developer,Part-Time,Remote,India,Bengaluru,2020-09-11,531648,INR,Needs Improvement,10
+EMP-10151,Aarav Reddy,aarav.reddy10@itcompany.com,Software Engineering,Backend Engineer,Full-Time,Hybrid,India,Pune,2022-12-20,631295,INR,Exceeds Expectations,16
+EMP-10152,Ananya Smith,ananya.smith54@itcompany.com,Cloud & DevOps,DevOps Specialist,Full-Time,Remote,India,Bengaluru,2022-09-11,1373577,INR,Needs Improvement,23
+EMP-10153,Priya Nair,priya.nair87@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Remote,Singapore,Singapore,2023-08-06,56355,SGD,Meets Expectations,20
+EMP-10154,Sneha Reddy,sneha.reddy86@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,On-Site,India,Hyderabad,2020-03-16,1480292,INR,Meets Expectations,5
+EMP-10155,Chris Patel,chris.patel75@itcompany.com,Cybersecurity,Security Analyst,Full-Time,On-Site,UK,London,2019-07-09,66629,GBP,Meets Expectations,20
+EMP-10156,Michael Patel,michael.patel47@itcompany.com,Cybersecurity,Security Analyst,Full-Time,Hybrid,Germany,Berlin,2021-07-10,62025,EUR,Meets Expectations,11
+EMP-10157,Rohan Brown,rohan.brown60@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Contract,Hybrid,India,Hyderabad,2022-08-27,757382,INR,Outstanding,11
+EMP-10158,Emily Jones,emily.jones35@itcompany.com,Data & AI,BI Developer,Full-Time,Remote,India,Hyderabad,2019-05-02,1404600,INR,Exceeds Expectations,22
+EMP-10159,Sneha Williams,sneha.williams43@itcompany.com,Cloud & DevOps,Cloud Architect,Part-Time,Remote,Germany,Berlin,2019-11-28,117523,EUR,Needs Improvement,22
+EMP-10160,Michael Iyer,michael.iyer11@itcompany.com,Quality Assurance,QA Lead,Full-Time,On-Site,India,Pune,2019-09-25,1849105,INR,Needs Improvement,10
+EMP-10161,Vikram Williams,vikram.williams30@itcompany.com,Quality Assurance,QA Tester,Full-Time,On-Site,Singapore,Singapore,2025-08-28,68908,SGD,Needs Improvement,2
+EMP-10162,Ananya Wilson,ananya.wilson76@itcompany.com,Quality Assurance,QA Lead,Full-Time,Remote,Singapore,Singapore,2019-05-16,100500,SGD,Meets Expectations,18
+EMP-10163,Rohan Patel,rohan.patel39@itcompany.com,Cloud & DevOps,DevOps Specialist,Contract,Remote,UK,London,2024-08-19,51943,GBP,Exceeds Expectations,14
+EMP-10164,Karthik Miller,karthik.miller77@itcompany.com,IT Infrastructure,System Administrator,Full-Time,Hybrid,Singapore,Singapore,2025-03-18,78512,SGD,Meets Expectations,23
+EMP-10165,Emily Williams,emily.williams90@itcompany.com,Software Engineering,Full Stack Developer,Part-Time,Remote,India,Hyderabad,2021-11-16,1292093,INR,Meets Expectations,2
+EMP-10166,Aarav Iyer,aarav.iyer26@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,On-Site,Germany,Berlin,2020-04-18,97049,EUR,Meets Expectations,16
+EMP-10167,Pooja Williams,pooja.williams50@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Remote,India,Bengaluru,2026-05-15,1208992,INR,Meets Expectations,24
+EMP-10168,Rohan Brown,rohan.brown34@itcompany.com,Product Management,Director of Product,Contract,On-Site,India,Hyderabad,2018-10-25,1719803,INR,Meets Expectations,9
+EMP-10169,Amit Rao,amit.rao90@itcompany.com,Data & AI,Data Analyst,Part-Time,Hybrid,Germany,Berlin,2022-02-12,47316,EUR,Meets Expectations,18
+EMP-10170,Morgan Wilson,morgan.wilson12@itcompany.com,IT Infrastructure,System Administrator,Full-Time,Hybrid,UK,London,2019-03-20,52678,GBP,Meets Expectations,7
+EMP-10171,Aarav Nair,aarav.nair32@itcompany.com,Data & AI,Data Analyst,Full-Time,Remote,India,Pune,2019-10-11,453897,INR,Meets Expectations,23
+EMP-10172,Ananya Singh,ananya.singh44@itcompany.com,Quality Assurance,QA Tester,Part-Time,Remote,USA,Austin,2020-05-15,88932,USD,Meets Expectations,1
+EMP-10173,David Nair,david.nair37@itcompany.com,Quality Assurance,Automation Engineer,Full-Time,Remote,India,Hyderabad,2019-06-25,688729,INR,Outstanding,5
+EMP-10174,Sneha Iyer,sneha.iyer37@itcompany.com,Product Management,Director of Product,Part-Time,Hybrid,USA,San Francisco,2023-03-16,193638,USD,Meets Expectations,10
+EMP-10175,Aarav Johnson,aarav.johnson49@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Full-Time,On-Site,Germany,Berlin,2021-03-21,54983,EUR,Meets Expectations,25
+EMP-10176,Sam Brown,sam.brown44@itcompany.com,IT Infrastructure,System Administrator,Contract,On-Site,India,Pune,2021-06-25,985008,INR,Exceeds Expectations,15
+EMP-10177,Taylor Williams,taylor.williams15@itcompany.com,Data & AI,AI/ML Engineer,Part-Time,Remote,India,Hyderabad,2020-07-21,1270545,INR,Exceeds Expectations,22
+EMP-10178,Jordan Smith,jordan.smith12@itcompany.com,Data & AI,BI Developer,Contract,Hybrid,Germany,Berlin,2018-02-14,72071,EUR,Needs Improvement,14
+EMP-10179,Rahul Rao,rahul.rao39@itcompany.com,Cloud & DevOps,Cloud Architect,Part-Time,Hybrid,India,Pune,2023-06-07,3148794,INR,Meets Expectations,20
+EMP-10180,Michael Williams,michael.williams46@itcompany.com,Data & AI,Data Scientist,Full-Time,On-Site,Germany,Berlin,2018-07-03,60994,EUR,Meets Expectations,1
+EMP-10181,Alex Brown,alex.brown79@itcompany.com,Cloud & DevOps,DevOps Specialist,Full-Time,Hybrid,Germany,Berlin,2023-05-10,67218,EUR,Meets Expectations,19
+EMP-10182,Taylor Johnson,taylor.johnson20@itcompany.com,Cybersecurity,Security Engineer,Part-Time,Hybrid,India,Bengaluru,2023-11-17,816881,INR,Needs Improvement,8
+EMP-10183,Emily Brown,emily.brown31@itcompany.com,IT Infrastructure,System Administrator,Part-Time,On-Site,India,Bengaluru,2022-12-14,1309456,INR,Meets Expectations,8
+EMP-10184,Michael Miller,michael.miller21@itcompany.com,Software Engineering,Junior Developer,Part-Time,On-Site,India,Bengaluru,2024-09-17,1498115,INR,Meets Expectations,1
+EMP-10185,Aarav Iyer,aarav.iyer75@itcompany.com,IT Infrastructure,System Administrator,Contract,Remote,India,Pune,2018-03-11,633454,INR,Meets Expectations,14
+EMP-10186,Michael Nair,michael.nair89@itcompany.com,Quality Assurance,Automation Engineer,Contract,Remote,USA,Austin,2023-10-17,79400,USD,Meets Expectations,13
+EMP-10187,Vikram Verma,vikram.verma44@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,Hybrid,Singapore,Singapore,2022-10-07,70226,SGD,Meets Expectations,6
+EMP-10188,Karthik Patel,karthik.patel65@itcompany.com,Product Management,Director of Product,Part-Time,Hybrid,Singapore,Singapore,2019-10-11,85549,SGD,Meets Expectations,23
+EMP-10189,Jordan Reddy,jordan.reddy47@itcompany.com,Data & AI,AI/ML Engineer,Full-Time,Hybrid,Germany,Berlin,2025-03-12,67998,EUR,Exceeds Expectations,3
+EMP-10190,Sarah Taylor,sarah.taylor83@itcompany.com,Software Engineering,Full Stack Developer,Full-Time,Remote,USA,San Francisco,2019-06-06,117796,USD,Meets Expectations,13
+EMP-10191,David Brown,david.brown85@itcompany.com,Cloud & DevOps,DevOps Specialist,Full-Time,Remote,Singapore,Singapore,2023-11-26,57355,SGD,Outstanding,4
+EMP-10192,Sneha Taylor,sneha.taylor44@itcompany.com,Product Management,Director of Product,Full-Time,Hybrid,India,Hyderabad,2025-07-07,1732855,INR,Meets Expectations,25
+EMP-10193,Michael Johnson,michael.johnson29@itcompany.com,Quality Assurance,QA Tester,Full-Time,Hybrid,India,Bengaluru,2019-12-02,1155172,INR,Meets Expectations,11
+EMP-10194,Chris Taylor,chris.taylor74@itcompany.com,Cloud & DevOps,Cloud Architect,Contract,Hybrid,India,Hyderabad,2020-06-08,2444553,INR,Meets Expectations,14
+EMP-10195,Rohan Brown,rohan.brown43@itcompany.com,Data & AI,Data Analyst,Full-Time,Remote,India,Hyderabad,2022-03-16,1051840,INR,Meets Expectations,19
+EMP-10196,Morgan Johnson,morgan.johnson91@itcompany.com,Quality Assurance,Automation Engineer,Full-Time,On-Site,UK,London,2018-04-25,55019,GBP,Meets Expectations,23
+EMP-10197,David Smith,david.smith24@itcompany.com,Data & AI,BI Developer,Full-Time,Remote,India,Hyderabad,2020-04-28,949335,INR,Meets Expectations,12
+EMP-10198,Morgan Sharma,morgan.sharma43@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,On-Site,India,Bengaluru,2023-03-17,600289,INR,Meets Expectations,21
+EMP-10199,Michael Brown,michael.brown18@itcompany.com,Software Engineering,Junior Developer,Part-Time,Remote,India,Bengaluru,2025-12-10,1157511,INR,Exceeds Expectations,10
+EMP-10200,Rahul Gupta,rahul.gupta58@itcompany.com,Software Engineering,Backend Engineer,Contract,Hybrid,India,Hyderabad,2021-11-28,968694,INR,Meets Expectations,21
+EMP-10201,Vikram Singh,vikram.singh16@itcompany.com,Product Management,Product Owner,Part-Time,Hybrid,UK,London,2026-05-14,41278,GBP,Exceeds Expectations,20
+EMP-10202,Sneha Singh,sneha.singh80@itcompany.com,Product Management,Associate Product Manager,Part-Time,On-Site,USA,Austin,2021-09-18,162717,USD,Exceeds Expectations,10
+EMP-10203,Sneha Rao,sneha.rao72@itcompany.com,Product Management,Product Owner,Contract,On-Site,USA,San Francisco,2025-03-30,107110,USD,Exceeds Expectations,19
+EMP-10204,Alex Patel,alex.patel63@itcompany.com,Quality Assurance,Automation Engineer,Full-Time,Remote,USA,Austin,2023-03-06,89889,USD,Meets Expectations,24
+EMP-10205,David Kumar,david.kumar52@itcompany.com,Quality Assurance,Automation Engineer,Contract,On-Site,India,Bengaluru,2022-02-21,1216271,INR,Meets Expectations,12
+EMP-10206,Morgan Nair,morgan.nair51@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Full-Time,Hybrid,UK,London,2023-11-04,66338,GBP,Outstanding,23
+EMP-10207,Karthik Verma,karthik.verma13@itcompany.com,Product Management,Product Manager,Full-Time,Remote,Germany,Berlin,2022-03-01,112428,EUR,Exceeds Expectations,1
+EMP-10208,Morgan Taylor,morgan.taylor99@itcompany.com,Data & AI,Data Engineer,Contract,On-Site,Germany,Berlin,2025-03-27,52904,EUR,Meets Expectations,22
+EMP-10209,Karthik Rao,karthik.rao19@itcompany.com,Cybersecurity,Security Analyst,Full-Time,Remote,USA,Austin,2023-07-08,87944,USD,Meets Expectations,15
+EMP-10210,Taylor Reddy,taylor.reddy96@itcompany.com,IT Infrastructure,IT Support Specialist,Part-Time,On-Site,Germany,Berlin,2018-10-24,45726,EUR,Meets Expectations,23
+EMP-10211,Rahul Singh,rahul.singh76@itcompany.com,Cybersecurity,Security Analyst,Full-Time,On-Site,USA,San Francisco,2018-07-07,124549,USD,Meets Expectations,21
+EMP-10212,Alex Brown,alex.brown39@itcompany.com,Software Engineering,Backend Engineer,Full-Time,On-Site,USA,San Francisco,2021-02-03,117850,USD,Meets Expectations,25
+EMP-10213,Ananya Davis,ananya.davis17@itcompany.com,Product Management,Director of Product,Contract,Hybrid,UK,London,2023-12-17,82405,GBP,Outstanding,5
+EMP-10214,Rahul Williams,rahul.williams61@itcompany.com,Data & AI,Data Analyst,Full-Time,Remote,India,Pune,2020-01-30,1498674,INR,Exceeds Expectations,18
+EMP-10215,Alex Nair,alex.nair95@itcompany.com,Data & AI,BI Developer,Full-Time,Remote,India,Bengaluru,2025-01-05,1426972,INR,Exceeds Expectations,22
+EMP-10216,Sam Wilson,sam.wilson18@itcompany.com,IT Infrastructure,Network Engineer,Part-Time,On-Site,Germany,Berlin,2023-07-15,78532,EUR,Meets Expectations,19
+EMP-10217,Emily Williams,emily.williams95@itcompany.com,Software Engineering,Frontend Developer,Full-Time,On-Site,Singapore,Singapore,2021-07-20,77130,SGD,Meets Expectations,14
+EMP-10218,Aarav Johnson,aarav.johnson56@itcompany.com,IT Infrastructure,Network Engineer,Contract,On-Site,USA,San Francisco,2023-06-24,73856,USD,Meets Expectations,24
+EMP-10219,Chris Davis,chris.davis53@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,Remote,Germany,Berlin,2021-05-30,78990,EUR,Meets Expectations,16
+EMP-10220,Sam Verma,sam.verma76@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,Remote,USA,Austin,2019-07-23,131713,USD,Meets Expectations,3
+EMP-10221,Sam Iyer,sam.iyer27@itcompany.com,Quality Assurance,QA Tester,Contract,Hybrid,USA,San Francisco,2021-10-27,72052,USD,Meets Expectations,2
+EMP-10222,Chris Miller,chris.miller69@itcompany.com,Quality Assurance,Automation Engineer,Contract,Hybrid,USA,Austin,2024-07-31,75727,USD,Needs Improvement,13
+EMP-10223,Emily Taylor,emily.taylor32@itcompany.com,Quality Assurance,QA Tester,Contract,Remote,USA,San Francisco,2018-12-31,101588,USD,Exceeds Expectations,9
+EMP-10224,Alex Patel,alex.patel45@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Full-Time,Remote,India,Hyderabad,2024-06-13,886690,INR,Meets Expectations,17
+EMP-10225,Sam Reddy,sam.reddy61@itcompany.com,Cybersecurity,CISO,Full-Time,Hybrid,USA,Austin,2021-06-10,191269,USD,Meets Expectations,8
+EMP-10226,Priya Iyer,priya.iyer44@itcompany.com,Data & AI,Data Engineer,Full-Time,Hybrid,Singapore,Singapore,2020-07-16,56377,SGD,Exceeds Expectations,9
+EMP-10227,Rahul Kumar,rahul.kumar47@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,Hybrid,Germany,Berlin,2023-10-31,55474,EUR,Meets Expectations,7
+EMP-10228,Ananya Gupta,ananya.gupta37@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Full-Time,On-Site,India,Hyderabad,2023-09-19,662332,INR,Meets Expectations,23
+EMP-10229,Michael Smith,michael.smith70@itcompany.com,Data & AI,Data Scientist,Part-Time,Hybrid,India,Hyderabad,2022-04-15,1277724,INR,Meets Expectations,21
+EMP-10230,Chris Singh,chris.singh27@itcompany.com,Data & AI,Data Engineer,Full-Time,On-Site,India,Bengaluru,2025-02-14,749333,INR,Meets Expectations,3
+EMP-10231,Priya Williams,priya.williams33@itcompany.com,Cybersecurity,Security Engineer,Part-Time,Hybrid,USA,San Francisco,2018-08-31,81612,USD,Meets Expectations,3
+EMP-10232,Rohan Johnson,rohan.johnson28@itcompany.com,Quality Assurance,Automation Engineer,Part-Time,On-Site,UK,London,2021-06-02,54074,GBP,Needs Improvement,12
+EMP-10233,Priya Davis,priya.davis38@itcompany.com,Software Engineering,Junior Developer,Full-Time,Hybrid,India,Bengaluru,2021-07-02,1257241,INR,Meets Expectations,12
+EMP-10234,Alex Jones,alex.jones32@itcompany.com,Product Management,Product Owner,Part-Time,Hybrid,USA,San Francisco,2024-01-06,104247,USD,Outstanding,2
+EMP-10235,Sneha Nair,sneha.nair61@itcompany.com,Product Management,Product Manager,Full-Time,On-Site,USA,Austin,2023-10-29,207121,USD,Meets Expectations,8
+EMP-10236,Amit Davis,amit.davis44@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,On-Site,UK,London,2025-10-12,53916,GBP,Meets Expectations,20
+EMP-10237,Vikram Nair,vikram.nair66@itcompany.com,Data & AI,Data Scientist,Full-Time,Hybrid,USA,San Francisco,2024-04-10,124734,USD,Meets Expectations,9
+EMP-10238,Pooja Miller,pooja.miller44@itcompany.com,Data & AI,Data Scientist,Part-Time,On-Site,India,Hyderabad,2021-08-01,1206245,INR,Meets Expectations,7
+EMP-10239,Michael Iyer,michael.iyer86@itcompany.com,Quality Assurance,QA Tester,Full-Time,Remote,Singapore,Singapore,2025-12-23,71663,SGD,Meets Expectations,7
+EMP-10240,Sarah Jones,sarah.jones37@itcompany.com,Software Engineering,Engineering Manager,Full-Time,Hybrid,USA,San Francisco,2019-08-10,184146,USD,Meets Expectations,11
+EMP-10241,Chris Davis,chris.davis62@itcompany.com,Software Engineering,Backend Engineer,Part-Time,On-Site,India,Hyderabad,2020-06-10,1442670,INR,Meets Expectations,5
+EMP-10242,Alex Rao,alex.rao84@itcompany.com,IT Infrastructure,IT Support Specialist,Contract,Hybrid,India,Pune,2021-08-28,946086,INR,Meets Expectations,24
+EMP-10243,Chris Reddy,chris.reddy13@itcompany.com,Quality Assurance,QA Tester,Contract,On-Site,India,Bengaluru,2019-10-04,1386094,INR,Meets Expectations,5
+EMP-10244,Morgan Verma,morgan.verma45@itcompany.com,Data & AI,Data Engineer,Full-Time,Hybrid,Singapore,Singapore,2022-09-22,45735,SGD,Meets Expectations,4
+EMP-10245,Rohan Gupta,rohan.gupta98@itcompany.com,Product Management,Associate Product Manager,Contract,Remote,Singapore,Singapore,2018-12-31,98059,SGD,Exceeds Expectations,5
+EMP-10246,Sneha Smith,sneha.smith23@itcompany.com,Data & AI,Data Engineer,Full-Time,Hybrid,India,Hyderabad,2023-06-07,1286579,INR,Meets Expectations,12
+EMP-10247,Vikram Brown,vikram.brown12@itcompany.com,Data & AI,BI Developer,Part-Time,On-Site,India,Hyderabad,2026-04-22,1178537,INR,Meets Expectations,19
+EMP-10248,Karthik Davis,karthik.davis38@itcompany.com,IT Infrastructure,System Administrator,Contract,Hybrid,India,Bengaluru,2018-06-02,650624,INR,Meets Expectations,3
+EMP-10249,Sam Smith,sam.smith73@itcompany.com,Software Engineering,Frontend Developer,Contract,Remote,India,Bengaluru,2024-09-05,1243404,INR,Exceeds Expectations,13
+EMP-10250,Pooja Verma,pooja.verma67@itcompany.com,Quality Assurance,Automation Engineer,Contract,Hybrid,USA,San Francisco,2023-08-28,108066,USD,Exceeds Expectations,4
+EMP-10251,Sam Jones,sam.jones65@itcompany.com,Product Management,Associate Product Manager,Full-Time,Hybrid,USA,San Francisco,2020-02-23,180987,USD,Meets Expectations,23
+EMP-10252,Emily Brown,emily.brown99@itcompany.com,Cybersecurity,Security Analyst,Part-Time,Hybrid,India,Pune,2020-10-10,1370131,INR,Meets Expectations,24
+EMP-10253,Sam Verma,sam.verma22@itcompany.com,Data & AI,Data Scientist,Full-Time,Hybrid,Singapore,Singapore,2020-06-11,57306,SGD,Meets Expectations,25
+EMP-10254,Amit Brown,amit.brown95@itcompany.com,Cybersecurity,Penetration Tester,Full-Time,Hybrid,India,Bengaluru,2022-06-04,648848,INR,Meets Expectations,3
+EMP-10255,Ananya Davis,ananya.davis40@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,On-Site,Singapore,Singapore,2018-08-03,65900,SGD,Meets Expectations,22
+EMP-10256,Pooja Taylor,pooja.taylor24@itcompany.com,Data & AI,Data Engineer,Contract,Remote,India,Pune,2025-06-25,1459305,INR,Needs Improvement,17
+EMP-10257,Pooja Verma,pooja.verma98@itcompany.com,Product Management,Product Owner,Full-Time,Hybrid,India,Hyderabad,2022-09-16,1456599,INR,Meets Expectations,6
+EMP-10258,Chris Iyer,chris.iyer57@itcompany.com,Data & AI,Data Scientist,Full-Time,Hybrid,Germany,Berlin,2022-12-07,65317,EUR,Exceeds Expectations,5
+EMP-10259,Morgan Sharma,morgan.sharma16@itcompany.com,Software Engineering,Full Stack Developer,Full-Time,On-Site,India,Bengaluru,2022-05-12,1267141,INR,Outstanding,15
+EMP-10260,Michael Jones,michael.jones36@itcompany.com,Cybersecurity,CISO,Contract,Hybrid,Germany,Berlin,2024-11-07,111542,EUR,Meets Expectations,13
+EMP-10261,Emily Miller,emily.miller35@itcompany.com,Software Engineering,Frontend Developer,Part-Time,On-Site,USA,Austin,2019-02-12,107169,USD,Meets Expectations,9
+EMP-10262,Aarav Anderson,aarav.anderson86@itcompany.com,Cloud & DevOps,Cloud Architect,Part-Time,Hybrid,Singapore,Singapore,2022-03-18,137862,SGD,Meets Expectations,10
+EMP-10263,Jordan Anderson,jordan.anderson11@itcompany.com,Software Engineering,Backend Engineer,Part-Time,Remote,Singapore,Singapore,2021-06-26,46973,SGD,Meets Expectations,18
+EMP-10264,Sneha Brown,sneha.brown87@itcompany.com,Data & AI,Data Scientist,Full-Time,Hybrid,India,Bengaluru,2024-09-13,1489044,INR,Outstanding,9
+EMP-10265,Pooja Kumar,pooja.kumar29@itcompany.com,Data & AI,Data Engineer,Contract,On-Site,India,Hyderabad,2018-07-11,1452477,INR,Meets Expectations,8
+EMP-10266,Sarah Brown,sarah.brown50@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Part-Time,On-Site,India,Hyderabad,2018-07-10,1056761,INR,Meets Expectations,17
+EMP-10267,Sam Brown,sam.brown21@itcompany.com,Product Management,Product Owner,Full-Time,Hybrid,Singapore,Singapore,2020-11-01,76978,SGD,Exceeds Expectations,19
+EMP-10268,Ananya Williams,ananya.williams31@itcompany.com,Product Management,Product Owner,Full-Time,On-Site,Germany,Berlin,2021-03-23,56959,EUR,Meets Expectations,15
+EMP-10269,Aarav Jones,aarav.jones80@itcompany.com,Quality Assurance,QA Lead,Full-Time,Hybrid,Singapore,Singapore,2026-04-22,97275,SGD,Meets Expectations,5
+EMP-10270,Sarah Verma,sarah.verma98@itcompany.com,Data & AI,Data Engineer,Full-Time,Remote,India,Pune,2018-04-14,988943,INR,Outstanding,25
+EMP-10271,Alex Singh,alex.singh83@itcompany.com,Cybersecurity,CISO,Full-Time,Hybrid,India,Bengaluru,2021-03-20,2071085,INR,Meets Expectations,15
+EMP-10272,Vikram Singh,vikram.singh61@itcompany.com,Quality Assurance,QA Tester,Part-Time,Hybrid,UK,London,2019-02-16,64622,GBP,Exceeds Expectations,14
+EMP-10273,Sneha Singh,sneha.singh12@itcompany.com,Data & AI,BI Developer,Full-Time,Remote,India,Hyderabad,2021-08-24,839333,INR,Meets Expectations,17
+EMP-10274,Sam Johnson,sam.johnson35@itcompany.com,Software Engineering,Junior Developer,Full-Time,Remote,UK,London,2025-11-13,60017,GBP,Meets Expectations,21
+EMP-10275,Sam Johnson,sam.johnson67@itcompany.com,Data & AI,BI Developer,Full-Time,On-Site,Singapore,Singapore,2018-05-29,49838,SGD,Needs Improvement,4
+EMP-10276,Rohan Nair,rohan.nair35@itcompany.com,Cloud & DevOps,Cloud Engineer,Contract,Remote,USA,San Francisco,2022-03-15,121911,USD,Meets Expectations,16
+EMP-10277,Chris Singh,chris.singh26@itcompany.com,Cloud & DevOps,Cloud Architect,Part-Time,Remote,Germany,Berlin,2025-12-16,112049,EUR,Exceeds Expectations,6
+EMP-10278,Rohan Verma,rohan.verma54@itcompany.com,IT Infrastructure,System Administrator,Contract,Remote,USA,San Francisco,2019-04-16,104681,USD,Meets Expectations,9
+EMP-10279,Pooja Reddy,pooja.reddy34@itcompany.com,Cybersecurity,CISO,Full-Time,Remote,India,Bengaluru,2019-10-23,1546349,INR,Meets Expectations,21
+EMP-10280,Rohan Williams,rohan.williams59@itcompany.com,Cybersecurity,Security Analyst,Full-Time,Remote,India,Pune,2021-10-05,940868,INR,Exceeds Expectations,18
+EMP-10281,Vikram Smith,vikram.smith12@itcompany.com,Cybersecurity,Security Analyst,Contract,Hybrid,India,Hyderabad,2022-01-30,1385216,INR,Meets Expectations,5
+EMP-10282,Morgan Johnson,morgan.johnson99@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Part-Time,Remote,India,Hyderabad,2019-02-13,705891,INR,Meets Expectations,23
+EMP-10283,Taylor Iyer,taylor.iyer15@itcompany.com,Cloud & DevOps,DevOps Specialist,Part-Time,On-Site,UK,London,2024-01-21,48002,GBP,Meets Expectations,16
+EMP-10284,Ananya Williams,ananya.williams34@itcompany.com,Cloud & DevOps,DevOps Specialist,Full-Time,Remote,UK,London,2018-07-13,45557,GBP,Meets Expectations,24
+EMP-10285,Michael Iyer,michael.iyer46@itcompany.com,Data & AI,Data Engineer,Full-Time,Hybrid,India,Hyderabad,2019-05-10,930958,INR,Meets Expectations,16
+EMP-10286,Chris Nair,chris.nair23@itcompany.com,Software Engineering,Tech Lead,Full-Time,On-Site,USA,San Francisco,2023-01-19,203816,USD,Exceeds Expectations,19
+EMP-10287,Taylor Patel,taylor.patel88@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,Remote,UK,London,2024-09-17,68141,GBP,Meets Expectations,5
+EMP-10288,Ananya Patel,ananya.patel20@itcompany.com,IT Infrastructure,System Administrator,Contract,On-Site,Germany,Berlin,2025-10-09,54178,EUR,Meets Expectations,11
+EMP-10289,Rahul Sharma,rahul.sharma23@itcompany.com,Product Management,Product Manager,Full-Time,Hybrid,Germany,Berlin,2019-03-10,137252,EUR,Meets Expectations,4
+EMP-10290,Priya Iyer,priya.iyer96@itcompany.com,Software Engineering,Engineering Manager,Part-Time,Hybrid,India,Hyderabad,2020-12-23,2390117,INR,Meets Expectations,18
+EMP-10291,Rahul Singh,rahul.singh89@itcompany.com,Data & AI,AI/ML Engineer,Full-Time,On-Site,India,Bengaluru,2021-01-28,510796,INR,Meets Expectations,8
+EMP-10292,Emily Gupta,emily.gupta38@itcompany.com,Product Management,Product Manager,Full-Time,On-Site,India,Hyderabad,2024-08-20,1214067,INR,Meets Expectations,3
+EMP-10293,Rahul Miller,rahul.miller79@itcompany.com,Data & AI,BI Developer,Full-Time,Remote,India,Pune,2018-05-06,1045558,INR,Exceeds Expectations,19
+EMP-10294,Priya Davis,priya.davis12@itcompany.com,Data & AI,Data Engineer,Full-Time,On-Site,UK,London,2018-09-23,58557,GBP,Meets Expectations,19
+EMP-10295,Taylor Smith,taylor.smith28@itcompany.com,Software Engineering,Junior Developer,Full-Time,On-Site,USA,San Francisco,2022-06-26,104556,USD,Meets Expectations,1
+EMP-10296,Karthik Gupta,karthik.gupta14@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Hybrid,Germany,Berlin,2022-01-30,53312,EUR,Meets Expectations,16
+EMP-10297,Sam Kumar,sam.kumar52@itcompany.com,Cloud & DevOps,DevOps Specialist,Contract,Hybrid,Germany,Berlin,2019-08-21,49025,EUR,Meets Expectations,4
+EMP-10298,Aarav Wilson,aarav.wilson66@itcompany.com,Data & AI,Data Engineer,Full-Time,Hybrid,India,Bengaluru,2025-09-26,475359,INR,Exceeds Expectations,21
+EMP-10299,Ananya Johnson,ananya.johnson98@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,Remote,India,Hyderabad,2023-01-28,1757484,INR,Exceeds Expectations,4
+EMP-10300,Sam Iyer,sam.iyer26@itcompany.com,Data & AI,Data Scientist,Full-Time,On-Site,USA,Austin,2021-02-11,94516,USD,Meets Expectations,23
+EMP-10301,Amit Singh,amit.singh34@itcompany.com,Software Engineering,Full Stack Developer,Full-Time,Remote,India,Bengaluru,2022-10-17,1011612,INR,Exceeds Expectations,2
+EMP-10302,Sarah Patel,sarah.patel76@itcompany.com,Cybersecurity,Security Engineer,Full-Time,Hybrid,USA,San Francisco,2022-04-08,95746,USD,Exceeds Expectations,4
+EMP-10303,Karthik Iyer,karthik.iyer44@itcompany.com,Quality Assurance,QA Lead,Full-Time,On-Site,Germany,Berlin,2025-10-22,133509,EUR,Meets Expectations,22
+EMP-10304,Chris Taylor,chris.taylor84@itcompany.com,Data & AI,Data Analyst,Full-Time,On-Site,Singapore,Singapore,2022-09-30,64316,SGD,Meets Expectations,5
+EMP-10305,Ananya Sharma,ananya.sharma73@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,On-Site,India,Pune,2023-06-08,1128892,INR,Exceeds Expectations,22
+EMP-10306,Rohan Anderson,rohan.anderson17@itcompany.com,Software Engineering,Tech Lead,Full-Time,Remote,USA,San Francisco,2021-04-01,178352,USD,Meets Expectations,8
+EMP-10307,Alex Nair,alex.nair89@itcompany.com,Cybersecurity,Security Engineer,Contract,Hybrid,India,Bengaluru,2022-12-29,860640,INR,Outstanding,9
+EMP-10308,Rahul Kumar,rahul.kumar56@itcompany.com,Software Engineering,Backend Engineer,Full-Time,On-Site,USA,San Francisco,2021-10-24,107879,USD,Meets Expectations,23
+EMP-10309,Priya Sharma,priya.sharma34@itcompany.com,Product Management,Product Manager,Full-Time,Hybrid,India,Bengaluru,2019-02-15,1894687,INR,Meets Expectations,18
+EMP-10310,Aarav Davis,aarav.davis53@itcompany.com,IT Infrastructure,Network Engineer,Contract,Remote,India,Bengaluru,2020-08-31,1052469,INR,Exceeds Expectations,10
+EMP-10311,Morgan Nair,morgan.nair95@itcompany.com,Cybersecurity,Security Engineer,Full-Time,Remote,Singapore,Singapore,2020-05-04,48436,SGD,Meets Expectations,14
+EMP-10312,Ananya Brown,ananya.brown68@itcompany.com,Cybersecurity,Security Engineer,Full-Time,Hybrid,India,Bengaluru,2022-07-29,1142063,INR,Outstanding,24
+EMP-10313,Sam Sharma,sam.sharma38@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,Hybrid,Germany,Berlin,2023-10-26,106008,EUR,Meets Expectations,5
+EMP-10314,Karthik Miller,karthik.miller64@itcompany.com,Quality Assurance,Automation Engineer,Full-Time,Hybrid,USA,San Francisco,2023-07-28,92043,USD,Exceeds Expectations,12
+EMP-10315,Taylor Sharma,taylor.sharma97@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Full-Time,On-Site,Germany,Berlin,2019-10-15,58868,EUR,Meets Expectations,5
+EMP-10316,Michael Williams,michael.williams96@itcompany.com,Software Engineering,Full Stack Developer,Part-Time,Hybrid,India,Hyderabad,2021-07-07,1468950,INR,Meets Expectations,2
+EMP-10317,Rahul Iyer,rahul.iyer42@itcompany.com,Quality Assurance,QA Tester,Part-Time,Hybrid,USA,Austin,2022-03-03,92106,USD,Meets Expectations,25
+EMP-10318,Vikram Davis,vikram.davis52@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Full-Time,On-Site,USA,San Francisco,2019-07-30,94720,USD,Meets Expectations,7
+EMP-10319,Ananya Sharma,ananya.sharma88@itcompany.com,Data & AI,Data Analyst,Part-Time,Hybrid,India,Hyderabad,2018-02-16,741041,INR,Meets Expectations,12
+EMP-10320,Vikram Singh,vikram.singh62@itcompany.com,Cloud & DevOps,Cloud Engineer,Contract,Hybrid,USA,Austin,2019-02-05,85357,USD,Meets Expectations,7
+EMP-10321,Michael Taylor,michael.taylor83@itcompany.com,Product Management,Product Manager,Full-Time,Hybrid,Germany,Berlin,2025-03-10,107475,EUR,Meets Expectations,2
+EMP-10322,Jordan Smith,jordan.smith45@itcompany.com,Quality Assurance,QA Lead,Contract,On-Site,UK,London,2020-12-29,116828,GBP,Meets Expectations,8
+EMP-10323,Sarah Williams,sarah.williams22@itcompany.com,Cybersecurity,Penetration Tester,Part-Time,On-Site,UK,London,2022-04-06,63739,GBP,Meets Expectations,10
+EMP-10324,Emily Smith,emily.smith11@itcompany.com,Cybersecurity,Security Analyst,Full-Time,Hybrid,USA,San Francisco,2026-03-04,90231,USD,Meets Expectations,8
+EMP-10325,Taylor Wilson,taylor.wilson61@itcompany.com,Cloud & DevOps,Cloud Architect,Part-Time,On-Site,Singapore,Singapore,2018-07-18,83322,SGD,Meets Expectations,4
+EMP-10326,Sam Rao,sam.rao92@itcompany.com,Data & AI,BI Developer,Part-Time,Hybrid,Germany,Berlin,2022-01-10,54695,EUR,Meets Expectations,23
+EMP-10327,David Patel,david.patel96@itcompany.com,Quality Assurance,QA Lead,Full-Time,Remote,India,Hyderabad,2022-10-20,2323857,INR,Meets Expectations,16
+EMP-10328,Priya Patel,priya.patel13@itcompany.com,Software Engineering,Backend Engineer,Part-Time,Hybrid,India,Pune,2018-04-22,540264,INR,Meets Expectations,25
+EMP-10329,Ananya Verma,ananya.verma29@itcompany.com,Quality Assurance,QA Tester,Part-Time,On-Site,India,Bengaluru,2020-01-06,1047691,INR,Meets Expectations,18
+EMP-10330,Aarav Gupta,aarav.gupta16@itcompany.com,Data & AI,AI/ML Engineer,Full-Time,Hybrid,USA,Austin,2025-06-30,104815,USD,Meets Expectations,16
+EMP-10331,Priya Taylor,priya.taylor59@itcompany.com,Data & AI,AI/ML Engineer,Full-Time,On-Site,Singapore,Singapore,2019-03-20,79222,SGD,Exceeds Expectations,12
+EMP-10332,Amit Patel,amit.patel44@itcompany.com,Data & AI,Data Engineer,Full-Time,Remote,India,Bengaluru,2021-05-27,1078046,INR,Meets Expectations,6
+EMP-10333,Priya Patel,priya.patel70@itcompany.com,Product Management,Product Manager,Full-Time,Hybrid,India,Bengaluru,2021-01-26,2608623,INR,Meets Expectations,5
+EMP-10334,Aarav Gupta,aarav.gupta31@itcompany.com,Product Management,Associate Product Manager,Part-Time,Hybrid,USA,Austin,2023-06-21,207991,USD,Meets Expectations,3
+EMP-10335,Ananya Nair,ananya.nair50@itcompany.com,Software Engineering,Engineering Manager,Part-Time,Hybrid,UK,London,2024-12-22,105362,GBP,Meets Expectations,19
+EMP-10336,Rahul Davis,rahul.davis58@itcompany.com,IT Infrastructure,Network Engineer,Contract,Remote,India,Bengaluru,2023-04-28,685886,INR,Meets Expectations,23
+EMP-10337,Morgan Wilson,morgan.wilson43@itcompany.com,Software Engineering,Engineering Manager,Full-Time,On-Site,Germany,Berlin,2024-10-18,108140,EUR,Meets Expectations,23
+EMP-10338,Aarav Rao,aarav.rao15@itcompany.com,Cybersecurity,Security Engineer,Contract,On-Site,India,Hyderabad,2024-07-27,1166040,INR,Meets Expectations,1
+EMP-10339,Jordan Verma,jordan.verma62@itcompany.com,Data & AI,BI Developer,Part-Time,Hybrid,Germany,Berlin,2021-06-09,70618,EUR,Meets Expectations,12
+EMP-10340,Chris Reddy,chris.reddy42@itcompany.com,Quality Assurance,QA Tester,Contract,Remote,USA,San Francisco,2023-11-09,91435,USD,Meets Expectations,4
+EMP-10341,Sneha Anderson,sneha.anderson61@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Part-Time,Hybrid,Singapore,Singapore,2024-01-12,70255,SGD,Needs Improvement,2
+EMP-10342,Ananya Verma,ananya.verma75@itcompany.com,Cybersecurity,Security Analyst,Full-Time,Hybrid,India,Pune,2022-01-31,1425282,INR,Meets Expectations,17
+EMP-10343,Emily Sharma,emily.sharma37@itcompany.com,Cloud & DevOps,Cloud Architect,Part-Time,Hybrid,India,Bengaluru,2023-08-14,2155685,INR,Meets Expectations,4
+EMP-10344,Michael Sharma,michael.sharma40@itcompany.com,Product Management,Product Owner,Part-Time,Remote,Singapore,Singapore,2019-08-23,76125,SGD,Meets Expectations,9
+EMP-10345,Amit Iyer,amit.iyer88@itcompany.com,IT Infrastructure,IT Support Specialist,Part-Time,On-Site,Germany,Berlin,2022-09-14,75727,EUR,Needs Improvement,21
+EMP-10346,Taylor Verma,taylor.verma26@itcompany.com,Product Management,Director of Product,Contract,Hybrid,India,Bengaluru,2021-07-15,2560251,INR,Meets Expectations,18
+EMP-10347,Priya Anderson,priya.anderson98@itcompany.com,Data & AI,Data Analyst,Part-Time,Remote,Singapore,Singapore,2019-12-16,54442,SGD,Meets Expectations,4
+EMP-10348,Ananya Reddy,ananya.reddy19@itcompany.com,Cybersecurity,Security Analyst,Full-Time,On-Site,India,Bengaluru,2023-06-08,1002324,INR,Exceeds Expectations,16
+EMP-10349,Ananya Taylor,ananya.taylor63@itcompany.com,Product Management,Director of Product,Full-Time,Remote,USA,San Francisco,2024-08-20,213380,USD,Exceeds Expectations,12
+EMP-10350,Aarav Anderson,aarav.anderson36@itcompany.com,Data & AI,Data Engineer,Full-Time,Remote,USA,San Francisco,2018-03-18,91129,USD,Meets Expectations,17
+EMP-10351,Sam Rao,sam.rao55@itcompany.com,Quality Assurance,QA Tester,Full-Time,Hybrid,USA,Austin,2018-11-26,81093,USD,Meets Expectations,5
+EMP-10352,Sam Miller,sam.miller85@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,Hybrid,India,Pune,2019-01-15,1557386,INR,Meets Expectations,23
+EMP-10353,Rahul Verma,rahul.verma64@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Remote,India,Hyderabad,2024-11-05,780774,INR,Meets Expectations,16
+EMP-10354,Michael Sharma,michael.sharma77@itcompany.com,Software Engineering,Frontend Developer,Full-Time,Hybrid,USA,San Francisco,2019-01-17,102801,USD,Meets Expectations,4
+EMP-10355,Alex Smith,alex.smith43@itcompany.com,Quality Assurance,QA Lead,Part-Time,Remote,Germany,Berlin,2018-05-01,122500,EUR,Outstanding,22
+EMP-10356,Vikram Iyer,vikram.iyer92@itcompany.com,Cloud & DevOps,DevOps Specialist,Full-Time,On-Site,India,Pune,2021-07-11,1331118,INR,Meets Expectations,1
+EMP-10357,Alex Verma,alex.verma38@itcompany.com,Product Management,Product Manager,Full-Time,Remote,USA,Austin,2020-10-20,142376,USD,Exceeds Expectations,6
+EMP-10358,Aarav Patel,aarav.patel99@itcompany.com,Data & AI,Data Analyst,Full-Time,On-Site,India,Pune,2020-05-21,786213,INR,Exceeds Expectations,25
+EMP-10359,Pooja Verma,pooja.verma50@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Remote,UK,London,2025-11-27,57395,GBP,Outstanding,7
+EMP-10360,Sneha Davis,sneha.davis38@itcompany.com,Cybersecurity,CISO,Full-Time,On-Site,USA,Austin,2018-07-22,140757,USD,Meets Expectations,17
+EMP-10361,Vikram Nair,vikram.nair31@itcompany.com,IT Infrastructure,IT Support Specialist,Part-Time,On-Site,USA,Austin,2018-08-08,99976,USD,Exceeds Expectations,7
+EMP-10362,Aarav Verma,aarav.verma65@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,Remote,UK,London,2024-07-07,41294,GBP,Exceeds Expectations,11
+EMP-10363,Emily Kumar,emily.kumar79@itcompany.com,Data & AI,Data Scientist,Part-Time,Hybrid,USA,Austin,2018-07-02,121119,USD,Meets Expectations,12
+EMP-10364,Rahul Rao,rahul.rao37@itcompany.com,Quality Assurance,QA Lead,Part-Time,On-Site,USA,San Francisco,2018-04-23,196570,USD,Exceeds Expectations,4
+EMP-10365,Morgan Gupta,morgan.gupta49@itcompany.com,Software Engineering,Engineering Manager,Full-Time,Remote,USA,San Francisco,2022-12-26,186189,USD,Meets Expectations,8
+EMP-10366,Taylor Verma,taylor.verma60@itcompany.com,Software Engineering,Backend Engineer,Contract,Remote,Germany,Berlin,2024-03-15,62303,EUR,Needs Improvement,9
+EMP-10367,Priya Anderson,priya.anderson46@itcompany.com,Cybersecurity,Security Analyst,Full-Time,Hybrid,Germany,Berlin,2019-07-26,72324,EUR,Meets Expectations,23
+EMP-10368,Chris Reddy,chris.reddy54@itcompany.com,Cloud & DevOps,Cloud Engineer,Contract,Remote,Germany,Berlin,2021-08-17,52850,EUR,Meets Expectations,25
+EMP-10369,Alex Sharma,alex.sharma92@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Remote,India,Bengaluru,2020-06-16,893591,INR,Meets Expectations,4
+EMP-10370,Rahul Johnson,rahul.johnson43@itcompany.com,Quality Assurance,Automation Engineer,Part-Time,On-Site,UK,London,2024-09-26,62097,GBP,Meets Expectations,18
+EMP-10371,Priya Brown,priya.brown47@itcompany.com,Cybersecurity,Penetration Tester,Part-Time,Remote,USA,San Francisco,2022-06-14,110085,USD,Exceeds Expectations,7
+EMP-10372,Sneha Taylor,sneha.taylor99@itcompany.com,Quality Assurance,Automation Engineer,Contract,Hybrid,USA,Austin,2021-10-01,111345,USD,Outstanding,16
+EMP-10373,Aarav Smith,aarav.smith11@itcompany.com,Software Engineering,Frontend Developer,Full-Time,Remote,India,Pune,2020-04-20,675969,INR,Meets Expectations,5
+EMP-10374,Amit Nair,amit.nair91@itcompany.com,Data & AI,Data Analyst,Contract,On-Site,India,Hyderabad,2023-10-26,948979,INR,Exceeds Expectations,13
+EMP-10375,Amit Reddy,amit.reddy61@itcompany.com,Quality Assurance,Automation Engineer,Full-Time,On-Site,Germany,Berlin,2024-01-26,48800,EUR,Meets Expectations,13
+EMP-10376,Priya Rao,priya.rao49@itcompany.com,Cloud & DevOps,Cloud Engineer,Part-Time,Hybrid,Singapore,Singapore,2020-12-10,53105,SGD,Exceeds Expectations,12
+EMP-10377,Alex Miller,alex.miller26@itcompany.com,Quality Assurance,Automation Engineer,Contract,Hybrid,USA,Austin,2025-08-09,98613,USD,Meets Expectations,15
+EMP-10378,Taylor Rao,taylor.rao45@itcompany.com,Data & AI,BI Developer,Full-Time,Remote,India,Hyderabad,2026-05-15,877059,INR,Meets Expectations,8
+EMP-10379,Jordan Singh,jordan.singh92@itcompany.com,Quality Assurance,QA Lead,Full-Time,Remote,Germany,Berlin,2021-05-28,98683,EUR,Meets Expectations,9
+EMP-10380,Karthik Reddy,karthik.reddy32@itcompany.com,Quality Assurance,Automation Engineer,Full-Time,On-Site,USA,San Francisco,2020-10-01,73390,USD,Meets Expectations,10
+EMP-10381,Ananya Miller,ananya.miller41@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,On-Site,Singapore,Singapore,2018-03-01,75952,SGD,Meets Expectations,3
+EMP-10382,Karthik Williams,karthik.williams31@itcompany.com,Cybersecurity,Security Analyst,Full-Time,Remote,USA,San Francisco,2022-04-05,119945,USD,Outstanding,3
+EMP-10383,David Brown,david.brown63@itcompany.com,Quality Assurance,Automation Engineer,Full-Time,Hybrid,India,Hyderabad,2020-03-21,1316710,INR,Exceeds Expectations,24
+EMP-10384,Karthik Smith,karthik.smith49@itcompany.com,Quality Assurance,QA Tester,Full-Time,Hybrid,Germany,Berlin,2023-11-08,79871,EUR,Outstanding,6
+EMP-10385,Ananya Smith,ananya.smith48@itcompany.com,Cybersecurity,CISO,Contract,Remote,India,Hyderabad,2025-07-26,2458986,INR,Meets Expectations,5
+EMP-10386,Vikram Patel,vikram.patel14@itcompany.com,Cloud & DevOps,DevOps Specialist,Part-Time,On-Site,UK,London,2023-11-29,58920,GBP,Exceeds Expectations,3
+EMP-10387,Aarav Davis,aarav.davis78@itcompany.com,Cloud & DevOps,DevOps Specialist,Part-Time,Hybrid,India,Pune,2020-10-27,952489,INR,Exceeds Expectations,25
+EMP-10388,Alex Gupta,alex.gupta83@itcompany.com,Software Engineering,Backend Engineer,Full-Time,On-Site,Germany,Berlin,2019-08-31,66736,EUR,Outstanding,7
+EMP-10389,Sneha Verma,sneha.verma40@itcompany.com,IT Infrastructure,Network Engineer,Part-Time,Remote,USA,San Francisco,2025-10-21,121205,USD,Meets Expectations,23
+EMP-10390,Chris Williams,chris.williams93@itcompany.com,Product Management,Product Manager,Part-Time,Hybrid,India,Pune,2018-09-27,2594514,INR,Exceeds Expectations,17
+EMP-10391,Priya Wilson,priya.wilson18@itcompany.com,Quality Assurance,QA Tester,Contract,Remote,Germany,Berlin,2025-07-05,77281,EUR,Meets Expectations,15
+EMP-10392,Vikram Anderson,vikram.anderson94@itcompany.com,IT Infrastructure,Network Engineer,Contract,Hybrid,India,Pune,2020-11-03,921796,INR,Meets Expectations,9
+EMP-10393,Jordan Johnson,jordan.johnson92@itcompany.com,IT Infrastructure,Network Engineer,Contract,Remote,India,Pune,2020-04-16,859934,INR,Meets Expectations,11
+EMP-10394,Michael Nair,michael.nair64@itcompany.com,Software Engineering,Full Stack Developer,Full-Time,Remote,USA,San Francisco,2024-03-16,83034,USD,Meets Expectations,11
+EMP-10395,Ananya Smith,ananya.smith37@itcompany.com,Data & AI,BI Developer,Contract,On-Site,India,Pune,2020-12-29,1245949,INR,Meets Expectations,6
+EMP-10396,Sarah Taylor,sarah.taylor49@itcompany.com,Cloud & DevOps,Cloud Architect,Part-Time,Remote,USA,San Francisco,2020-02-11,186758,USD,Meets Expectations,21
+EMP-10397,Aarav Iyer,aarav.iyer28@itcompany.com,Quality Assurance,QA Tester,Full-Time,Remote,India,Bengaluru,2024-10-31,1461211,INR,Meets Expectations,3
+EMP-10398,Alex Gupta,alex.gupta71@itcompany.com,Quality Assurance,Automation Engineer,Full-Time,On-Site,India,Bengaluru,2019-11-13,639976,INR,Exceeds Expectations,25
+EMP-10399,Karthik Jones,karthik.jones69@itcompany.com,Quality Assurance,Automation Engineer,Part-Time,Remote,Singapore,Singapore,2025-10-04,54392,SGD,Exceeds Expectations,15
+EMP-10400,Priya Kumar,priya.kumar15@itcompany.com,Product Management,Associate Product Manager,Full-Time,Remote,Singapore,Singapore,2024-02-10,99127,SGD,Exceeds Expectations,14
+EMP-10401,David Reddy,david.reddy55@itcompany.com,Product Management,Associate Product Manager,Contract,Remote,USA,Austin,2018-10-06,199624,USD,Meets Expectations,12
+EMP-10402,Vikram Verma,vikram.verma13@itcompany.com,Cybersecurity,CISO,Full-Time,On-Site,USA,San Francisco,2020-08-05,194629,USD,Meets Expectations,18
+EMP-10403,Rahul Smith,rahul.smith37@itcompany.com,Quality Assurance,QA Tester,Part-Time,Hybrid,India,Bengaluru,2023-08-13,618671,INR,Meets Expectations,3
+EMP-10404,Chris Sharma,chris.sharma41@itcompany.com,IT Infrastructure,System Administrator,Full-Time,Hybrid,USA,San Francisco,2021-04-22,109749,USD,Exceeds Expectations,8
+EMP-10405,Vikram Miller,vikram.miller89@itcompany.com,Cybersecurity,Security Analyst,Part-Time,Remote,USA,San Francisco,2025-09-08,118069,USD,Exceeds Expectations,12
+EMP-10406,Sam Williams,sam.williams38@itcompany.com,Cloud & DevOps,Cloud Architect,Contract,Hybrid,UK,London,2024-01-18,112898,GBP,Meets Expectations,5
+EMP-10407,Sarah Smith,sarah.smith93@itcompany.com,Product Management,Product Owner,Full-Time,On-Site,USA,Austin,2020-04-23,79792,USD,Exceeds Expectations,9
+EMP-10408,David Reddy,david.reddy48@itcompany.com,Software Engineering,Engineering Manager,Full-Time,On-Site,Singapore,Singapore,2021-04-26,133125,SGD,Meets Expectations,4
+EMP-10409,Jordan Verma,jordan.verma65@itcompany.com,Quality Assurance,QA Tester,Full-Time,On-Site,Singapore,Singapore,2022-02-16,68495,SGD,Meets Expectations,12
+EMP-10410,Amit Jones,amit.jones36@itcompany.com,Cybersecurity,Security Engineer,Full-Time,On-Site,India,Bengaluru,2019-07-26,1083967,INR,Needs Improvement,20
+EMP-10411,Pooja Gupta,pooja.gupta17@itcompany.com,Product Management,Director of Product,Full-Time,Remote,USA,Austin,2020-03-18,205878,USD,Meets Expectations,10
+EMP-10412,Priya Smith,priya.smith13@itcompany.com,Product Management,Product Manager,Contract,Remote,India,Bengaluru,2025-01-04,1512420,INR,Meets Expectations,24
+EMP-10413,Sam Brown,sam.brown52@itcompany.com,Product Management,Associate Product Manager,Full-Time,Hybrid,India,Hyderabad,2024-05-30,2472806,INR,Meets Expectations,12
+EMP-10414,Vikram Brown,vikram.brown88@itcompany.com,IT Infrastructure,Network Engineer,Part-Time,Hybrid,India,Hyderabad,2020-05-30,1419838,INR,Meets Expectations,24
+EMP-10415,Sarah Rao,sarah.rao84@itcompany.com,IT Infrastructure,Network Engineer,Part-Time,On-Site,USA,Austin,2019-08-09,105648,USD,Meets Expectations,23
+EMP-10416,Sam Iyer,sam.iyer90@itcompany.com,Quality Assurance,QA Lead,Full-Time,On-Site,UK,London,2023-07-19,119518,GBP,Meets Expectations,6
+EMP-10417,Morgan Smith,morgan.smith48@itcompany.com,Cloud & DevOps,DevOps Specialist,Full-Time,Hybrid,USA,Austin,2022-02-27,93959,USD,Meets Expectations,13
+EMP-10418,Rohan Verma,rohan.verma87@itcompany.com,Cybersecurity,Security Engineer,Contract,On-Site,India,Pune,2023-01-27,1177992,INR,Meets Expectations,3
+EMP-10419,Emily Miller,emily.miller98@itcompany.com,Data & AI,AI/ML Engineer,Contract,Hybrid,India,Pune,2023-11-29,1177696,INR,Exceeds Expectations,19
+EMP-10420,Amit Nair,amit.nair29@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,On-Site,Germany,Berlin,2019-04-25,60107,EUR,Meets Expectations,17
+EMP-10421,Pooja Miller,pooja.miller31@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,On-Site,USA,San Francisco,2025-12-05,178362,USD,Meets Expectations,8
+EMP-10422,Pooja Reddy,pooja.reddy25@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Part-Time,On-Site,UK,London,2018-07-08,45789,GBP,Exceeds Expectations,5
+EMP-10423,Emily Miller,emily.miller73@itcompany.com,Product Management,Director of Product,Full-Time,Hybrid,Singapore,Singapore,2022-07-20,136737,SGD,Outstanding,23
+EMP-10424,Jordan Gupta,jordan.gupta68@itcompany.com,Product Management,Product Owner,Full-Time,On-Site,India,Pune,2022-11-10,1416468,INR,Meets Expectations,17
+EMP-10425,Sam Davis,sam.davis92@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Remote,India,Bengaluru,2022-03-02,574104,INR,Outstanding,19
+EMP-10426,Emily Reddy,emily.reddy35@itcompany.com,Data & AI,Data Analyst,Contract,Hybrid,Singapore,Singapore,2024-01-08,74247,SGD,Meets Expectations,23
+EMP-10427,Taylor Smith,taylor.smith91@itcompany.com,IT Infrastructure,System Administrator,Part-Time,Remote,India,Bengaluru,2021-11-30,857523,INR,Meets Expectations,13
+EMP-10428,Michael Anderson,michael.anderson81@itcompany.com,Software Engineering,Engineering Manager,Full-Time,On-Site,India,Hyderabad,2025-01-29,1467525,INR,Exceeds Expectations,15
+EMP-10429,Michael Taylor,michael.taylor36@itcompany.com,Software Engineering,Engineering Manager,Full-Time,Remote,UK,London,2019-05-21,89054,GBP,Needs Improvement,15
+EMP-10430,Ananya Miller,ananya.miller78@itcompany.com,Cybersecurity,Security Engineer,Full-Time,Remote,Germany,Berlin,2018-08-01,70333,EUR,Meets Expectations,24
+EMP-10431,Karthik Rao,karthik.rao46@itcompany.com,Data & AI,Data Scientist,Contract,Remote,India,Hyderabad,2019-10-07,545561,INR,Meets Expectations,5
+EMP-10432,Amit Nair,amit.nair52@itcompany.com,IT Infrastructure,Network Engineer,Contract,On-Site,India,Bengaluru,2021-03-14,482769,INR,Meets Expectations,1
+EMP-10433,Sam Wilson,sam.wilson70@itcompany.com,Cloud & DevOps,DevOps Specialist,Full-Time,Hybrid,UK,London,2020-04-21,59229,GBP,Meets Expectations,8
+EMP-10434,Priya Nair,priya.nair19@itcompany.com,Quality Assurance,Automation Engineer,Full-Time,Remote,India,Bengaluru,2021-01-15,475720,INR,Meets Expectations,12
+EMP-10435,Chris Williams,chris.williams56@itcompany.com,Cybersecurity,Security Engineer,Contract,On-Site,USA,Austin,2018-08-30,111755,USD,Meets Expectations,15
+EMP-10436,David Kumar,david.kumar54@itcompany.com,Cybersecurity,CISO,Part-Time,Remote,USA,Austin,2018-07-05,136175,USD,Meets Expectations,20
+EMP-10437,Emily Jones,emily.jones65@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,On-Site,India,Pune,2022-09-22,694635,INR,Outstanding,4
+EMP-10438,Chris Smith,chris.smith13@itcompany.com,Product Management,Director of Product,Full-Time,Hybrid,UK,London,2019-05-18,100490,GBP,Exceeds Expectations,10
+EMP-10439,Karthik Brown,karthik.brown61@itcompany.com,Cybersecurity,Security Engineer,Contract,Remote,UK,London,2018-05-14,61819,GBP,Meets Expectations,16
+EMP-10440,Sneha Wilson,sneha.wilson26@itcompany.com,Software Engineering,Backend Engineer,Part-Time,Remote,Singapore,Singapore,2018-09-19,73920,SGD,Meets Expectations,23
+EMP-10441,Aarav Reddy,aarav.reddy83@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,Remote,Singapore,Singapore,2025-02-19,69968,SGD,Meets Expectations,14
+EMP-10442,Chris Rao,chris.rao66@itcompany.com,Product Management,Product Manager,Full-Time,Remote,USA,San Francisco,2019-11-24,192540,USD,Meets Expectations,2
+EMP-10443,Emily Iyer,emily.iyer27@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Remote,USA,Austin,2020-03-10,114365,USD,Meets Expectations,16
+EMP-10444,Rohan Gupta,rohan.gupta35@itcompany.com,Data & AI,Data Scientist,Full-Time,On-Site,Germany,Berlin,2023-10-08,53649,EUR,Needs Improvement,1
+EMP-10445,Priya Singh,priya.singh98@itcompany.com,Product Management,Product Owner,Full-Time,Remote,UK,London,2022-11-23,64400,GBP,Meets Expectations,22
+EMP-10446,Aarav Wilson,aarav.wilson26@itcompany.com,Quality Assurance,QA Tester,Full-Time,Hybrid,Germany,Berlin,2019-05-26,51395,EUR,Outstanding,5
+EMP-10447,Taylor Rao,taylor.rao99@itcompany.com,Product Management,Product Manager,Full-Time,On-Site,India,Pune,2019-03-14,1452879,INR,Meets Expectations,18
+EMP-10448,Rahul Sharma,rahul.sharma70@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,Remote,USA,Austin,2022-06-16,142425,USD,Meets Expectations,14
+EMP-10449,Sam Johnson,sam.johnson33@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,On-Site,UK,London,2022-10-01,43136,GBP,Meets Expectations,13
+EMP-10450,Rahul Singh,rahul.singh21@itcompany.com,IT Infrastructure,Network Engineer,Contract,Hybrid,Singapore,Singapore,2020-07-27,51371,SGD,Outstanding,12
+EMP-10451,Jordan Patel,jordan.patel28@itcompany.com,IT Infrastructure,IT Support Specialist,Part-Time,Remote,Germany,Berlin,2020-12-06,71694,EUR,Meets Expectations,8
+EMP-10452,Amit Wilson,amit.wilson91@itcompany.com,Cybersecurity,Security Engineer,Part-Time,Remote,India,Pune,2018-02-18,1440449,INR,Meets Expectations,24
+EMP-10453,Chris Nair,chris.nair81@itcompany.com,Quality Assurance,Automation Engineer,Contract,Remote,India,Pune,2019-11-24,530846,INR,Meets Expectations,9
+EMP-10454,Alex Verma,alex.verma68@itcompany.com,Software Engineering,Engineering Manager,Full-Time,Remote,India,Hyderabad,2019-11-30,2681912,INR,Exceeds Expectations,8
+EMP-10455,Taylor Kumar,taylor.kumar66@itcompany.com,Product Management,Product Owner,Full-Time,Hybrid,UK,London,2019-01-01,44798,GBP,Needs Improvement,2
+EMP-10456,Sarah Reddy,sarah.reddy36@itcompany.com,IT Infrastructure,System Administrator,Full-Time,Remote,India,Pune,2025-01-01,1244588,INR,Exceeds Expectations,2
+EMP-10457,Chris Verma,chris.verma43@itcompany.com,IT Infrastructure,System Administrator,Contract,On-Site,India,Hyderabad,2024-01-30,1116605,INR,Meets Expectations,1
+EMP-10458,Sneha Anderson,sneha.anderson94@itcompany.com,IT Infrastructure,Network Engineer,Part-Time,Remote,India,Bengaluru,2021-03-16,826373,INR,Exceeds Expectations,8
+EMP-10459,Sarah Anderson,sarah.anderson87@itcompany.com,Quality Assurance,QA Lead,Contract,Hybrid,Singapore,Singapore,2022-10-29,95048,SGD,Meets Expectations,14
+EMP-10460,Aarav Singh,aarav.singh60@itcompany.com,Data & AI,BI Developer,Full-Time,On-Site,Singapore,Singapore,2023-10-17,75846,SGD,Meets Expectations,2
+EMP-10461,Jordan Anderson,jordan.anderson28@itcompany.com,Data & AI,AI/ML Engineer,Full-Time,Hybrid,UK,London,2023-08-15,52091,GBP,Meets Expectations,11
+EMP-10462,Pooja Patel,pooja.patel52@itcompany.com,Cloud & DevOps,Cloud Architect,Part-Time,Remote,USA,Austin,2025-05-16,161901,USD,Meets Expectations,2
+EMP-10463,Sneha Rao,sneha.rao88@itcompany.com,Cloud & DevOps,DevOps Specialist,Full-Time,Hybrid,India,Bengaluru,2019-02-25,1355442,INR,Meets Expectations,21
+EMP-10464,Rahul Jones,rahul.jones32@itcompany.com,Cybersecurity,CISO,Part-Time,Remote,India,Bengaluru,2021-03-12,1317329,INR,Meets Expectations,18
+EMP-10465,Aarav Verma,aarav.verma91@itcompany.com,Product Management,Associate Product Manager,Full-Time,Remote,USA,San Francisco,2026-04-27,198522,USD,Meets Expectations,11
+EMP-10466,David Singh,david.singh42@itcompany.com,Cybersecurity,Penetration Tester,Full-Time,Remote,USA,Austin,2025-05-02,94957,USD,Meets Expectations,15
+EMP-10467,Taylor Taylor,taylor.taylor57@itcompany.com,Quality Assurance,QA Tester,Full-Time,Remote,UK,London,2021-11-11,63194,GBP,Meets Expectations,13
+EMP-10468,Ananya Kumar,ananya.kumar90@itcompany.com,IT Infrastructure,IT Support Specialist,Part-Time,On-Site,UK,London,2023-07-22,57397,GBP,Exceeds Expectations,4
+EMP-10469,Alex Davis,alex.davis56@itcompany.com,Product Management,Director of Product,Full-Time,Hybrid,India,Bengaluru,2019-09-02,2709776,INR,Meets Expectations,21
+EMP-10470,Rohan Verma,rohan.verma14@itcompany.com,Cloud & DevOps,Cloud Architect,Part-Time,Hybrid,USA,Austin,2021-09-14,169759,USD,Exceeds Expectations,4
+EMP-10471,Pooja Taylor,pooja.taylor55@itcompany.com,Software Engineering,Backend Engineer,Full-Time,On-Site,USA,Austin,2018-08-11,86254,USD,Meets Expectations,24
+EMP-10472,Karthik Iyer,karthik.iyer75@itcompany.com,Cloud & DevOps,DevOps Specialist,Contract,On-Site,Germany,Berlin,2025-11-18,74363,EUR,Outstanding,15
+EMP-10473,Michael Miller,michael.miller90@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,Remote,India,Hyderabad,2020-05-24,2702531,INR,Meets Expectations,16
+EMP-10474,Rohan Brown,rohan.brown55@itcompany.com,Cybersecurity,Security Engineer,Part-Time,On-Site,USA,Austin,2020-10-27,107240,USD,Meets Expectations,11
+EMP-10475,David Williams,david.williams87@itcompany.com,Software Engineering,Backend Engineer,Full-Time,Hybrid,USA,San Francisco,2022-11-26,99727,USD,Meets Expectations,23
+EMP-10476,Vikram Verma,vikram.verma98@itcompany.com,Cybersecurity,Security Engineer,Full-Time,Hybrid,India,Bengaluru,2023-09-13,538463,INR,Exceeds Expectations,4
+EMP-10477,Sneha Sharma,sneha.sharma80@itcompany.com,IT Infrastructure,System Administrator,Full-Time,Remote,India,Hyderabad,2025-08-12,526108,INR,Meets Expectations,5
+EMP-10478,Amit Brown,amit.brown25@itcompany.com,Product Management,Director of Product,Contract,Hybrid,USA,Austin,2025-09-01,140703,USD,Meets Expectations,6
+EMP-10479,Amit Nair,amit.nair69@itcompany.com,Quality Assurance,Automation Engineer,Full-Time,Hybrid,Singapore,Singapore,2021-08-04,77062,SGD,Meets Expectations,14
+EMP-10480,Rohan Taylor,rohan.taylor42@itcompany.com,Cybersecurity,Penetration Tester,Full-Time,Remote,Singapore,Singapore,2023-10-23,64331,SGD,Meets Expectations,21
+EMP-10481,David Brown,david.brown19@itcompany.com,Data & AI,Data Analyst,Contract,Remote,Germany,Berlin,2019-07-11,52796,EUR,Meets Expectations,19
+EMP-10482,Morgan Johnson,morgan.johnson46@itcompany.com,Software Engineering,Frontend Developer,Full-Time,Remote,India,Pune,2020-01-08,1200086,INR,Meets Expectations,21
+EMP-10483,Amit Wilson,amit.wilson89@itcompany.com,Software Engineering,Engineering Manager,Full-Time,Remote,India,Bengaluru,2021-10-20,3486410,INR,Exceeds Expectations,8
+EMP-10484,Pooja Wilson,pooja.wilson76@itcompany.com,Data & AI,Data Analyst,Full-Time,On-Site,India,Bengaluru,2022-05-26,788461,INR,Meets Expectations,12
+EMP-10485,Chris Kumar,chris.kumar33@itcompany.com,IT Infrastructure,System Administrator,Contract,On-Site,India,Hyderabad,2025-03-31,1021208,INR,Meets Expectations,14
+EMP-10486,Amit Smith,amit.smith55@itcompany.com,Data & AI,AI/ML Engineer,Full-Time,On-Site,UK,London,2022-04-22,50162,GBP,Exceeds Expectations,6
+EMP-10487,Alex Smith,alex.smith45@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,On-Site,Germany,Berlin,2025-11-16,69027,EUR,Meets Expectations,12
+EMP-10488,Chris Rao,chris.rao31@itcompany.com,Software Engineering,Backend Engineer,Full-Time,Hybrid,Singapore,Singapore,2020-08-27,51530,SGD,Meets Expectations,18
+EMP-10489,Emily Anderson,emily.anderson84@itcompany.com,Quality Assurance,Automation Engineer,Full-Time,Remote,India,Hyderabad,2018-11-22,881181,INR,Meets Expectations,4
+EMP-10490,Morgan Patel,morgan.patel56@itcompany.com,Quality Assurance,Automation Engineer,Part-Time,Remote,India,Hyderabad,2022-08-12,1016057,INR,Exceeds Expectations,7
+EMP-10491,Pooja Sharma,pooja.sharma21@itcompany.com,Cybersecurity,Security Engineer,Full-Time,Hybrid,India,Bengaluru,2018-12-14,585721,INR,Meets Expectations,12
+EMP-10492,Emily Wilson,emily.wilson40@itcompany.com,Data & AI,Data Scientist,Full-Time,On-Site,India,Bengaluru,2018-01-16,759616,INR,Meets Expectations,24
+EMP-10493,Vikram Smith,vikram.smith60@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,Hybrid,UK,London,2025-09-06,50554,GBP,Meets Expectations,15
+EMP-10494,Morgan Reddy,morgan.reddy40@itcompany.com,Data & AI,Data Scientist,Full-Time,Hybrid,USA,San Francisco,2025-03-10,122770,USD,Needs Improvement,11
+EMP-10495,Alex Miller,alex.miller42@itcompany.com,Cloud & DevOps,DevOps Specialist,Full-Time,Remote,USA,San Francisco,2022-05-20,101200,USD,Meets Expectations,2
+EMP-10496,Rahul Nair,rahul.nair20@itcompany.com,Quality Assurance,QA Tester,Contract,Remote,UK,London,2019-04-09,55208,GBP,Exceeds Expectations,9
+EMP-10497,Karthik Davis,karthik.davis43@itcompany.com,Quality Assurance,Automation Engineer,Full-Time,On-Site,India,Hyderabad,2021-11-12,1463665,INR,Meets Expectations,13
+EMP-10498,Rohan Anderson,rohan.anderson71@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,On-Site,India,Pune,2022-10-19,1184103,INR,Meets Expectations,17
+EMP-10499,Taylor Kumar,taylor.kumar54@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,Remote,India,Bengaluru,2025-07-26,906194,INR,Meets Expectations,10
+EMP-10500,Pooja Singh,pooja.singh91@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Full-Time,Hybrid,UK,London,2023-04-04,63856,GBP,Exceeds Expectations,7
+EMP-10501,Vikram Taylor,vikram.taylor37@itcompany.com,Data & AI,BI Developer,Part-Time,Hybrid,India,Pune,2024-12-30,1117620,INR,Exceeds Expectations,3
+EMP-10502,Sneha Nair,sneha.nair30@itcompany.com,Product Management,Associate Product Manager,Part-Time,Hybrid,India,Bengaluru,2026-05-18,3093344,INR,Exceeds Expectations,20
+EMP-10503,Emily Davis,emily.davis13@itcompany.com,Data & AI,AI/ML Engineer,Full-Time,Hybrid,USA,San Francisco,2023-01-26,71549,USD,Outstanding,7
+EMP-10504,Rahul Miller,rahul.miller95@itcompany.com,Software Engineering,Engineering Manager,Full-Time,Hybrid,India,Bengaluru,2022-03-10,1243325,INR,Meets Expectations,25
+EMP-10505,Priya Singh,priya.singh91@itcompany.com,Software Engineering,Engineering Manager,Full-Time,Remote,Germany,Berlin,2024-12-11,108924,EUR,Meets Expectations,4
+EMP-10506,Karthik Taylor,karthik.taylor48@itcompany.com,Data & AI,Data Engineer,Full-Time,Hybrid,USA,San Francisco,2021-01-06,71599,USD,Meets Expectations,4
+EMP-10507,Chris Singh,chris.singh81@itcompany.com,Cybersecurity,Security Analyst,Full-Time,Remote,Singapore,Singapore,2021-03-30,74062,SGD,Meets Expectations,12
+EMP-10508,Emily Smith,emily.smith16@itcompany.com,Cybersecurity,Security Analyst,Full-Time,On-Site,India,Bengaluru,2023-12-15,645816,INR,Meets Expectations,16
+EMP-10509,Vikram Nair,vikram.nair28@itcompany.com,Cybersecurity,Security Engineer,Full-Time,Remote,USA,Austin,2025-03-02,120173,USD,Meets Expectations,8
+EMP-10510,Emily Reddy,emily.reddy65@itcompany.com,Data & AI,Data Scientist,Full-Time,On-Site,Germany,Berlin,2020-02-23,69831,EUR,Meets Expectations,20
+EMP-10511,Michael Patel,michael.patel43@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Full-Time,Remote,Germany,Berlin,2018-01-09,70172,EUR,Outstanding,14
+EMP-10512,Sneha Miller,sneha.miller98@itcompany.com,Cybersecurity,Security Analyst,Part-Time,On-Site,India,Bengaluru,2019-05-22,1384438,INR,Meets Expectations,13
+EMP-10513,Priya Miller,priya.miller81@itcompany.com,Software Engineering,Frontend Developer,Full-Time,On-Site,UK,London,2026-04-28,63631,GBP,Meets Expectations,14
+EMP-10514,Rohan Jones,rohan.jones11@itcompany.com,Data & AI,Data Scientist,Full-Time,On-Site,India,Hyderabad,2024-09-21,480090,INR,Outstanding,8
+EMP-10515,Alex Iyer,alex.iyer26@itcompany.com,IT Infrastructure,Network Engineer,Contract,On-Site,India,Pune,2022-03-14,902764,INR,Meets Expectations,12
+EMP-10516,Rahul Sharma,rahul.sharma25@itcompany.com,IT Infrastructure,Network Engineer,Part-Time,Remote,India,Hyderabad,2025-08-08,1190706,INR,Exceeds Expectations,19
+EMP-10517,Alex Anderson,alex.anderson24@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,On-Site,USA,Austin,2021-09-15,120794,USD,Meets Expectations,21
+EMP-10518,Rohan Johnson,rohan.johnson82@itcompany.com,Cybersecurity,Security Analyst,Full-Time,Remote,USA,Austin,2024-12-23,100525,USD,Meets Expectations,23
+EMP-10519,Amit Iyer,amit.iyer88@itcompany.com,Quality Assurance,QA Lead,Contract,Hybrid,USA,San Francisco,2019-10-27,154532,USD,Outstanding,21
+EMP-10520,Karthik Williams,karthik.williams28@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,On-Site,USA,Austin,2022-12-01,119216,USD,Meets Expectations,17
+EMP-10521,Morgan Williams,morgan.williams40@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Remote,Germany,Berlin,2018-04-25,51799,EUR,Meets Expectations,13
+EMP-10522,Chris Singh,chris.singh82@itcompany.com,Software Engineering,Junior Developer,Contract,Hybrid,India,Hyderabad,2025-03-17,744979,INR,Meets Expectations,25
+EMP-10523,Jordan Iyer,jordan.iyer33@itcompany.com,IT Infrastructure,System Administrator,Contract,Hybrid,USA,San Francisco,2026-04-09,97202,USD,Meets Expectations,4
+EMP-10524,Sarah Smith,sarah.smith75@itcompany.com,Software Engineering,Tech Lead,Full-Time,Hybrid,UK,London,2020-11-18,110741,GBP,Exceeds Expectations,12
+EMP-10525,Aarav Anderson,aarav.anderson18@itcompany.com,Data & AI,Data Scientist,Full-Time,On-Site,USA,Austin,2024-04-17,71317,USD,Exceeds Expectations,1
+EMP-10526,Aarav Davis,aarav.davis64@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,Remote,India,Pune,2019-09-28,1007326,INR,Meets Expectations,14
+EMP-10527,Emily Rao,emily.rao16@itcompany.com,Product Management,Associate Product Manager,Full-Time,Remote,India,Bengaluru,2023-01-10,2630414,INR,Meets Expectations,21
+EMP-10528,David Smith,david.smith33@itcompany.com,Quality Assurance,Automation Engineer,Contract,Remote,Singapore,Singapore,2022-12-24,53192,SGD,Exceeds Expectations,3
+EMP-10529,Aarav Johnson,aarav.johnson36@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,On-Site,India,Bengaluru,2018-04-04,640620,INR,Meets Expectations,8
+EMP-10530,Rohan Gupta,rohan.gupta13@itcompany.com,Cybersecurity,Penetration Tester,Full-Time,Hybrid,USA,San Francisco,2019-01-06,124350,USD,Exceeds Expectations,22
+EMP-10531,Michael Nair,michael.nair57@itcompany.com,IT Infrastructure,System Administrator,Contract,On-Site,UK,London,2023-02-01,47132,GBP,Meets Expectations,18
+EMP-10532,Taylor Williams,taylor.williams24@itcompany.com,Cybersecurity,CISO,Full-Time,Hybrid,Germany,Berlin,2025-07-14,81422,EUR,Meets Expectations,13
+EMP-10533,Alex Nair,alex.nair21@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,Remote,UK,London,2022-09-13,83406,GBP,Outstanding,24
+EMP-10534,Alex Gupta,alex.gupta34@itcompany.com,Cybersecurity,Security Engineer,Part-Time,Hybrid,India,Hyderabad,2021-12-26,742000,INR,Meets Expectations,25
+EMP-10535,Michael Brown,michael.brown89@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,Hybrid,USA,San Francisco,2024-01-21,209039,USD,Exceeds Expectations,1
+EMP-10536,Vikram Rao,vikram.rao91@itcompany.com,Quality Assurance,QA Tester,Full-Time,Remote,USA,San Francisco,2021-09-30,73889,USD,Meets Expectations,5
+EMP-10537,Chris Sharma,chris.sharma79@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Hybrid,USA,San Francisco,2020-09-02,124188,USD,Meets Expectations,24
+EMP-10538,Sneha Davis,sneha.davis93@itcompany.com,Quality Assurance,QA Tester,Full-Time,Remote,Singapore,Singapore,2022-10-11,55438,SGD,Meets Expectations,2
+EMP-10539,Rohan Reddy,rohan.reddy70@itcompany.com,Software Engineering,Junior Developer,Full-Time,On-Site,USA,Austin,2020-08-21,117002,USD,Meets Expectations,1
+EMP-10540,David Rao,david.rao28@itcompany.com,Data & AI,BI Developer,Full-Time,Hybrid,UK,London,2022-01-23,52403,GBP,Meets Expectations,20
+EMP-10541,David Jones,david.jones45@itcompany.com,Software Engineering,Frontend Developer,Full-Time,Remote,Germany,Berlin,2018-08-20,48286,EUR,Meets Expectations,20
+EMP-10542,Amit Rao,amit.rao61@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Remote,USA,San Francisco,2026-05-29,123078,USD,Meets Expectations,18
+EMP-10543,Sam Verma,sam.verma17@itcompany.com,Cloud & DevOps,Cloud Engineer,Part-Time,Remote,USA,Austin,2021-11-14,78232,USD,Meets Expectations,21
+EMP-10544,Alex Patel,alex.patel89@itcompany.com,Cloud & DevOps,DevOps Specialist,Full-Time,Remote,Germany,Berlin,2020-06-14,64360,EUR,Meets Expectations,5
+EMP-10545,Vikram Wilson,vikram.wilson13@itcompany.com,Cybersecurity,Security Analyst,Contract,Hybrid,Singapore,Singapore,2025-10-20,53957,SGD,Needs Improvement,14
+EMP-10546,Sarah Rao,sarah.rao79@itcompany.com,Cybersecurity,Security Engineer,Contract,Hybrid,India,Bengaluru,2020-09-06,1137412,INR,Exceeds Expectations,7
+EMP-10547,Morgan Kumar,morgan.kumar26@itcompany.com,Software Engineering,Engineering Manager,Full-Time,Hybrid,Germany,Berlin,2018-04-12,133282,EUR,Meets Expectations,9
+EMP-10548,Emily Davis,emily.davis51@itcompany.com,Cybersecurity,Security Engineer,Part-Time,Hybrid,Singapore,Singapore,2018-05-17,73094,SGD,Exceeds Expectations,4
+EMP-10549,Chris Anderson,chris.anderson99@itcompany.com,Data & AI,Data Scientist,Full-Time,Remote,USA,San Francisco,2021-07-20,84704,USD,Meets Expectations,22
+EMP-10550,Priya Sharma,priya.sharma45@itcompany.com,Data & AI,AI/ML Engineer,Contract,Hybrid,UK,London,2018-03-21,56014,GBP,Meets Expectations,12
+EMP-10551,Rahul Patel,rahul.patel74@itcompany.com,Cloud & DevOps,Cloud Engineer,Contract,Remote,India,Hyderabad,2021-04-17,936642,INR,Meets Expectations,10
+EMP-10552,Pooja Patel,pooja.patel60@itcompany.com,Cybersecurity,Penetration Tester,Part-Time,On-Site,India,Bengaluru,2024-12-22,588876,INR,Meets Expectations,11
+EMP-10553,Ananya Singh,ananya.singh71@itcompany.com,Product Management,Product Owner,Full-Time,Hybrid,USA,San Francisco,2022-04-23,101589,USD,Outstanding,19
+EMP-10554,Michael Brown,michael.brown82@itcompany.com,Cloud & DevOps,DevOps Specialist,Full-Time,Hybrid,Germany,Berlin,2022-07-12,52887,EUR,Outstanding,8
+EMP-10555,Sneha Sharma,sneha.sharma66@itcompany.com,Cybersecurity,Security Engineer,Full-Time,Hybrid,India,Hyderabad,2025-01-28,881633,INR,Exceeds Expectations,3
+EMP-10556,Alex Verma,alex.verma62@itcompany.com,Cloud & DevOps,DevOps Specialist,Contract,Hybrid,Singapore,Singapore,2023-03-03,71489,SGD,Outstanding,12
+EMP-10557,Priya Anderson,priya.anderson49@itcompany.com,Cloud & DevOps,DevOps Specialist,Full-Time,Remote,Singapore,Singapore,2022-01-07,79446,SGD,Meets Expectations,6
+EMP-10558,Emily Williams,emily.williams82@itcompany.com,Cybersecurity,CISO,Contract,Remote,Germany,Berlin,2025-01-17,134834,EUR,Meets Expectations,13
+EMP-10559,Emily Sharma,emily.sharma71@itcompany.com,Software Engineering,Backend Engineer,Full-Time,Hybrid,Singapore,Singapore,2023-11-21,59604,SGD,Meets Expectations,17
+EMP-10560,Ananya Taylor,ananya.taylor94@itcompany.com,Cybersecurity,Security Analyst,Full-Time,Hybrid,India,Pune,2025-02-07,1423033,INR,Exceeds Expectations,6
+EMP-10561,Sam Gupta,sam.gupta56@itcompany.com,IT Infrastructure,System Administrator,Part-Time,On-Site,USA,Austin,2021-11-13,93390,USD,Exceeds Expectations,2
+EMP-10562,Michael Brown,michael.brown45@itcompany.com,Data & AI,BI Developer,Part-Time,Remote,India,Bengaluru,2021-11-19,754026,INR,Outstanding,17
+EMP-10563,Rahul Taylor,rahul.taylor52@itcompany.com,Data & AI,Data Engineer,Full-Time,Remote,USA,San Francisco,2019-09-02,82182,USD,Meets Expectations,17
+EMP-10564,Karthik Nair,karthik.nair13@itcompany.com,Data & AI,Data Analyst,Full-Time,Hybrid,Singapore,Singapore,2020-01-20,56781,SGD,Outstanding,6
+EMP-10565,Aarav Gupta,aarav.gupta99@itcompany.com,Data & AI,Data Engineer,Full-Time,Remote,Germany,Berlin,2024-02-08,57969,EUR,Needs Improvement,10
+EMP-10566,Ananya Nair,ananya.nair72@itcompany.com,Cybersecurity,Penetration Tester,Full-Time,Hybrid,India,Bengaluru,2021-09-05,1385586,INR,Meets Expectations,4
+EMP-10567,Alex Williams,alex.williams60@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Full-Time,Remote,Germany,Berlin,2025-07-19,45777,EUR,Meets Expectations,1
+EMP-10568,David Miller,david.miller93@itcompany.com,Data & AI,AI/ML Engineer,Part-Time,Remote,India,Bengaluru,2023-02-16,843323,INR,Meets Expectations,19
+EMP-10569,Emily Williams,emily.williams13@itcompany.com,Cybersecurity,Security Engineer,Full-Time,Hybrid,India,Hyderabad,2022-08-28,770835,INR,Exceeds Expectations,1
+EMP-10570,Taylor Johnson,taylor.johnson19@itcompany.com,Product Management,Associate Product Manager,Full-Time,Hybrid,USA,San Francisco,2024-02-21,199268,USD,Meets Expectations,4
+EMP-10571,Sarah Anderson,sarah.anderson11@itcompany.com,Product Management,Director of Product,Contract,Remote,USA,Austin,2020-05-16,176973,USD,Outstanding,21
+EMP-10572,Vikram Wilson,vikram.wilson39@itcompany.com,Data & AI,Data Engineer,Full-Time,Hybrid,India,Pune,2018-12-22,1482180,INR,Meets Expectations,12
+EMP-10573,Chris Nair,chris.nair91@itcompany.com,IT Infrastructure,System Administrator,Contract,Hybrid,India,Hyderabad,2019-09-06,1180859,INR,Meets Expectations,9
+EMP-10574,Ananya Wilson,ananya.wilson87@itcompany.com,Data & AI,BI Developer,Part-Time,Hybrid,UK,London,2023-02-14,49570,GBP,Meets Expectations,8
+EMP-10575,Priya Singh,priya.singh85@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,On-Site,Singapore,Singapore,2019-11-05,62454,SGD,Meets Expectations,12
+EMP-10576,Sarah Johnson,sarah.johnson38@itcompany.com,Product Management,Director of Product,Contract,Remote,USA,Austin,2018-11-29,198349,USD,Exceeds Expectations,22
+EMP-10577,Rohan Brown,rohan.brown32@itcompany.com,Software Engineering,Backend Engineer,Full-Time,Remote,UK,London,2024-01-17,51581,GBP,Meets Expectations,23
+EMP-10578,Rahul Brown,rahul.brown37@itcompany.com,IT Infrastructure,Network Engineer,Part-Time,On-Site,USA,San Francisco,2023-01-16,80827,USD,Meets Expectations,1
+EMP-10579,Amit Johnson,amit.johnson22@itcompany.com,IT Infrastructure,System Administrator,Full-Time,On-Site,Germany,Berlin,2025-05-09,69268,EUR,Exceeds Expectations,7
+EMP-10580,Amit Davis,amit.davis65@itcompany.com,Data & AI,BI Developer,Contract,Remote,India,Bengaluru,2020-09-20,706163,INR,Meets Expectations,11
+EMP-10581,Ananya Kumar,ananya.kumar73@itcompany.com,Data & AI,AI/ML Engineer,Full-Time,On-Site,Germany,Berlin,2024-05-14,74021,EUR,Outstanding,12
+EMP-10582,Alex Johnson,alex.johnson56@itcompany.com,Quality Assurance,QA Lead,Contract,Hybrid,Germany,Berlin,2018-08-02,126820,EUR,Meets Expectations,7
+EMP-10583,Priya Jones,priya.jones44@itcompany.com,Software Engineering,Junior Developer,Full-Time,On-Site,India,Hyderabad,2020-03-27,767285,INR,Meets Expectations,17
+EMP-10584,Emily Gupta,emily.gupta87@itcompany.com,Quality Assurance,QA Tester,Full-Time,Hybrid,India,Hyderabad,2019-03-19,1412629,INR,Meets Expectations,21
+EMP-10585,Rahul Davis,rahul.davis33@itcompany.com,Cybersecurity,CISO,Part-Time,Remote,Germany,Berlin,2021-08-01,86627,EUR,Meets Expectations,7
+EMP-10586,Jordan Johnson,jordan.johnson38@itcompany.com,Cybersecurity,CISO,Full-Time,On-Site,Singapore,Singapore,2018-03-28,111006,SGD,Meets Expectations,6
+EMP-10587,Sneha Singh,sneha.singh98@itcompany.com,IT Infrastructure,System Administrator,Part-Time,Remote,USA,San Francisco,2026-02-04,80361,USD,Meets Expectations,6
+EMP-10588,Emily Sharma,emily.sharma26@itcompany.com,Quality Assurance,QA Tester,Contract,Remote,Germany,Berlin,2020-02-25,55233,EUR,Meets Expectations,8
+EMP-10589,David Jones,david.jones88@itcompany.com,Cybersecurity,Penetration Tester,Full-Time,Hybrid,India,Pune,2024-09-04,899265,INR,Exceeds Expectations,5
+EMP-10590,Vikram Verma,vikram.verma34@itcompany.com,Quality Assurance,QA Tester,Full-Time,Remote,USA,San Francisco,2024-07-06,75561,USD,Meets Expectations,6
+EMP-10591,Pooja Sharma,pooja.sharma48@itcompany.com,Quality Assurance,QA Tester,Contract,Remote,USA,San Francisco,2024-11-03,71718,USD,Meets Expectations,13
+EMP-10592,Morgan Kumar,morgan.kumar49@itcompany.com,Software Engineering,Backend Engineer,Contract,On-Site,Germany,Berlin,2023-07-17,78887,EUR,Meets Expectations,7
+EMP-10593,Aarav Brown,aarav.brown26@itcompany.com,IT Infrastructure,IT Support Specialist,Part-Time,On-Site,India,Hyderabad,2018-11-30,1467773,INR,Exceeds Expectations,20
+EMP-10594,Priya Johnson,priya.johnson22@itcompany.com,Software Engineering,Tech Lead,Contract,Hybrid,Germany,Berlin,2023-11-14,119487,EUR,Meets Expectations,3
+EMP-10595,Sarah Verma,sarah.verma10@itcompany.com,Cybersecurity,Penetration Tester,Contract,Remote,Singapore,Singapore,2024-05-18,67369,SGD,Meets Expectations,2
+EMP-10596,Taylor Patel,taylor.patel12@itcompany.com,Data & AI,BI Developer,Full-Time,Remote,UK,London,2025-05-21,48304,GBP,Meets Expectations,14
+EMP-10597,Jordan Wilson,jordan.wilson89@itcompany.com,Quality Assurance,Automation Engineer,Part-Time,On-Site,UK,London,2023-09-05,60998,GBP,Outstanding,10
+EMP-10598,Jordan Gupta,jordan.gupta50@itcompany.com,Cybersecurity,Penetration Tester,Full-Time,On-Site,Singapore,Singapore,2021-08-18,74178,SGD,Exceeds Expectations,7
+EMP-10599,Pooja Nair,pooja.nair71@itcompany.com,Data & AI,BI Developer,Full-Time,Remote,UK,London,2023-08-12,56102,GBP,Meets Expectations,13
+EMP-10600,Priya Gupta,priya.gupta30@itcompany.com,IT Infrastructure,System Administrator,Full-Time,Hybrid,USA,Austin,2023-02-25,78110,USD,Exceeds Expectations,22
+EMP-10601,Sneha Verma,sneha.verma46@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Full-Time,Remote,India,Pune,2023-03-26,1194654,INR,Meets Expectations,13
+EMP-10602,Jordan Sharma,jordan.sharma33@itcompany.com,Cybersecurity,Security Engineer,Full-Time,Hybrid,India,Hyderabad,2018-02-20,1164171,INR,Exceeds Expectations,14
+EMP-10603,Chris Miller,chris.miller64@itcompany.com,Quality Assurance,Automation Engineer,Part-Time,Remote,India,Bengaluru,2024-01-09,524254,INR,Meets Expectations,18
+EMP-10604,Priya Patel,priya.patel39@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Full-Time,Hybrid,Germany,Berlin,2019-11-13,72004,EUR,Meets Expectations,14
+EMP-10605,Amit Singh,amit.singh96@itcompany.com,Product Management,Product Owner,Full-Time,Remote,India,Hyderabad,2018-10-03,812328,INR,Meets Expectations,14
+EMP-10606,Aarav Miller,aarav.miller85@itcompany.com,Software Engineering,Junior Developer,Full-Time,Hybrid,USA,San Francisco,2022-11-26,105903,USD,Outstanding,18
+EMP-10607,Rohan Rao,rohan.rao44@itcompany.com,Cloud & DevOps,Cloud Architect,Contract,On-Site,USA,San Francisco,2025-07-20,196798,USD,Outstanding,18
+EMP-10608,Sneha Taylor,sneha.taylor88@itcompany.com,Software Engineering,Backend Engineer,Full-Time,Hybrid,Singapore,Singapore,2019-06-02,52544,SGD,Meets Expectations,23
+EMP-10609,Sneha Reddy,sneha.reddy16@itcompany.com,Software Engineering,Backend Engineer,Full-Time,Remote,USA,San Francisco,2022-08-26,80626,USD,Meets Expectations,6
+EMP-10610,Jordan Brown,jordan.brown30@itcompany.com,Quality Assurance,Automation Engineer,Contract,Hybrid,USA,San Francisco,2019-01-27,122879,USD,Meets Expectations,7
+EMP-10611,Morgan Johnson,morgan.johnson37@itcompany.com,Data & AI,Data Scientist,Full-Time,Remote,Germany,Berlin,2025-07-03,63009,EUR,Meets Expectations,23
+EMP-10612,Ananya Patel,ananya.patel22@itcompany.com,Cybersecurity,Penetration Tester,Contract,Remote,India,Hyderabad,2019-10-09,1463260,INR,Exceeds Expectations,9
+EMP-10613,Ananya Smith,ananya.smith77@itcompany.com,Software Engineering,Junior Developer,Contract,On-Site,USA,Austin,2019-12-06,82675,USD,Meets Expectations,23
+EMP-10614,Taylor Taylor,taylor.taylor94@itcompany.com,IT Infrastructure,System Administrator,Full-Time,On-Site,UK,London,2019-05-08,62941,GBP,Meets Expectations,4
+EMP-10615,Michael Iyer,michael.iyer67@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,Hybrid,USA,San Francisco,2025-02-10,101855,USD,Outstanding,3
+EMP-10616,Rohan Singh,rohan.singh27@itcompany.com,Quality Assurance,QA Lead,Part-Time,On-Site,USA,Austin,2021-09-07,134087,USD,Outstanding,25
+EMP-10617,Rahul Johnson,rahul.johnson91@itcompany.com,Software Engineering,Full Stack Developer,Contract,Hybrid,USA,Austin,2020-09-17,114706,USD,Exceeds Expectations,13
+EMP-10618,Taylor Wilson,taylor.wilson41@itcompany.com,Software Engineering,Full Stack Developer,Full-Time,Remote,India,Bengaluru,2024-11-01,1004105,INR,Meets Expectations,9
+EMP-10619,Taylor Gupta,taylor.gupta24@itcompany.com,Software Engineering,Junior Developer,Full-Time,Hybrid,USA,Austin,2018-10-28,78342,USD,Outstanding,20
+EMP-10620,Sam Davis,sam.davis71@itcompany.com,Quality Assurance,QA Lead,Part-Time,On-Site,Germany,Berlin,2019-04-11,80408,EUR,Exceeds Expectations,21
+EMP-10621,Morgan Williams,morgan.williams10@itcompany.com,Software Engineering,Engineering Manager,Full-Time,Hybrid,India,Bengaluru,2020-08-16,3464325,INR,Meets Expectations,13
+EMP-10622,Jordan Davis,jordan.davis59@itcompany.com,Cybersecurity,Security Analyst,Full-Time,Remote,Germany,Berlin,2019-05-14,51514,EUR,Meets Expectations,6
+EMP-10623,Pooja Taylor,pooja.taylor84@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,Hybrid,Germany,Berlin,2023-07-18,49419,EUR,Meets Expectations,3
+EMP-10624,Alex Miller,alex.miller76@itcompany.com,Product Management,Director of Product,Full-Time,Hybrid,India,Pune,2019-10-11,1677048,INR,Exceeds Expectations,22
+EMP-10625,Pooja Iyer,pooja.iyer29@itcompany.com,Product Management,Product Manager,Full-Time,Hybrid,India,Bengaluru,2024-11-29,3278087,INR,Meets Expectations,15
+EMP-10626,Alex Patel,alex.patel49@itcompany.com,Software Engineering,Full Stack Developer,Full-Time,Remote,Germany,Berlin,2020-06-15,53397,EUR,Meets Expectations,11
+EMP-10627,Amit Reddy,amit.reddy84@itcompany.com,Quality Assurance,Automation Engineer,Full-Time,On-Site,UK,London,2020-02-09,69298,GBP,Needs Improvement,12
+EMP-10628,Karthik Taylor,karthik.taylor51@itcompany.com,Cybersecurity,Penetration Tester,Full-Time,Hybrid,India,Bengaluru,2018-03-18,927579,INR,Meets Expectations,21
+EMP-10629,Sarah Davis,sarah.davis65@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,Hybrid,India,Hyderabad,2018-05-03,1210487,INR,Needs Improvement,6
+EMP-10630,Rohan Smith,rohan.smith84@itcompany.com,Data & AI,Data Analyst,Contract,Hybrid,Singapore,Singapore,2023-08-05,61066,SGD,Exceeds Expectations,16
+EMP-10631,Jordan Brown,jordan.brown48@itcompany.com,Data & AI,Data Analyst,Full-Time,Remote,Singapore,Singapore,2023-12-27,64144,SGD,Meets Expectations,17
+EMP-10632,Jordan Reddy,jordan.reddy33@itcompany.com,Data & AI,BI Developer,Full-Time,Remote,USA,Austin,2024-12-05,73487,USD,Meets Expectations,6
+EMP-10633,Taylor Verma,taylor.verma31@itcompany.com,Software Engineering,Junior Developer,Full-Time,On-Site,USA,Austin,2024-03-12,111923,USD,Meets Expectations,14
+EMP-10634,Priya Sharma,priya.sharma50@itcompany.com,Product Management,Product Manager,Full-Time,Hybrid,Germany,Berlin,2023-07-21,107282,EUR,Meets Expectations,25
+EMP-10635,Chris Miller,chris.miller79@itcompany.com,Software Engineering,Backend Engineer,Full-Time,Hybrid,USA,Austin,2025-12-20,91965,USD,Exceeds Expectations,12
+EMP-10636,Amit Williams,amit.williams36@itcompany.com,Data & AI,AI/ML Engineer,Full-Time,On-Site,Singapore,Singapore,2025-03-01,45544,SGD,Exceeds Expectations,9
+EMP-10637,Vikram Wilson,vikram.wilson14@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,Remote,USA,Austin,2023-06-09,76855,USD,Meets Expectations,5
+EMP-10638,Pooja Patel,pooja.patel48@itcompany.com,Cybersecurity,Security Analyst,Full-Time,Remote,USA,Austin,2019-09-03,77023,USD,Meets Expectations,12
+EMP-10639,Taylor Nair,taylor.nair13@itcompany.com,Product Management,Director of Product,Full-Time,Hybrid,USA,Austin,2021-11-08,204735,USD,Exceeds Expectations,22
+EMP-10640,Taylor Iyer,taylor.iyer63@itcompany.com,Data & AI,Data Scientist,Full-Time,Hybrid,India,Pune,2018-09-21,616240,INR,Exceeds Expectations,22
+EMP-10641,Karthik Sharma,karthik.sharma59@itcompany.com,IT Infrastructure,System Administrator,Full-Time,On-Site,Germany,Berlin,2022-08-19,54454,EUR,Exceeds Expectations,5
+EMP-10642,Pooja Smith,pooja.smith56@itcompany.com,IT Infrastructure,System Administrator,Part-Time,On-Site,Singapore,Singapore,2022-02-10,67349,SGD,Meets Expectations,7
+EMP-10643,Vikram Singh,vikram.singh59@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Full-Time,Hybrid,USA,Austin,2020-09-27,87334,USD,Needs Improvement,11
+EMP-10644,Alex Kumar,alex.kumar78@itcompany.com,Cybersecurity,Penetration Tester,Full-Time,Hybrid,Germany,Berlin,2019-10-22,58419,EUR,Exceeds Expectations,18
+EMP-10645,Sam Iyer,sam.iyer21@itcompany.com,Product Management,Director of Product,Part-Time,On-Site,India,Pune,2021-05-24,2180744,INR,Meets Expectations,6
+EMP-10646,Jordan Nair,jordan.nair92@itcompany.com,Cybersecurity,Penetration Tester,Full-Time,On-Site,UK,London,2018-01-21,52620,GBP,Meets Expectations,6
+EMP-10647,Sarah Anderson,sarah.anderson59@itcompany.com,Quality Assurance,QA Lead,Part-Time,Hybrid,Singapore,Singapore,2025-12-06,114869,SGD,Meets Expectations,23
+EMP-10648,Priya Brown,priya.brown78@itcompany.com,Cybersecurity,Security Analyst,Part-Time,Hybrid,USA,San Francisco,2023-05-03,93661,USD,Exceeds Expectations,24
+EMP-10649,Michael Sharma,michael.sharma19@itcompany.com,Cybersecurity,Security Analyst,Full-Time,Hybrid,UK,London,2018-01-02,45426,GBP,Meets Expectations,5
+EMP-10650,Aarav Jones,aarav.jones22@itcompany.com,Cybersecurity,Security Engineer,Full-Time,On-Site,India,Bengaluru,2019-08-19,550792,INR,Exceeds Expectations,14
+EMP-10651,Aarav Iyer,aarav.iyer61@itcompany.com,Data & AI,Data Engineer,Full-Time,On-Site,India,Pune,2019-03-20,1331859,INR,Meets Expectations,10
+EMP-10652,David Rao,david.rao23@itcompany.com,Cloud & DevOps,DevOps Specialist,Part-Time,On-Site,India,Pune,2021-04-23,1341282,INR,Meets Expectations,1
+EMP-10653,Chris Johnson,chris.johnson59@itcompany.com,Quality Assurance,Automation Engineer,Full-Time,Remote,India,Pune,2022-10-30,799319,INR,Meets Expectations,15
+EMP-10654,Sneha Kumar,sneha.kumar78@itcompany.com,Data & AI,BI Developer,Full-Time,Remote,UK,London,2021-11-23,64530,GBP,Meets Expectations,21
+EMP-10655,Taylor Singh,taylor.singh47@itcompany.com,Quality Assurance,QA Lead,Full-Time,Remote,USA,Austin,2021-11-30,165352,USD,Exceeds Expectations,23
+EMP-10656,Ananya Taylor,ananya.taylor53@itcompany.com,Cloud & DevOps,Cloud Architect,Contract,Hybrid,UK,London,2019-12-29,114636,GBP,Outstanding,9
+EMP-10657,Priya Brown,priya.brown82@itcompany.com,Data & AI,Data Engineer,Part-Time,On-Site,USA,Austin,2023-11-05,95158,USD,Meets Expectations,25
+EMP-10658,Pooja Singh,pooja.singh41@itcompany.com,Data & AI,BI Developer,Full-Time,On-Site,Singapore,Singapore,2022-10-11,77464,SGD,Meets Expectations,15
+EMP-10659,Sarah Brown,sarah.brown36@itcompany.com,Quality Assurance,QA Tester,Contract,On-Site,UK,London,2026-04-18,56850,GBP,Meets Expectations,4
+EMP-10660,Ananya Davis,ananya.davis69@itcompany.com,Quality Assurance,QA Tester,Contract,Hybrid,India,Pune,2019-11-11,890297,INR,Exceeds Expectations,5
+EMP-10661,Taylor Nair,taylor.nair70@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,On-Site,USA,Austin,2024-02-18,98841,USD,Meets Expectations,3
+EMP-10662,Chris Singh,chris.singh27@itcompany.com,Product Management,Associate Product Manager,Contract,On-Site,USA,Austin,2020-08-27,135331,USD,Meets Expectations,17
+EMP-10663,Rahul Gupta,rahul.gupta53@itcompany.com,Product Management,Associate Product Manager,Full-Time,On-Site,USA,San Francisco,2021-06-25,200990,USD,Meets Expectations,20
+EMP-10664,Emily Johnson,emily.johnson46@itcompany.com,Data & AI,AI/ML Engineer,Full-Time,On-Site,Singapore,Singapore,2025-09-28,45854,SGD,Meets Expectations,5
+EMP-10665,Chris Iyer,chris.iyer51@itcompany.com,Cybersecurity,CISO,Full-Time,On-Site,UK,London,2024-05-21,93808,GBP,Exceeds Expectations,18
+EMP-10666,Rahul Kumar,rahul.kumar32@itcompany.com,Data & AI,BI Developer,Full-Time,Remote,India,Bengaluru,2024-11-01,898365,INR,Outstanding,13
+EMP-10667,Pooja Jones,pooja.jones82@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,Remote,India,Bengaluru,2022-03-08,675361,INR,Exceeds Expectations,7
+EMP-10668,Taylor Brown,taylor.brown62@itcompany.com,Quality Assurance,QA Lead,Full-Time,Remote,USA,San Francisco,2023-01-13,141821,USD,Meets Expectations,15
+EMP-10669,Michael Johnson,michael.johnson62@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,Remote,Singapore,Singapore,2021-03-15,59129,SGD,Exceeds Expectations,16
+EMP-10670,Sneha Taylor,sneha.taylor17@itcompany.com,Product Management,Product Manager,Full-Time,Remote,USA,San Francisco,2020-01-12,149744,USD,Meets Expectations,3
+EMP-10671,Sam Reddy,sam.reddy11@itcompany.com,Software Engineering,Backend Engineer,Full-Time,Hybrid,USA,Austin,2018-06-20,91584,USD,Outstanding,12
+EMP-10672,Rohan Sharma,rohan.sharma31@itcompany.com,Product Management,Product Manager,Full-Time,On-Site,Singapore,Singapore,2025-11-01,107917,SGD,Exceeds Expectations,14
+EMP-10673,Sneha Smith,sneha.smith58@itcompany.com,Quality Assurance,QA Lead,Contract,Remote,UK,London,2024-06-19,110628,GBP,Needs Improvement,8
+EMP-10674,Aarav Taylor,aarav.taylor17@itcompany.com,Software Engineering,Junior Developer,Full-Time,Remote,USA,Austin,2019-03-21,114644,USD,Meets Expectations,12
+EMP-10675,Emily Anderson,emily.anderson20@itcompany.com,Software Engineering,Frontend Developer,Full-Time,On-Site,USA,San Francisco,2024-05-20,88688,USD,Meets Expectations,14
+EMP-10676,Rohan Smith,rohan.smith17@itcompany.com,Quality Assurance,QA Tester,Full-Time,Hybrid,Germany,Berlin,2019-04-16,52456,EUR,Meets Expectations,10
+EMP-10677,Pooja Anderson,pooja.anderson68@itcompany.com,Cybersecurity,Security Engineer,Full-Time,Remote,USA,San Francisco,2020-11-28,102798,USD,Meets Expectations,1
+EMP-10678,Vikram Reddy,vikram.reddy25@itcompany.com,Data & AI,Data Analyst,Full-Time,On-Site,USA,San Francisco,2021-04-20,90493,USD,Exceeds Expectations,23
+EMP-10679,Jordan Jones,jordan.jones32@itcompany.com,Software Engineering,Tech Lead,Full-Time,Hybrid,Singapore,Singapore,2022-07-22,97429,SGD,Meets Expectations,21
+EMP-10680,Rohan Singh,rohan.singh48@itcompany.com,Software Engineering,Junior Developer,Full-Time,On-Site,USA,San Francisco,2025-05-21,82487,USD,Exceeds Expectations,12
+EMP-10681,Sneha Singh,sneha.singh43@itcompany.com,Data & AI,AI/ML Engineer,Full-Time,On-Site,India,Hyderabad,2018-11-07,1386667,INR,Outstanding,22
+EMP-10682,Sam Nair,sam.nair12@itcompany.com,Cybersecurity,Penetration Tester,Full-Time,Hybrid,India,Bengaluru,2019-12-17,1291294,INR,Exceeds Expectations,12
+EMP-10683,Amit Gupta,amit.gupta12@itcompany.com,Cybersecurity,CISO,Contract,Hybrid,India,Bengaluru,2024-04-04,2171900,INR,Meets Expectations,23
+EMP-10684,Vikram Miller,vikram.miller44@itcompany.com,Software Engineering,Frontend Developer,Part-Time,Remote,USA,Austin,2023-10-15,95237,USD,Meets Expectations,21
+EMP-10685,Taylor Wilson,taylor.wilson80@itcompany.com,IT Infrastructure,IT Support Specialist,Contract,Hybrid,USA,Austin,2019-10-28,112685,USD,Meets Expectations,3
+EMP-10686,Karthik Brown,karthik.brown86@itcompany.com,Quality Assurance,QA Lead,Full-Time,Hybrid,India,Bengaluru,2020-01-20,2547230,INR,Meets Expectations,1
+EMP-10687,Priya Iyer,priya.iyer44@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,Hybrid,India,Bengaluru,2021-12-05,3106189,INR,Exceeds Expectations,10
+EMP-10688,Chris Gupta,chris.gupta96@itcompany.com,Data & AI,Data Scientist,Full-Time,On-Site,India,Pune,2021-12-22,1288623,INR,Meets Expectations,24
+EMP-10689,Priya Davis,priya.davis93@itcompany.com,Software Engineering,Full Stack Developer,Full-Time,On-Site,UK,London,2022-04-12,65474,GBP,Meets Expectations,22
+EMP-10690,Rohan Williams,rohan.williams45@itcompany.com,Product Management,Director of Product,Full-Time,Remote,India,Pune,2023-09-27,1521146,INR,Exceeds Expectations,13
+EMP-10691,Priya Reddy,priya.reddy47@itcompany.com,Data & AI,AI/ML Engineer,Part-Time,Remote,India,Hyderabad,2023-11-16,811348,INR,Meets Expectations,6
+EMP-10692,Sam Brown,sam.brown62@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,Hybrid,UK,London,2023-12-23,41507,GBP,Meets Expectations,4
+EMP-10693,Taylor Taylor,taylor.taylor85@itcompany.com,IT Infrastructure,System Administrator,Contract,Remote,UK,London,2020-10-06,46434,GBP,Meets Expectations,21
+EMP-10694,Morgan Davis,morgan.davis79@itcompany.com,Quality Assurance,QA Tester,Full-Time,Hybrid,India,Bengaluru,2020-07-21,1499730,INR,Meets Expectations,21
+EMP-10695,Michael Miller,michael.miller79@itcompany.com,Data & AI,Data Engineer,Part-Time,On-Site,Germany,Berlin,2025-08-19,58044,EUR,Meets Expectations,11
+EMP-10696,Karthik Brown,karthik.brown96@itcompany.com,IT Infrastructure,Network Engineer,Part-Time,Remote,India,Hyderabad,2020-09-22,1016506,INR,Needs Improvement,20
+EMP-10697,Priya Iyer,priya.iyer54@itcompany.com,Quality Assurance,Automation Engineer,Full-Time,On-Site,UK,London,2024-04-06,67260,GBP,Exceeds Expectations,2
+EMP-10698,Priya Wilson,priya.wilson72@itcompany.com,Product Management,Associate Product Manager,Contract,On-Site,USA,San Francisco,2023-09-07,197853,USD,Meets Expectations,3
+EMP-10699,Rahul Taylor,rahul.taylor74@itcompany.com,Software Engineering,Backend Engineer,Contract,Remote,India,Hyderabad,2021-02-08,498377,INR,Outstanding,14
+EMP-10700,Chris Kumar,chris.kumar89@itcompany.com,Product Management,Director of Product,Full-Time,Hybrid,India,Bengaluru,2024-02-26,1741871,INR,Exceeds Expectations,22
+EMP-10701,Ananya Wilson,ananya.wilson31@itcompany.com,Software Engineering,Full Stack Developer,Part-Time,Remote,India,Bengaluru,2018-01-27,629050,INR,Meets Expectations,1
+EMP-10702,Jordan Williams,jordan.williams72@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,On-Site,USA,San Francisco,2020-10-27,70146,USD,Meets Expectations,21
+EMP-10703,Chris Smith,chris.smith28@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Hybrid,Singapore,Singapore,2025-07-23,68696,SGD,Meets Expectations,14
+EMP-10704,Emily Verma,emily.verma60@itcompany.com,Product Management,Director of Product,Full-Time,Remote,UK,London,2019-05-04,95811,GBP,Meets Expectations,1
+EMP-10705,Karthik Reddy,karthik.reddy50@itcompany.com,Quality Assurance,QA Lead,Contract,On-Site,India,Pune,2023-07-07,1380393,INR,Exceeds Expectations,18
+EMP-10706,Ananya Verma,ananya.verma13@itcompany.com,Quality Assurance,QA Lead,Full-Time,On-Site,Germany,Berlin,2025-07-30,92782,EUR,Meets Expectations,16
+EMP-10707,Sneha Kumar,sneha.kumar42@itcompany.com,Software Engineering,Junior Developer,Full-Time,On-Site,India,Hyderabad,2020-10-10,1270511,INR,Exceeds Expectations,12
+EMP-10708,Karthik Patel,karthik.patel80@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Hybrid,India,Hyderabad,2025-02-07,1323845,INR,Outstanding,4
+EMP-10709,David Singh,david.singh56@itcompany.com,Product Management,Associate Product Manager,Full-Time,On-Site,Germany,Berlin,2024-07-01,120434,EUR,Outstanding,10
+EMP-10710,Sam Kumar,sam.kumar59@itcompany.com,IT Infrastructure,System Administrator,Contract,Hybrid,India,Bengaluru,2024-11-10,1242581,INR,Exceeds Expectations,8
+EMP-10711,Jordan Taylor,jordan.taylor24@itcompany.com,IT Infrastructure,Network Engineer,Part-Time,Hybrid,India,Pune,2018-03-16,1249257,INR,Meets Expectations,14
+EMP-10712,Rahul Reddy,rahul.reddy73@itcompany.com,Software Engineering,Backend Engineer,Part-Time,Hybrid,USA,San Francisco,2018-07-13,71303,USD,Needs Improvement,12
+EMP-10713,Pooja Patel,pooja.patel70@itcompany.com,Cloud & DevOps,Cloud Architect,Contract,Remote,India,Bengaluru,2023-02-20,2785371,INR,Outstanding,14
+EMP-10714,Karthik Patel,karthik.patel58@itcompany.com,Product Management,Associate Product Manager,Part-Time,On-Site,USA,San Francisco,2023-10-08,187421,USD,Meets Expectations,24
+EMP-10715,Alex Miller,alex.miller10@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,On-Site,India,Hyderabad,2021-11-20,588307,INR,Meets Expectations,15
+EMP-10716,Taylor Reddy,taylor.reddy52@itcompany.com,Data & AI,Data Scientist,Full-Time,Hybrid,India,Hyderabad,2024-08-15,739852,INR,Meets Expectations,14
+EMP-10717,Pooja Iyer,pooja.iyer59@itcompany.com,Software Engineering,Junior Developer,Part-Time,Hybrid,USA,Austin,2020-04-17,99532,USD,Meets Expectations,23
+EMP-10718,Ananya Rao,ananya.rao93@itcompany.com,Cloud & DevOps,DevOps Specialist,Full-Time,Hybrid,USA,Austin,2024-04-26,89311,USD,Meets Expectations,3
+EMP-10719,Alex Anderson,alex.anderson77@itcompany.com,IT Infrastructure,IT Support Specialist,Contract,Hybrid,India,Pune,2022-03-31,498132,INR,Meets Expectations,5
+EMP-10720,Karthik Iyer,karthik.iyer68@itcompany.com,Product Management,Product Manager,Part-Time,Hybrid,UK,London,2022-08-22,127606,GBP,Meets Expectations,17
+EMP-10721,Amit Williams,amit.williams23@itcompany.com,IT Infrastructure,System Administrator,Full-Time,Hybrid,UK,London,2023-11-28,65599,GBP,Exceeds Expectations,12
+EMP-10722,Karthik Williams,karthik.williams25@itcompany.com,Cybersecurity,Security Engineer,Contract,Hybrid,Singapore,Singapore,2025-06-07,52039,SGD,Outstanding,16
+EMP-10723,Rahul Gupta,rahul.gupta19@itcompany.com,Cybersecurity,Security Analyst,Full-Time,Hybrid,India,Pune,2025-10-25,1114202,INR,Exceeds Expectations,20
+EMP-10724,Rohan Johnson,rohan.johnson82@itcompany.com,Product Management,Associate Product Manager,Full-Time,Remote,Singapore,Singapore,2022-09-04,130110,SGD,Outstanding,4
+EMP-10725,Ananya Singh,ananya.singh53@itcompany.com,Cloud & DevOps,Cloud Engineer,Part-Time,Remote,USA,San Francisco,2024-11-06,72595,USD,Meets Expectations,17
+EMP-10726,Pooja Sharma,pooja.sharma15@itcompany.com,Cybersecurity,Security Engineer,Full-Time,Hybrid,Germany,Berlin,2023-07-15,68317,EUR,Exceeds Expectations,20
+EMP-10727,Pooja Brown,pooja.brown26@itcompany.com,Cybersecurity,Penetration Tester,Full-Time,On-Site,UK,London,2023-01-29,51138,GBP,Meets Expectations,13
+EMP-10728,Amit Jones,amit.jones44@itcompany.com,Data & AI,AI/ML Engineer,Full-Time,Remote,India,Hyderabad,2018-08-20,719644,INR,Exceeds Expectations,7
+EMP-10729,Rahul Nair,rahul.nair99@itcompany.com,Cybersecurity,Penetration Tester,Contract,Hybrid,USA,Austin,2020-10-16,108461,USD,Meets Expectations,1
+EMP-10730,Chris Miller,chris.miller36@itcompany.com,Data & AI,Data Scientist,Full-Time,Hybrid,India,Bengaluru,2025-06-24,1332669,INR,Meets Expectations,20
+EMP-10731,David Patel,david.patel57@itcompany.com,Software Engineering,Frontend Developer,Full-Time,Hybrid,India,Bengaluru,2021-08-06,746766,INR,Meets Expectations,7
+EMP-10732,Pooja Rao,pooja.rao15@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,On-Site,USA,Austin,2021-08-13,211952,USD,Meets Expectations,20
+EMP-10733,Amit Nair,amit.nair56@itcompany.com,Software Engineering,Tech Lead,Full-Time,Hybrid,India,Hyderabad,2021-02-12,2135328,INR,Needs Improvement,14
+EMP-10734,Ananya Wilson,ananya.wilson98@itcompany.com,Cloud & DevOps,Cloud Architect,Part-Time,Hybrid,Singapore,Singapore,2022-11-12,108664,SGD,Needs Improvement,23
+EMP-10735,Taylor Brown,taylor.brown27@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,Remote,UK,London,2026-04-09,123218,GBP,Meets Expectations,3
+EMP-10736,Priya Miller,priya.miller44@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,Hybrid,India,Bengaluru,2023-04-15,3108745,INR,Meets Expectations,7
+EMP-10737,Sam Nair,sam.nair17@itcompany.com,Cybersecurity,CISO,Full-Time,Remote,USA,Austin,2021-12-26,179821,USD,Meets Expectations,22
+EMP-10738,Pooja Reddy,pooja.reddy43@itcompany.com,Quality Assurance,QA Tester,Contract,On-Site,Germany,Berlin,2021-04-19,74162,EUR,Meets Expectations,23
+EMP-10739,Emily Patel,emily.patel63@itcompany.com,Product Management,Product Manager,Full-Time,On-Site,India,Pune,2019-02-03,2438815,INR,Exceeds Expectations,5
+EMP-10740,Chris Jones,chris.jones80@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Hybrid,Germany,Berlin,2022-12-10,72849,EUR,Meets Expectations,23
+EMP-10741,Rahul Verma,rahul.verma54@itcompany.com,Cybersecurity,Security Analyst,Part-Time,Hybrid,India,Pune,2022-07-27,645315,INR,Meets Expectations,8
+EMP-10742,Sarah Iyer,sarah.iyer69@itcompany.com,Cybersecurity,Penetration Tester,Full-Time,On-Site,India,Bengaluru,2025-06-23,553524,INR,Meets Expectations,4
+EMP-10743,Karthik Wilson,karthik.wilson58@itcompany.com,Software Engineering,Backend Engineer,Contract,Hybrid,India,Hyderabad,2020-10-11,593226,INR,Meets Expectations,25
+EMP-10744,Taylor Williams,taylor.williams55@itcompany.com,Quality Assurance,Automation Engineer,Full-Time,Remote,India,Pune,2018-06-08,1435915,INR,Meets Expectations,11
+EMP-10745,Michael Brown,michael.brown67@itcompany.com,Cloud & DevOps,Cloud Architect,Contract,Remote,Singapore,Singapore,2023-06-23,104869,SGD,Meets Expectations,15
+EMP-10746,Chris Sharma,chris.sharma62@itcompany.com,Data & AI,AI/ML Engineer,Part-Time,Hybrid,Singapore,Singapore,2023-02-14,64544,SGD,Needs Improvement,8
+EMP-10747,Vikram Davis,vikram.davis71@itcompany.com,Cybersecurity,CISO,Full-Time,Remote,India,Pune,2019-01-14,2714305,INR,Exceeds Expectations,19
+EMP-10748,Alex Brown,alex.brown96@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Remote,India,Pune,2024-07-12,1202090,INR,Meets Expectations,14
+EMP-10749,Sam Anderson,sam.anderson45@itcompany.com,IT Infrastructure,System Administrator,Full-Time,Remote,USA,San Francisco,2020-06-17,75331,USD,Meets Expectations,11
+EMP-10750,Rohan Wilson,rohan.wilson92@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,Hybrid,India,Bengaluru,2026-03-27,3391252,INR,Outstanding,4
+EMP-10751,Ananya Rao,ananya.rao99@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,On-Site,India,Hyderabad,2020-01-09,1379285,INR,Meets Expectations,23
+EMP-10752,Sam Rao,sam.rao57@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,Remote,Germany,Berlin,2025-06-15,128978,EUR,Exceeds Expectations,5
+EMP-10753,Chris Verma,chris.verma15@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,Remote,Singapore,Singapore,2019-10-21,68587,SGD,Exceeds Expectations,13
+EMP-10754,Rahul Smith,rahul.smith99@itcompany.com,Software Engineering,Junior Developer,Contract,Hybrid,Germany,Berlin,2025-03-17,70320,EUR,Needs Improvement,6
+EMP-10755,Amit Reddy,amit.reddy92@itcompany.com,Cloud & DevOps,DevOps Specialist,Full-Time,On-Site,India,Hyderabad,2025-09-11,1407040,INR,Exceeds Expectations,23
+EMP-10756,Karthik Anderson,karthik.anderson63@itcompany.com,Cybersecurity,Security Analyst,Full-Time,On-Site,USA,San Francisco,2022-11-21,104536,USD,Meets Expectations,25
+EMP-10757,Sarah Johnson,sarah.johnson36@itcompany.com,Cloud & DevOps,DevOps Specialist,Full-Time,On-Site,USA,Austin,2025-01-21,73818,USD,Outstanding,10
+EMP-10758,Sneha Anderson,sneha.anderson23@itcompany.com,Cybersecurity,Security Analyst,Full-Time,Hybrid,India,Pune,2021-11-08,835622,INR,Exceeds Expectations,21
+EMP-10759,Karthik Brown,karthik.brown40@itcompany.com,Cloud & DevOps,DevOps Specialist,Full-Time,On-Site,Singapore,Singapore,2022-10-04,65779,SGD,Meets Expectations,17
+EMP-10760,Morgan Patel,morgan.patel34@itcompany.com,Quality Assurance,QA Lead,Contract,Remote,India,Bengaluru,2022-08-17,2886141,INR,Meets Expectations,9
+EMP-10761,Taylor Rao,taylor.rao55@itcompany.com,Data & AI,Data Engineer,Full-Time,Remote,India,Pune,2023-01-27,1045567,INR,Outstanding,9
+EMP-10762,Michael Anderson,michael.anderson25@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Full-Time,Hybrid,UK,London,2026-02-20,53056,GBP,Meets Expectations,2
+EMP-10763,Amit Miller,amit.miller88@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Hybrid,USA,San Francisco,2018-04-03,108463,USD,Meets Expectations,15
+EMP-10764,Taylor Gupta,taylor.gupta61@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Hybrid,USA,Austin,2024-02-23,73576,USD,Exceeds Expectations,7
+EMP-10765,Rohan Jones,rohan.jones45@itcompany.com,Cybersecurity,CISO,Full-Time,Hybrid,India,Bengaluru,2025-01-08,2246697,INR,Exceeds Expectations,18
+EMP-10766,Jordan Reddy,jordan.reddy74@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,Hybrid,Singapore,Singapore,2024-02-02,62560,SGD,Exceeds Expectations,22
+EMP-10767,Alex Miller,alex.miller38@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Hybrid,India,Bengaluru,2021-10-31,944729,INR,Meets Expectations,9
+EMP-10768,Chris Smith,chris.smith98@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,On-Site,USA,San Francisco,2023-01-04,114763,USD,Meets Expectations,5
+EMP-10769,Priya Wilson,priya.wilson90@itcompany.com,Product Management,Director of Product,Full-Time,On-Site,USA,San Francisco,2024-12-08,172170,USD,Meets Expectations,12
+EMP-10770,Karthik Anderson,karthik.anderson81@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,Hybrid,Singapore,Singapore,2022-01-22,59164,SGD,Outstanding,23
+EMP-10771,Rahul Johnson,rahul.johnson21@itcompany.com,Data & AI,Data Scientist,Full-Time,Remote,India,Hyderabad,2025-06-30,722374,INR,Meets Expectations,19
+EMP-10772,Alex Kumar,alex.kumar84@itcompany.com,Quality Assurance,QA Lead,Full-Time,Hybrid,Germany,Berlin,2018-04-27,134276,EUR,Exceeds Expectations,4
+EMP-10773,Michael Jones,michael.jones99@itcompany.com,Software Engineering,Full Stack Developer,Full-Time,Hybrid,India,Hyderabad,2019-06-27,951836,INR,Meets Expectations,14
+EMP-10774,Amit Rao,amit.rao16@itcompany.com,Cybersecurity,CISO,Contract,Hybrid,USA,Austin,2021-07-23,177338,USD,Meets Expectations,15
+EMP-10775,Pooja Taylor,pooja.taylor32@itcompany.com,Data & AI,BI Developer,Contract,On-Site,UK,London,2026-06-01,57174,GBP,Meets Expectations,15
+EMP-10776,Ananya Williams,ananya.williams49@itcompany.com,Software Engineering,Backend Engineer,Full-Time,Hybrid,India,Pune,2022-10-31,587130,INR,Meets Expectations,13
+EMP-10777,Sam Davis,sam.davis11@itcompany.com,Quality Assurance,QA Lead,Full-Time,On-Site,USA,San Francisco,2019-10-19,218246,USD,Meets Expectations,22
+EMP-10778,Sam Kumar,sam.kumar79@itcompany.com,Product Management,Director of Product,Full-Time,Hybrid,Germany,Berlin,2024-12-25,107550,EUR,Exceeds Expectations,3
+EMP-10779,Priya Singh,priya.singh88@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,On-Site,India,Hyderabad,2018-07-21,1056057,INR,Meets Expectations,16
+EMP-10780,Rohan Sharma,rohan.sharma94@itcompany.com,Product Management,Product Manager,Full-Time,Hybrid,USA,San Francisco,2024-11-24,143126,USD,Meets Expectations,15
+EMP-10781,Sam Sharma,sam.sharma17@itcompany.com,Software Engineering,Backend Engineer,Full-Time,Remote,India,Pune,2023-06-07,570368,INR,Meets Expectations,4
+EMP-10782,Morgan Williams,morgan.williams21@itcompany.com,Cybersecurity,Security Engineer,Full-Time,Hybrid,Germany,Berlin,2020-05-06,75310,EUR,Exceeds Expectations,4
+EMP-10783,Jordan Johnson,jordan.johnson49@itcompany.com,Cybersecurity,CISO,Full-Time,Remote,India,Hyderabad,2026-05-06,3281095,INR,Exceeds Expectations,14
+EMP-10784,Priya Iyer,priya.iyer51@itcompany.com,Cybersecurity,Security Engineer,Part-Time,Remote,USA,San Francisco,2021-11-19,82187,USD,Meets Expectations,8
+EMP-10785,Morgan Anderson,morgan.anderson85@itcompany.com,Product Management,Director of Product,Full-Time,Remote,India,Hyderabad,2018-08-27,1753960,INR,Meets Expectations,2
+EMP-10786,Emily Kumar,emily.kumar35@itcompany.com,IT Infrastructure,Network Engineer,Part-Time,On-Site,India,Hyderabad,2023-10-18,515122,INR,Exceeds Expectations,21
+EMP-10787,Michael Jones,michael.jones25@itcompany.com,Quality Assurance,QA Lead,Full-Time,Remote,UK,London,2022-10-03,107071,GBP,Meets Expectations,9
+EMP-10788,Sneha Miller,sneha.miller30@itcompany.com,Cloud & DevOps,DevOps Specialist,Full-Time,Hybrid,USA,San Francisco,2018-04-17,99908,USD,Meets Expectations,13
+EMP-10789,Sarah Reddy,sarah.reddy47@itcompany.com,Software Engineering,Engineering Manager,Full-Time,Hybrid,USA,San Francisco,2024-09-16,188272,USD,Exceeds Expectations,22
+EMP-10790,Michael Reddy,michael.reddy18@itcompany.com,Software Engineering,Backend Engineer,Part-Time,Remote,Singapore,Singapore,2020-11-23,50802,SGD,Needs Improvement,25
+EMP-10791,Sam Miller,sam.miller98@itcompany.com,Quality Assurance,QA Lead,Contract,Hybrid,USA,Austin,2026-01-23,179179,USD,Meets Expectations,14
+EMP-10792,Taylor Gupta,taylor.gupta31@itcompany.com,Software Engineering,Frontend Developer,Full-Time,On-Site,Germany,Berlin,2023-08-26,69304,EUR,Meets Expectations,24
+EMP-10793,Sarah Smith,sarah.smith43@itcompany.com,Quality Assurance,QA Lead,Contract,Remote,USA,Austin,2024-10-30,143957,USD,Outstanding,5
+EMP-10794,Sarah Rao,sarah.rao66@itcompany.com,Cloud & DevOps,Cloud Engineer,Part-Time,Hybrid,USA,Austin,2023-11-14,124609,USD,Meets Expectations,24
+EMP-10795,Morgan Rao,morgan.rao63@itcompany.com,Cybersecurity,Security Analyst,Part-Time,Hybrid,India,Pune,2025-08-06,1053800,INR,Exceeds Expectations,22
+EMP-10796,Rahul Kumar,rahul.kumar98@itcompany.com,Data & AI,BI Developer,Full-Time,Remote,USA,San Francisco,2021-09-10,78365,USD,Meets Expectations,10
+EMP-10797,Alex Kumar,alex.kumar46@itcompany.com,Cloud & DevOps,DevOps Specialist,Full-Time,Hybrid,Germany,Berlin,2023-10-09,65423,EUR,Meets Expectations,17
+EMP-10798,Sarah Davis,sarah.davis54@itcompany.com,Software Engineering,Full Stack Developer,Full-Time,Remote,India,Hyderabad,2024-01-27,1329710,INR,Meets Expectations,6
+EMP-10799,Karthik Johnson,karthik.johnson89@itcompany.com,Quality Assurance,QA Lead,Part-Time,On-Site,India,Pune,2024-07-31,1897390,INR,Meets Expectations,18
+EMP-10800,Karthik Jones,karthik.jones68@itcompany.com,Data & AI,Data Scientist,Part-Time,On-Site,India,Pune,2019-09-19,1215584,INR,Meets Expectations,10
+EMP-10801,Chris Rao,chris.rao30@itcompany.com,Product Management,Director of Product,Full-Time,Remote,USA,San Francisco,2025-09-06,209701,USD,Outstanding,12
+EMP-10802,Alex Sharma,alex.sharma97@itcompany.com,Product Management,Product Owner,Full-Time,On-Site,Singapore,Singapore,2022-03-09,73256,SGD,Meets Expectations,18
+EMP-10803,Emily Anderson,emily.anderson23@itcompany.com,Product Management,Product Manager,Contract,On-Site,Singapore,Singapore,2020-06-23,113568,SGD,Meets Expectations,6
+EMP-10804,Rohan Miller,rohan.miller64@itcompany.com,Software Engineering,Tech Lead,Contract,Hybrid,USA,Austin,2021-03-03,158887,USD,Meets Expectations,19
+EMP-10805,Amit Sharma,amit.sharma42@itcompany.com,Product Management,Product Manager,Full-Time,Remote,India,Pune,2019-09-02,1409236,INR,Meets Expectations,20
+EMP-10806,Sneha Singh,sneha.singh72@itcompany.com,Data & AI,BI Developer,Full-Time,On-Site,USA,San Francisco,2020-08-25,72066,USD,Meets Expectations,9
+EMP-10807,Sam Miller,sam.miller54@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,On-Site,India,Bengaluru,2024-12-24,1090637,INR,Meets Expectations,13
+EMP-10808,Alex Sharma,alex.sharma67@itcompany.com,Product Management,Associate Product Manager,Full-Time,Hybrid,India,Pune,2019-01-02,3275001,INR,Meets Expectations,16
+EMP-10809,Morgan Anderson,morgan.anderson29@itcompany.com,Product Management,Product Manager,Full-Time,Remote,USA,Austin,2023-04-23,190377,USD,Meets Expectations,3
+EMP-10810,Emily Singh,emily.singh97@itcompany.com,Quality Assurance,QA Lead,Full-Time,On-Site,UK,London,2020-07-01,95688,GBP,Exceeds Expectations,21
+EMP-10811,Sneha Patel,sneha.patel41@itcompany.com,Quality Assurance,QA Lead,Full-Time,On-Site,Singapore,Singapore,2020-02-26,102110,SGD,Meets Expectations,9
+EMP-10812,Rahul Gupta,rahul.gupta51@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,On-Site,Singapore,Singapore,2023-04-03,83963,SGD,Meets Expectations,2
+EMP-10813,David Reddy,david.reddy87@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,On-Site,Singapore,Singapore,2021-11-07,59891,SGD,Outstanding,25
+EMP-10814,Michael Verma,michael.verma10@itcompany.com,Data & AI,Data Scientist,Full-Time,On-Site,India,Hyderabad,2025-02-21,804519,INR,Exceeds Expectations,8
+EMP-10815,David Anderson,david.anderson44@itcompany.com,IT Infrastructure,IT Support Specialist,Part-Time,Hybrid,UK,London,2019-05-08,50972,GBP,Meets Expectations,5
+EMP-10816,Sarah Brown,sarah.brown98@itcompany.com,Data & AI,Data Analyst,Part-Time,On-Site,USA,Austin,2022-05-14,116183,USD,Meets Expectations,22
+EMP-10817,Sam Nair,sam.nair11@itcompany.com,Quality Assurance,QA Lead,Contract,Hybrid,Singapore,Singapore,2024-04-14,132806,SGD,Outstanding,11
+EMP-10818,Rohan Brown,rohan.brown78@itcompany.com,Cloud & DevOps,Cloud Architect,Contract,Remote,India,Bengaluru,2024-03-14,2890397,INR,Meets Expectations,2
+EMP-10819,Ananya Reddy,ananya.reddy47@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Full-Time,Hybrid,USA,Austin,2022-10-11,112338,USD,Meets Expectations,6
+EMP-10820,Morgan Wilson,morgan.wilson91@itcompany.com,Quality Assurance,QA Lead,Full-Time,Hybrid,India,Hyderabad,2020-08-26,3013475,INR,Meets Expectations,3
+EMP-10821,Sneha Rao,sneha.rao80@itcompany.com,Product Management,Product Owner,Contract,Remote,India,Hyderabad,2020-10-24,940975,INR,Meets Expectations,25
+EMP-10822,Sneha Anderson,sneha.anderson34@itcompany.com,Quality Assurance,Automation Engineer,Part-Time,Hybrid,India,Bengaluru,2020-02-10,1485005,INR,Needs Improvement,7
+EMP-10823,Chris Verma,chris.verma86@itcompany.com,IT Infrastructure,Network Engineer,Part-Time,Remote,USA,Austin,2024-05-23,93159,USD,Meets Expectations,3
+EMP-10824,Aarav Brown,aarav.brown47@itcompany.com,Data & AI,Data Engineer,Contract,Remote,UK,London,2019-06-09,67842,GBP,Outstanding,12
+EMP-10825,Sarah Iyer,sarah.iyer20@itcompany.com,Quality Assurance,QA Tester,Full-Time,Remote,India,Hyderabad,2020-11-03,1287615,INR,Meets Expectations,15
+EMP-10826,Priya Sharma,priya.sharma82@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Part-Time,Hybrid,Singapore,Singapore,2018-11-06,46116,SGD,Meets Expectations,22
+EMP-10827,Aarav Kumar,aarav.kumar18@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,Remote,USA,San Francisco,2018-10-20,91180,USD,Meets Expectations,7
+EMP-10828,Karthik Davis,karthik.davis29@itcompany.com,Data & AI,Data Analyst,Full-Time,Remote,India,Bengaluru,2018-01-22,752662,INR,Outstanding,3
+EMP-10829,Sarah Rao,sarah.rao96@itcompany.com,Data & AI,BI Developer,Full-Time,Hybrid,India,Bengaluru,2020-10-12,1033100,INR,Meets Expectations,23
+EMP-10830,Sarah Rao,sarah.rao15@itcompany.com,Data & AI,Data Analyst,Full-Time,Hybrid,India,Hyderabad,2020-02-04,877567,INR,Exceeds Expectations,18
+EMP-10831,Taylor Verma,taylor.verma19@itcompany.com,Cloud & DevOps,Cloud Architect,Contract,Hybrid,Singapore,Singapore,2023-09-26,104652,SGD,Meets Expectations,6
+EMP-10832,Chris Taylor,chris.taylor87@itcompany.com,Product Management,Associate Product Manager,Contract,On-Site,India,Pune,2019-08-17,3190128,INR,Meets Expectations,3
+EMP-10833,Aarav Gupta,aarav.gupta36@itcompany.com,Data & AI,BI Developer,Contract,On-Site,India,Bengaluru,2018-01-24,1094815,INR,Meets Expectations,6
+EMP-10834,Ananya Taylor,ananya.taylor16@itcompany.com,Data & AI,Data Scientist,Full-Time,Remote,USA,Austin,2026-02-24,115609,USD,Meets Expectations,8
+EMP-10835,Ananya Brown,ananya.brown48@itcompany.com,IT Infrastructure,System Administrator,Full-Time,Remote,USA,Austin,2019-03-25,92495,USD,Meets Expectations,10
+EMP-10836,Sarah Verma,sarah.verma89@itcompany.com,Quality Assurance,QA Lead,Contract,Hybrid,India,Bengaluru,2025-07-20,2256266,INR,Meets Expectations,13
+EMP-10837,Ananya Smith,ananya.smith95@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Contract,On-Site,India,Hyderabad,2021-05-09,1321362,INR,Meets Expectations,7
+EMP-10838,Michael Singh,michael.singh93@itcompany.com,Data & AI,BI Developer,Part-Time,On-Site,India,Bengaluru,2024-07-27,1155569,INR,Exceeds Expectations,22
+EMP-10839,Chris Taylor,chris.taylor42@itcompany.com,Cybersecurity,CISO,Full-Time,Hybrid,USA,San Francisco,2026-05-13,156766,USD,Exceeds Expectations,16
+EMP-10840,David Iyer,david.iyer52@itcompany.com,Software Engineering,Engineering Manager,Full-Time,Remote,Singapore,Singapore,2023-03-05,96271,SGD,Meets Expectations,18
+EMP-10841,Rohan Williams,rohan.williams62@itcompany.com,Quality Assurance,QA Tester,Part-Time,On-Site,Singapore,Singapore,2024-12-18,48573,SGD,Needs Improvement,22
+EMP-10842,Rahul Gupta,rahul.gupta47@itcompany.com,Quality Assurance,QA Lead,Part-Time,Remote,India,Hyderabad,2018-12-26,2120444,INR,Meets Expectations,2
+EMP-10843,Chris Verma,chris.verma71@itcompany.com,Software Engineering,Backend Engineer,Part-Time,Remote,Singapore,Singapore,2019-06-19,48833,SGD,Meets Expectations,21
+EMP-10844,Rahul Nair,rahul.nair29@itcompany.com,IT Infrastructure,System Administrator,Full-Time,On-Site,USA,Austin,2019-12-06,74308,USD,Meets Expectations,21
+EMP-10845,Sneha Anderson,sneha.anderson76@itcompany.com,Data & AI,AI/ML Engineer,Part-Time,Hybrid,India,Hyderabad,2025-02-18,979514,INR,Meets Expectations,13
+EMP-10846,Michael Miller,michael.miller52@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,Hybrid,USA,San Francisco,2020-05-12,96168,USD,Meets Expectations,10
+EMP-10847,Vikram Iyer,vikram.iyer40@itcompany.com,IT Infrastructure,System Administrator,Part-Time,On-Site,USA,San Francisco,2021-09-26,90700,USD,Meets Expectations,3
+EMP-10848,Taylor Rao,taylor.rao75@itcompany.com,Quality Assurance,QA Tester,Full-Time,Remote,Singapore,Singapore,2022-08-09,78228,SGD,Exceeds Expectations,7
+EMP-10849,Vikram Brown,vikram.brown99@itcompany.com,Product Management,Associate Product Manager,Full-Time,Hybrid,India,Hyderabad,2020-04-03,2554562,INR,Meets Expectations,4
+EMP-10850,Rahul Rao,rahul.rao74@itcompany.com,Cybersecurity,CISO,Full-Time,On-Site,USA,San Francisco,2022-05-03,161694,USD,Meets Expectations,15
+EMP-10851,Rahul Jones,rahul.jones23@itcompany.com,Quality Assurance,QA Lead,Full-Time,Hybrid,India,Pune,2019-10-05,1385086,INR,Exceeds Expectations,16
+EMP-10852,Sam Jones,sam.jones61@itcompany.com,Cloud & DevOps,DevOps Specialist,Full-Time,Remote,Germany,Berlin,2023-03-07,46927,EUR,Exceeds Expectations,20
+EMP-10853,Chris Reddy,chris.reddy81@itcompany.com,Data & AI,Data Analyst,Part-Time,Remote,USA,San Francisco,2021-10-15,89227,USD,Needs Improvement,21
+EMP-10854,Taylor Wilson,taylor.wilson52@itcompany.com,Quality Assurance,QA Tester,Contract,Remote,UK,London,2022-05-13,45934,GBP,Exceeds Expectations,14
+EMP-10855,Priya Jones,priya.jones41@itcompany.com,Data & AI,Data Scientist,Full-Time,On-Site,India,Bengaluru,2026-04-06,604160,INR,Meets Expectations,10
+EMP-10856,Emily Gupta,emily.gupta10@itcompany.com,Cloud & DevOps,Cloud Engineer,Contract,Remote,India,Hyderabad,2023-11-09,644737,INR,Meets Expectations,11
+EMP-10857,Karthik Smith,karthik.smith98@itcompany.com,Product Management,Product Owner,Full-Time,On-Site,UK,London,2019-11-18,59202,GBP,Meets Expectations,2
+EMP-10858,Sarah Sharma,sarah.sharma33@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,Remote,India,Hyderabad,2022-02-24,1827214,INR,Meets Expectations,18
+EMP-10859,Sam Sharma,sam.sharma52@itcompany.com,Product Management,Product Owner,Full-Time,Remote,Germany,Berlin,2020-09-11,76342,EUR,Meets Expectations,11
+EMP-10860,Sneha Davis,sneha.davis14@itcompany.com,Cloud & DevOps,Cloud Engineer,Part-Time,Hybrid,USA,San Francisco,2018-08-16,122769,USD,Exceeds Expectations,10
+EMP-10861,Rohan Iyer,rohan.iyer96@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Contract,Remote,India,Bengaluru,2023-05-14,548992,INR,Meets Expectations,25
+EMP-10862,Rohan Taylor,rohan.taylor52@itcompany.com,Software Engineering,Full Stack Developer,Full-Time,Remote,UK,London,2022-06-22,46053,GBP,Exceeds Expectations,6
+EMP-10863,Sarah Reddy,sarah.reddy95@itcompany.com,Data & AI,Data Engineer,Contract,Remote,USA,San Francisco,2025-02-20,108439,USD,Meets Expectations,14
+EMP-10864,Vikram Johnson,vikram.johnson11@itcompany.com,Quality Assurance,QA Tester,Contract,Remote,USA,Austin,2026-04-24,92639,USD,Meets Expectations,24
+EMP-10865,Karthik Davis,karthik.davis59@itcompany.com,Quality Assurance,Automation Engineer,Part-Time,On-Site,USA,San Francisco,2024-04-04,120112,USD,Meets Expectations,9
+EMP-10866,Karthik Wilson,karthik.wilson29@itcompany.com,Cloud & DevOps,Cloud Engineer,Contract,Hybrid,USA,San Francisco,2021-10-10,80598,USD,Exceeds Expectations,14
+EMP-10867,Sneha Nair,sneha.nair23@itcompany.com,Data & AI,Data Scientist,Full-Time,Remote,India,Bengaluru,2025-12-30,847707,INR,Exceeds Expectations,6
+EMP-10868,Taylor Kumar,taylor.kumar64@itcompany.com,Cybersecurity,Security Analyst,Contract,Remote,India,Pune,2024-03-10,885649,INR,Outstanding,23
+EMP-10869,Taylor Wilson,taylor.wilson90@itcompany.com,Software Engineering,Engineering Manager,Full-Time,Hybrid,India,Bengaluru,2021-10-06,1424617,INR,Meets Expectations,5
+EMP-10870,Aarav Reddy,aarav.reddy98@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,On-Site,India,Hyderabad,2019-11-03,677515,INR,Exceeds Expectations,14
+EMP-10871,Jordan Miller,jordan.miller12@itcompany.com,Data & AI,Data Scientist,Full-Time,On-Site,Singapore,Singapore,2025-09-25,69924,SGD,Meets Expectations,8
+EMP-10872,David Miller,david.miller87@itcompany.com,Quality Assurance,Automation Engineer,Full-Time,Remote,UK,London,2021-10-13,69652,GBP,Exceeds Expectations,4
+EMP-10873,Aarav Patel,aarav.patel54@itcompany.com,Data & AI,Data Engineer,Full-Time,Hybrid,India,Hyderabad,2025-04-01,933028,INR,Outstanding,11
+EMP-10874,Priya Verma,priya.verma15@itcompany.com,Product Management,Director of Product,Full-Time,Hybrid,UK,London,2023-01-21,78567,GBP,Meets Expectations,8
+EMP-10875,Ananya Jones,ananya.jones94@itcompany.com,Software Engineering,Full Stack Developer,Full-Time,Hybrid,USA,Austin,2025-08-17,115921,USD,Exceeds Expectations,6
+EMP-10876,Emily Williams,emily.williams14@itcompany.com,Software Engineering,Backend Engineer,Part-Time,Remote,India,Bengaluru,2025-10-30,580770,INR,Meets Expectations,6
+EMP-10877,Aarav Johnson,aarav.johnson19@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,On-Site,UK,London,2021-03-10,47389,GBP,Meets Expectations,3
+EMP-10878,Morgan Patel,morgan.patel89@itcompany.com,Cybersecurity,Penetration Tester,Full-Time,Remote,USA,Austin,2024-07-20,119804,USD,Meets Expectations,4
+EMP-10879,Amit Kumar,amit.kumar76@itcompany.com,Data & AI,BI Developer,Full-Time,On-Site,India,Pune,2021-02-10,1001355,INR,Meets Expectations,14
+EMP-10880,Aarav Kumar,aarav.kumar36@itcompany.com,IT Infrastructure,System Administrator,Full-Time,Remote,India,Pune,2024-11-08,1217170,INR,Exceeds Expectations,14
+EMP-10881,Rahul Reddy,rahul.reddy28@itcompany.com,Quality Assurance,QA Lead,Full-Time,Remote,India,Pune,2020-12-12,1849313,INR,Outstanding,18
+EMP-10882,Alex Wilson,alex.wilson99@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,Hybrid,Singapore,Singapore,2022-11-05,75114,SGD,Needs Improvement,9
+EMP-10883,Chris Sharma,chris.sharma24@itcompany.com,Cybersecurity,CISO,Part-Time,On-Site,USA,Austin,2018-12-18,204648,USD,Outstanding,21
+EMP-10884,Michael Miller,michael.miller57@itcompany.com,IT Infrastructure,Network Engineer,Contract,Hybrid,Singapore,Singapore,2018-11-30,71561,SGD,Meets Expectations,2
+EMP-10885,Karthik Anderson,karthik.anderson67@itcompany.com,Software Engineering,Frontend Developer,Full-Time,On-Site,Germany,Berlin,2020-03-07,45726,EUR,Outstanding,12
+EMP-10886,Ananya Johnson,ananya.johnson44@itcompany.com,Cloud & DevOps,Cloud Engineer,Contract,Remote,USA,San Francisco,2024-11-20,113881,USD,Meets Expectations,4
+EMP-10887,Chris Johnson,chris.johnson44@itcompany.com,Quality Assurance,QA Tester,Full-Time,Remote,India,Pune,2025-02-17,1378693,INR,Exceeds Expectations,18
+EMP-10888,Karthik Nair,karthik.nair44@itcompany.com,Data & AI,AI/ML Engineer,Full-Time,On-Site,USA,Austin,2021-09-29,87502,USD,Exceeds Expectations,6
+EMP-10889,Taylor Sharma,taylor.sharma77@itcompany.com,Product Management,Director of Product,Full-Time,On-Site,India,Hyderabad,2019-01-12,2545840,INR,Exceeds Expectations,18
+EMP-10890,Sneha Jones,sneha.jones64@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,Hybrid,USA,Austin,2020-07-10,111838,USD,Exceeds Expectations,2
+EMP-10891,Alex Nair,alex.nair38@itcompany.com,Quality Assurance,Automation Engineer,Full-Time,Hybrid,India,Hyderabad,2018-06-20,976497,INR,Meets Expectations,25
+EMP-10892,Sneha Wilson,sneha.wilson96@itcompany.com,Software Engineering,Tech Lead,Full-Time,Remote,India,Bengaluru,2018-11-24,3079299,INR,Meets Expectations,20
+EMP-10893,David Williams,david.williams27@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,Hybrid,India,Hyderabad,2020-01-04,483950,INR,Outstanding,16
+EMP-10894,Rohan Verma,rohan.verma93@itcompany.com,Data & AI,AI/ML Engineer,Part-Time,Hybrid,Germany,Berlin,2023-02-21,45917,EUR,Needs Improvement,25
+EMP-10895,Pooja Davis,pooja.davis59@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Full-Time,Remote,India,Bengaluru,2023-02-06,1170409,INR,Meets Expectations,10
+EMP-10896,Michael Kumar,michael.kumar41@itcompany.com,Cloud & DevOps,DevOps Specialist,Full-Time,On-Site,UK,London,2023-01-03,47287,GBP,Meets Expectations,25
+EMP-10897,Taylor Miller,taylor.miller93@itcompany.com,Quality Assurance,QA Lead,Full-Time,Hybrid,India,Hyderabad,2018-12-16,2072625,INR,Meets Expectations,10
+EMP-10898,David Miller,david.miller39@itcompany.com,Quality Assurance,QA Lead,Full-Time,Hybrid,Singapore,Singapore,2019-08-25,105590,SGD,Exceeds Expectations,11
+EMP-10899,Sneha Williams,sneha.williams64@itcompany.com,Product Management,Director of Product,Full-Time,Remote,USA,San Francisco,2023-11-15,134736,USD,Meets Expectations,5
+EMP-10900,Rohan Davis,rohan.davis79@itcompany.com,Quality Assurance,QA Tester,Contract,On-Site,India,Pune,2021-12-04,1016346,INR,Exceeds Expectations,15
+EMP-10901,Emily Singh,emily.singh68@itcompany.com,Data & AI,Data Analyst,Part-Time,Hybrid,UK,London,2025-10-03,49116,GBP,Meets Expectations,23
+EMP-10902,Michael Nair,michael.nair75@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,Remote,India,Bengaluru,2024-02-22,1026152,INR,Exceeds Expectations,7
+EMP-10903,Michael Nair,michael.nair42@itcompany.com,Product Management,Product Manager,Full-Time,On-Site,India,Bengaluru,2024-02-25,1933715,INR,Outstanding,17
+EMP-10904,Taylor Nair,taylor.nair57@itcompany.com,Product Management,Associate Product Manager,Contract,Hybrid,India,Pune,2023-07-20,2562617,INR,Meets Expectations,24
+EMP-10905,Alex Singh,alex.singh42@itcompany.com,Product Management,Product Manager,Full-Time,Hybrid,India,Hyderabad,2025-03-14,1724688,INR,Meets Expectations,18
+EMP-10906,Amit Rao,amit.rao16@itcompany.com,Product Management,Product Manager,Full-Time,On-Site,UK,London,2021-12-14,128920,GBP,Needs Improvement,15
+EMP-10907,Aarav Miller,aarav.miller67@itcompany.com,Quality Assurance,QA Tester,Full-Time,Remote,USA,Austin,2018-01-20,82719,USD,Meets Expectations,4
+EMP-10908,Alex Reddy,alex.reddy56@itcompany.com,Quality Assurance,QA Tester,Full-Time,Hybrid,India,Hyderabad,2021-03-10,932701,INR,Exceeds Expectations,5
+EMP-10909,Rohan Brown,rohan.brown40@itcompany.com,Cybersecurity,Penetration Tester,Part-Time,Hybrid,UK,London,2018-01-29,54912,GBP,Meets Expectations,14
+EMP-10910,Sam Anderson,sam.anderson86@itcompany.com,Quality Assurance,QA Lead,Contract,Hybrid,USA,San Francisco,2022-05-01,182173,USD,Outstanding,7
+EMP-10911,Sarah Reddy,sarah.reddy43@itcompany.com,Quality Assurance,QA Tester,Full-Time,Remote,USA,Austin,2024-01-20,119417,USD,Meets Expectations,2
+EMP-10912,Sneha Jones,sneha.jones42@itcompany.com,Product Management,Director of Product,Full-Time,On-Site,UK,London,2021-08-02,125217,GBP,Outstanding,6
+EMP-10913,Rohan Taylor,rohan.taylor44@itcompany.com,Product Management,Product Manager,Full-Time,Remote,India,Hyderabad,2020-03-14,3301184,INR,Meets Expectations,22
+EMP-10914,David Smith,david.smith80@itcompany.com,Data & AI,Data Scientist,Part-Time,Remote,India,Bengaluru,2022-12-13,693926,INR,Outstanding,7
+EMP-10915,Pooja Davis,pooja.davis17@itcompany.com,Data & AI,BI Developer,Contract,On-Site,India,Bengaluru,2018-01-31,815932,INR,Exceeds Expectations,5
+EMP-10916,Priya Johnson,priya.johnson83@itcompany.com,Cybersecurity,Penetration Tester,Part-Time,Hybrid,India,Hyderabad,2025-06-05,699405,INR,Meets Expectations,16
+EMP-10917,Sarah Gupta,sarah.gupta58@itcompany.com,IT Infrastructure,System Administrator,Full-Time,Hybrid,USA,Austin,2021-05-25,108593,USD,Meets Expectations,15
+EMP-10918,Karthik Gupta,karthik.gupta32@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,On-Site,Germany,Berlin,2025-11-12,52022,EUR,Meets Expectations,8
+EMP-10919,Sam Patel,sam.patel74@itcompany.com,Cybersecurity,Security Analyst,Full-Time,Remote,USA,Austin,2022-08-06,104980,USD,Exceeds Expectations,23
+EMP-10920,Sarah Brown,sarah.brown64@itcompany.com,Software Engineering,Frontend Developer,Full-Time,Hybrid,Singapore,Singapore,2020-11-22,51614,SGD,Exceeds Expectations,7
+EMP-10921,Sarah Sharma,sarah.sharma93@itcompany.com,Quality Assurance,QA Tester,Part-Time,On-Site,India,Hyderabad,2024-04-15,468428,INR,Exceeds Expectations,24
+EMP-10922,Rahul Johnson,rahul.johnson98@itcompany.com,Cloud & DevOps,Cloud Engineer,Contract,Hybrid,Singapore,Singapore,2021-02-12,51045,SGD,Exceeds Expectations,9
+EMP-10923,Amit Nair,amit.nair43@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,Remote,India,Pune,2019-05-23,1495484,INR,Meets Expectations,16
+EMP-10924,Michael Iyer,michael.iyer36@itcompany.com,Quality Assurance,QA Tester,Contract,Remote,Germany,Berlin,2024-05-24,79416,EUR,Meets Expectations,10
+EMP-10925,Sam Johnson,sam.johnson23@itcompany.com,Quality Assurance,QA Tester,Part-Time,On-Site,India,Bengaluru,2025-05-06,1168848,INR,Meets Expectations,10
+EMP-10926,Morgan Davis,morgan.davis35@itcompany.com,Product Management,Product Owner,Full-Time,Hybrid,India,Bengaluru,2024-02-10,1245628,INR,Meets Expectations,13
+EMP-10927,David Rao,david.rao96@itcompany.com,Data & AI,Data Analyst,Contract,Remote,USA,San Francisco,2019-11-11,77368,USD,Meets Expectations,5
+EMP-10928,David Miller,david.miller63@itcompany.com,IT Infrastructure,System Administrator,Full-Time,Hybrid,Singapore,Singapore,2024-08-15,77100,SGD,Meets Expectations,10
+EMP-10929,Alex Davis,alex.davis17@itcompany.com,Product Management,Product Manager,Full-Time,Hybrid,UK,London,2023-12-27,92914,GBP,Meets Expectations,24
+EMP-10930,David Smith,david.smith20@itcompany.com,Cybersecurity,Penetration Tester,Full-Time,Hybrid,India,Hyderabad,2019-03-18,1005674,INR,Meets Expectations,12
+EMP-10931,Sam Taylor,sam.taylor16@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Contract,Hybrid,Germany,Berlin,2025-06-21,77761,EUR,Exceeds Expectations,15
+EMP-10932,Pooja Wilson,pooja.wilson19@itcompany.com,Software Engineering,Full Stack Developer,Full-Time,Remote,Singapore,Singapore,2019-07-29,49621,SGD,Meets Expectations,9
+EMP-10933,Taylor Patel,taylor.patel56@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Part-Time,On-Site,India,Pune,2020-07-03,889735,INR,Meets Expectations,2
+EMP-10934,Emily Nair,emily.nair16@itcompany.com,Data & AI,Data Engineer,Full-Time,Remote,India,Bengaluru,2023-03-27,943520,INR,Needs Improvement,23
+EMP-10935,Taylor Jones,taylor.jones31@itcompany.com,Software Engineering,Backend Engineer,Full-Time,Remote,Germany,Berlin,2022-08-23,56544,EUR,Exceeds Expectations,22
+EMP-10936,Priya Nair,priya.nair72@itcompany.com,Quality Assurance,QA Lead,Contract,Hybrid,India,Pune,2025-07-06,2481324,INR,Meets Expectations,17
+EMP-10937,Rahul Reddy,rahul.reddy12@itcompany.com,Cloud & DevOps,Cloud Engineer,Contract,On-Site,India,Pune,2018-05-13,1145763,INR,Needs Improvement,24
+EMP-10938,Chris Smith,chris.smith65@itcompany.com,Cloud & DevOps,DevOps Specialist,Full-Time,Remote,USA,San Francisco,2024-11-11,106804,USD,Exceeds Expectations,19
+EMP-10939,Priya Wilson,priya.wilson35@itcompany.com,Software Engineering,Junior Developer,Full-Time,On-Site,Germany,Berlin,2023-02-08,65737,EUR,Meets Expectations,25
+EMP-10940,Priya Johnson,priya.johnson78@itcompany.com,Product Management,Product Manager,Part-Time,Hybrid,Germany,Berlin,2020-08-01,84710,EUR,Meets Expectations,13
+EMP-10941,Rohan Taylor,rohan.taylor46@itcompany.com,Software Engineering,Engineering Manager,Full-Time,Hybrid,Singapore,Singapore,2020-05-25,83686,SGD,Meets Expectations,7
+EMP-10942,Alex Brown,alex.brown75@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Contract,On-Site,USA,Austin,2024-09-07,113172,USD,Exceeds Expectations,7
+EMP-10943,Aarav Sharma,aarav.sharma54@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,On-Site,USA,San Francisco,2023-02-06,153766,USD,Meets Expectations,7
+EMP-10944,Michael Iyer,michael.iyer18@itcompany.com,Quality Assurance,QA Lead,Part-Time,On-Site,Singapore,Singapore,2022-06-26,132933,SGD,Exceeds Expectations,15
+EMP-10945,Sarah Brown,sarah.brown62@itcompany.com,Cybersecurity,Security Analyst,Full-Time,Hybrid,India,Pune,2021-05-14,915140,INR,Meets Expectations,9
+EMP-10946,Sneha Iyer,sneha.iyer18@itcompany.com,Cybersecurity,Penetration Tester,Full-Time,Hybrid,India,Hyderabad,2018-08-12,1405969,INR,Outstanding,2
+EMP-10947,Morgan Iyer,morgan.iyer82@itcompany.com,IT Infrastructure,IT Support Specialist,Contract,Hybrid,Germany,Berlin,2024-11-04,67590,EUR,Outstanding,8
+EMP-10948,David Jones,david.jones63@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,On-Site,USA,Austin,2025-11-29,74572,USD,Exceeds Expectations,22
+EMP-10949,Chris Sharma,chris.sharma79@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,On-Site,USA,San Francisco,2025-03-17,84252,USD,Meets Expectations,11
+EMP-10950,Aarav Gupta,aarav.gupta36@itcompany.com,Data & AI,Data Engineer,Contract,On-Site,Singapore,Singapore,2024-07-26,52971,SGD,Exceeds Expectations,24
+EMP-10951,Karthik Kumar,karthik.kumar75@itcompany.com,Cybersecurity,Security Analyst,Full-Time,Hybrid,USA,San Francisco,2022-05-13,85077,USD,Meets Expectations,11
+EMP-10952,Rahul Kumar,rahul.kumar16@itcompany.com,Quality Assurance,QA Lead,Full-Time,Hybrid,India,Bengaluru,2026-03-21,1918368,INR,Outstanding,4
+EMP-10953,Emily Miller,emily.miller38@itcompany.com,Data & AI,Data Engineer,Full-Time,Remote,India,Bengaluru,2020-02-18,747862,INR,Meets Expectations,9
+EMP-10954,Vikram Anderson,vikram.anderson81@itcompany.com,Cloud & DevOps,Site Reliability Engineer,Full-Time,Hybrid,Germany,Berlin,2018-01-25,74153,EUR,Meets Expectations,25
+EMP-10955,David Reddy,david.reddy11@itcompany.com,Software Engineering,Frontend Developer,Part-Time,On-Site,India,Bengaluru,2025-04-14,1322090,INR,Outstanding,6
+EMP-10956,Vikram Kumar,vikram.kumar68@itcompany.com,Product Management,Director of Product,Full-Time,On-Site,USA,San Francisco,2019-01-07,216061,USD,Meets Expectations,22
+EMP-10957,Sam Kumar,sam.kumar90@itcompany.com,Cloud & DevOps,Cloud Engineer,Full-Time,Remote,India,Bengaluru,2026-05-02,1445399,INR,Exceeds Expectations,4
+EMP-10958,Morgan Anderson,morgan.anderson72@itcompany.com,Product Management,Associate Product Manager,Full-Time,Remote,Germany,Berlin,2019-12-08,133970,EUR,Meets Expectations,21
+EMP-10959,Chris Kumar,chris.kumar68@itcompany.com,Cloud & DevOps,Cloud Engineer,Contract,Hybrid,India,Hyderabad,2025-10-03,690985,INR,Meets Expectations,6
+EMP-10960,Sarah Williams,sarah.williams65@itcompany.com,Quality Assurance,QA Lead,Full-Time,Remote,USA,Austin,2022-01-13,150089,USD,Exceeds Expectations,8
+EMP-10961,Amit Sharma,amit.sharma21@itcompany.com,Software Engineering,Engineering Manager,Full-Time,Hybrid,USA,San Francisco,2023-06-21,158412,USD,Exceeds Expectations,7
+EMP-10962,Jordan Nair,jordan.nair70@itcompany.com,Software Engineering,Junior Developer,Contract,Hybrid,India,Pune,2023-11-24,1225443,INR,Meets Expectations,23
+EMP-10963,Jordan Williams,jordan.williams25@itcompany.com,IT Infrastructure,Network Engineer,Full-Time,Remote,India,Bengaluru,2024-09-05,973374,INR,Meets Expectations,6
+EMP-10964,Amit Gupta,amit.gupta41@itcompany.com,Data & AI,Data Analyst,Full-Time,Remote,India,Pune,2024-04-19,786300,INR,Exceeds Expectations,4
+EMP-10965,Sam Miller,sam.miller38@itcompany.com,Cloud & DevOps,DevOps Specialist,Contract,Hybrid,India,Bengaluru,2024-01-14,1131352,INR,Meets Expectations,11
+EMP-10966,Sneha Reddy,sneha.reddy93@itcompany.com,IT Infrastructure,Network Engineer,Part-Time,Hybrid,USA,San Francisco,2021-05-08,103146,USD,Meets Expectations,10
+EMP-10967,Morgan Davis,morgan.davis81@itcompany.com,IT Infrastructure,Network Engineer,Contract,On-Site,USA,San Francisco,2022-12-23,93424,USD,Exceeds Expectations,15
+EMP-10968,Vikram Singh,vikram.singh80@itcompany.com,Software Engineering,Full Stack Developer,Part-Time,Remote,India,Pune,2018-03-04,990399,INR,Meets Expectations,25
+EMP-10969,Amit Taylor,amit.taylor34@itcompany.com,Product Management,Director of Product,Contract,On-Site,USA,San Francisco,2024-07-13,188943,USD,Exceeds Expectations,17
+EMP-10970,Jordan Williams,jordan.williams15@itcompany.com,IT Infrastructure,IT Support Specialist,Part-Time,On-Site,Germany,Berlin,2019-04-28,48683,EUR,Exceeds Expectations,13
+EMP-10971,David Davis,david.davis96@itcompany.com,Product Management,Product Manager,Full-Time,Remote,USA,San Francisco,2022-06-08,209146,USD,Exceeds Expectations,3
+EMP-10972,Priya Singh,priya.singh36@itcompany.com,Software Engineering,Frontend Developer,Full-Time,On-Site,India,Hyderabad,2024-01-27,576987,INR,Exceeds Expectations,11
+EMP-10973,Pooja Miller,pooja.miller87@itcompany.com,Cybersecurity,CISO,Part-Time,Remote,USA,San Francisco,2023-11-15,143764,USD,Meets Expectations,4
+EMP-10974,David Reddy,david.reddy86@itcompany.com,Quality Assurance,QA Lead,Part-Time,Remote,UK,London,2022-06-24,127840,GBP,Outstanding,21
+EMP-10975,Amit Verma,amit.verma53@itcompany.com,Cloud & DevOps,DevOps Specialist,Part-Time,Hybrid,India,Pune,2020-03-28,1049424,INR,Meets Expectations,23
+EMP-10976,Chris Johnson,chris.johnson78@itcompany.com,Product Management,Product Owner,Full-Time,On-Site,UK,London,2021-05-25,59697,GBP,Meets Expectations,21
+EMP-10977,Alex Nair,alex.nair64@itcompany.com,Cybersecurity,Security Engineer,Full-Time,On-Site,UK,London,2023-04-16,54624,GBP,Meets Expectations,17
+EMP-10978,Sarah Nair,sarah.nair33@itcompany.com,Data & AI,Data Scientist,Full-Time,Remote,USA,Austin,2018-09-26,90029,USD,Exceeds Expectations,10
+EMP-10979,Taylor Wilson,taylor.wilson72@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,Remote,UK,London,2020-10-18,108146,GBP,Meets Expectations,14
+EMP-10980,Vikram Williams,vikram.williams65@itcompany.com,Software Engineering,Junior Developer,Contract,On-Site,USA,San Francisco,2020-03-03,75740,USD,Meets Expectations,21
+EMP-10981,Vikram Johnson,vikram.johnson70@itcompany.com,Cloud & DevOps,DevOps Specialist,Part-Time,On-Site,USA,San Francisco,2022-07-22,124177,USD,Meets Expectations,8
+EMP-10982,Michael Sharma,michael.sharma36@itcompany.com,Product Management,Associate Product Manager,Full-Time,On-Site,India,Bengaluru,2021-06-02,2917043,INR,Meets Expectations,22
+EMP-10983,Karthik Singh,karthik.singh19@itcompany.com,Quality Assurance,QA Lead,Full-Time,Remote,India,Pune,2026-05-08,2878493,INR,Outstanding,20
+EMP-10984,Taylor Patel,taylor.patel67@itcompany.com,IT Infrastructure,IT Support Specialist,Full-Time,Hybrid,USA,San Francisco,2022-12-15,70680,USD,Exceeds Expectations,20
+EMP-10985,Karthik Johnson,karthik.johnson36@itcompany.com,Product Management,Director of Product,Full-Time,On-Site,Singapore,Singapore,2026-04-11,133940,SGD,Exceeds Expectations,1
+EMP-10986,Karthik Verma,karthik.verma29@itcompany.com,Data & AI,Data Engineer,Full-Time,On-Site,India,Pune,2020-03-15,711803,INR,Meets Expectations,21
+EMP-10987,Chris Davis,chris.davis22@itcompany.com,Software Engineering,Full Stack Developer,Part-Time,Remote,Singapore,Singapore,2023-10-23,79328,SGD,Exceeds Expectations,3
+EMP-10988,David Miller,david.miller50@itcompany.com,Data & AI,BI Developer,Full-Time,On-Site,India,Hyderabad,2024-04-16,498249,INR,Meets Expectations,13
+EMP-10989,Priya Rao,priya.rao33@itcompany.com,Quality Assurance,QA Lead,Full-Time,On-Site,India,Hyderabad,2025-07-22,2520176,INR,Exceeds Expectations,8
+EMP-10990,Chris Iyer,chris.iyer75@itcompany.com,Product Management,Product Manager,Full-Time,Remote,India,Bengaluru,2024-03-27,1319991,INR,Meets Expectations,22
+EMP-10991,Morgan Nair,morgan.nair64@itcompany.com,Product Management,Product Manager,Part-Time,Hybrid,USA,San Francisco,2021-12-08,180694,USD,Meets Expectations,22
+EMP-10992,Michael Williams,michael.williams85@itcompany.com,Quality Assurance,QA Lead,Contract,On-Site,UK,London,2022-03-20,94862,GBP,Exceeds Expectations,20
+EMP-10993,Emily Wilson,emily.wilson98@itcompany.com,Quality Assurance,QA Lead,Full-Time,On-Site,India,Pune,2022-04-30,2838715,INR,Meets Expectations,11
+EMP-10994,Taylor Sharma,taylor.sharma92@itcompany.com,Software Engineering,Backend Engineer,Full-Time,Hybrid,USA,Austin,2023-01-19,100241,USD,Outstanding,24
+EMP-10995,Vikram Gupta,vikram.gupta36@itcompany.com,Quality Assurance,QA Lead,Full-Time,On-Site,Germany,Berlin,2026-02-15,121041,EUR,Meets Expectations,16
+EMP-10996,Morgan Miller,morgan.miller15@itcompany.com,IT Infrastructure,IT Support Specialist,Contract,On-Site,India,Bengaluru,2018-09-08,450906,INR,Exceeds Expectations,15
+EMP-10997,Chris Verma,chris.verma36@itcompany.com,Cloud & DevOps,Cloud Architect,Full-Time,On-Site,India,Bengaluru,2024-12-05,1971965,INR,Meets Expectations,5
+EMP-10998,Alex Davis,alex.davis36@itcompany.com,Product Management,Associate Product Manager,Full-Time,Remote,India,Pune,2022-12-24,2643056,INR,Meets Expectations,13
+EMP-10999,Amit Kumar,amit.kumar43@itcompany.com,Product Management,Director of Product,Full-Time,On-Site,Singapore,Singapore,2020-07-03,134873,SGD,Meets Expectations,10
+EMP-11000,Emily Wilson,emily.wilson43@itcompany.com,Quality Assurance,QA Tester,Contract,Hybrid,Germany,Berlin,2023-02-07,64865,EUR,Meets Expectations,23

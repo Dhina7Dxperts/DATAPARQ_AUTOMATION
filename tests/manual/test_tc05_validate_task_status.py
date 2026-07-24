@@ -64,13 +64,9 @@ def test_tc05_validate_task_status(driver, step_tracker, screenshot_manager):
 
     from pages.login_page import LoginPage
     login_page = LoginPage(driver)
-    if "7dxperts" not in driver.current_url.lower() and "dataparq" not in driver.current_url.lower():
-        login_page.navigate()
-        login_page.login()
-    else:
-        from selenium.webdriver.common.by import By
-        if driver.find_elements(By.XPATH, "//input[@name='username' or @id='username' or @aria-label='Username']"):
-            login_page.login()
+    login_page.login_if_needed()
+    logger.info("INFO - Login check completed.")
+
 
     monitor_page = MonitorPage(driver)
 

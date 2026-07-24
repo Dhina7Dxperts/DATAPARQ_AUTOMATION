@@ -46,3 +46,53 @@ class LoginPage:
             assert True
         except Exception as e:
             pytest.fail(f"FAIL: Dashboard did not load or login was unsuccessful. {e}")
+
+    def is_already_logged_in(self) -> bool:
+        """
+        Check if the current browser session is already authenticated.
+        Returns True ONLY if a known authenticated-app element is visible (sidebar nav).
+        This avoids false positives when the login form hasn't rendered yet.
+        """
+        try:
+            # Look for positive proof of authenticated app (left nav sidebar items)
+            auth_indicators = [
+                (By.XPATH, "//a[@href='/monitor']"),
+                (By.XPATH, "//a[contains(@href, 'parq-your-data')]"),
+                (By.XPATH, "//div[contains(@class, 'truncate') and normalize-space(text())='Monitor']"),
+                (By.XPATH, "//span[normalize-space(text())='OBSERVE & ASK' or normalize-space(text())='OBSERVE &amp; ASK']"),
+            ]
+            for locator in auth_indicators:
+                elements = self.driver.find_elements(*locator)
+                if elements and elements[0].is_displayed():
+                    return True
+            return False
+        except Exception:
+            return False
+
+    def login_if_needed(self):
+        """
+        Navigate to the app and login only if not already authenticated.
+        Uses positive detection of authenticated sidebar elements to decide.
+        Safe to call from any test case in a shared or standalone browser session.
+        """
+        import time
+
+        # First check if we are already on the authenticated app (no navigation needed)
+        if self.is_already_logged_in():
+            logger.info("INFO - Session already active (authenticated app visible). Skipping login.")
+            return
+
+        # Navigate to the base URL and wait for the page to settle
+        self.navigate()
+        time.sleep(4)  # Allow SPA redirect to complete
+
+        # Check again after navigation
+        if self.is_already_logged_in():
+            logger.info("INFO - Session already active after navigation. Skipping login.")
+            return
+
+        # Login form must be present — proceed with login
+        logger.info("INFO - Not authenticated. Performing login.")
+        self.login()
+        self.wait_for_dashboard()
+        logger.info("INFO - Login successful.")

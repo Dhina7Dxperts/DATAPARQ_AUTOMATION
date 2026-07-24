@@ -147,47 +147,37 @@ class DataLakehousePage:
         except Exception as e:
             pytest.fail(f"FAIL: Could not click Scan. {e}")
 
-    def validate_file_exists(self, folder_name, file_name):
+    def select_specific_source_file(self, folder_name: str, file_name: str):
         try:
             # Wait longer for scan results to load
             time.sleep(5)
+            
+            # Ensure the file_name has the .csv extension if it doesn't already
+            # (Based on HTML snippet, files are listed with extensions like uploaded_file.csv)
+            expected_file_name = file_name if file_name.endswith('.csv') else f"{file_name}.csv"
+            
+            # Uncheck any currently checked boxes to ensure ONLY the target file is selected
+            checked_boxes = self.driver.find_elements(By.XPATH, "//input[@type='checkbox' and @data-path]")
+            for box in checked_boxes:
+                if box.is_selected():
+                    self.driver.execute_script("arguments[0].click();", box)
 
-            # Try multiple locator strategies
-            locators = [
-                (By.XPATH, f"//input[@data-path='/{folder_name}/{file_name}']"),
-                (By.XPATH, f"//input[@data-path='{folder_name}/{file_name}']"),
-                (By.XPATH, f"//span[contains(text(), '{file_name}')]"),
-                (By.XPATH, f"//*[contains(text(), '{file_name}')]"),
-            ]
-
-            element = None
-            for loc in locators:
-                try:
-                    element = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(loc))
-                    logger.info(f"Found file element using locator: {loc}")
-                    break
-                except Exception:
-                    continue
-
-            if element is None:
-                # Dump HTML for debugging
-                import os
-                html_dump_path = os.path.join(os.getcwd(), "reports", "html_dumps", "step12_scan_result.html")
-                os.makedirs(os.path.dirname(html_dump_path), exist_ok=True)
-                with open(html_dump_path, "w", encoding="utf-8") as f:
-                    f.write(self.driver.page_source)
-                logger.info(f"DEBUG: Page HTML dumped to {html_dump_path} — inspect to find correct locator")
-                pytest.fail(f"FAIL: Could not find file '{file_name}' under '{folder_name}' in scan results. HTML dumped to {html_dump_path}")
-
-            # If it's a checkbox/radio, click it if not selected
+            # Precise exact match using data-path attribute
+            target_xpath = f"//input[@data-path='/{folder_name}/{expected_file_name}']"
             try:
-                if element.tag_name == "input" and not element.is_selected():
-                    self.driver.execute_script("arguments[0].click();", element)
+                target_checkbox = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, target_xpath)))
+                self.driver.execute_script("arguments[0].scrollIntoView({block:'center'});", target_checkbox)
+                
+                # Only click if it's not already selected (though we just unchecked all above)
+                if not target_checkbox.is_selected():
+                    self.driver.execute_script("arguments[0].click();", target_checkbox)
+                    
+                logger.info(f"Successfully selected specific source file: {expected_file_name}")
             except Exception:
-                pass  # Not a checkbox, just visibility check is enough
+                pytest.fail(f"FAIL: Could not find exact file match for '{expected_file_name}' inside folder '{folder_name}'. Ensure the test data is correct.")
 
         except Exception as e:
-            pytest.fail(f"FAIL: Could not find or select file {file_name} under {folder_name}. {e}")
+            pytest.fail(f"FAIL: Error during specific source file selection for {file_name}. {e}")
             
     def wait_for_upload_page(self):
         try:

@@ -77,20 +77,9 @@ def test_TC08_verify_upload_file_in_monitor(driver, step_tracker, screenshot_man
     # ── Handle standalone execution (Login if necessary) ──────────────────────
     from pages.login_page import LoginPage
     login_page = LoginPage(driver)
-    
-    # If the current URL is not the app, navigate there
-    if "7dxperts" not in driver.current_url.lower() and "dataparq" not in driver.current_url.lower():
-        logger.info("Fresh session detected. Navigating to base URL and logging in...")
-        login_page.navigate()
-        login_page.login()
-        login_page.wait_for_dashboard()
-    else:
-        # We are already in the app. Just to be safe, if on login page, log in.
-        from selenium.webdriver.common.by import By
-        if driver.find_elements(By.XPATH, "//input[@name='username' or @id='username' or @aria-label='Username']"):
-            logger.info("Session active but found login screen. Logging in...")
-            login_page.login()
-            login_page.wait_for_dashboard()
+    login_page.login_if_needed()
+    logger.info("INFO - Login check completed.")
+
 
     monitor_page = MonitorPage(driver)
     task_page = TaskPage(driver)
@@ -127,8 +116,8 @@ def test_TC08_verify_upload_file_in_monitor(driver, step_tracker, screenshot_man
 
     # ── Step 7: Search Using Domain Name again ────────────────────────────────
     step_tracker["current"] = 7
-    monitor_page.search_domain(workflow_name)
-    _record(step_tracker, screenshot_manager, 7, f"Searched for domain '{workflow_name}' again.")
+    monitor_page.search_domain_via_column_filter(workflow_name)
+    _record(step_tracker, screenshot_manager, 7, f"Searched for domain '{workflow_name}' via column filter.")
 
     # ── Step 8: Validate Domain Presence (Exact Match) ─────────────────────────
     step_tracker["current"] = 8

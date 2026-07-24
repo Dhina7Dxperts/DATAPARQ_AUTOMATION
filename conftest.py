@@ -348,7 +348,7 @@ def pytest_runtest_makereport(item, call):
         for snum in sorted(step_descriptions.keys()):
             if snum in existing_step_nums:
                 steps.append(next(r for r in existing_results if r["step"] == snum))
-            elif snum < failed_step or (not passed and snum == failed_step):
+            elif not passed and (snum < failed_step or snum == failed_step):
                 # Step was reached but no explicit result logged — infer from failure
                 steps.append({
                     "step": snum,
@@ -358,8 +358,10 @@ def pytest_runtest_makereport(item, call):
                     "status": "FAIL" if snum == failed_step else "PASS",
                     "error": error_message if snum == failed_step else "",
                 })
-            else:
-                break  # Steps beyond failure point not reached
+            elif not passed and snum > failed_step:
+                break  # Steps beyond failure point were not reached — stop
+            # else: test passed but step has no record (merged/skipped step) — skip silently
+
 
         # Generate report
         try:

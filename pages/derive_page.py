@@ -133,54 +133,125 @@ class DerivePage:
         except Exception as e:
             pytest.fail(f"FAIL: Could not click 'Add New Source'. {e}")
 
-    def select_source_entity_dropdown(self, domain_name: str):
+    def select_domain_name_dropdown(self, domain_name: str):
         try:
-            # Click the dropdown associated with the Source Entity label
+            # Target the Domain Name dropdown using the specific label ID provided by the user
             self.driver.execute_script("""
-                var clicked = false;
-                var label = document.querySelector('label#source_name_label');
+                var label = document.querySelector('label#domain_name_label');
                 if (label) {
                     var sibling = label.nextElementSibling;
                     if (sibling) {
                         var picker = sibling.querySelector('.k-dropdownlist, .k-picker, button, .k-input-button');
                         if (picker) { 
-                            picker.click(); 
-                            clicked = true;
-                        }
-                    }
-                }
-                if (!clicked) {
-                    // Fallback to searching by text if ID changes
-                    var labels = document.querySelectorAll('label');
-                    for (var i = 0; i < labels.length; i++) {
-                        if (labels[i].textContent.toLowerCase().includes('source entity')) {
-                            var sibling = labels[i].nextElementSibling;
-                            if (sibling) {
-                                var picker = sibling.querySelector('.k-dropdownlist, .k-picker, button, .k-input-button');
-                                if (picker) { 
-                                    picker.click(); 
-                                    clicked = true;
-                                    break; 
-                                }
-                            }
+                            picker.scrollIntoView({block:'center'});
+                            picker.click();
                         }
                     }
                 }
             """)
             time.sleep(1.5)
             
-            option_xpath = (
-                f"//*[contains(@class,'k-popup') or contains(@class,'k-animation-container')]"
-                f"//*[@role='option' or contains(@class,'k-item')]"
-                f"[contains(.,'{domain_name}')]"
-            )
-            option = self.wait.until(EC.presence_of_element_located((By.XPATH, option_xpath)))
-            self.driver.execute_script("arguments[0].scrollIntoView({block:'center'});", option)
+            # Select the exact domain name from the popup list
+            self.driver.execute_script(f"""
+                var popups = document.querySelectorAll('.k-popup, .k-animation-container, .k-list-container');
+                for (var popup of popups) {{
+                    if (popup.style.display !== 'none' || popup.offsetParent !== null) {{
+                        var items = popup.querySelectorAll('[role="option"], .k-item');
+                        for (var item of items) {{
+                            var text = item.textContent.trim().toLowerCase();
+                            if (text === '{domain_name.lower()}') {{
+                                item.scrollIntoView({{block:'center'}});
+                                item.click();
+                                return;
+                            }}
+                        }}
+                    }}
+                }}
+            """)
+            logger.info(f"INFO - Selected '{domain_name}' from the Domain Name dropdown successfully.")
             time.sleep(0.5)
-            self.driver.execute_script("arguments[0].click();", option)
-            logger.info(f"INFO - Selected domain name '{domain_name}' from Source Entity dropdown.")
         except Exception as e:
-            pytest.fail(f"FAIL: Could not select domain name '{domain_name}' from Source Entity dropdown. {e}")
+            pytest.fail(f"FAIL: Could not select Domain Name from dropdown. {e}")
+
+    def select_workflow_name_dropdown(self, workflow_name: str):
+        try:
+            # Target the Workflow Name dropdown using the specific label ID provided by the user
+            self.driver.execute_script("""
+                var label = document.querySelector('label#schedule_name_label');
+                if (label) {
+                    var sibling = label.nextElementSibling;
+                    if (sibling) {
+                        var picker = sibling.querySelector('.k-dropdownlist, .k-picker, button, .k-input-button');
+                        if (picker) { 
+                            picker.scrollIntoView({block:'center'});
+                            picker.click();
+                        }
+                    }
+                }
+            """)
+            time.sleep(1.5)
+            
+            # Select the exact workflow name from the popup list
+            self.driver.execute_script(f"""
+                var popups = document.querySelectorAll('.k-popup, .k-animation-container, .k-list-container');
+                for (var popup of popups) {{
+                    if (popup.style.display !== 'none' || popup.offsetParent !== null) {{
+                        var items = popup.querySelectorAll('[role="option"], .k-item');
+                        for (var item of items) {{
+                            var text = item.textContent.trim().toLowerCase();
+                            if (text === '{workflow_name.lower()}') {{
+                                item.scrollIntoView({{block:'center'}});
+                                item.click();
+                                return;
+                            }}
+                        }}
+                    }}
+                }}
+            """)
+            logger.info(f"INFO - Selected '{workflow_name}' from the Workflow Name dropdown successfully.")
+            time.sleep(0.5)
+        except Exception as e:
+            pytest.fail(f"FAIL: Could not select Workflow Name from dropdown. {e}")
+
+    def select_source_entity_dropdown(self):
+        try:
+            # Target the Source Entity dropdown using the specific label ID provided by the user
+            self.driver.execute_script("""
+                var label = document.querySelector('label#source_name_label');
+                if (label) {
+                    var sibling = label.nextElementSibling;
+                    if (sibling) {
+                        var picker = sibling.querySelector('.k-dropdownlist, .k-picker, button, .k-input-button');
+                        if (picker) { 
+                            picker.scrollIntoView({block:'center'});
+                            picker.click();
+                        }
+                    }
+                }
+            """)
+            time.sleep(1.5)
+            
+            # Select the first valid (non-placeholder) source entity option
+            self.driver.execute_script("""
+                var popups = document.querySelectorAll('.k-popup, .k-animation-container, .k-list-container');
+                for (var popup of popups) {
+                    if (popup.style.display !== 'none' || popup.offsetParent !== null) {
+                        var items = popup.querySelectorAll('[role="option"], .k-item');
+                        for (var item of items) {
+                            var text = item.textContent.trim().toLowerCase();
+                            if (text && !text.includes('please select')) {
+                                item.scrollIntoView({block:'center'});
+                                item.click();
+                                return;
+                            }
+                        }
+                    }
+                }
+            """)
+            logger.info("INFO - Selected the available Source Entity from the dropdown successfully.")
+            time.sleep(0.5)
+        except Exception as e:
+            pytest.fail(f"FAIL: Could not select Source Entity from dropdown. {e}")
 
     def click_next_modal(self):
         try:

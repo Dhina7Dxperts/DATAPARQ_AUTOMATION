@@ -339,11 +339,46 @@ class MonitorPage:
                 raise
             pytest.fail(f"FAIL: Could not search/filter domain '{domain_name}' in Monitor module. {e}")
 
+    def search_domain_via_column_filter(self, domain_name):
+        try:
+            # According to provided HTML, the input is placed near the "Domain Name" column title.
+            # <span class="k-column-title">Domain Name</span></span>
+            # <input autocomplete="off" id=":rcm:" type="text" placeholder="Search" class="k-input-inner"...
+            input_xpath = "//input[@placeholder='Search' and contains(@class, 'k-input-inner')]"
+            
+            # Since there could be multiple search boxes, we try to locate the correct one.
+            search_inputs = self.wait.until(EC.presence_of_all_elements_located((By.XPATH, input_xpath)))
+            target_input = search_inputs[0] if search_inputs else None
+            
+            # Check for the one nearest to "Domain Name" text or simply use the first visible one
+            for inp in search_inputs:
+                if inp.is_displayed():
+                    target_input = inp
+                    # If there are multiple visible, try to refine (we'll just use the first visible one for now)
+                    break
+                    
+            if not target_input:
+                pytest.fail("FAIL: Domain Name search textbox could not be found.")
+
+            self.driver.execute_script("arguments[0].scrollIntoView({block:'center'}); arguments[0].click(); arguments[0].value='';", target_input)
+            target_input.clear()
+            target_input.send_keys(domain_name)
+            
+            import time
+            time.sleep(2)
+            
+            from selenium.webdriver.common.keys import Keys
+            target_input.send_keys(Keys.ENTER)
+            
+            # Wait for grid to update
+            time.sleep(3)
+            logger.info(f"Searched domain via column filter for: {domain_name}")
+        except Exception as e:
+            pytest.fail(f"FAIL: Could not search using domain column filter for '{domain_name}'. {e}")
+
     def validate_domain_presence(self, domain_name):
         try:
-            # Case-insensitive search to handle any casing variation
             domain_lower = domain_name.lower()
-            # wait for grid to refresh
             time.sleep(2)
             row_xpath = (
                 f"//tr[td["
@@ -357,6 +392,26 @@ class MonitorPage:
         except TimeoutException:
             logger.error(f"Domain '{domain_name}' was NOT found in the Monitor grid results after search.")
             pytest.fail(f"FAIL: Domain '{domain_name}' was not found in the Monitor results grid.")
+
+    def validate_domain_and_workflow_presence(self, domain_name, workflow_name):
+        try:
+            domain_lower = domain_name.lower()
+            workflow_lower = workflow_name.lower()
+            time.sleep(2)
+            
+            # Find rows that contain both the domain and workflow names (case insensitive)
+            row_xpath = (
+                f"//tr["
+                f"td[translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')='{domain_lower}'] "
+                f"and td[translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')='{workflow_lower}']"
+                f"]"
+            )
+            self.wait.until(EC.presence_of_element_located((By.XPATH, row_xpath)))
+            logger.info(f"Domain '{domain_name}' and Workflow '{workflow_name}' successfully found in the Monitor grid results.")
+            return True
+        except TimeoutException:
+            logger.error(f"Domain '{domain_name}' or Workflow '{workflow_name}' was NOT found in the Monitor grid results.")
+            pytest.fail(f"FAIL: Row with Domain '{domain_name}' and Workflow '{workflow_name}' was not found in the Monitor results grid.")
 
     def click_create_batch(self, domain_name):
         try:
@@ -422,15 +477,24 @@ class MonitorPage:
         except Exception as e:
             pytest.fail(f"FAIL: Confirmation dialog Yes button not found or action was not accepted. {e}")
 
-    def click_task_button(self, domain_name):
+    def click_task_button(self, domain_name, workflow_name=None):
         try:
             domain_lower = domain_name.lower()
-            row_xpath = (
-                f"//tr[td["
-                f"translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')="
-                f"'{domain_lower}'"
-                f"]]"
-            )
+            if workflow_name:
+                workflow_lower = workflow_name.lower()
+                row_xpath = (
+                    f"//tr["
+                    f"td[translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')='{domain_lower}'] "
+                    f"and td[translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')='{workflow_lower}']"
+                    f"]"
+                )
+            else:
+                row_xpath = (
+                    f"//tr[td["
+                    f"translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')='{domain_lower}'"
+                    f"]]"
+                )
+            
             action_cell_xpath = f"{row_xpath}//td[contains(@class, 'action') or contains(@class, 'command') or position()=last()]"
             
             self.wait.until(EC.presence_of_element_located((By.XPATH, action_cell_xpath)))
@@ -443,18 +507,18 @@ class MonitorPage:
             target_button = None
             for btn in buttons:
                 html = (btn.get_attribute("outerHTML") or "").lower()
-                if "task" in html or "detail" in html or "monitor" in html or "eye" in html:
+                if "task" in html or "detail" in html or "monitor" in html or "eye" in html or "12.8168" in html:
                     target_button = btn
                     break
                     
             if not target_button:
-                target_button = buttons[2] if len(buttons) >= 3 else buttons[0]
+                target_button = buttons[2] if len(buttons) >= 3 else buttons[-1]
             
             self.driver.execute_script("arguments[0].scrollIntoView({block: 'center', inline: 'center'});", target_button)
             time.sleep(1)
             self.driver.execute_script("arguments[0].click();", target_button)
             
-            logger.info(f"Clicked the Task button for domain '{domain_name}'.")
+            logger.info(f"Clicked the Task button for domain '{domain_name}' and workflow '{workflow_name}'.")
             time.sleep(2)
         except Exception as e:
             pytest.fail(f"FAIL: Could not click the Task button for domain '{domain_name}'. {e}")
@@ -562,7 +626,7 @@ class MonitorPage:
             start_time = time.time()
             logger.info(f"Starting {max_wait//60}-minute polling for layer '{layer_name}'.")
             
-            row_xpath = f"//tr[td[{layer_idx}][contains(normalize-space(translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')), '{layer_name.lower()}')]]"
+            row_xpath = f"//tr[td[{layer_idx}][contains(normalize-space(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')), '{layer_name.lower()}')]]"
             
             last_status = None
 
@@ -656,8 +720,10 @@ class MonitorPage:
                         
                         matched_layer = None
                         for target in target_layers:
-                            # Exact match or very close to avoid "Data Lake" matching "Data Lakehouse"
-                            if target.lower() == actual_layer_name:
+                            # Remove spaces and convert to lower case for comparison to handle "Data Quality" vs "dataquality"
+                            t_clean = target.lower().replace(" ", "")
+                            a_clean = actual_layer_name.replace(" ", "")
+                            if t_clean == a_clean:
                                 matched_layer = target
                                 break
                                 
@@ -701,6 +767,89 @@ class MonitorPage:
             if "FAIL:" in str(e):
                 raise
             pytest.fail(f"Failed to validate data quality and lake status: {e}")
+
+    def validate_multiple_enrich_tasks_status(self, max_wait=1800, poll_interval=15, screenshot_manager=None, step_num=35):
+        import time
+        try:
+            self.wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(@class, 'k-column-title') and contains(text(), 'Layer Name')]")))
+            
+            headers = self.driver.find_elements(By.XPATH, "//th")
+            layer_idx = -1
+            status_idx = -1
+            for i, header in enumerate(headers):
+                text = header.get_attribute("textContent").strip()
+                if "Layer Name" in text:
+                    layer_idx = i + 1
+                elif "Status" in text:
+                    status_idx = i + 1
+                    
+            if layer_idx == -1 or status_idx == -1:
+                pytest.fail("Could not find 'Layer Name' or 'Status' column in the task details grid.")
+                
+            start_time = time.time()
+            logger.info(f"Starting {max_wait//60}-minute polling for exactly two 'Enrich' tasks.")
+            
+            # Wait for rows to render
+            time.sleep(2)
+            
+            while time.time() - start_time < max_wait:
+                # Try to click grid refresh button if it exists
+                try:
+                    refresh_btn = self.driver.find_element(By.XPATH, "//*[contains(@class, 'k-pager-refresh')] | //button[@title='Refresh'] | //button[contains(@class, 'k-pager-refresh')]")
+                    if refresh_btn.is_displayed() and refresh_btn.is_enabled():
+                        self.driver.execute_script("arguments[0].click();", refresh_btn)
+                        time.sleep(1) # short wait for refresh to process
+                except Exception:
+                    pass
+                    
+                rows = self.driver.find_elements(By.XPATH, "//tr[td]")
+                
+                enrich_task_statuses = []
+                for row in rows:
+                    try:
+                        layer_name_cell = row.find_element(By.XPATH, f"./td[{layer_idx}]")
+                        actual_layer_name = layer_name_cell.text.strip().lower()
+                        
+                        if actual_layer_name == "enrich":
+                            status_cell = row.find_element(By.XPATH, f"./td[{status_idx}]")
+                            status_text = status_cell.text.strip().lower()
+                            enrich_task_statuses.append(status_text)
+                    except Exception:
+                        pass
+                
+                if len(enrich_task_statuses) != 2:
+                    if len(enrich_task_statuses) == 0:
+                        logger.info("No Enrich tasks found yet. Continuing to poll...")
+                    else:
+                        pytest.fail(f"FAIL: Expected exactly two 'Enrich' tasks, but found {len(enrich_task_statuses)}.")
+                else:
+                    # Log current state
+                    elapsed_mins = int((time.time() - start_time) // 60)
+                    elapsed_secs = int((time.time() - start_time) % 60)
+                    logger.info(f"─── Poll at {elapsed_mins}m {elapsed_secs}s ───")
+                    logger.info(f"  Enrich Task 1: {enrich_task_statuses[0]}")
+                    logger.info(f"  Enrich Task 2: {enrich_task_statuses[1]}")
+                    
+                    if screenshot_manager and (elapsed_secs % 60 < poll_interval): # Take screenshot roughly every minute
+                        screenshot_manager.capture(step_number=step_num, description=f"Enrich tasks statuses: {enrich_task_statuses[0]}, {enrich_task_statuses[1]}")
+
+                    for status_text in enrich_task_statuses:
+                        if status_text in ["failed", "error", "stopped", "cancelled", "aborted"]:
+                            pytest.fail(f"FAIL: An Enrich task encountered terminal status: {status_text}")
+                            
+                    if all(status == "completed" for status in enrich_task_statuses):
+                        logger.info("Both Enrich tasks completed successfully!")
+                        if screenshot_manager:
+                            screenshot_manager.capture(step_number=step_num, description="Both Enrich tasks completed successfully")
+                        return True
+                        
+                time.sleep(poll_interval)
+                
+            pytest.fail(f"Timeout reached: Enrich tasks did not complete within {max_wait//60} minutes.")
+        except Exception as e:
+            if "FAIL:" in str(e):
+                raise
+            pytest.fail(f"Failed to validate Enrich tasks status: {e}")
 
     def validate_layer_record_counts(self):
         try:
